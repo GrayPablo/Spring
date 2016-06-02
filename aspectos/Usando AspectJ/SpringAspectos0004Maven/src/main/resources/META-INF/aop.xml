@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aspectj>
+    <weaver>
+        <include within="com.curso.spring.beans.*"/>
+        <include within="com.curso.spring.aspectos.*"/>
+    </weaver>
+    <aspects>
+        <aspect name="com.curso.spring.aspectos.Profiler"/>
+    </aspects>
+</aspectj>

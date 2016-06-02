@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+    
+    <bean id="aspectoEjemploBean" class="com.curso.springaspectosaop0001.aspectos.AspectoEjemplo"/>
+    <aop:config>
+        <aop:aspect id="aspectoEjemplo" ref="aspectoEjemploBean">
+            <aop:pointcut id="pointcutObtenerMensaje" expression="execution(* obtenerMensaje(..))"/>
+            <aop:pointcut id="pointcutConParametro" expression="execution(* conParametro(..)) and args(parametro)"/>
+            <aop:pointcut id="pointcutObtenerTiempo" expression="execution(* obtenerTiempo(..))"/>
+            <aop:pointcut id="pointcutLanzarExcepcion" expression="execution(* lanzarExcepcion(..))"/>
+            <aop:pointcut id="pointcutMetodoLento" expression="execution(* metodoLento(..))"/>
+            <aop:before method="testBeforeSinParametros" pointcut-ref="pointcutObtenerMensaje"/>
+            <aop:before method="testBeforeConParametros" pointcut-ref="pointcutConParametro"/>
+            <aop:after method="testAfterSinParametros" pointcut-ref="pointcutObtenerTiempo"/>
+            <aop:after-returning method="testAfterReturning" returning="valor" pointcut-ref="pointcutObtenerMensaje"/>
+            <aop:after-throwing method="testAfterThrowing" throwing="e" pointcut-ref="pointcutLanzarExcepcion"/>
+            <aop:around method="testAround" pointcut-ref="pointcutMetodoLento"/>
+        </aop:aspect>
+    </aop:config>
+</beans>
