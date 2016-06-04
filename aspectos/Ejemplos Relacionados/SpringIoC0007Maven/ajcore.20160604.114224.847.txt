@@ -1,0 +1,264 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114224.847.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+info using configuration file:/C:/Users/usuario/.m2/repository/org/springframework/spring-aspects/3.1.2.RELEASE/spring-aspects-3.1.2.RELEASE.jar!/META-INF/aop.xml
+debug weaving 'org.springframework.context.support.MessageSourceSupport'
+abort trouble in: 
+public abstract class org.springframework.context.support.MessageSourceSupport extends java.lang.Object:
+  private static final java.text.MessageFormat INVALID_MESSAGE_FORMAT
+  protected final org.apache.commons.logging.Log logger
+  private boolean alwaysUseMessageFormat
+  private final java.util.Map cachedMessageFormats [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/text/MessageFormat;>;)]
+  static void <clinit>():
+    staticinitialization(void org.springframework.context.support.MessageSourceSupport.<clinit>())
+    |               NEW java.text.MessageFormat   (line 43)
+    |               DUP
+    |               LDC ""
+    |               INVOKESPECIAL java.text.MessageFormat.<init> (Ljava/lang/String;)V
+    |               PUTSTATIC org.springframework.context.support.MessageSourceSupport.INVALID_MESSAGE_FORMAT Ljava/text/MessageFormat;
+    |               RETURN   (line 41)
+    staticinitialization(void org.springframework.context.support.MessageSourceSupport.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 41)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.context.support.MessageSourceSupport.<init>())
+    |               ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 46)
+    |               ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTFIELD org.springframework.context.support.MessageSourceSupport.logger Lorg/apache/commons/logging/Log;
+    |               ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 48)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.context.support.MessageSourceSupport.alwaysUseMessageFormat Z
+    |               ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 55)
+    |               NEW java.util.HashMap
+    |               DUP
+    |               INVOKESPECIAL java.util.HashMap.<init> ()V
+    |               PUTFIELD org.springframework.context.support.MessageSourceSupport.cachedMessageFormats Ljava/util/Map;
+    |               RETURN   (line 41)
+    constructor-execution(void org.springframework.context.support.MessageSourceSupport.<init>())
+  end public void <init>()
+
+  public void setAlwaysUseMessageFormat(boolean):
+                    ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 73)
+                    ILOAD_1     // Z alwaysUseMessageFormat
+                    PUTFIELD org.springframework.context.support.MessageSourceSupport.alwaysUseMessageFormat Z
+                    RETURN   (line 74)
+  end public void setAlwaysUseMessageFormat(boolean)
+
+  protected boolean isAlwaysUseMessageFormat():
+                    ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 81)
+                    GETFIELD org.springframework.context.support.MessageSourceSupport.alwaysUseMessageFormat Z
+                    IRETURN
+  end protected boolean isAlwaysUseMessageFormat()
+
+  protected String renderDefaultMessage(String, Object[], java.util.Locale):
+                    ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 100)
+                    ALOAD_1     // Ljava/lang/String; defaultMessage
+                    ALOAD_2     // [Ljava/lang/Object; args
+                    ALOAD_3     // Ljava/util/Locale; locale
+                    INVOKEVIRTUAL org.springframework.context.support.MessageSourceSupport.formatMessage (Ljava/lang/String;[Ljava/lang/Object;Ljava/util/Locale;)Ljava/lang/String;
+                    ARETURN
+  end protected String renderDefaultMessage(String, Object[], java.util.Locale)
+
+  protected String formatMessage(String, Object[], java.util.Locale):
+                    ALOAD_1     // Ljava/lang/String; msg   (line 114)
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this
+                    GETFIELD org.springframework.context.support.MessageSourceSupport.alwaysUseMessageFormat Z
+                    IFNE L1
+                    ALOAD_2     // [Ljava/lang/Object; args
+                    INVOKESTATIC org.springframework.util.ObjectUtils.isEmpty ([Ljava/lang/Object;)Z
+                    IFEQ L1
+                L0: ALOAD_1     // Ljava/lang/String; msg   (line 115)
+                    ARETURN
+                L1: ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 118)
+                    GETFIELD org.springframework.context.support.MessageSourceSupport.cachedMessageFormats Ljava/util/Map;
+                    DUP
+                    ASTORE 5
+                    MONITORENTER
+    finally -> E2
+    |               ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 119)
+    |               GETFIELD org.springframework.context.support.MessageSourceSupport.cachedMessageFormats Ljava/util/Map;
+    |               ALOAD_1     // Ljava/lang/String; msg
+    |               INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               CHECKCAST java.text.MessageFormat
+    |               ASTORE 4
+    |               ALOAD 4     // Ljava/text/MessageFormat; messageFormat   (line 120)
+    |               IFNONNULL L4
+    | catch java.lang.IllegalArgumentException -> E0
+    | |             ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 122)
+    | |             ALOAD_1     // Ljava/lang/String; msg
+    | |             ALOAD_3     // Ljava/util/Locale; locale
+    | |             INVOKEVIRTUAL org.springframework.context.support.MessageSourceSupport.createMessageFormat (Ljava/lang/String;Ljava/util/Locale;)Ljava/text/MessageFormat;
+    | |             ASTORE 4     // Ljava/text/MessageFormat; messageFormat
+    | catch java.lang.IllegalArgumentException -> E0
+    |               GOTO L3
+    |           E0: ASTORE 6   (line 124)
+    |               ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 127)
+    |               GETFIELD org.springframework.context.support.MessageSourceSupport.alwaysUseMessageFormat Z
+    |               IFEQ L2
+    |               ALOAD 6     // Ljava/lang/IllegalArgumentException; ex   (line 128)
+    |               ATHROW
+    |           L2: GETSTATIC org.springframework.context.support.MessageSourceSupport.INVALID_MESSAGE_FORMAT Ljava/text/MessageFormat;   (line 131)
+    |               ASTORE 4     // Ljava/text/MessageFormat; messageFormat
+    |           L3: ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 133)
+    |               GETFIELD org.springframework.context.support.MessageSourceSupport.cachedMessageFormats Ljava/util/Map;
+    |               ALOAD_1     // Ljava/lang/String; msg
+    |               ALOAD 4     // Ljava/text/MessageFormat; messageFormat
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |           L4: ALOAD 5   (line 118)
+    |               MONITOREXIT
+    finally -> E2
+                    GOTO L5
+    finally -> E2
+    |           E2: ALOAD 5
+    |               MONITOREXIT
+    finally -> E2
+                    ATHROW
+                L5: ALOAD 4     // Ljava/text/MessageFormat; messageFormat   (line 136)
+                    GETSTATIC org.springframework.context.support.MessageSourceSupport.INVALID_MESSAGE_FORMAT Ljava/text/MessageFormat;
+                    IF_ACMPNE L6
+                    ALOAD_1     // Ljava/lang/String; msg   (line 137)
+                    ARETURN
+                L6: ALOAD 4     // Ljava/text/MessageFormat; messageFormat   (line 139)
+                    DUP
+                    ASTORE 5
+                    MONITORENTER
+    finally -> E4
+    |               ALOAD 4     // Ljava/text/MessageFormat; messageFormat   (line 140)
+    |               ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this
+    |               ALOAD_2     // [Ljava/lang/Object; args
+    |               ALOAD_3     // Ljava/util/Locale; locale
+    |               INVOKEVIRTUAL org.springframework.context.support.MessageSourceSupport.resolveArguments ([Ljava/lang/Object;Ljava/util/Locale;)[Ljava/lang/Object;
+    |               INVOKEVIRTUAL java.text.MessageFormat.format (Ljava/lang/Object;)Ljava/lang/String;
+    |               ALOAD 5
+    |               MONITOREXIT
+    finally -> E4
+                    ARETURN
+    finally -> E4
+    |           E4: ALOAD 5   (line 139)
+    |               MONITOREXIT
+    finally -> E4
+                    ATHROW
+  end protected String formatMessage(String, Object[], java.util.Locale)
+
+  protected java.text.MessageFormat createMessageFormat(String, java.util.Locale):
+                    NEW java.text.MessageFormat   (line 151)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; msg
+                    IFNULL L0
+                    ALOAD_1     // Ljava/lang/String; msg
+                    GOTO L1
+                L0: LDC ""
+                L1: ALOAD_2     // Ljava/util/Locale; locale
+                    INVOKESPECIAL java.text.MessageFormat.<init> (Ljava/lang/String;Ljava/util/Locale;)V
+                    ARETURN
+  end protected java.text.MessageFormat createMessageFormat(String, java.util.Locale)
+
+  protected Object[] resolveArguments(Object[], java.util.Locale):
+                    ALOAD_1     // [Ljava/lang/Object; args   (line 164)
+                    ARETURN
+  end protected Object[] resolveArguments(Object[], java.util.Locale)
+end public abstract class org.springframework.context.support.MessageSourceSupport
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.context.NoSuchMessageException'
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

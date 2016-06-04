@@ -1,0 +1,383 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114044.429.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+info using configuration file:/C:/Users/usuario/.m2/repository/org/springframework/spring-aspects/3.1.2.RELEASE/spring-aspects-3.1.2.RELEASE.jar!/META-INF/aop.xml
+debug weaving 'org.springframework.asm.Label'
+abort trouble in: 
+public class org.springframework.asm.Label extends java.lang.Object:
+  int k
+  boolean a
+  int b
+  boolean c
+  private int d
+  private int[] e
+  int f
+  int g
+  org.springframework.asm.Edge h
+  org.springframework.asm.Label i
+  boolean j
+  public void <init>():
+                    ALOAD_0
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.asm.Label.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.asm.Label.<init>())
+  end public void <init>()
+
+  public int getOffset():
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Label.a Z
+                    IFNE L0
+                    NEW java.lang.IllegalStateException
+                    DUP
+                    LDC "Label offset position has not been resolved yet"
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_0
+                    GETFIELD org.springframework.asm.Label.b I
+                    IRETURN
+  end public int getOffset()
+
+  void a(org.springframework.asm.MethodWriter, org.springframework.asm.ByteVector, int, boolean):
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Label.a Z
+                    IFEQ L1
+                    ILOAD 4
+                    IFEQ L0
+                    ALOAD_2
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Label.b I
+                    ILOAD_3
+                    ISUB
+                    INVOKEVIRTUAL org.springframework.asm.ByteVector.putInt (I)Lorg/springframework/asm/ByteVector;
+                    POP
+                    GOTO L3
+                L0: ALOAD_2
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Label.b I
+                    ILOAD_3
+                    ISUB
+                    INVOKEVIRTUAL org.springframework.asm.ByteVector.putShort (I)Lorg/springframework/asm/ByteVector;
+                    POP
+                    GOTO L3
+                L1: ILOAD 4
+                    IFEQ L2
+                    ALOAD_0
+                    ICONST_M1
+                    ILOAD_3
+                    ISUB
+                    ALOAD_2
+                    GETFIELD org.springframework.asm.ByteVector.b I
+                    INVOKESPECIAL org.springframework.asm.Label.a (II)V
+                    ALOAD_2
+                    ICONST_M1
+                    INVOKEVIRTUAL org.springframework.asm.ByteVector.putInt (I)Lorg/springframework/asm/ByteVector;
+                    POP
+                    GOTO L3
+                L2: ALOAD_0
+                    ILOAD_3
+                    ALOAD_2
+                    GETFIELD org.springframework.asm.ByteVector.b I
+                    INVOKESPECIAL org.springframework.asm.Label.a (II)V
+                    ALOAD_2
+                    ICONST_M1
+                    INVOKEVIRTUAL org.springframework.asm.ByteVector.putShort (I)Lorg/springframework/asm/ByteVector;
+                    POP
+                L3: RETURN
+  end void a(org.springframework.asm.MethodWriter, org.springframework.asm.ByteVector, int, boolean)
+
+  private void a(int, int):
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Label.e [I
+                    IFNONNULL L0
+                    ALOAD_0
+                    BIPUSH 6
+                    NEWARRAY 10
+                    PUTFIELD org.springframework.asm.Label.e [I
+                L0: ALOAD_0
+                    GETFIELD org.springframework.asm.Label.d I
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Label.e [I
+                    ARRAYLENGTH
+                    IF_ICMPLT L1
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Label.e [I
+                    ARRAYLENGTH
+                    BIPUSH 6
+                    IADD
+                    NEWARRAY 10
+                    ASTORE_3
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Label.e [I
+                    ICONST_0
+                    ALOAD_3
+                    ICONST_0
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Label.e [I
+                    ARRAYLENGTH
+                    INVOKESTATIC java.lang.System.arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V
+                    ALOAD_0
+                    ALOAD_3
+                    PUTFIELD org.springframework.asm.Label.e [I
+                L1: ALOAD_0
+                    GETFIELD org.springframework.asm.Label.e [I
+                    ALOAD_0
+                    DUP
+                    GETFIELD org.springframework.asm.Label.d I
+                    DUP_X1
+                    ICONST_1
+                    IADD
+                    PUTFIELD org.springframework.asm.Label.d I
+                    ILOAD_1
+                    IASTORE
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Label.e [I
+                    ALOAD_0
+                    DUP
+                    GETFIELD org.springframework.asm.Label.d I
+                    DUP_X1
+                    ICONST_1
+                    IADD
+                    PUTFIELD org.springframework.asm.Label.d I
+                    ILOAD_2
+                    IASTORE
+                    RETURN
+  end private void a(int, int)
+
+  boolean a(org.springframework.asm.MethodWriter, int, byte[]):
+                    ICONST_0
+                    ISTORE 4
+                    ALOAD_0
+                    ICONST_1
+                    PUTFIELD org.springframework.asm.Label.a Z
+                    ALOAD_0
+                    ILOAD_2
+                    PUTFIELD org.springframework.asm.Label.b I
+                    ICONST_0
+                    ISTORE 5
+                L0: ILOAD 5
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Label.d I
+                    IF_ICMPGE L7
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Label.e [I
+                    ILOAD 5
+                    IINC 5 1
+                    IALOAD
+                    ISTORE 6
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Label.e [I
+                    ILOAD 5
+                    IINC 5 1
+                    IALOAD
+                    ISTORE 7
+                    ILOAD 6
+                    IFLT L5
+                    ILOAD_2
+                    ILOAD 6
+                    ISUB
+                    ISTORE 8
+                    ILOAD 8
+                    SIPUSH -32768
+                    IF_ICMPLT L1
+                    ILOAD 8
+                    SIPUSH 32767
+                    IF_ICMPLE L4
+                L1: ALOAD_3
+                    ILOAD 7
+                    ICONST_1
+                    ISUB
+                    BALOAD
+                    SIPUSH 255
+                    IAND
+                    ISTORE 9
+                    ILOAD 9
+                    SIPUSH 168
+                    IF_ICMPGT L2
+                    ALOAD_3
+                    ILOAD 7
+                    ICONST_1
+                    ISUB
+                    ILOAD 9
+                    BIPUSH 49
+                    IADD
+                    I2B
+                    BASTORE
+                    GOTO L3
+                L2: ALOAD_3
+                    ILOAD 7
+                    ICONST_1
+                    ISUB
+                    ILOAD 9
+                    BIPUSH 20
+                    IADD
+                    I2B
+                    BASTORE
+                L3: ICONST_1
+                    ISTORE 4
+                L4: ALOAD_3
+                    ILOAD 7
+                    IINC 7 1
+                    ILOAD 8
+                    BIPUSH 8
+                    IUSHR
+                    I2B
+                    BASTORE
+                    ALOAD_3
+                    ILOAD 7
+                    ILOAD 8
+                    I2B
+                    BASTORE
+                    GOTO L6
+                L5: ILOAD_2
+                    ILOAD 6
+                    IADD
+                    ICONST_1
+                    IADD
+                    ISTORE 8
+                    ALOAD_3
+                    ILOAD 7
+                    IINC 7 1
+                    ILOAD 8
+                    BIPUSH 24
+                    IUSHR
+                    I2B
+                    BASTORE
+                    ALOAD_3
+                    ILOAD 7
+                    IINC 7 1
+                    ILOAD 8
+                    BIPUSH 16
+                    IUSHR
+                    I2B
+                    BASTORE
+                    ALOAD_3
+                    ILOAD 7
+                    IINC 7 1
+                    ILOAD 8
+                    BIPUSH 8
+                    IUSHR
+                    I2B
+                    BASTORE
+                    ALOAD_3
+                    ILOAD 7
+                    ILOAD 8
+                    I2B
+                    BASTORE
+                L6: GOTO L0
+                L7: ILOAD 4
+                    IRETURN
+  end boolean a(org.springframework.asm.MethodWriter, int, byte[])
+
+  public String toString():
+                    NEW java.lang.StringBuffer
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuffer.<init> ()V
+                    LDC "L"
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (Ljava/lang/String;)Ljava/lang/StringBuffer;
+                    ALOAD_0
+                    INVOKESTATIC java.lang.System.identityHashCode (Ljava/lang/Object;)I
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (I)Ljava/lang/StringBuffer;
+                    INVOKEVIRTUAL java.lang.StringBuffer.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+end public class org.springframework.asm.Label
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.asm.ClassWriter'
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

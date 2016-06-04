@@ -1,0 +1,675 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114221.188.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.beans.factory.support.SimpleInstantiationStrategy extends java.lang.Object implements org.springframework.beans.factory.support.InstantiationStrategy:
+  private static final ThreadLocal currentlyInvokedFactoryMethod [Signature(Ljava/lang/ThreadLocal<Ljava/lang/reflect/Method;>;)]
+  static void <clinit>():
+    staticinitialization(void org.springframework.beans.factory.support.SimpleInstantiationStrategy.<clinit>())
+    |               NEW java.lang.ThreadLocal   (line 45)
+    |               DUP
+    |               INVOKESPECIAL java.lang.ThreadLocal.<init> ()V
+    |               PUTSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;
+    |               RETURN   (line 43)
+    staticinitialization(void org.springframework.beans.factory.support.SimpleInstantiationStrategy.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy; this   (line 43)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.support.SimpleInstantiationStrategy.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.beans.factory.support.SimpleInstantiationStrategy.<init>())
+  end public void <init>()
+
+  public Object instantiate(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory):
+                    ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 49)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getMethodOverrides ()Lorg/springframework/beans/factory/support/MethodOverrides;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.MethodOverrides.isEmpty ()Z
+                    IFEQ L5
+                    ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 51)
+                    GETFIELD org.springframework.beans.factory.support.RootBeanDefinition.constructorArgumentLock Ljava/lang/Object;
+                    DUP
+                    ASTORE 5
+                    MONITORENTER
+    finally -> E2
+    |               ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 52)
+    |               GETFIELD org.springframework.beans.factory.support.RootBeanDefinition.resolvedConstructorOrFactoryMethod Ljava/lang/Object;
+    |               CHECKCAST java.lang.reflect.Constructor
+    |               ASTORE 4
+    |               ALOAD 4     // Ljava/lang/reflect/Constructor; constructorToUse   (line 53)
+    |               IFNONNULL L3
+    |               ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 54)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getBeanClass ()Ljava/lang/Class;
+    |               ASTORE 6
+    |               ALOAD 6     // Ljava/lang/Class; clazz   (line 55)
+    |               INVOKEVIRTUAL java.lang.Class.isInterface ()Z
+    |               IFEQ L0
+    |               NEW org.springframework.beans.BeanInstantiationException   (line 56)
+    |               DUP
+    |               ALOAD 6     // Ljava/lang/Class; clazz
+    |               LDC "Specified class is an interface"
+    |               INVOKESPECIAL org.springframework.beans.BeanInstantiationException.<init> (Ljava/lang/Class;Ljava/lang/String;)V
+    |               ATHROW
+    | catch java.lang.Exception -> E0
+    | |         L0: INVOKESTATIC java.lang.System.getSecurityManager ()Ljava/lang/SecurityManager;   (line 59)
+    | |             IFNULL L1
+    | |             NEW org.springframework.beans.factory.support.SimpleInstantiationStrategy$1   (line 60)
+    | |             DUP
+    | |             ALOAD_0     // Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy; this
+    | |             ALOAD 6     // Ljava/lang/Class; clazz
+    | |             INVOKESPECIAL org.springframework.beans.factory.support.SimpleInstantiationStrategy$1.<init> (Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy;Ljava/lang/Class;)V
+    | |             INVOKESTATIC java.security.AccessController.doPrivileged (Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;
+    | |             CHECKCAST java.lang.reflect.Constructor
+    | |             ASTORE 4     // Ljava/lang/reflect/Constructor; constructorToUse
+    | |             GOTO L2
+    | |         L1: ALOAD 6     // Ljava/lang/Class; clazz   (line 67)
+    | |             ACONST_NULL
+    | |             INVOKEVIRTUAL java.lang.Class.getDeclaredConstructor ([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+    | |             ASTORE 4     // Ljava/lang/reflect/Constructor; constructorToUse
+    | |         L2: ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 69)
+    | |             ALOAD 4     // Ljava/lang/reflect/Constructor; constructorToUse
+    | |             PUTFIELD org.springframework.beans.factory.support.RootBeanDefinition.resolvedConstructorOrFactoryMethod Ljava/lang/Object;
+    | catch java.lang.Exception -> E0
+    |               GOTO L3
+    |           E0: ASTORE 7   (line 71)
+    |               NEW org.springframework.beans.BeanInstantiationException   (line 72)
+    |               DUP
+    |               ALOAD 6     // Ljava/lang/Class; clazz
+    |               LDC "No default constructor found"
+    |               ALOAD 7     // Ljava/lang/Exception; ex
+    |               INVOKESPECIAL org.springframework.beans.BeanInstantiationException.<init> (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Throwable;)V
+    |               ATHROW
+    |           L3: ALOAD 5   (line 51)
+    |               MONITOREXIT
+    finally -> E2
+                    GOTO L4
+    finally -> E2
+    |           E2: ALOAD 5
+    |               MONITOREXIT
+    finally -> E2
+                    ATHROW
+                L4: ALOAD 4     // Ljava/lang/reflect/Constructor; constructorToUse   (line 76)
+                    ICONST_0
+                    ANEWARRAY java.lang.Object
+                    INVOKESTATIC org.springframework.beans.BeanUtils.instantiateClass (Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+                L5: ALOAD_0     // Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy; this   (line 80)
+                    ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    ALOAD_3     // Lorg/springframework/beans/factory/BeanFactory; owner
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithMethodInjection (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/String;Lorg/springframework/beans/factory/BeanFactory;)Ljava/lang/Object;
+                    ARETURN
+  end public Object instantiate(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory)
+
+  protected Object instantiateWithMethodInjection(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory):
+                    NEW java.lang.UnsupportedOperationException   (line 93)
+                    DUP
+                    LDC "Method Injection not supported in SimpleInstantiationStrategy"   (line 94)
+                    INVOKESPECIAL java.lang.UnsupportedOperationException.<init> (Ljava/lang/String;)V   (line 93)
+                    ATHROW
+  end protected Object instantiateWithMethodInjection(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory)
+
+  public Object instantiate(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory, java.lang.reflect.Constructor, Object[]):
+                    ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 100)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getMethodOverrides ()Lorg/springframework/beans/factory/support/MethodOverrides;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.MethodOverrides.isEmpty ()Z
+                    IFEQ L1
+                    INVOKESTATIC java.lang.System.getSecurityManager ()Ljava/lang/SecurityManager;   (line 101)
+                    IFNULL L0
+                    NEW org.springframework.beans.factory.support.SimpleInstantiationStrategy$2   (line 103)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy; this
+                    ALOAD 4     // Ljava/lang/reflect/Constructor; ctor
+                    INVOKESPECIAL org.springframework.beans.factory.support.SimpleInstantiationStrategy$2.<init> (Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy;Ljava/lang/reflect/Constructor;)V
+                    INVOKESTATIC java.security.AccessController.doPrivileged (Ljava/security/PrivilegedAction;)Ljava/lang/Object;
+                    POP
+                L0: ALOAD 4     // Ljava/lang/reflect/Constructor; ctor   (line 110)
+                    ALOAD 5     // [Ljava/lang/Object; args
+                    INVOKESTATIC org.springframework.beans.BeanUtils.instantiateClass (Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+                L1: ALOAD_0     // Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy; this   (line 113)
+                    ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    ALOAD_3     // Lorg/springframework/beans/factory/BeanFactory; owner
+                    ALOAD 4     // Ljava/lang/reflect/Constructor; ctor
+                    ALOAD 5     // [Ljava/lang/Object; args
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithMethodInjection (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/String;Lorg/springframework/beans/factory/BeanFactory;Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+  end public Object instantiate(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory, java.lang.reflect.Constructor, Object[])
+
+  protected Object instantiateWithMethodInjection(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory, java.lang.reflect.Constructor, Object[]):
+                    NEW java.lang.UnsupportedOperationException   (line 126)
+                    DUP
+                    LDC "Method Injection not supported in SimpleInstantiationStrategy"   (line 127)
+                    INVOKESPECIAL java.lang.UnsupportedOperationException.<init> (Ljava/lang/String;)V   (line 126)
+                    ATHROW
+  end protected Object instantiateWithMethodInjection(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory, java.lang.reflect.Constructor, Object[])
+
+  public Object instantiate(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory, Object, java.lang.reflect.Method, Object[]):
+    catch java.lang.reflect.InvocationTargetException -> E6
+    | catch java.lang.IllegalAccessException -> E4
+    | | catch java.lang.IllegalArgumentException -> E2
+    | | |           INVOKESTATIC java.lang.System.getSecurityManager ()Ljava/lang/SecurityManager;   (line 134)
+    | | |           IFNULL L0
+    | | |           NEW org.springframework.beans.factory.support.SimpleInstantiationStrategy$3   (line 135)
+    | | |           DUP
+    | | |           ALOAD_0     // Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy; this
+    | | |           ALOAD 5     // Ljava/lang/reflect/Method; factoryMethod
+    | | |           INVOKESPECIAL org.springframework.beans.factory.support.SimpleInstantiationStrategy$3.<init> (Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy;Ljava/lang/reflect/Method;)V
+    | | |           INVOKESTATIC java.security.AccessController.doPrivileged (Ljava/security/PrivilegedAction;)Ljava/lang/Object;
+    | | |           POP
+    | | |           GOTO L1
+    | | |       L0: ALOAD 5     // Ljava/lang/reflect/Method; factoryMethod   (line 143)
+    | | |           INVOKESTATIC org.springframework.util.ReflectionUtils.makeAccessible (Ljava/lang/reflect/Method;)V
+    | | |       L1: GETSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;   (line 146)
+    | | |           INVOKEVIRTUAL java.lang.ThreadLocal.get ()Ljava/lang/Object;
+    | | |           CHECKCAST java.lang.reflect.Method
+    | | |           ASTORE 7
+    | | | finally -> E0
+    | | | |         GETSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;   (line 148)
+    | | | |         ALOAD 5     // Ljava/lang/reflect/Method; factoryMethod
+    | | | |         INVOKEVIRTUAL java.lang.ThreadLocal.set (Ljava/lang/Object;)V
+    | | | |         ALOAD 5     // Ljava/lang/reflect/Method; factoryMethod   (line 149)
+    | | | |         ALOAD 4     // Ljava/lang/Object; factoryBean
+    | | | |         ALOAD 6     // [Ljava/lang/Object; args
+    | | | |         INVOKEVIRTUAL java.lang.reflect.Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    | | | |         ASTORE 9
+    | | | finally -> E0
+    | | |           ALOAD 7     // Ljava/lang/reflect/Method; priorInvokedFactoryMethod   (line 151)
+    | | |           IFNULL L2
+    | | |           GETSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;   (line 152)
+    | | |           ALOAD 7     // Ljava/lang/reflect/Method; priorInvokedFactoryMethod
+    | | |           INVOKEVIRTUAL java.lang.ThreadLocal.set (Ljava/lang/Object;)V
+    | | |           GOTO L3
+    | | |       L2: GETSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;   (line 155)
+    | | |           INVOKEVIRTUAL java.lang.ThreadLocal.remove ()V
+    | | catch java.lang.IllegalArgumentException -> E2
+    | catch java.lang.IllegalAccessException -> E4
+    catch java.lang.reflect.InvocationTargetException -> E6
+                L3: ALOAD 9   (line 149)
+                    ARETURN
+    catch java.lang.reflect.InvocationTargetException -> E6
+    | catch java.lang.IllegalAccessException -> E4
+    | | catch java.lang.IllegalArgumentException -> E2
+    | | |       E0: ASTORE 8   (line 150)
+    | | |           ALOAD 7     // Ljava/lang/reflect/Method; priorInvokedFactoryMethod   (line 151)
+    | | |           IFNULL L4
+    | | |           GETSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;   (line 152)
+    | | |           ALOAD 7     // Ljava/lang/reflect/Method; priorInvokedFactoryMethod
+    | | |           INVOKEVIRTUAL java.lang.ThreadLocal.set (Ljava/lang/Object;)V
+    | | |           GOTO L5
+    | | |       L4: GETSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;   (line 155)
+    | | |           INVOKEVIRTUAL java.lang.ThreadLocal.remove ()V
+    | | |       L5: ALOAD 8   (line 157)
+    | | |           ATHROW
+    | | catch java.lang.IllegalArgumentException -> E2
+    | catch java.lang.IllegalAccessException -> E4
+    catch java.lang.reflect.InvocationTargetException -> E6
+                E2: POP   (line 159)
+                    NEW org.springframework.beans.factory.BeanDefinitionStoreException   (line 160)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 161)
+                    DUP
+                    LDC "Illegal arguments to factory method ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 5     // Ljava/lang/reflect/Method; factoryMethod
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "]; "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "args: "   (line 162)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 6     // [Ljava/lang/Object; args
+                    INVOKESTATIC org.springframework.util.StringUtils.arrayToCommaDelimitedString ([Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;   (line 161)
+                    INVOKESPECIAL org.springframework.beans.factory.BeanDefinitionStoreException.<init> (Ljava/lang/String;)V   (line 160)
+                    ATHROW
+                E4: POP   (line 164)
+                    NEW org.springframework.beans.factory.BeanDefinitionStoreException   (line 165)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 166)
+                    DUP
+                    LDC "Cannot access factory method ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 5     // Ljava/lang/reflect/Method; factoryMethod
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "]; is it public?"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL org.springframework.beans.factory.BeanDefinitionStoreException.<init> (Ljava/lang/String;)V   (line 165)
+                    ATHROW
+                E6: ASTORE 7   (line 168)
+                    NEW org.springframework.beans.factory.BeanDefinitionStoreException   (line 169)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 170)
+                    DUP
+                    LDC "Factory method ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 5     // Ljava/lang/reflect/Method; factoryMethod
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "] threw exception"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 7     // Ljava/lang/reflect/InvocationTargetException; ex
+                    INVOKEVIRTUAL java.lang.reflect.InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+                    INVOKESPECIAL org.springframework.beans.factory.BeanDefinitionStoreException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V   (line 169)
+                    ATHROW
+  end public Object instantiate(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory, Object, java.lang.reflect.Method, Object[])
+
+  public static java.lang.reflect.Method getCurrentlyInvokedFactoryMethod():
+                    GETSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;   (line 180)
+                    INVOKEVIRTUAL java.lang.ThreadLocal.get ()Ljava/lang/Object;
+                    CHECKCAST java.lang.reflect.Method
+                    ARETURN
+  end public static java.lang.reflect.Method getCurrentlyInvokedFactoryMethod()
+end public class org.springframework.beans.factory.support.SimpleInstantiationStrategy
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.beans.factory.support.SimpleInstantiationStrategy extends java.lang.Object implements org.springframework.beans.factory.support.InstantiationStrategy:
+  private static final ThreadLocal currentlyInvokedFactoryMethod [Signature(Ljava/lang/ThreadLocal<Ljava/lang/reflect/Method;>;)]
+  static void <clinit>():
+    staticinitialization(void org.springframework.beans.factory.support.SimpleInstantiationStrategy.<clinit>())
+    |               NEW java.lang.ThreadLocal   (line 45)
+    |               DUP
+    |               INVOKESPECIAL java.lang.ThreadLocal.<init> ()V
+    |               PUTSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;
+    |               RETURN   (line 43)
+    staticinitialization(void org.springframework.beans.factory.support.SimpleInstantiationStrategy.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy; this   (line 43)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.support.SimpleInstantiationStrategy.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.beans.factory.support.SimpleInstantiationStrategy.<init>())
+  end public void <init>()
+
+  public Object instantiate(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory):
+                    ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 49)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getMethodOverrides ()Lorg/springframework/beans/factory/support/MethodOverrides;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.MethodOverrides.isEmpty ()Z
+                    IFEQ L5
+                    ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 51)
+                    GETFIELD org.springframework.beans.factory.support.RootBeanDefinition.constructorArgumentLock Ljava/lang/Object;
+                    DUP
+                    ASTORE 5
+                    MONITORENTER
+    finally -> E2
+    |               ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 52)
+    |               GETFIELD org.springframework.beans.factory.support.RootBeanDefinition.resolvedConstructorOrFactoryMethod Ljava/lang/Object;
+    |               CHECKCAST java.lang.reflect.Constructor
+    |               ASTORE 4
+    |               ALOAD 4     // Ljava/lang/reflect/Constructor; constructorToUse   (line 53)
+    |               IFNONNULL L3
+    |               ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 54)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getBeanClass ()Ljava/lang/Class;
+    |               ASTORE 6
+    |               ALOAD 6     // Ljava/lang/Class; clazz   (line 55)
+    |               INVOKEVIRTUAL java.lang.Class.isInterface ()Z
+    |               IFEQ L0
+    |               NEW org.springframework.beans.BeanInstantiationException   (line 56)
+    |               DUP
+    |               ALOAD 6     // Ljava/lang/Class; clazz
+    |               LDC "Specified class is an interface"
+    |               INVOKESPECIAL org.springframework.beans.BeanInstantiationException.<init> (Ljava/lang/Class;Ljava/lang/String;)V
+    |               ATHROW
+    | catch java.lang.Exception -> E0
+    | |         L0: INVOKESTATIC java.lang.System.getSecurityManager ()Ljava/lang/SecurityManager;   (line 59)
+    | |             IFNULL L1
+    | |             NEW org.springframework.beans.factory.support.SimpleInstantiationStrategy$1   (line 60)
+    | |             DUP
+    | |             ALOAD_0     // Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy; this
+    | |             ALOAD 6     // Ljava/lang/Class; clazz
+    | |             INVOKESPECIAL org.springframework.beans.factory.support.SimpleInstantiationStrategy$1.<init> (Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy;Ljava/lang/Class;)V
+    | |             INVOKESTATIC java.security.AccessController.doPrivileged (Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;
+    | |             CHECKCAST java.lang.reflect.Constructor
+    | |             ASTORE 4     // Ljava/lang/reflect/Constructor; constructorToUse
+    | |             GOTO L2
+    | |         L1: ALOAD 6     // Ljava/lang/Class; clazz   (line 67)
+    | |             ACONST_NULL
+    | |             INVOKEVIRTUAL java.lang.Class.getDeclaredConstructor ([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+    | |             ASTORE 4     // Ljava/lang/reflect/Constructor; constructorToUse
+    | |         L2: ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 69)
+    | |             ALOAD 4     // Ljava/lang/reflect/Constructor; constructorToUse
+    | |             PUTFIELD org.springframework.beans.factory.support.RootBeanDefinition.resolvedConstructorOrFactoryMethod Ljava/lang/Object;
+    | catch java.lang.Exception -> E0
+    |               GOTO L3
+    |           E0: ASTORE 7   (line 71)
+    |               NEW org.springframework.beans.BeanInstantiationException   (line 72)
+    |               DUP
+    |               ALOAD 6     // Ljava/lang/Class; clazz
+    |               LDC "No default constructor found"
+    |               ALOAD 7     // Ljava/lang/Exception; ex
+    |               INVOKESPECIAL org.springframework.beans.BeanInstantiationException.<init> (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Throwable;)V
+    |               ATHROW
+    |           L3: ALOAD 5   (line 51)
+    |               MONITOREXIT
+    finally -> E2
+                    GOTO L4
+    finally -> E2
+    |           E2: ALOAD 5
+    |               MONITOREXIT
+    finally -> E2
+                    ATHROW
+                L4: ALOAD 4     // Ljava/lang/reflect/Constructor; constructorToUse   (line 76)
+                    ICONST_0
+                    ANEWARRAY java.lang.Object
+                    INVOKESTATIC org.springframework.beans.BeanUtils.instantiateClass (Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+                L5: ALOAD_0     // Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy; this   (line 80)
+                    ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    ALOAD_3     // Lorg/springframework/beans/factory/BeanFactory; owner
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithMethodInjection (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/String;Lorg/springframework/beans/factory/BeanFactory;)Ljava/lang/Object;
+                    ARETURN
+  end public Object instantiate(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory)
+
+  protected Object instantiateWithMethodInjection(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory):
+                    NEW java.lang.UnsupportedOperationException   (line 93)
+                    DUP
+                    LDC "Method Injection not supported in SimpleInstantiationStrategy"   (line 94)
+                    INVOKESPECIAL java.lang.UnsupportedOperationException.<init> (Ljava/lang/String;)V   (line 93)
+                    ATHROW
+  end protected Object instantiateWithMethodInjection(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory)
+
+  public Object instantiate(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory, java.lang.reflect.Constructor, Object[]):
+                    ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 100)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getMethodOverrides ()Lorg/springframework/beans/factory/support/MethodOverrides;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.MethodOverrides.isEmpty ()Z
+                    IFEQ L1
+                    INVOKESTATIC java.lang.System.getSecurityManager ()Ljava/lang/SecurityManager;   (line 101)
+                    IFNULL L0
+                    NEW org.springframework.beans.factory.support.SimpleInstantiationStrategy$2   (line 103)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy; this
+                    ALOAD 4     // Ljava/lang/reflect/Constructor; ctor
+                    INVOKESPECIAL org.springframework.beans.factory.support.SimpleInstantiationStrategy$2.<init> (Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy;Ljava/lang/reflect/Constructor;)V
+                    INVOKESTATIC java.security.AccessController.doPrivileged (Ljava/security/PrivilegedAction;)Ljava/lang/Object;
+                    POP
+                L0: ALOAD 4     // Ljava/lang/reflect/Constructor; ctor   (line 110)
+                    ALOAD 5     // [Ljava/lang/Object; args
+                    INVOKESTATIC org.springframework.beans.BeanUtils.instantiateClass (Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+                L1: ALOAD_0     // Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy; this   (line 113)
+                    ALOAD_1     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    ALOAD_3     // Lorg/springframework/beans/factory/BeanFactory; owner
+                    ALOAD 4     // Ljava/lang/reflect/Constructor; ctor
+                    ALOAD 5     // [Ljava/lang/Object; args
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithMethodInjection (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/String;Lorg/springframework/beans/factory/BeanFactory;Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+  end public Object instantiate(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory, java.lang.reflect.Constructor, Object[])
+
+  protected Object instantiateWithMethodInjection(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory, java.lang.reflect.Constructor, Object[]):
+                    NEW java.lang.UnsupportedOperationException   (line 126)
+                    DUP
+                    LDC "Method Injection not supported in SimpleInstantiationStrategy"   (line 127)
+                    INVOKESPECIAL java.lang.UnsupportedOperationException.<init> (Ljava/lang/String;)V   (line 126)
+                    ATHROW
+  end protected Object instantiateWithMethodInjection(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory, java.lang.reflect.Constructor, Object[])
+
+  public Object instantiate(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory, Object, java.lang.reflect.Method, Object[]):
+    catch java.lang.reflect.InvocationTargetException -> E6
+    | catch java.lang.IllegalAccessException -> E4
+    | | catch java.lang.IllegalArgumentException -> E2
+    | | |           INVOKESTATIC java.lang.System.getSecurityManager ()Ljava/lang/SecurityManager;   (line 134)
+    | | |           IFNULL L0
+    | | |           NEW org.springframework.beans.factory.support.SimpleInstantiationStrategy$3   (line 135)
+    | | |           DUP
+    | | |           ALOAD_0     // Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy; this
+    | | |           ALOAD 5     // Ljava/lang/reflect/Method; factoryMethod
+    | | |           INVOKESPECIAL org.springframework.beans.factory.support.SimpleInstantiationStrategy$3.<init> (Lorg/springframework/beans/factory/support/SimpleInstantiationStrategy;Ljava/lang/reflect/Method;)V
+    | | |           INVOKESTATIC java.security.AccessController.doPrivileged (Ljava/security/PrivilegedAction;)Ljava/lang/Object;
+    | | |           POP
+    | | |           GOTO L1
+    | | |       L0: ALOAD 5     // Ljava/lang/reflect/Method; factoryMethod   (line 143)
+    | | |           INVOKESTATIC org.springframework.util.ReflectionUtils.makeAccessible (Ljava/lang/reflect/Method;)V
+    | | |       L1: GETSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;   (line 146)
+    | | |           INVOKEVIRTUAL java.lang.ThreadLocal.get ()Ljava/lang/Object;
+    | | |           CHECKCAST java.lang.reflect.Method
+    | | |           ASTORE 7
+    | | | finally -> E0
+    | | | |         GETSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;   (line 148)
+    | | | |         ALOAD 5     // Ljava/lang/reflect/Method; factoryMethod
+    | | | |         INVOKEVIRTUAL java.lang.ThreadLocal.set (Ljava/lang/Object;)V
+    | | | |         ALOAD 5     // Ljava/lang/reflect/Method; factoryMethod   (line 149)
+    | | | |         ALOAD 4     // Ljava/lang/Object; factoryBean
+    | | | |         ALOAD 6     // [Ljava/lang/Object; args
+    | | | |         INVOKEVIRTUAL java.lang.reflect.Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    | | | |         ASTORE 9
+    | | | finally -> E0
+    | | |           ALOAD 7     // Ljava/lang/reflect/Method; priorInvokedFactoryMethod   (line 151)
+    | | |           IFNULL L2
+    | | |           GETSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;   (line 152)
+    | | |           ALOAD 7     // Ljava/lang/reflect/Method; priorInvokedFactoryMethod
+    | | |           INVOKEVIRTUAL java.lang.ThreadLocal.set (Ljava/lang/Object;)V
+    | | |           GOTO L3
+    | | |       L2: GETSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;   (line 155)
+    | | |           INVOKEVIRTUAL java.lang.ThreadLocal.remove ()V
+    | | catch java.lang.IllegalArgumentException -> E2
+    | catch java.lang.IllegalAccessException -> E4
+    catch java.lang.reflect.InvocationTargetException -> E6
+                L3: ALOAD 9   (line 149)
+                    ARETURN
+    catch java.lang.reflect.InvocationTargetException -> E6
+    | catch java.lang.IllegalAccessException -> E4
+    | | catch java.lang.IllegalArgumentException -> E2
+    | | |       E0: ASTORE 8   (line 150)
+    | | |           ALOAD 7     // Ljava/lang/reflect/Method; priorInvokedFactoryMethod   (line 151)
+    | | |           IFNULL L4
+    | | |           GETSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;   (line 152)
+    | | |           ALOAD 7     // Ljava/lang/reflect/Method; priorInvokedFactoryMethod
+    | | |           INVOKEVIRTUAL java.lang.ThreadLocal.set (Ljava/lang/Object;)V
+    | | |           GOTO L5
+    | | |       L4: GETSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;   (line 155)
+    | | |           INVOKEVIRTUAL java.lang.ThreadLocal.remove ()V
+    | | |       L5: ALOAD 8   (line 157)
+    | | |           ATHROW
+    | | catch java.lang.IllegalArgumentException -> E2
+    | catch java.lang.IllegalAccessException -> E4
+    catch java.lang.reflect.InvocationTargetException -> E6
+                E2: POP   (line 159)
+                    NEW org.springframework.beans.factory.BeanDefinitionStoreException   (line 160)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 161)
+                    DUP
+                    LDC "Illegal arguments to factory method ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 5     // Ljava/lang/reflect/Method; factoryMethod
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "]; "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "args: "   (line 162)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 6     // [Ljava/lang/Object; args
+                    INVOKESTATIC org.springframework.util.StringUtils.arrayToCommaDelimitedString ([Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;   (line 161)
+                    INVOKESPECIAL org.springframework.beans.factory.BeanDefinitionStoreException.<init> (Ljava/lang/String;)V   (line 160)
+                    ATHROW
+                E4: POP   (line 164)
+                    NEW org.springframework.beans.factory.BeanDefinitionStoreException   (line 165)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 166)
+                    DUP
+                    LDC "Cannot access factory method ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 5     // Ljava/lang/reflect/Method; factoryMethod
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "]; is it public?"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL org.springframework.beans.factory.BeanDefinitionStoreException.<init> (Ljava/lang/String;)V   (line 165)
+                    ATHROW
+                E6: ASTORE 7   (line 168)
+                    NEW org.springframework.beans.factory.BeanDefinitionStoreException   (line 169)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 170)
+                    DUP
+                    LDC "Factory method ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 5     // Ljava/lang/reflect/Method; factoryMethod
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "] threw exception"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 7     // Ljava/lang/reflect/InvocationTargetException; ex
+                    INVOKEVIRTUAL java.lang.reflect.InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+                    INVOKESPECIAL org.springframework.beans.factory.BeanDefinitionStoreException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V   (line 169)
+                    ATHROW
+  end public Object instantiate(org.springframework.beans.factory.support.RootBeanDefinition, String, org.springframework.beans.factory.BeanFactory, Object, java.lang.reflect.Method, Object[])
+
+  public static java.lang.reflect.Method getCurrentlyInvokedFactoryMethod():
+                    GETSTATIC org.springframework.beans.factory.support.SimpleInstantiationStrategy.currentlyInvokedFactoryMethod Ljava/lang/ThreadLocal;   (line 180)
+                    INVOKEVIRTUAL java.lang.ThreadLocal.get ()Ljava/lang/Object;
+                    CHECKCAST java.lang.reflect.Method
+                    ARETURN
+  end public static java.lang.reflect.Method getCurrentlyInvokedFactoryMethod()
+end public class org.springframework.beans.factory.support.SimpleInstantiationStrategy
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:665)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:615)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1752)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1464)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1273)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:394)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:281)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:95)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:52)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.<init>(AbstractAutowireCapableBeanFactory.java:118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.<init>(AbstractAutowireCapableBeanFactory.java:168)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.<init>(DefaultListableBeanFactory.java:167)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.createBeanFactory(AbstractRefreshableApplicationContext.java:195)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:128)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:527)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:441)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.curso.spring.springioc0007.Main.init(Main.java:29)
+	at com.curso.spring.springioc0007.Main.main(Main.java:24)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

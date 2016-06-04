@@ -1,0 +1,1334 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114259.961.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.beans.factory.config.BeanDefinitionVisitor extends java.lang.Object:
+  private org.springframework.util.StringValueResolver valueResolver
+  public void <init>(org.springframework.util.StringValueResolver):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 57)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionVisitor.<init>(org.springframework.util.StringValueResolver))
+    |               ALOAD_1     // Lorg/springframework/util/StringValueResolver; valueResolver   (line 58)
+    |               LDC "StringValueResolver must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 59)
+    |               ALOAD_1     // Lorg/springframework/util/StringValueResolver; valueResolver
+    |               PUTFIELD org.springframework.beans.factory.config.BeanDefinitionVisitor.valueResolver Lorg/springframework/util/StringValueResolver;
+    |               RETURN   (line 60)
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionVisitor.<init>(org.springframework.util.StringValueResolver))
+  end public void <init>(org.springframework.util.StringValueResolver)
+
+  protected void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 66)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionVisitor.<init>())
+    |               RETURN   (line 67)
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionVisitor.<init>())
+  end protected void <init>()
+
+  public void visitBeanDefinition(org.springframework.beans.factory.config.BeanDefinition):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 77)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitParentName (Lorg/springframework/beans/factory/config/BeanDefinition;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 78)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanClassName (Lorg/springframework/beans/factory/config/BeanDefinition;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 79)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitFactoryBeanName (Lorg/springframework/beans/factory/config/BeanDefinition;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 80)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitFactoryMethodName (Lorg/springframework/beans/factory/config/BeanDefinition;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 81)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitScope (Lorg/springframework/beans/factory/config/BeanDefinition;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 82)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues (Lorg/springframework/beans/MutablePropertyValues;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 83)
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getConstructorArgumentValues ()Lorg/springframework/beans/factory/config/ConstructorArgumentValues;
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 84)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues; cas
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues.getIndexedArgumentValues ()Ljava/util/Map;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitIndexedArgumentValues (Ljava/util/Map;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 85)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues; cas
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues.getGenericArgumentValues ()Ljava/util/List;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitGenericArgumentValues (Ljava/util/List;)V
+                    RETURN   (line 86)
+  end public void visitBeanDefinition(org.springframework.beans.factory.config.BeanDefinition)
+
+  protected void visitParentName(org.springframework.beans.factory.config.BeanDefinition):
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 89)
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getParentName ()Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; parentName   (line 90)
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 91)
+                    ALOAD_2     // Ljava/lang/String; parentName
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/String; parentName   (line 92)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 93)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.setParentName (Ljava/lang/String;)V
+                L0: RETURN   (line 96)
+  end protected void visitParentName(org.springframework.beans.factory.config.BeanDefinition)
+
+  protected void visitBeanClassName(org.springframework.beans.factory.config.BeanDefinition):
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 99)
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getBeanClassName ()Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; beanClassName   (line 100)
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 101)
+                    ALOAD_2     // Ljava/lang/String; beanClassName
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/String; beanClassName   (line 102)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 103)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.setBeanClassName (Ljava/lang/String;)V
+                L0: RETURN   (line 106)
+  end protected void visitBeanClassName(org.springframework.beans.factory.config.BeanDefinition)
+
+  protected void visitFactoryBeanName(org.springframework.beans.factory.config.BeanDefinition):
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 109)
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getFactoryBeanName ()Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; factoryBeanName   (line 110)
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 111)
+                    ALOAD_2     // Ljava/lang/String; factoryBeanName
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/String; factoryBeanName   (line 112)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 113)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.setFactoryBeanName (Ljava/lang/String;)V
+                L0: RETURN   (line 116)
+  end protected void visitFactoryBeanName(org.springframework.beans.factory.config.BeanDefinition)
+
+  protected void visitFactoryMethodName(org.springframework.beans.factory.config.BeanDefinition):
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 119)
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getFactoryMethodName ()Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; factoryMethodName   (line 120)
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 121)
+                    ALOAD_2     // Ljava/lang/String; factoryMethodName
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/String; factoryMethodName   (line 122)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 123)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.setFactoryMethodName (Ljava/lang/String;)V
+                L0: RETURN   (line 126)
+  end protected void visitFactoryMethodName(org.springframework.beans.factory.config.BeanDefinition)
+
+  protected void visitScope(org.springframework.beans.factory.config.BeanDefinition):
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 129)
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getScope ()Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; scope   (line 130)
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 131)
+                    ALOAD_2     // Ljava/lang/String; scope
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/String; scope   (line 132)
+                    ALOAD_3     // Ljava/lang/String; resolvedScope
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 133)
+                    ALOAD_3     // Ljava/lang/String; resolvedScope
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.setScope (Ljava/lang/String;)V
+                L0: RETURN   (line 136)
+  end protected void visitScope(org.springframework.beans.factory.config.BeanDefinition)
+
+  protected void visitPropertyValues(org.springframework.beans.MutablePropertyValues):
+                    ALOAD_1     // Lorg/springframework/beans/MutablePropertyValues; pvs   (line 139)
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.getPropertyValues ()[Lorg/springframework/beans/PropertyValue;
+                    ASTORE_2
+                    ALOAD_2     // [Lorg/springframework/beans/PropertyValue; pvArray   (line 140)
+                    DUP
+                    ASTORE 6
+                    ARRAYLENGTH
+                    ISTORE 5
+                    ICONST_0
+                    ISTORE 4
+                    GOTO L2
+                L0: ALOAD 6
+                    ILOAD 4
+                    AALOAD
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 141)
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getValue ()Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 7
+                    ALOAD 7     // Ljava/lang/Object; newVal   (line 142)
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getValue ()Ljava/lang/Object;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_1     // Lorg/springframework/beans/MutablePropertyValues; pvs   (line 143)
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getName ()Ljava/lang/String;
+                    ALOAD 7     // Ljava/lang/Object; newVal
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                L1: IINC 4 1   (line 140)
+                L2: ILOAD 4
+                    ILOAD 5
+                    IF_ICMPLT L0
+                    RETURN   (line 146)
+  end protected void visitPropertyValues(org.springframework.beans.MutablePropertyValues)
+
+  protected void visitIndexedArgumentValues(java.util.Map):
+                    ALOAD_1     // Ljava/util/Map; ias   (line 149)
+                    INVOKEINTERFACE java.util.Map.values ()Ljava/util/Collection;
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L1
+                L0: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 150)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues$ValueHolder; valueHolder
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder.getValue ()Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Object; newVal   (line 151)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues$ValueHolder; valueHolder
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder.getValue ()Ljava/lang/Object;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues$ValueHolder; valueHolder   (line 152)
+                    ALOAD 4     // Ljava/lang/Object; newVal
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder.setValue (Ljava/lang/Object;)V
+                L1: ALOAD_3   (line 149)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    RETURN   (line 155)
+  end protected void visitIndexedArgumentValues(java.util.Map)
+
+  protected void visitGenericArgumentValues(java.util.List):
+                    ALOAD_1     // Ljava/util/List; gas   (line 158)
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L1
+                L0: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 159)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues$ValueHolder; valueHolder
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder.getValue ()Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Object; newVal   (line 160)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues$ValueHolder; valueHolder
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder.getValue ()Ljava/lang/Object;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues$ValueHolder; valueHolder   (line 161)
+                    ALOAD 4     // Ljava/lang/Object; newVal
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder.setValue (Ljava/lang/Object;)V
+                L1: ALOAD_3   (line 158)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    RETURN   (line 164)
+  end protected void visitGenericArgumentValues(java.util.List)
+
+  protected Object resolveValue(Object):
+                    ALOAD_1     // Ljava/lang/Object; value   (line 168)
+                    INSTANCEOF org.springframework.beans.factory.config.BeanDefinition
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 169)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST org.springframework.beans.factory.config.BeanDefinition
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition (Lorg/springframework/beans/factory/config/BeanDefinition;)V
+                    GOTO L9
+                L0: ALOAD_1     // Ljava/lang/Object; value   (line 171)
+                    INSTANCEOF org.springframework.beans.factory.config.BeanDefinitionHolder
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 172)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST org.springframework.beans.factory.config.BeanDefinitionHolder
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getBeanDefinition ()Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition (Lorg/springframework/beans/factory/config/BeanDefinition;)V
+                    GOTO L9
+                L1: ALOAD_1     // Ljava/lang/Object; value   (line 174)
+                    INSTANCEOF org.springframework.beans.factory.config.RuntimeBeanReference
+                    IFEQ L2
+                    ALOAD_1     // Ljava/lang/Object; value   (line 175)
+                    CHECKCAST org.springframework.beans.factory.config.RuntimeBeanReference
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 176)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; ref
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanReference.getBeanName ()Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; newBeanName   (line 177)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; ref
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanReference.getBeanName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L9
+                    NEW org.springframework.beans.factory.config.RuntimeBeanReference   (line 178)
+                    DUP
+                    ALOAD_3     // Ljava/lang/String; newBeanName
+                    INVOKESPECIAL org.springframework.beans.factory.config.RuntimeBeanReference.<init> (Ljava/lang/String;)V
+                    ARETURN
+                L2: ALOAD_1     // Ljava/lang/Object; value   (line 181)
+                    INSTANCEOF org.springframework.beans.factory.config.RuntimeBeanNameReference
+                    IFEQ L3
+                    ALOAD_1     // Ljava/lang/Object; value   (line 182)
+                    CHECKCAST org.springframework.beans.factory.config.RuntimeBeanNameReference
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 183)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanNameReference; ref
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanNameReference.getBeanName ()Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; newBeanName   (line 184)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanNameReference; ref
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanNameReference.getBeanName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L9
+                    NEW org.springframework.beans.factory.config.RuntimeBeanNameReference   (line 185)
+                    DUP
+                    ALOAD_3     // Ljava/lang/String; newBeanName
+                    INVOKESPECIAL org.springframework.beans.factory.config.RuntimeBeanNameReference.<init> (Ljava/lang/String;)V
+                    ARETURN
+                L3: ALOAD_1     // Ljava/lang/Object; value   (line 188)
+                    INSTANCEOF [Ljava.lang.Object;
+                    IFEQ L4
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 189)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST [Ljava.lang.Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitArray ([Ljava/lang/Object;)V
+                    GOTO L9
+                L4: ALOAD_1     // Ljava/lang/Object; value   (line 191)
+                    INSTANCEOF java.util.List
+                    IFEQ L5
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 192)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST java.util.List
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitList (Ljava/util/List;)V
+                    GOTO L9
+                L5: ALOAD_1     // Ljava/lang/Object; value   (line 194)
+                    INSTANCEOF java.util.Set
+                    IFEQ L6
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 195)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST java.util.Set
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitSet (Ljava/util/Set;)V
+                    GOTO L9
+                L6: ALOAD_1     // Ljava/lang/Object; value   (line 197)
+                    INSTANCEOF java.util.Map
+                    IFEQ L7
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 198)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST java.util.Map
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitMap (Ljava/util/Map;)V
+                    GOTO L9
+                L7: ALOAD_1     // Ljava/lang/Object; value   (line 200)
+                    INSTANCEOF org.springframework.beans.factory.config.TypedStringValue
+                    IFEQ L8
+                    ALOAD_1     // Ljava/lang/Object; value   (line 201)
+                    CHECKCAST org.springframework.beans.factory.config.TypedStringValue
+                    ASTORE_2
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/TypedStringValue; typedStringValue   (line 202)
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.getValue ()Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; stringValue   (line 203)
+                    IFNULL L9
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 204)
+                    ALOAD_3     // Ljava/lang/String; stringValue
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/TypedStringValue; typedStringValue   (line 205)
+                    ALOAD 4     // Ljava/lang/String; visitedString
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.setValue (Ljava/lang/String;)V
+                    GOTO L9
+                L8: ALOAD_1     // Ljava/lang/Object; value   (line 208)
+                    INSTANCEOF java.lang.String
+                    IFEQ L9
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 209)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST java.lang.String
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+                L9: ALOAD_1     // Ljava/lang/Object; value   (line 211)
+                    ARETURN
+  end protected Object resolveValue(Object)
+
+  protected void visitArray(Object[]):
+                    ICONST_0   (line 215)
+                    ISTORE_2
+                    GOTO L2
+                L0: ALOAD_1     // [Ljava/lang/Object; arrayVal   (line 216)
+                    ILOAD_2     // I i
+                    AALOAD
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 217)
+                    ALOAD_3     // Ljava/lang/Object; elem
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Object; newVal   (line 218)
+                    ALOAD_3     // Ljava/lang/Object; elem
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_1     // [Ljava/lang/Object; arrayVal   (line 219)
+                    ILOAD_2     // I i
+                    ALOAD 4     // Ljava/lang/Object; newVal
+                    AASTORE
+                L1: IINC_2 1     // I i   (line 215)
+                L2: ILOAD_2     // I i
+                    ALOAD_1     // [Ljava/lang/Object; arrayVal
+                    ARRAYLENGTH
+                    IF_ICMPLT L0
+                    RETURN   (line 222)
+  end protected void visitArray(Object[])
+
+  protected void visitList(java.util.List):
+                    ICONST_0   (line 226)
+                    ISTORE_2
+                    GOTO L2
+                L0: ALOAD_1     // Ljava/util/List; listVal   (line 227)
+                    ILOAD_2     // I i
+                    INVOKEINTERFACE java.util.List.get (I)Ljava/lang/Object;
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 228)
+                    ALOAD_3     // Ljava/lang/Object; elem
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Object; newVal   (line 229)
+                    ALOAD_3     // Ljava/lang/Object; elem
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_1     // Ljava/util/List; listVal   (line 230)
+                    ILOAD_2     // I i
+                    ALOAD 4     // Ljava/lang/Object; newVal
+                    INVOKEINTERFACE java.util.List.set (ILjava/lang/Object;)Ljava/lang/Object;
+                    POP
+                L1: IINC_2 1     // I i   (line 226)
+                L2: ILOAD_2     // I i
+                    ALOAD_1     // Ljava/util/List; listVal
+                    INVOKEINTERFACE java.util.List.size ()I
+                    IF_ICMPLT L0
+                    RETURN   (line 233)
+  end protected void visitList(java.util.List)
+
+  protected void visitSet(java.util.Set):
+                    NEW java.util.LinkedHashSet   (line 237)
+                    DUP
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 238)
+                    ISTORE_3
+                    ALOAD_1     // Ljava/util/Set; setVal   (line 239)
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 5
+                    GOTO L7
+                L0: ALOAD 5
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Object; elem   (line 240)
+                    IFNULL L1
+                    ALOAD 4     // Ljava/lang/Object; elem
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    GOTO L2
+                L1: ICONST_0
+                L2: ISTORE 6
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 241)
+                    ALOAD 4     // Ljava/lang/Object; elem
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 7
+                    ALOAD 7     // Ljava/lang/Object; newVal   (line 242)
+                    IFNULL L3
+                    ALOAD 7     // Ljava/lang/Object; newVal
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    GOTO L4
+                L3: ICONST_0
+                L4: ISTORE 8
+                    ALOAD_2     // Ljava/util/Set; newContent   (line 243)
+                    ALOAD 7     // Ljava/lang/Object; newVal
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    ILOAD_3     // Z entriesModified   (line 244)
+                    IFNE L5
+                    ALOAD 7     // Ljava/lang/Object; newVal
+                    ALOAD 4     // Ljava/lang/Object; elem
+                    IF_ACMPNE L5
+                    ILOAD 8     // I newValHash
+                    ILOAD 6     // I elemHash
+                    IF_ICMPNE L5
+                    ICONST_0
+                    GOTO L6
+                L5: ICONST_1
+                L6: ISTORE_3     // Z entriesModified
+                L7: ALOAD 5   (line 239)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ILOAD_3     // Z entriesModified   (line 246)
+                    IFEQ L8
+                    ALOAD_1     // Ljava/util/Set; setVal   (line 247)
+                    INVOKEINTERFACE java.util.Set.clear ()V
+                    ALOAD_1     // Ljava/util/Set; setVal   (line 248)
+                    ALOAD_2     // Ljava/util/Set; newContent
+                    INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+                    POP
+                L8: RETURN   (line 250)
+  end protected void visitSet(java.util.Set)
+
+  protected void visitMap(java.util.Map):
+                    NEW java.util.LinkedHashMap   (line 254)
+                    DUP
+                    INVOKESPECIAL java.util.LinkedHashMap.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 255)
+                    ISTORE_3
+                    ALOAD_1     // Ljava/util/Map; mapVal   (line 256)
+                    INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 5
+                    GOTO L7
+                L0: ALOAD 5
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.util.Map$Entry
+                    ASTORE 4
+                    ALOAD 4     // Ljava/util/Map$Entry; entry   (line 257)
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    ASTORE 6
+                    ALOAD 6     // Ljava/lang/Object; key   (line 258)
+                    IFNULL L1
+                    ALOAD 6     // Ljava/lang/Object; key
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    GOTO L2
+                L1: ICONST_0
+                L2: ISTORE 7
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 259)
+                    ALOAD 6     // Ljava/lang/Object; key
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 8
+                    ALOAD 8     // Ljava/lang/Object; newKey   (line 260)
+                    IFNULL L3
+                    ALOAD 8     // Ljava/lang/Object; newKey
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    GOTO L4
+                L3: ICONST_0
+                L4: ISTORE 9
+                    ALOAD 4     // Ljava/util/Map$Entry; entry   (line 261)
+                    INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+                    ASTORE 10
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 262)
+                    ALOAD 10     // Ljava/lang/Object; val
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 11
+                    ALOAD_2     // Ljava/util/Map; newContent   (line 263)
+                    ALOAD 8     // Ljava/lang/Object; newKey
+                    ALOAD 11     // Ljava/lang/Object; newVal
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    ILOAD_3     // Z entriesModified   (line 264)
+                    IFNE L5
+                    ALOAD 11     // Ljava/lang/Object; newVal
+                    ALOAD 10     // Ljava/lang/Object; val
+                    IF_ACMPNE L5
+                    ALOAD 8     // Ljava/lang/Object; newKey
+                    ALOAD 6     // Ljava/lang/Object; key
+                    IF_ACMPNE L5
+                    ILOAD 9     // I newKeyHash
+                    ILOAD 7     // I keyHash
+                    IF_ICMPNE L5
+                    ICONST_0
+                    GOTO L6
+                L5: ICONST_1
+                L6: ISTORE_3     // Z entriesModified
+                L7: ALOAD 5   (line 256)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ILOAD_3     // Z entriesModified   (line 266)
+                    IFEQ L8
+                    ALOAD_1     // Ljava/util/Map; mapVal   (line 267)
+                    INVOKEINTERFACE java.util.Map.clear ()V
+                    ALOAD_1     // Ljava/util/Map; mapVal   (line 268)
+                    ALOAD_2     // Ljava/util/Map; newContent
+                    INVOKEINTERFACE java.util.Map.putAll (Ljava/util/Map;)V
+                L8: RETURN   (line 270)
+  end protected void visitMap(java.util.Map)
+
+  protected String resolveStringValue(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 278)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionVisitor.valueResolver Lorg/springframework/util/StringValueResolver;
+                    IFNONNULL L0
+                    NEW java.lang.IllegalStateException   (line 279)
+                    DUP
+                    LDC_W "No StringValueResolver specified - pass a resolver object into the constructor or override the 'resolveStringValue' method"
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 282)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionVisitor.valueResolver Lorg/springframework/util/StringValueResolver;
+                    ALOAD_1     // Ljava/lang/String; strVal
+                    INVOKEINTERFACE org.springframework.util.StringValueResolver.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_1     // Ljava/lang/String; strVal   (line 284)
+                    ALOAD_2     // Ljava/lang/String; resolvedValue
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_1     // Ljava/lang/String; strVal
+                    GOTO L2
+                L1: ALOAD_2     // Ljava/lang/String; resolvedValue
+                L2: ARETURN
+  end protected String resolveStringValue(String)
+
+end public class org.springframework.beans.factory.config.BeanDefinitionVisitor
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.beans.factory.config.BeanDefinitionVisitor extends java.lang.Object:
+  private org.springframework.util.StringValueResolver valueResolver
+  public void <init>(org.springframework.util.StringValueResolver):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 57)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionVisitor.<init>(org.springframework.util.StringValueResolver))
+    |               ALOAD_1     // Lorg/springframework/util/StringValueResolver; valueResolver   (line 58)
+    |               LDC "StringValueResolver must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 59)
+    |               ALOAD_1     // Lorg/springframework/util/StringValueResolver; valueResolver
+    |               PUTFIELD org.springframework.beans.factory.config.BeanDefinitionVisitor.valueResolver Lorg/springframework/util/StringValueResolver;
+    |               RETURN   (line 60)
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionVisitor.<init>(org.springframework.util.StringValueResolver))
+  end public void <init>(org.springframework.util.StringValueResolver)
+
+  protected void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 66)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionVisitor.<init>())
+    |               RETURN   (line 67)
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionVisitor.<init>())
+  end protected void <init>()
+
+  public void visitBeanDefinition(org.springframework.beans.factory.config.BeanDefinition):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 77)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitParentName (Lorg/springframework/beans/factory/config/BeanDefinition;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 78)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanClassName (Lorg/springframework/beans/factory/config/BeanDefinition;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 79)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitFactoryBeanName (Lorg/springframework/beans/factory/config/BeanDefinition;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 80)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitFactoryMethodName (Lorg/springframework/beans/factory/config/BeanDefinition;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 81)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitScope (Lorg/springframework/beans/factory/config/BeanDefinition;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 82)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues (Lorg/springframework/beans/MutablePropertyValues;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 83)
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getConstructorArgumentValues ()Lorg/springframework/beans/factory/config/ConstructorArgumentValues;
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 84)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues; cas
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues.getIndexedArgumentValues ()Ljava/util/Map;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitIndexedArgumentValues (Ljava/util/Map;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 85)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues; cas
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues.getGenericArgumentValues ()Ljava/util/List;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitGenericArgumentValues (Ljava/util/List;)V
+                    RETURN   (line 86)
+  end public void visitBeanDefinition(org.springframework.beans.factory.config.BeanDefinition)
+
+  protected void visitParentName(org.springframework.beans.factory.config.BeanDefinition):
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 89)
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getParentName ()Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; parentName   (line 90)
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 91)
+                    ALOAD_2     // Ljava/lang/String; parentName
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/String; parentName   (line 92)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 93)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.setParentName (Ljava/lang/String;)V
+                L0: RETURN   (line 96)
+  end protected void visitParentName(org.springframework.beans.factory.config.BeanDefinition)
+
+  protected void visitBeanClassName(org.springframework.beans.factory.config.BeanDefinition):
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 99)
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getBeanClassName ()Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; beanClassName   (line 100)
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 101)
+                    ALOAD_2     // Ljava/lang/String; beanClassName
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/String; beanClassName   (line 102)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 103)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.setBeanClassName (Ljava/lang/String;)V
+                L0: RETURN   (line 106)
+  end protected void visitBeanClassName(org.springframework.beans.factory.config.BeanDefinition)
+
+  protected void visitFactoryBeanName(org.springframework.beans.factory.config.BeanDefinition):
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 109)
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getFactoryBeanName ()Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; factoryBeanName   (line 110)
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 111)
+                    ALOAD_2     // Ljava/lang/String; factoryBeanName
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/String; factoryBeanName   (line 112)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 113)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.setFactoryBeanName (Ljava/lang/String;)V
+                L0: RETURN   (line 116)
+  end protected void visitFactoryBeanName(org.springframework.beans.factory.config.BeanDefinition)
+
+  protected void visitFactoryMethodName(org.springframework.beans.factory.config.BeanDefinition):
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 119)
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getFactoryMethodName ()Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; factoryMethodName   (line 120)
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 121)
+                    ALOAD_2     // Ljava/lang/String; factoryMethodName
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/String; factoryMethodName   (line 122)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 123)
+                    ALOAD_3     // Ljava/lang/String; resolvedName
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.setFactoryMethodName (Ljava/lang/String;)V
+                L0: RETURN   (line 126)
+  end protected void visitFactoryMethodName(org.springframework.beans.factory.config.BeanDefinition)
+
+  protected void visitScope(org.springframework.beans.factory.config.BeanDefinition):
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 129)
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getScope ()Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; scope   (line 130)
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 131)
+                    ALOAD_2     // Ljava/lang/String; scope
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/String; scope   (line 132)
+                    ALOAD_3     // Ljava/lang/String; resolvedScope
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 133)
+                    ALOAD_3     // Ljava/lang/String; resolvedScope
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.setScope (Ljava/lang/String;)V
+                L0: RETURN   (line 136)
+  end protected void visitScope(org.springframework.beans.factory.config.BeanDefinition)
+
+  protected void visitPropertyValues(org.springframework.beans.MutablePropertyValues):
+                    ALOAD_1     // Lorg/springframework/beans/MutablePropertyValues; pvs   (line 139)
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.getPropertyValues ()[Lorg/springframework/beans/PropertyValue;
+                    ASTORE_2
+                    ALOAD_2     // [Lorg/springframework/beans/PropertyValue; pvArray   (line 140)
+                    DUP
+                    ASTORE 6
+                    ARRAYLENGTH
+                    ISTORE 5
+                    ICONST_0
+                    ISTORE 4
+                    GOTO L2
+                L0: ALOAD 6
+                    ILOAD 4
+                    AALOAD
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 141)
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getValue ()Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 7
+                    ALOAD 7     // Ljava/lang/Object; newVal   (line 142)
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getValue ()Ljava/lang/Object;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_1     // Lorg/springframework/beans/MutablePropertyValues; pvs   (line 143)
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getName ()Ljava/lang/String;
+                    ALOAD 7     // Ljava/lang/Object; newVal
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                L1: IINC 4 1   (line 140)
+                L2: ILOAD 4
+                    ILOAD 5
+                    IF_ICMPLT L0
+                    RETURN   (line 146)
+  end protected void visitPropertyValues(org.springframework.beans.MutablePropertyValues)
+
+  protected void visitIndexedArgumentValues(java.util.Map):
+                    ALOAD_1     // Ljava/util/Map; ias   (line 149)
+                    INVOKEINTERFACE java.util.Map.values ()Ljava/util/Collection;
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L1
+                L0: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 150)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues$ValueHolder; valueHolder
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder.getValue ()Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Object; newVal   (line 151)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues$ValueHolder; valueHolder
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder.getValue ()Ljava/lang/Object;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues$ValueHolder; valueHolder   (line 152)
+                    ALOAD 4     // Ljava/lang/Object; newVal
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder.setValue (Ljava/lang/Object;)V
+                L1: ALOAD_3   (line 149)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    RETURN   (line 155)
+  end protected void visitIndexedArgumentValues(java.util.Map)
+
+  protected void visitGenericArgumentValues(java.util.List):
+                    ALOAD_1     // Ljava/util/List; gas   (line 158)
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L1
+                L0: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 159)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues$ValueHolder; valueHolder
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder.getValue ()Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Object; newVal   (line 160)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues$ValueHolder; valueHolder
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder.getValue ()Ljava/lang/Object;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues$ValueHolder; valueHolder   (line 161)
+                    ALOAD 4     // Ljava/lang/Object; newVal
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues$ValueHolder.setValue (Ljava/lang/Object;)V
+                L1: ALOAD_3   (line 158)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    RETURN   (line 164)
+  end protected void visitGenericArgumentValues(java.util.List)
+
+  protected Object resolveValue(Object):
+                    ALOAD_1     // Ljava/lang/Object; value   (line 168)
+                    INSTANCEOF org.springframework.beans.factory.config.BeanDefinition
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 169)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST org.springframework.beans.factory.config.BeanDefinition
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition (Lorg/springframework/beans/factory/config/BeanDefinition;)V
+                    GOTO L9
+                L0: ALOAD_1     // Ljava/lang/Object; value   (line 171)
+                    INSTANCEOF org.springframework.beans.factory.config.BeanDefinitionHolder
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 172)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST org.springframework.beans.factory.config.BeanDefinitionHolder
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getBeanDefinition ()Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition (Lorg/springframework/beans/factory/config/BeanDefinition;)V
+                    GOTO L9
+                L1: ALOAD_1     // Ljava/lang/Object; value   (line 174)
+                    INSTANCEOF org.springframework.beans.factory.config.RuntimeBeanReference
+                    IFEQ L2
+                    ALOAD_1     // Ljava/lang/Object; value   (line 175)
+                    CHECKCAST org.springframework.beans.factory.config.RuntimeBeanReference
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 176)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; ref
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanReference.getBeanName ()Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; newBeanName   (line 177)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; ref
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanReference.getBeanName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L9
+                    NEW org.springframework.beans.factory.config.RuntimeBeanReference   (line 178)
+                    DUP
+                    ALOAD_3     // Ljava/lang/String; newBeanName
+                    INVOKESPECIAL org.springframework.beans.factory.config.RuntimeBeanReference.<init> (Ljava/lang/String;)V
+                    ARETURN
+                L2: ALOAD_1     // Ljava/lang/Object; value   (line 181)
+                    INSTANCEOF org.springframework.beans.factory.config.RuntimeBeanNameReference
+                    IFEQ L3
+                    ALOAD_1     // Ljava/lang/Object; value   (line 182)
+                    CHECKCAST org.springframework.beans.factory.config.RuntimeBeanNameReference
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 183)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanNameReference; ref
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanNameReference.getBeanName ()Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; newBeanName   (line 184)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanNameReference; ref
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanNameReference.getBeanName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L9
+                    NEW org.springframework.beans.factory.config.RuntimeBeanNameReference   (line 185)
+                    DUP
+                    ALOAD_3     // Ljava/lang/String; newBeanName
+                    INVOKESPECIAL org.springframework.beans.factory.config.RuntimeBeanNameReference.<init> (Ljava/lang/String;)V
+                    ARETURN
+                L3: ALOAD_1     // Ljava/lang/Object; value   (line 188)
+                    INSTANCEOF [Ljava.lang.Object;
+                    IFEQ L4
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 189)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST [Ljava.lang.Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitArray ([Ljava/lang/Object;)V
+                    GOTO L9
+                L4: ALOAD_1     // Ljava/lang/Object; value   (line 191)
+                    INSTANCEOF java.util.List
+                    IFEQ L5
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 192)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST java.util.List
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitList (Ljava/util/List;)V
+                    GOTO L9
+                L5: ALOAD_1     // Ljava/lang/Object; value   (line 194)
+                    INSTANCEOF java.util.Set
+                    IFEQ L6
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 195)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST java.util.Set
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitSet (Ljava/util/Set;)V
+                    GOTO L9
+                L6: ALOAD_1     // Ljava/lang/Object; value   (line 197)
+                    INSTANCEOF java.util.Map
+                    IFEQ L7
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 198)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST java.util.Map
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.visitMap (Ljava/util/Map;)V
+                    GOTO L9
+                L7: ALOAD_1     // Ljava/lang/Object; value   (line 200)
+                    INSTANCEOF org.springframework.beans.factory.config.TypedStringValue
+                    IFEQ L8
+                    ALOAD_1     // Ljava/lang/Object; value   (line 201)
+                    CHECKCAST org.springframework.beans.factory.config.TypedStringValue
+                    ASTORE_2
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/TypedStringValue; typedStringValue   (line 202)
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.getValue ()Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; stringValue   (line 203)
+                    IFNULL L9
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 204)
+                    ALOAD_3     // Ljava/lang/String; stringValue
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/TypedStringValue; typedStringValue   (line 205)
+                    ALOAD 4     // Ljava/lang/String; visitedString
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.setValue (Ljava/lang/String;)V
+                    GOTO L9
+                L8: ALOAD_1     // Ljava/lang/Object; value   (line 208)
+                    INSTANCEOF java.lang.String
+                    IFEQ L9
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 209)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST java.lang.String
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+                L9: ALOAD_1     // Ljava/lang/Object; value   (line 211)
+                    ARETURN
+  end protected Object resolveValue(Object)
+
+  protected void visitArray(Object[]):
+                    ICONST_0   (line 215)
+                    ISTORE_2
+                    GOTO L2
+                L0: ALOAD_1     // [Ljava/lang/Object; arrayVal   (line 216)
+                    ILOAD_2     // I i
+                    AALOAD
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 217)
+                    ALOAD_3     // Ljava/lang/Object; elem
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Object; newVal   (line 218)
+                    ALOAD_3     // Ljava/lang/Object; elem
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_1     // [Ljava/lang/Object; arrayVal   (line 219)
+                    ILOAD_2     // I i
+                    ALOAD 4     // Ljava/lang/Object; newVal
+                    AASTORE
+                L1: IINC_2 1     // I i   (line 215)
+                L2: ILOAD_2     // I i
+                    ALOAD_1     // [Ljava/lang/Object; arrayVal
+                    ARRAYLENGTH
+                    IF_ICMPLT L0
+                    RETURN   (line 222)
+  end protected void visitArray(Object[])
+
+  protected void visitList(java.util.List):
+                    ICONST_0   (line 226)
+                    ISTORE_2
+                    GOTO L2
+                L0: ALOAD_1     // Ljava/util/List; listVal   (line 227)
+                    ILOAD_2     // I i
+                    INVOKEINTERFACE java.util.List.get (I)Ljava/lang/Object;
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 228)
+                    ALOAD_3     // Ljava/lang/Object; elem
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Object; newVal   (line 229)
+                    ALOAD_3     // Ljava/lang/Object; elem
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_1     // Ljava/util/List; listVal   (line 230)
+                    ILOAD_2     // I i
+                    ALOAD 4     // Ljava/lang/Object; newVal
+                    INVOKEINTERFACE java.util.List.set (ILjava/lang/Object;)Ljava/lang/Object;
+                    POP
+                L1: IINC_2 1     // I i   (line 226)
+                L2: ILOAD_2     // I i
+                    ALOAD_1     // Ljava/util/List; listVal
+                    INVOKEINTERFACE java.util.List.size ()I
+                    IF_ICMPLT L0
+                    RETURN   (line 233)
+  end protected void visitList(java.util.List)
+
+  protected void visitSet(java.util.Set):
+                    NEW java.util.LinkedHashSet   (line 237)
+                    DUP
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 238)
+                    ISTORE_3
+                    ALOAD_1     // Ljava/util/Set; setVal   (line 239)
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 5
+                    GOTO L7
+                L0: ALOAD 5
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Object; elem   (line 240)
+                    IFNULL L1
+                    ALOAD 4     // Ljava/lang/Object; elem
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    GOTO L2
+                L1: ICONST_0
+                L2: ISTORE 6
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 241)
+                    ALOAD 4     // Ljava/lang/Object; elem
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 7
+                    ALOAD 7     // Ljava/lang/Object; newVal   (line 242)
+                    IFNULL L3
+                    ALOAD 7     // Ljava/lang/Object; newVal
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    GOTO L4
+                L3: ICONST_0
+                L4: ISTORE 8
+                    ALOAD_2     // Ljava/util/Set; newContent   (line 243)
+                    ALOAD 7     // Ljava/lang/Object; newVal
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    ILOAD_3     // Z entriesModified   (line 244)
+                    IFNE L5
+                    ALOAD 7     // Ljava/lang/Object; newVal
+                    ALOAD 4     // Ljava/lang/Object; elem
+                    IF_ACMPNE L5
+                    ILOAD 8     // I newValHash
+                    ILOAD 6     // I elemHash
+                    IF_ICMPNE L5
+                    ICONST_0
+                    GOTO L6
+                L5: ICONST_1
+                L6: ISTORE_3     // Z entriesModified
+                L7: ALOAD 5   (line 239)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ILOAD_3     // Z entriesModified   (line 246)
+                    IFEQ L8
+                    ALOAD_1     // Ljava/util/Set; setVal   (line 247)
+                    INVOKEINTERFACE java.util.Set.clear ()V
+                    ALOAD_1     // Ljava/util/Set; setVal   (line 248)
+                    ALOAD_2     // Ljava/util/Set; newContent
+                    INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+                    POP
+                L8: RETURN   (line 250)
+  end protected void visitSet(java.util.Set)
+
+  protected void visitMap(java.util.Map):
+                    NEW java.util.LinkedHashMap   (line 254)
+                    DUP
+                    INVOKESPECIAL java.util.LinkedHashMap.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 255)
+                    ISTORE_3
+                    ALOAD_1     // Ljava/util/Map; mapVal   (line 256)
+                    INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 5
+                    GOTO L7
+                L0: ALOAD 5
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.util.Map$Entry
+                    ASTORE 4
+                    ALOAD 4     // Ljava/util/Map$Entry; entry   (line 257)
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    ASTORE 6
+                    ALOAD 6     // Ljava/lang/Object; key   (line 258)
+                    IFNULL L1
+                    ALOAD 6     // Ljava/lang/Object; key
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    GOTO L2
+                L1: ICONST_0
+                L2: ISTORE 7
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 259)
+                    ALOAD 6     // Ljava/lang/Object; key
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 8
+                    ALOAD 8     // Ljava/lang/Object; newKey   (line 260)
+                    IFNULL L3
+                    ALOAD 8     // Ljava/lang/Object; newKey
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    GOTO L4
+                L3: ICONST_0
+                L4: ISTORE 9
+                    ALOAD 4     // Ljava/util/Map$Entry; entry   (line 261)
+                    INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+                    ASTORE 10
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 262)
+                    ALOAD 10     // Ljava/lang/Object; val
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 11
+                    ALOAD_2     // Ljava/util/Map; newContent   (line 263)
+                    ALOAD 8     // Ljava/lang/Object; newKey
+                    ALOAD 11     // Ljava/lang/Object; newVal
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    ILOAD_3     // Z entriesModified   (line 264)
+                    IFNE L5
+                    ALOAD 11     // Ljava/lang/Object; newVal
+                    ALOAD 10     // Ljava/lang/Object; val
+                    IF_ACMPNE L5
+                    ALOAD 8     // Ljava/lang/Object; newKey
+                    ALOAD 6     // Ljava/lang/Object; key
+                    IF_ACMPNE L5
+                    ILOAD 9     // I newKeyHash
+                    ILOAD 7     // I keyHash
+                    IF_ICMPNE L5
+                    ICONST_0
+                    GOTO L6
+                L5: ICONST_1
+                L6: ISTORE_3     // Z entriesModified
+                L7: ALOAD 5   (line 256)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ILOAD_3     // Z entriesModified   (line 266)
+                    IFEQ L8
+                    ALOAD_1     // Ljava/util/Map; mapVal   (line 267)
+                    INVOKEINTERFACE java.util.Map.clear ()V
+                    ALOAD_1     // Ljava/util/Map; mapVal   (line 268)
+                    ALOAD_2     // Ljava/util/Map; newContent
+                    INVOKEINTERFACE java.util.Map.putAll (Ljava/util/Map;)V
+                L8: RETURN   (line 270)
+  end protected void visitMap(java.util.Map)
+
+  protected String resolveStringValue(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 278)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionVisitor.valueResolver Lorg/springframework/util/StringValueResolver;
+                    IFNONNULL L0
+                    NEW java.lang.IllegalStateException   (line 279)
+                    DUP
+                    LDC_W "No StringValueResolver specified - pass a resolver object into the constructor or override the 'resolveStringValue' method"
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionVisitor; this   (line 282)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionVisitor.valueResolver Lorg/springframework/util/StringValueResolver;
+                    ALOAD_1     // Ljava/lang/String; strVal
+                    INVOKEINTERFACE org.springframework.util.StringValueResolver.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_1     // Ljava/lang/String; strVal   (line 284)
+                    ALOAD_2     // Ljava/lang/String; resolvedValue
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_1     // Ljava/lang/String; strVal
+                    GOTO L2
+                L1: ALOAD_2     // Ljava/lang/String; resolvedValue
+                L2: ARETURN
+  end protected String resolveStringValue(String)
+
+end public class org.springframework.beans.factory.config.BeanDefinitionVisitor
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:665)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:615)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1752)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1464)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1273)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:394)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:281)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:95)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:52)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:197)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.processProperties(PropertySourcesPlaceholderConfigurer.java:174)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:151)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:686)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:661)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.curso.spring.springioc0007.Main.init(Main.java:29)
+	at com.curso.spring.springioc0007.Main.main(Main.java:24)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

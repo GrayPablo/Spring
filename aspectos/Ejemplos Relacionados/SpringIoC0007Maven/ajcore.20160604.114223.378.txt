@@ -1,0 +1,1178 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114223.378.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.util.DefaultPropertiesPersister extends java.lang.Object implements org.springframework.util.PropertiesPersister:
+  private static final boolean loadFromReaderAvailable
+  private static final boolean storeToWriterAvailable
+  static void <clinit>():
+    staticinitialization(void org.springframework.util.DefaultPropertiesPersister.<clinit>())
+    |               LDC java.util.Properties   (line 71)
+    |               LDC "load"
+    |               ICONST_1
+    |               ANEWARRAY java.lang.Class
+    |               DUP
+    |               ICONST_0
+    |               LDC java.io.Reader
+    |               AASTORE
+    |               INVOKESTATIC org.springframework.util.ClassUtils.hasMethod (Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Z
+    |               PUTSTATIC org.springframework.util.DefaultPropertiesPersister.loadFromReaderAvailable Z   (line 70)
+    |               LDC java.util.Properties   (line 75)
+    |               LDC "store"
+    |               ICONST_2
+    |               ANEWARRAY java.lang.Class
+    |               DUP
+    |               ICONST_0
+    |               LDC java.io.Writer
+    |               AASTORE
+    |               DUP
+    |               ICONST_1
+    |               LDC java.lang.String
+    |               AASTORE
+    |               INVOKESTATIC org.springframework.util.ClassUtils.hasMethod (Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Z
+    |               PUTSTATIC org.springframework.util.DefaultPropertiesPersister.storeToWriterAvailable Z   (line 74)
+    |               RETURN   (line 67)
+    staticinitialization(void org.springframework.util.DefaultPropertiesPersister.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this   (line 67)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.util.DefaultPropertiesPersister.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.util.DefaultPropertiesPersister.<init>())
+  end public void <init>()
+
+  public void load(java.util.Properties, java.io.InputStream) throws java.io.IOException:
+                    ALOAD_1     // Ljava/util/Properties; props   (line 79)
+                    ALOAD_2     // Ljava/io/InputStream; is
+                    INVOKEVIRTUAL java.util.Properties.load (Ljava/io/InputStream;)V
+                    RETURN   (line 80)
+  end public void load(java.util.Properties, java.io.InputStream) throws java.io.IOException
+
+  public void load(java.util.Properties, java.io.Reader) throws java.io.IOException:
+                    GETSTATIC org.springframework.util.DefaultPropertiesPersister.loadFromReaderAvailable Z   (line 83)
+                    IFEQ L0
+                    ALOAD_1     // Ljava/util/Properties; props   (line 85)
+                    ALOAD_2     // Ljava/io/Reader; reader
+                    INVOKEVIRTUAL java.util.Properties.load (Ljava/io/Reader;)V
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this   (line 89)
+                    ALOAD_1     // Ljava/util/Properties; props
+                    ALOAD_2     // Ljava/io/Reader; reader
+                    INVOKEVIRTUAL org.springframework.util.DefaultPropertiesPersister.doLoad (Ljava/util/Properties;Ljava/io/Reader;)V
+                L1: RETURN   (line 91)
+  end public void load(java.util.Properties, java.io.Reader) throws java.io.IOException
+
+  protected void doLoad(java.util.Properties, java.io.Reader) throws java.io.IOException:
+                    NEW java.io.BufferedReader   (line 94)
+                    DUP
+                    ALOAD_2     // Ljava/io/Reader; reader
+                    INVOKESPECIAL java.io.BufferedReader.<init> (Ljava/io/Reader;)V
+                    ASTORE_3
+                L0: ALOAD_3     // Ljava/io/BufferedReader; in   (line 96)
+                    INVOKEVIRTUAL java.io.BufferedReader.readLine ()Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/String; line   (line 97)
+                    IFNONNULL L1
+                    RETURN   (line 98)
+                L1: ALOAD 4     // Ljava/lang/String; line   (line 100)
+                    INVOKESTATIC org.springframework.util.StringUtils.trimLeadingWhitespace (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 4     // Ljava/lang/String; line
+                    ALOAD 4     // Ljava/lang/String; line   (line 101)
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IFLE L0
+                    ALOAD 4     // Ljava/lang/String; line   (line 102)
+                    ICONST_0
+                    INVOKEVIRTUAL java.lang.String.charAt (I)C
+                    ISTORE 5
+                    ILOAD 5     // C firstChar   (line 103)
+                    BIPUSH 35
+                    IF_ICMPEQ L0
+                    ILOAD 5     // C firstChar
+                    BIPUSH 33
+                    IF_ICMPEQ L0
+                    GOTO L3   (line 104)
+                L2: ALOAD_3     // Ljava/io/BufferedReader; in   (line 105)
+                    INVOKEVIRTUAL java.io.BufferedReader.readLine ()Ljava/lang/String;
+                    ASTORE 6
+                    ALOAD 4     // Ljava/lang/String; line   (line 106)
+                    ICONST_0
+                    ALOAD 4     // Ljava/lang/String; line
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ICONST_1
+                    ISUB
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 4     // Ljava/lang/String; line
+                    ALOAD 6     // Ljava/lang/String; nextLine   (line 107)
+                    IFNULL L3
+                    NEW java.lang.StringBuilder   (line 108)
+                    DUP
+                    ALOAD 4     // Ljava/lang/String; line
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 6     // Ljava/lang/String; nextLine
+                    INVOKESTATIC org.springframework.util.StringUtils.trimLeadingWhitespace (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ASTORE 4     // Ljava/lang/String; line
+                L3: ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this   (line 104)
+                    ALOAD 4     // Ljava/lang/String; line
+                    INVOKEVIRTUAL org.springframework.util.DefaultPropertiesPersister.endsWithContinuationMarker (Ljava/lang/String;)Z
+                    IFNE L2
+                    ALOAD 4     // Ljava/lang/String; line   (line 111)
+                    LDC "="
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ISTORE 6
+                    ILOAD 6     // I separatorIndex   (line 112)
+                    ICONST_M1
+                    IF_ICMPNE L4
+                    ALOAD 4     // Ljava/lang/String; line   (line 113)
+                    LDC ":"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ISTORE 6     // I separatorIndex
+                L4: ILOAD 6     // I separatorIndex   (line 115)
+                    ICONST_M1
+                    IF_ICMPEQ L5
+                    ALOAD 4     // Ljava/lang/String; line
+                    ICONST_0
+                    ILOAD 6     // I separatorIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    GOTO L6
+                L5: ALOAD 4     // Ljava/lang/String; line
+                L6: ASTORE 7
+                    ILOAD 6     // I separatorIndex   (line 116)
+                    ICONST_M1
+                    IF_ICMPEQ L7
+                    ALOAD 4     // Ljava/lang/String; line
+                    ILOAD 6     // I separatorIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    GOTO L8
+                L7: LDC ""
+                L8: ASTORE 8
+                    ALOAD 7     // Ljava/lang/String; key   (line 117)
+                    INVOKESTATIC org.springframework.util.StringUtils.trimTrailingWhitespace (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 7     // Ljava/lang/String; key
+                    ALOAD 8     // Ljava/lang/String; value   (line 118)
+                    INVOKESTATIC org.springframework.util.StringUtils.trimLeadingWhitespace (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 8     // Ljava/lang/String; value
+                    ALOAD_1     // Ljava/util/Properties; props   (line 119)
+                    ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this
+                    ALOAD 7     // Ljava/lang/String; key
+                    INVOKEVIRTUAL org.springframework.util.DefaultPropertiesPersister.unescape (Ljava/lang/String;)Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this
+                    ALOAD 8     // Ljava/lang/String; value
+                    INVOKEVIRTUAL org.springframework.util.DefaultPropertiesPersister.unescape (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.util.Properties.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    GOTO L0   (line 95)
+  end protected void doLoad(java.util.Properties, java.io.Reader) throws java.io.IOException
+
+  protected boolean endsWithContinuationMarker(String):
+                    ICONST_1   (line 126)
+                    ISTORE_2
+                    ALOAD_1     // Ljava/lang/String; line   (line 127)
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ICONST_1
+                    ISUB
+                    ISTORE_3
+                    GOTO L3   (line 128)
+                L0: ILOAD_2     // Z evenSlashCount   (line 129)
+                    IFEQ L1
+                    ICONST_0
+                    GOTO L2
+                L1: ICONST_1
+                L2: ISTORE_2     // Z evenSlashCount
+                    IINC_3 -1     // I index   (line 130)
+                L3: ILOAD_3     // I index   (line 128)
+                    IFLT L4
+                    ALOAD_1     // Ljava/lang/String; line
+                    ILOAD_3     // I index
+                    INVOKEVIRTUAL java.lang.String.charAt (I)C
+                    BIPUSH 92
+                    IF_ICMPEQ L0
+                L4: ILOAD_2     // Z evenSlashCount   (line 132)
+                    IFEQ L5
+                    ICONST_0
+                    GOTO L6
+                L5: ICONST_1
+                L6: IRETURN
+  end protected boolean endsWithContinuationMarker(String)
+
+  protected String unescape(String):
+                    NEW java.lang.StringBuilder   (line 136)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; str
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (I)V
+                    ASTORE_2
+                    ICONST_0   (line 137)
+                    ISTORE_3
+                    GOTO L5
+                L0: ALOAD_1     // Ljava/lang/String; str   (line 138)
+                    ILOAD_3     // I index
+                    IINC_3 1     // I index
+                    INVOKEVIRTUAL java.lang.String.charAt (I)C
+                    ISTORE 4
+                    ILOAD 4     // C c   (line 139)
+                    BIPUSH 92
+                    IF_ICMPNE L4
+                    ALOAD_1     // Ljava/lang/String; str   (line 140)
+                    ILOAD_3     // I index
+                    IINC_3 1     // I index
+                    INVOKEVIRTUAL java.lang.String.charAt (I)C
+                    ISTORE 4     // C c
+                    ILOAD 4     // C c   (line 141)
+                    BIPUSH 116
+                    IF_ICMPNE L1
+                    BIPUSH 9   (line 142)
+                    ISTORE 4     // C c
+                    GOTO L4
+                L1: ILOAD 4     // C c   (line 144)
+                    BIPUSH 114
+                    IF_ICMPNE L2
+                    BIPUSH 13   (line 145)
+                    ISTORE 4     // C c
+                    GOTO L4
+                L2: ILOAD 4     // C c   (line 147)
+                    BIPUSH 110
+                    IF_ICMPNE L3
+                    BIPUSH 10   (line 148)
+                    ISTORE 4     // C c
+                    GOTO L4
+                L3: ILOAD 4     // C c   (line 150)
+                    BIPUSH 102
+                    IF_ICMPNE L4
+                    BIPUSH 12   (line 151)
+                    ISTORE 4     // C c
+                L4: ALOAD_2     // Ljava/lang/StringBuilder; result   (line 154)
+                    ILOAD 4     // C c
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+                L5: ILOAD_3     // I index   (line 137)
+                    ALOAD_1     // Ljava/lang/String; str
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IF_ICMPLT L0
+                    ALOAD_2     // Ljava/lang/StringBuilder; result   (line 156)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end protected String unescape(String)
+
+  public void store(java.util.Properties, java.io.OutputStream, String) throws java.io.IOException:
+                    ALOAD_1     // Ljava/util/Properties; props   (line 161)
+                    ALOAD_2     // Ljava/io/OutputStream; os
+                    ALOAD_3     // Ljava/lang/String; header
+                    INVOKEVIRTUAL java.util.Properties.store (Ljava/io/OutputStream;Ljava/lang/String;)V
+                    RETURN   (line 162)
+  end public void store(java.util.Properties, java.io.OutputStream, String) throws java.io.IOException
+
+  public void store(java.util.Properties, java.io.Writer, String) throws java.io.IOException:
+                    GETSTATIC org.springframework.util.DefaultPropertiesPersister.storeToWriterAvailable Z   (line 165)
+                    IFEQ L0
+                    ALOAD_1     // Ljava/util/Properties; props   (line 167)
+                    ALOAD_2     // Ljava/io/Writer; writer
+                    ALOAD_3     // Ljava/lang/String; header
+                    INVOKEVIRTUAL java.util.Properties.store (Ljava/io/Writer;Ljava/lang/String;)V
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this   (line 171)
+                    ALOAD_1     // Ljava/util/Properties; props
+                    ALOAD_2     // Ljava/io/Writer; writer
+                    ALOAD_3     // Ljava/lang/String; header
+                    INVOKEVIRTUAL org.springframework.util.DefaultPropertiesPersister.doStore (Ljava/util/Properties;Ljava/io/Writer;Ljava/lang/String;)V
+                L1: RETURN   (line 173)
+  end public void store(java.util.Properties, java.io.Writer, String) throws java.io.IOException
+
+  protected void doStore(java.util.Properties, java.io.Writer, String) throws java.io.IOException:
+                    NEW java.io.BufferedWriter   (line 176)
+                    DUP
+                    ALOAD_2     // Ljava/io/Writer; writer
+                    INVOKESPECIAL java.io.BufferedWriter.<init> (Ljava/io/Writer;)V
+                    ASTORE 4
+                    ALOAD_3     // Ljava/lang/String; header   (line 177)
+                    IFNULL L0
+                    ALOAD 4     // Ljava/io/BufferedWriter; out   (line 178)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "#"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/lang/String; header
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.io.BufferedWriter.write (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/io/BufferedWriter; out   (line 179)
+                    INVOKEVIRTUAL java.io.BufferedWriter.newLine ()V
+                L0: ALOAD 4     // Ljava/io/BufferedWriter; out   (line 181)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "#"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    NEW java.util.Date
+                    DUP
+                    INVOKESPECIAL java.util.Date.<init> ()V
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.io.BufferedWriter.write (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/io/BufferedWriter; out   (line 182)
+                    INVOKEVIRTUAL java.io.BufferedWriter.newLine ()V
+                    ALOAD_1     // Ljava/util/Properties; props   (line 183)
+                    INVOKEVIRTUAL java.util.Properties.keys ()Ljava/util/Enumeration;
+                    ASTORE 5
+                    GOTO L2
+                L1: ALOAD 5     // Ljava/util/Enumeration; keys   (line 184)
+                    INVOKEINTERFACE java.util.Enumeration.nextElement ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 6
+                    ALOAD_1     // Ljava/util/Properties; props   (line 185)
+                    ALOAD 6     // Ljava/lang/String; key
+                    INVOKEVIRTUAL java.util.Properties.getProperty (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 7
+                    ALOAD 4     // Ljava/io/BufferedWriter; out   (line 186)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this
+                    ALOAD 6     // Ljava/lang/String; key
+                    ICONST_1
+                    INVOKEVIRTUAL org.springframework.util.DefaultPropertiesPersister.escape (Ljava/lang/String;Z)Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "="
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this
+                    ALOAD 7     // Ljava/lang/String; val
+                    ICONST_0
+                    INVOKEVIRTUAL org.springframework.util.DefaultPropertiesPersister.escape (Ljava/lang/String;Z)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.io.BufferedWriter.write (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/io/BufferedWriter; out   (line 187)
+                    INVOKEVIRTUAL java.io.BufferedWriter.newLine ()V
+                L2: ALOAD 5     // Ljava/util/Enumeration; keys   (line 183)
+                    INVOKEINTERFACE java.util.Enumeration.hasMoreElements ()Z
+                    IFNE L1
+                    ALOAD 4     // Ljava/io/BufferedWriter; out   (line 189)
+                    INVOKEVIRTUAL java.io.BufferedWriter.flush ()V
+                    RETURN   (line 190)
+  end protected void doStore(java.util.Properties, java.io.Writer, String) throws java.io.IOException
+
+  protected String escape(String, boolean):
+                    ALOAD_1     // Ljava/lang/String; str   (line 193)
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ISTORE_3
+                    NEW java.lang.StringBuilder   (line 194)
+                    DUP
+                    ILOAD_3     // I len
+                    ICONST_2
+                    IMUL
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (I)V
+                    ASTORE 4
+                    ICONST_0   (line 195)
+                    ISTORE 5
+                    GOTO L12
+                L0: ALOAD_1     // Ljava/lang/String; str   (line 196)
+                    ILOAD 5     // I index
+                    INVOKEVIRTUAL java.lang.String.charAt (I)C
+                    ISTORE 6
+                    ILOAD 6     // C c   (line 197)
+                    LOOKUPSWITCH
+                      9: 	L5
+                      10: 	L6
+                      12: 	L8
+                      13: 	L7
+                      32: 	L1
+                      92: 	L4
+                      default: 	L9
+                L1: ILOAD 5     // I index   (line 199)
+                    IFEQ L2
+                    ILOAD_2     // Z isKey
+                    IFEQ L3
+                L2: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 200)
+                    BIPUSH 92
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+                L3: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 202)
+                    BIPUSH 32
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L11   (line 203)
+                L4: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 205)
+                    LDC "\\"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L11   (line 206)
+                L5: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 208)
+                    LDC "\t"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L11   (line 209)
+                L6: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 211)
+                    LDC "\n"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L11   (line 212)
+                L7: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 214)
+                    LDC "\r"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L11   (line 215)
+                L8: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 217)
+                    LDC "\f"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L11   (line 218)
+                L9: LDC "=: \t\r\n#!"   (line 220)
+                    ILOAD 6     // C c
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ICONST_M1
+                    IF_ICMPEQ L10
+                    ALOAD 4     // Ljava/lang/StringBuilder; result   (line 221)
+                    BIPUSH 92
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+               L10: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 223)
+                    ILOAD 6     // C c
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+               L11: IINC 5 1     // I index   (line 195)
+               L12: ILOAD 5     // I index
+                    ILOAD_3     // I len
+                    IF_ICMPLT L0
+                    ALOAD 4     // Ljava/lang/StringBuilder; result   (line 226)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end protected String escape(String, boolean)
+
+  public void loadFromXml(java.util.Properties, java.io.InputStream) throws java.io.IOException:
+    catch java.lang.NoSuchMethodError -> E0
+    |               ALOAD_1     // Ljava/util/Properties; props   (line 232)
+    |               ALOAD_2     // Ljava/io/InputStream; is
+    |               INVOKEVIRTUAL java.util.Properties.loadFromXML (Ljava/io/InputStream;)V
+    catch java.lang.NoSuchMethodError -> E0
+                    GOTO L0
+                E0: ASTORE_3   (line 234)
+                    NEW java.io.IOException   (line 235)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Cannot load properties XML file - not running on JDK 1.5+: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/lang/NoSuchMethodError; err
+                    INVOKEVIRTUAL java.lang.NoSuchMethodError.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.io.IOException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: RETURN   (line 237)
+  end public void loadFromXml(java.util.Properties, java.io.InputStream) throws java.io.IOException
+
+  public void storeToXml(java.util.Properties, java.io.OutputStream, String) throws java.io.IOException:
+    catch java.lang.NoSuchMethodError -> E0
+    |               ALOAD_1     // Ljava/util/Properties; props   (line 241)
+    |               ALOAD_2     // Ljava/io/OutputStream; os
+    |               ALOAD_3     // Ljava/lang/String; header
+    |               INVOKEVIRTUAL java.util.Properties.storeToXML (Ljava/io/OutputStream;Ljava/lang/String;)V
+    catch java.lang.NoSuchMethodError -> E0
+                    GOTO L0
+                E0: ASTORE 4   (line 243)
+                    NEW java.io.IOException   (line 244)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Cannot store properties XML file - not running on JDK 1.5+: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/lang/NoSuchMethodError; err
+                    INVOKEVIRTUAL java.lang.NoSuchMethodError.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.io.IOException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: RETURN   (line 246)
+  end public void storeToXml(java.util.Properties, java.io.OutputStream, String) throws java.io.IOException
+
+  public void storeToXml(java.util.Properties, java.io.OutputStream, String, String) throws java.io.IOException:
+    catch java.lang.NoSuchMethodError -> E0
+    |               ALOAD_1     // Ljava/util/Properties; props   (line 250)
+    |               ALOAD_2     // Ljava/io/OutputStream; os
+    |               ALOAD_3     // Ljava/lang/String; header
+    |               ALOAD 4     // Ljava/lang/String; encoding
+    |               INVOKEVIRTUAL java.util.Properties.storeToXML (Ljava/io/OutputStream;Ljava/lang/String;Ljava/lang/String;)V
+    catch java.lang.NoSuchMethodError -> E0
+                    GOTO L0
+                E0: ASTORE 5   (line 252)
+                    NEW java.io.IOException   (line 253)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Cannot store properties XML file - not running on JDK 1.5+: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 5     // Ljava/lang/NoSuchMethodError; err
+                    INVOKEVIRTUAL java.lang.NoSuchMethodError.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.io.IOException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: RETURN   (line 255)
+  end public void storeToXml(java.util.Properties, java.io.OutputStream, String, String) throws java.io.IOException
+end public class org.springframework.util.DefaultPropertiesPersister
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.util.DefaultPropertiesPersister extends java.lang.Object implements org.springframework.util.PropertiesPersister:
+  private static final boolean loadFromReaderAvailable
+  private static final boolean storeToWriterAvailable
+  static void <clinit>():
+    staticinitialization(void org.springframework.util.DefaultPropertiesPersister.<clinit>())
+    |               LDC java.util.Properties   (line 71)
+    |               LDC "load"
+    |               ICONST_1
+    |               ANEWARRAY java.lang.Class
+    |               DUP
+    |               ICONST_0
+    |               LDC java.io.Reader
+    |               AASTORE
+    |               INVOKESTATIC org.springframework.util.ClassUtils.hasMethod (Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Z
+    |               PUTSTATIC org.springframework.util.DefaultPropertiesPersister.loadFromReaderAvailable Z   (line 70)
+    |               LDC java.util.Properties   (line 75)
+    |               LDC "store"
+    |               ICONST_2
+    |               ANEWARRAY java.lang.Class
+    |               DUP
+    |               ICONST_0
+    |               LDC java.io.Writer
+    |               AASTORE
+    |               DUP
+    |               ICONST_1
+    |               LDC java.lang.String
+    |               AASTORE
+    |               INVOKESTATIC org.springframework.util.ClassUtils.hasMethod (Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Z
+    |               PUTSTATIC org.springframework.util.DefaultPropertiesPersister.storeToWriterAvailable Z   (line 74)
+    |               RETURN   (line 67)
+    staticinitialization(void org.springframework.util.DefaultPropertiesPersister.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this   (line 67)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.util.DefaultPropertiesPersister.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.util.DefaultPropertiesPersister.<init>())
+  end public void <init>()
+
+  public void load(java.util.Properties, java.io.InputStream) throws java.io.IOException:
+                    ALOAD_1     // Ljava/util/Properties; props   (line 79)
+                    ALOAD_2     // Ljava/io/InputStream; is
+                    INVOKEVIRTUAL java.util.Properties.load (Ljava/io/InputStream;)V
+                    RETURN   (line 80)
+  end public void load(java.util.Properties, java.io.InputStream) throws java.io.IOException
+
+  public void load(java.util.Properties, java.io.Reader) throws java.io.IOException:
+                    GETSTATIC org.springframework.util.DefaultPropertiesPersister.loadFromReaderAvailable Z   (line 83)
+                    IFEQ L0
+                    ALOAD_1     // Ljava/util/Properties; props   (line 85)
+                    ALOAD_2     // Ljava/io/Reader; reader
+                    INVOKEVIRTUAL java.util.Properties.load (Ljava/io/Reader;)V
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this   (line 89)
+                    ALOAD_1     // Ljava/util/Properties; props
+                    ALOAD_2     // Ljava/io/Reader; reader
+                    INVOKEVIRTUAL org.springframework.util.DefaultPropertiesPersister.doLoad (Ljava/util/Properties;Ljava/io/Reader;)V
+                L1: RETURN   (line 91)
+  end public void load(java.util.Properties, java.io.Reader) throws java.io.IOException
+
+  protected void doLoad(java.util.Properties, java.io.Reader) throws java.io.IOException:
+                    NEW java.io.BufferedReader   (line 94)
+                    DUP
+                    ALOAD_2     // Ljava/io/Reader; reader
+                    INVOKESPECIAL java.io.BufferedReader.<init> (Ljava/io/Reader;)V
+                    ASTORE_3
+                L0: ALOAD_3     // Ljava/io/BufferedReader; in   (line 96)
+                    INVOKEVIRTUAL java.io.BufferedReader.readLine ()Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/String; line   (line 97)
+                    IFNONNULL L1
+                    RETURN   (line 98)
+                L1: ALOAD 4     // Ljava/lang/String; line   (line 100)
+                    INVOKESTATIC org.springframework.util.StringUtils.trimLeadingWhitespace (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 4     // Ljava/lang/String; line
+                    ALOAD 4     // Ljava/lang/String; line   (line 101)
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IFLE L0
+                    ALOAD 4     // Ljava/lang/String; line   (line 102)
+                    ICONST_0
+                    INVOKEVIRTUAL java.lang.String.charAt (I)C
+                    ISTORE 5
+                    ILOAD 5     // C firstChar   (line 103)
+                    BIPUSH 35
+                    IF_ICMPEQ L0
+                    ILOAD 5     // C firstChar
+                    BIPUSH 33
+                    IF_ICMPEQ L0
+                    GOTO L3   (line 104)
+                L2: ALOAD_3     // Ljava/io/BufferedReader; in   (line 105)
+                    INVOKEVIRTUAL java.io.BufferedReader.readLine ()Ljava/lang/String;
+                    ASTORE 6
+                    ALOAD 4     // Ljava/lang/String; line   (line 106)
+                    ICONST_0
+                    ALOAD 4     // Ljava/lang/String; line
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ICONST_1
+                    ISUB
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 4     // Ljava/lang/String; line
+                    ALOAD 6     // Ljava/lang/String; nextLine   (line 107)
+                    IFNULL L3
+                    NEW java.lang.StringBuilder   (line 108)
+                    DUP
+                    ALOAD 4     // Ljava/lang/String; line
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 6     // Ljava/lang/String; nextLine
+                    INVOKESTATIC org.springframework.util.StringUtils.trimLeadingWhitespace (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ASTORE 4     // Ljava/lang/String; line
+                L3: ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this   (line 104)
+                    ALOAD 4     // Ljava/lang/String; line
+                    INVOKEVIRTUAL org.springframework.util.DefaultPropertiesPersister.endsWithContinuationMarker (Ljava/lang/String;)Z
+                    IFNE L2
+                    ALOAD 4     // Ljava/lang/String; line   (line 111)
+                    LDC "="
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ISTORE 6
+                    ILOAD 6     // I separatorIndex   (line 112)
+                    ICONST_M1
+                    IF_ICMPNE L4
+                    ALOAD 4     // Ljava/lang/String; line   (line 113)
+                    LDC ":"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ISTORE 6     // I separatorIndex
+                L4: ILOAD 6     // I separatorIndex   (line 115)
+                    ICONST_M1
+                    IF_ICMPEQ L5
+                    ALOAD 4     // Ljava/lang/String; line
+                    ICONST_0
+                    ILOAD 6     // I separatorIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    GOTO L6
+                L5: ALOAD 4     // Ljava/lang/String; line
+                L6: ASTORE 7
+                    ILOAD 6     // I separatorIndex   (line 116)
+                    ICONST_M1
+                    IF_ICMPEQ L7
+                    ALOAD 4     // Ljava/lang/String; line
+                    ILOAD 6     // I separatorIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    GOTO L8
+                L7: LDC ""
+                L8: ASTORE 8
+                    ALOAD 7     // Ljava/lang/String; key   (line 117)
+                    INVOKESTATIC org.springframework.util.StringUtils.trimTrailingWhitespace (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 7     // Ljava/lang/String; key
+                    ALOAD 8     // Ljava/lang/String; value   (line 118)
+                    INVOKESTATIC org.springframework.util.StringUtils.trimLeadingWhitespace (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 8     // Ljava/lang/String; value
+                    ALOAD_1     // Ljava/util/Properties; props   (line 119)
+                    ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this
+                    ALOAD 7     // Ljava/lang/String; key
+                    INVOKEVIRTUAL org.springframework.util.DefaultPropertiesPersister.unescape (Ljava/lang/String;)Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this
+                    ALOAD 8     // Ljava/lang/String; value
+                    INVOKEVIRTUAL org.springframework.util.DefaultPropertiesPersister.unescape (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.util.Properties.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    GOTO L0   (line 95)
+  end protected void doLoad(java.util.Properties, java.io.Reader) throws java.io.IOException
+
+  protected boolean endsWithContinuationMarker(String):
+                    ICONST_1   (line 126)
+                    ISTORE_2
+                    ALOAD_1     // Ljava/lang/String; line   (line 127)
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ICONST_1
+                    ISUB
+                    ISTORE_3
+                    GOTO L3   (line 128)
+                L0: ILOAD_2     // Z evenSlashCount   (line 129)
+                    IFEQ L1
+                    ICONST_0
+                    GOTO L2
+                L1: ICONST_1
+                L2: ISTORE_2     // Z evenSlashCount
+                    IINC_3 -1     // I index   (line 130)
+                L3: ILOAD_3     // I index   (line 128)
+                    IFLT L4
+                    ALOAD_1     // Ljava/lang/String; line
+                    ILOAD_3     // I index
+                    INVOKEVIRTUAL java.lang.String.charAt (I)C
+                    BIPUSH 92
+                    IF_ICMPEQ L0
+                L4: ILOAD_2     // Z evenSlashCount   (line 132)
+                    IFEQ L5
+                    ICONST_0
+                    GOTO L6
+                L5: ICONST_1
+                L6: IRETURN
+  end protected boolean endsWithContinuationMarker(String)
+
+  protected String unescape(String):
+                    NEW java.lang.StringBuilder   (line 136)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; str
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (I)V
+                    ASTORE_2
+                    ICONST_0   (line 137)
+                    ISTORE_3
+                    GOTO L5
+                L0: ALOAD_1     // Ljava/lang/String; str   (line 138)
+                    ILOAD_3     // I index
+                    IINC_3 1     // I index
+                    INVOKEVIRTUAL java.lang.String.charAt (I)C
+                    ISTORE 4
+                    ILOAD 4     // C c   (line 139)
+                    BIPUSH 92
+                    IF_ICMPNE L4
+                    ALOAD_1     // Ljava/lang/String; str   (line 140)
+                    ILOAD_3     // I index
+                    IINC_3 1     // I index
+                    INVOKEVIRTUAL java.lang.String.charAt (I)C
+                    ISTORE 4     // C c
+                    ILOAD 4     // C c   (line 141)
+                    BIPUSH 116
+                    IF_ICMPNE L1
+                    BIPUSH 9   (line 142)
+                    ISTORE 4     // C c
+                    GOTO L4
+                L1: ILOAD 4     // C c   (line 144)
+                    BIPUSH 114
+                    IF_ICMPNE L2
+                    BIPUSH 13   (line 145)
+                    ISTORE 4     // C c
+                    GOTO L4
+                L2: ILOAD 4     // C c   (line 147)
+                    BIPUSH 110
+                    IF_ICMPNE L3
+                    BIPUSH 10   (line 148)
+                    ISTORE 4     // C c
+                    GOTO L4
+                L3: ILOAD 4     // C c   (line 150)
+                    BIPUSH 102
+                    IF_ICMPNE L4
+                    BIPUSH 12   (line 151)
+                    ISTORE 4     // C c
+                L4: ALOAD_2     // Ljava/lang/StringBuilder; result   (line 154)
+                    ILOAD 4     // C c
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+                L5: ILOAD_3     // I index   (line 137)
+                    ALOAD_1     // Ljava/lang/String; str
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IF_ICMPLT L0
+                    ALOAD_2     // Ljava/lang/StringBuilder; result   (line 156)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end protected String unescape(String)
+
+  public void store(java.util.Properties, java.io.OutputStream, String) throws java.io.IOException:
+                    ALOAD_1     // Ljava/util/Properties; props   (line 161)
+                    ALOAD_2     // Ljava/io/OutputStream; os
+                    ALOAD_3     // Ljava/lang/String; header
+                    INVOKEVIRTUAL java.util.Properties.store (Ljava/io/OutputStream;Ljava/lang/String;)V
+                    RETURN   (line 162)
+  end public void store(java.util.Properties, java.io.OutputStream, String) throws java.io.IOException
+
+  public void store(java.util.Properties, java.io.Writer, String) throws java.io.IOException:
+                    GETSTATIC org.springframework.util.DefaultPropertiesPersister.storeToWriterAvailable Z   (line 165)
+                    IFEQ L0
+                    ALOAD_1     // Ljava/util/Properties; props   (line 167)
+                    ALOAD_2     // Ljava/io/Writer; writer
+                    ALOAD_3     // Ljava/lang/String; header
+                    INVOKEVIRTUAL java.util.Properties.store (Ljava/io/Writer;Ljava/lang/String;)V
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this   (line 171)
+                    ALOAD_1     // Ljava/util/Properties; props
+                    ALOAD_2     // Ljava/io/Writer; writer
+                    ALOAD_3     // Ljava/lang/String; header
+                    INVOKEVIRTUAL org.springframework.util.DefaultPropertiesPersister.doStore (Ljava/util/Properties;Ljava/io/Writer;Ljava/lang/String;)V
+                L1: RETURN   (line 173)
+  end public void store(java.util.Properties, java.io.Writer, String) throws java.io.IOException
+
+  protected void doStore(java.util.Properties, java.io.Writer, String) throws java.io.IOException:
+                    NEW java.io.BufferedWriter   (line 176)
+                    DUP
+                    ALOAD_2     // Ljava/io/Writer; writer
+                    INVOKESPECIAL java.io.BufferedWriter.<init> (Ljava/io/Writer;)V
+                    ASTORE 4
+                    ALOAD_3     // Ljava/lang/String; header   (line 177)
+                    IFNULL L0
+                    ALOAD 4     // Ljava/io/BufferedWriter; out   (line 178)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "#"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/lang/String; header
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.io.BufferedWriter.write (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/io/BufferedWriter; out   (line 179)
+                    INVOKEVIRTUAL java.io.BufferedWriter.newLine ()V
+                L0: ALOAD 4     // Ljava/io/BufferedWriter; out   (line 181)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "#"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    NEW java.util.Date
+                    DUP
+                    INVOKESPECIAL java.util.Date.<init> ()V
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.io.BufferedWriter.write (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/io/BufferedWriter; out   (line 182)
+                    INVOKEVIRTUAL java.io.BufferedWriter.newLine ()V
+                    ALOAD_1     // Ljava/util/Properties; props   (line 183)
+                    INVOKEVIRTUAL java.util.Properties.keys ()Ljava/util/Enumeration;
+                    ASTORE 5
+                    GOTO L2
+                L1: ALOAD 5     // Ljava/util/Enumeration; keys   (line 184)
+                    INVOKEINTERFACE java.util.Enumeration.nextElement ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 6
+                    ALOAD_1     // Ljava/util/Properties; props   (line 185)
+                    ALOAD 6     // Ljava/lang/String; key
+                    INVOKEVIRTUAL java.util.Properties.getProperty (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 7
+                    ALOAD 4     // Ljava/io/BufferedWriter; out   (line 186)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this
+                    ALOAD 6     // Ljava/lang/String; key
+                    ICONST_1
+                    INVOKEVIRTUAL org.springframework.util.DefaultPropertiesPersister.escape (Ljava/lang/String;Z)Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "="
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/util/DefaultPropertiesPersister; this
+                    ALOAD 7     // Ljava/lang/String; val
+                    ICONST_0
+                    INVOKEVIRTUAL org.springframework.util.DefaultPropertiesPersister.escape (Ljava/lang/String;Z)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.io.BufferedWriter.write (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/io/BufferedWriter; out   (line 187)
+                    INVOKEVIRTUAL java.io.BufferedWriter.newLine ()V
+                L2: ALOAD 5     // Ljava/util/Enumeration; keys   (line 183)
+                    INVOKEINTERFACE java.util.Enumeration.hasMoreElements ()Z
+                    IFNE L1
+                    ALOAD 4     // Ljava/io/BufferedWriter; out   (line 189)
+                    INVOKEVIRTUAL java.io.BufferedWriter.flush ()V
+                    RETURN   (line 190)
+  end protected void doStore(java.util.Properties, java.io.Writer, String) throws java.io.IOException
+
+  protected String escape(String, boolean):
+                    ALOAD_1     // Ljava/lang/String; str   (line 193)
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ISTORE_3
+                    NEW java.lang.StringBuilder   (line 194)
+                    DUP
+                    ILOAD_3     // I len
+                    ICONST_2
+                    IMUL
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (I)V
+                    ASTORE 4
+                    ICONST_0   (line 195)
+                    ISTORE 5
+                    GOTO L12
+                L0: ALOAD_1     // Ljava/lang/String; str   (line 196)
+                    ILOAD 5     // I index
+                    INVOKEVIRTUAL java.lang.String.charAt (I)C
+                    ISTORE 6
+                    ILOAD 6     // C c   (line 197)
+                    LOOKUPSWITCH
+                      9: 	L5
+                      10: 	L6
+                      12: 	L8
+                      13: 	L7
+                      32: 	L1
+                      92: 	L4
+                      default: 	L9
+                L1: ILOAD 5     // I index   (line 199)
+                    IFEQ L2
+                    ILOAD_2     // Z isKey
+                    IFEQ L3
+                L2: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 200)
+                    BIPUSH 92
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+                L3: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 202)
+                    BIPUSH 32
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L11   (line 203)
+                L4: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 205)
+                    LDC "\\"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L11   (line 206)
+                L5: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 208)
+                    LDC "\t"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L11   (line 209)
+                L6: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 211)
+                    LDC "\n"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L11   (line 212)
+                L7: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 214)
+                    LDC "\r"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L11   (line 215)
+                L8: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 217)
+                    LDC "\f"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L11   (line 218)
+                L9: LDC "=: \t\r\n#!"   (line 220)
+                    ILOAD 6     // C c
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ICONST_M1
+                    IF_ICMPEQ L10
+                    ALOAD 4     // Ljava/lang/StringBuilder; result   (line 221)
+                    BIPUSH 92
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+               L10: ALOAD 4     // Ljava/lang/StringBuilder; result   (line 223)
+                    ILOAD 6     // C c
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+               L11: IINC 5 1     // I index   (line 195)
+               L12: ILOAD 5     // I index
+                    ILOAD_3     // I len
+                    IF_ICMPLT L0
+                    ALOAD 4     // Ljava/lang/StringBuilder; result   (line 226)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end protected String escape(String, boolean)
+
+  public void loadFromXml(java.util.Properties, java.io.InputStream) throws java.io.IOException:
+    catch java.lang.NoSuchMethodError -> E0
+    |               ALOAD_1     // Ljava/util/Properties; props   (line 232)
+    |               ALOAD_2     // Ljava/io/InputStream; is
+    |               INVOKEVIRTUAL java.util.Properties.loadFromXML (Ljava/io/InputStream;)V
+    catch java.lang.NoSuchMethodError -> E0
+                    GOTO L0
+                E0: ASTORE_3   (line 234)
+                    NEW java.io.IOException   (line 235)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Cannot load properties XML file - not running on JDK 1.5+: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/lang/NoSuchMethodError; err
+                    INVOKEVIRTUAL java.lang.NoSuchMethodError.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.io.IOException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: RETURN   (line 237)
+  end public void loadFromXml(java.util.Properties, java.io.InputStream) throws java.io.IOException
+
+  public void storeToXml(java.util.Properties, java.io.OutputStream, String) throws java.io.IOException:
+    catch java.lang.NoSuchMethodError -> E0
+    |               ALOAD_1     // Ljava/util/Properties; props   (line 241)
+    |               ALOAD_2     // Ljava/io/OutputStream; os
+    |               ALOAD_3     // Ljava/lang/String; header
+    |               INVOKEVIRTUAL java.util.Properties.storeToXML (Ljava/io/OutputStream;Ljava/lang/String;)V
+    catch java.lang.NoSuchMethodError -> E0
+                    GOTO L0
+                E0: ASTORE 4   (line 243)
+                    NEW java.io.IOException   (line 244)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Cannot store properties XML file - not running on JDK 1.5+: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/lang/NoSuchMethodError; err
+                    INVOKEVIRTUAL java.lang.NoSuchMethodError.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.io.IOException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: RETURN   (line 246)
+  end public void storeToXml(java.util.Properties, java.io.OutputStream, String) throws java.io.IOException
+
+  public void storeToXml(java.util.Properties, java.io.OutputStream, String, String) throws java.io.IOException:
+    catch java.lang.NoSuchMethodError -> E0
+    |               ALOAD_1     // Ljava/util/Properties; props   (line 250)
+    |               ALOAD_2     // Ljava/io/OutputStream; os
+    |               ALOAD_3     // Ljava/lang/String; header
+    |               ALOAD 4     // Ljava/lang/String; encoding
+    |               INVOKEVIRTUAL java.util.Properties.storeToXML (Ljava/io/OutputStream;Ljava/lang/String;Ljava/lang/String;)V
+    catch java.lang.NoSuchMethodError -> E0
+                    GOTO L0
+                E0: ASTORE 5   (line 252)
+                    NEW java.io.IOException   (line 253)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Cannot store properties XML file - not running on JDK 1.5+: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 5     // Ljava/lang/NoSuchMethodError; err
+                    INVOKEVIRTUAL java.lang.NoSuchMethodError.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.io.IOException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: RETURN   (line 255)
+  end public void storeToXml(java.util.Properties, java.io.OutputStream, String, String) throws java.io.IOException
+end public class org.springframework.util.DefaultPropertiesPersister
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:665)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:615)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1752)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1464)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1273)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:394)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:281)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:95)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:52)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.<init>(PropertiesLoaderSupport.java:58)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.<init>(PropertyResourceConfigurer.java:52)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.<init>(PlaceholderConfigurerSupport.java:88)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.<init>(PropertySourcesPlaceholderConfigurer.java:64)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:76)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:990)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:943)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:649)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.curso.spring.springioc0007.Main.init(Main.java:29)
+	at com.curso.spring.springioc0007.Main.main(Main.java:24)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

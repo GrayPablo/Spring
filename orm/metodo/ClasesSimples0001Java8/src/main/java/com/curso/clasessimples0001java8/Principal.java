@@ -46,7 +46,6 @@ public class Principal {
             s.update(u);
             return u;
         }, usuarioInmutable.conNombre("Otro nombre")).ifPresent(out::println);
-
         runQuery((q, s) -> s.createQuery(q).list(), "from UsuarioInmutable").ifPresent(out::println);
 
         run((u, s) -> {

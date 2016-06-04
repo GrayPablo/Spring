@@ -5,9 +5,9 @@ import com.curso.springdaohibernate.dominio.Persona;
 
 import com.curso.springdaohibernate.servicios.ServicioPersona;
 import static java.lang.System.out;
-import java.util.List;
-import java.util.logging.Level;
+import java.util.function.IntConsumer;
 import java.util.logging.Logger;
+import java.util.stream.IntStream;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -16,28 +16,27 @@ import org.springframework.dao.DataAccessException;
 public class Principal {
 
     private ApplicationContext ctx;
-    private static final Logger logger = Logger.getAnonymousLogger();
+    private static final Logger LOGGER = Logger.getAnonymousLogger();
 
     public Principal() {
     }
 
     public static void main(String[] args) {
-        Principal principal = new Principal();
-        principal.cargarContexto();
-        principal.cargarDatosPrueba();
-        principal.probarAccesoDatos();
-        principal.probarAspectoRecuperacion();
+        new Principal()
+                .cargarContexto()
+                .cargarDatosPrueba()
+                .probarAccesoDatos()
+                .probarAspectoRecuperacion();                
     }
 
-    private void cargarContexto() {
-        String[] paths
-                = {"applicationContext.xml", "daoContext.xml", "aspectosContext.xml"};
-        ctx = new ClassPathXmlApplicationContext(paths);
+    private Principal cargarContexto() {
+        ctx = new ClassPathXmlApplicationContext("applicationContext.xml", "daoContext.xml", "aspectosContext.xml");
         System.out.println("Contexto cargado");
+        return this;
     }
 
-    private void probarAccesoDatos() {
-        ServicioPersona s = (ServicioPersona) ctx.getBean("servicioPersona");
+    private Principal probarAccesoDatos() {
+        ServicioPersona s =  ctx.getBean(ServicioPersona.class);
         System.out.printf("Hay %d personas en la base de datos\n",
                 s.getNumeroDePersonas());
         System.out.println("************************************************");
@@ -63,30 +62,42 @@ public class Principal {
         System.out.println("Aficiones de la persona con id 2 de una tercera forma");
         s.getAficionesDeOtraManeraMas(2).forEach(out::println);
         System.out.println("************************************************");
+        return this;
     }
 
-    private void cargarDatosPrueba() {
-        ServicioPersona s = (ServicioPersona) ctx.getBean("servicioPersona");
-        logger.log(Level.INFO, "Servicio de personas encontrado");
-        for (int i = 0; i < 10; i++) {
-            Persona p = new Persona();
-            p.setNombre("pepe" + i);
-            Aficion a = new Aficion();
-            a.setNombre("Afición" + i);
-            a.setPersona(p);
-            p.getAficionesInternas().add(a);
-            s.insertPersona(p);
+    private static class Consumidor implements IntConsumer {
+
+        private final ServicioPersona sp;
+
+        public Consumidor(ServicioPersona sp) {
+            System.out.println("ServicioPersonas encontrado");
+            this.sp = sp;
         }
-        System.out.println("************************************************");
+
+        @Override
+        public void accept(int numero) {
+            Persona p = new Persona("pepe" + numero);
+            Aficion a = new Aficion("Afición" + numero, p);
+            p.nuevaAficion(a);
+            sp.insertPersona(p);
+        }
+
     }
 
-    private void probarAspectoRecuperacion() {
-        ServicioPersona s = (ServicioPersona) ctx.getBean("servicioPersona");
+    private Principal cargarDatosPrueba() {
+        IntStream.range(0, 10).forEach(new Consumidor(ctx.getBean(ServicioPersona.class)));
+        System.out.println("************************************************");
+        return this;
+    }
+
+    private Principal probarAspectoRecuperacion() {
+        ServicioPersona s = ctx.getBean(ServicioPersona.class);
         System.out.println("Probando el aspecto de recuperación...");
         try {
             Persona p = s.getPersona(20000);
         } catch (DataAccessException e) {
             System.out.println("Excepción de tipo DataAccessException");
         }
+        return this;
     }
 }

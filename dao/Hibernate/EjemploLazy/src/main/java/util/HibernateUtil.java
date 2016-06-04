@@ -9,13 +9,14 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
+
 /**
  *
  * @author Chema
  */
 public class HibernateUtil {
 
-    private static final SessionFactory sessionFactory;
+    private static final SessionFactory SESSIONFACTORY;
 
     static {
         try {
@@ -23,7 +24,7 @@ public class HibernateUtil {
             Configuration conf = new Configuration().configure();
             ServiceRegistry s = new ServiceRegistryBuilder().applySettings(
                     conf.getProperties()).buildServiceRegistry();
-            sessionFactory = conf.buildSessionFactory(s);
+            SESSIONFACTORY = conf.buildSessionFactory(s);
             System.out.println("Factoría de sesiones creada.");
         } catch (Throwable ex) {
             System.err.println("La creación de la factoría de sesiones ha fallado." + ex);
@@ -32,6 +33,6 @@ public class HibernateUtil {
     }
 
     public static SessionFactory getSessionFactory() {
-        return sessionFactory;
+        return SESSIONFACTORY;
     }
 }

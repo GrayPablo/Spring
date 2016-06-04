@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+">
+    <!-- Bean configuration -->
+   
+    <bean id="proxyBean"
+          class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="proxyInterfaces">
+            <value>com.curso.ejemploafterthrowingadvice.InterfaceSimple</value>
+        </property>
+        <property name="target" ref="beanTarget"/>
+        <property name="interceptorNames">
+            <list>
+                <value>theTracingThrowsAdvisor</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- Bean Classes -->
+    <bean id="beanTarget" class="com.curso.ejemploafterthrowingadvice.InterfaceSimpleImpl" />
+
+    <!-- Advisor pointcut definition for before advice -->
+    <bean id="theTracingThrowsAdvisor"
+          class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice" ref="theTracingThrowsAdvice"/>
+        <property name="pattern">
+            <value>.*</value>
+        </property>
+    </bean>
+
+    <!-- Advice classes -->
+    <bean id="theTracingThrowsAdvice"
+          class="com.curso.ejemploafterthrowingadvice.EjemploAfterThrowingAdvice" />
+
+</beans>

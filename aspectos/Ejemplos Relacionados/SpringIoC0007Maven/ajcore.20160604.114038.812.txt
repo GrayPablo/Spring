@@ -1,0 +1,566 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114038.812.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+info using configuration file:/C:/Users/usuario/.m2/repository/org/springframework/spring-aspects/3.1.2.RELEASE/spring-aspects-3.1.2.RELEASE.jar!/META-INF/aop.xml
+debug weaving 'org.springframework.core.Constants'
+abort trouble in: 
+public class org.springframework.core.Constants extends java.lang.Object:
+  private final String className
+  private final java.util.Map fieldCache [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)]
+  public void <init>(Class):
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 61)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.Constants.<init>(java.lang.Class))
+    |               ALOAD_0     // Lorg/springframework/core/Constants; this   (line 52)
+    |               NEW java.util.HashMap
+    |               DUP
+    |               INVOKESPECIAL java.util.HashMap.<init> ()V
+    |               PUTFIELD org.springframework.core.Constants.fieldCache Ljava/util/Map;
+    |               ALOAD_1     // Ljava/lang/Class; clazz   (line 62)
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;)V
+    |               ALOAD_0     // Lorg/springframework/core/Constants; this   (line 63)
+    |               ALOAD_1     // Ljava/lang/Class; clazz
+    |               INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    |               PUTFIELD org.springframework.core.Constants.className Ljava/lang/String;
+    |               ALOAD_1     // Ljava/lang/Class; clazz   (line 64)
+    |               INVOKEVIRTUAL java.lang.Class.getFields ()[Ljava/lang/reflect/Field;
+    |               ASTORE_2
+    |               ALOAD_2     // [Ljava/lang/reflect/Field; fields   (line 65)
+    |               DUP
+    |               ASTORE 6
+    |               ARRAYLENGTH
+    |               ISTORE 5
+    |               ICONST_0
+    |               ISTORE 4
+    |               GOTO L2
+    |           L0: ALOAD 6
+    |               ILOAD 4
+    |               AALOAD
+    |               ASTORE_3
+    |               ALOAD_3     // Ljava/lang/reflect/Field; field   (line 66)
+    |               INVOKESTATIC org.springframework.util.ReflectionUtils.isPublicStaticFinal (Ljava/lang/reflect/Field;)Z
+    |               IFEQ L1
+    |               ALOAD_3     // Ljava/lang/reflect/Field; field   (line 67)
+    |               INVOKEVIRTUAL java.lang.reflect.Field.getName ()Ljava/lang/String;
+    |               ASTORE 7
+    | catch java.lang.IllegalAccessException -> E0
+    | |             ALOAD_3     // Ljava/lang/reflect/Field; field   (line 69)
+    | |             ACONST_NULL
+    | |             INVOKEVIRTUAL java.lang.reflect.Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+    | |             ASTORE 8
+    | |             ALOAD_0     // Lorg/springframework/core/Constants; this   (line 70)
+    | |             GETFIELD org.springframework.core.Constants.fieldCache Ljava/util/Map;
+    | |             ALOAD 7     // Ljava/lang/String; name
+    | |             ALOAD 8     // Ljava/lang/Object; value
+    | |             INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    | |             POP
+    | catch java.lang.IllegalAccessException -> E0
+    |               GOTO L1
+    |           E0: POP   (line 72)
+    |           L1: IINC 4 1   (line 65)
+    |           L2: ILOAD 4
+    |               ILOAD 5
+    |               IF_ICMPLT L0
+    |               RETURN   (line 77)
+    constructor-execution(void org.springframework.core.Constants.<init>(java.lang.Class))
+  end public void <init>(Class)
+
+  public final String getClassName():
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 84)
+                    GETFIELD org.springframework.core.Constants.className Ljava/lang/String;
+                    ARETURN
+  end public final String getClassName()
+
+  public final int getSize():
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 91)
+                    GETFIELD org.springframework.core.Constants.fieldCache Ljava/util/Map;
+                    INVOKEINTERFACE java.util.Map.size ()I
+                    IRETURN
+  end public final int getSize()
+
+  protected final java.util.Map getFieldCache():
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 99)
+                    GETFIELD org.springframework.core.Constants.fieldCache Ljava/util/Map;
+                    ARETURN
+  end protected final java.util.Map getFieldCache()
+
+  public Number asNumber(String) throws org.springframework.core.ConstantException:
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 112)
+                    ALOAD_1     // Ljava/lang/String; code
+                    INVOKEVIRTUAL org.springframework.core.Constants.asObject (Ljava/lang/String;)Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Object; obj   (line 113)
+                    INSTANCEOF java.lang.Number
+                    IFNE L0
+                    NEW org.springframework.core.ConstantException   (line 114)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/Constants; this
+                    GETFIELD org.springframework.core.Constants.className Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/String; code
+                    LDC "not a Number"
+                    INVOKESPECIAL org.springframework.core.ConstantException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_2     // Ljava/lang/Object; obj   (line 116)
+                    CHECKCAST java.lang.Number
+                    ARETURN
+  end public Number asNumber(String) throws org.springframework.core.ConstantException
+
+  public String asString(String) throws org.springframework.core.ConstantException:
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 128)
+                    ALOAD_1     // Ljava/lang/String; code
+                    INVOKEVIRTUAL org.springframework.core.Constants.asObject (Ljava/lang/String;)Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.Object.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String asString(String) throws org.springframework.core.ConstantException
+
+  public Object asObject(String) throws org.springframework.core.ConstantException:
+                    ALOAD_1     // Ljava/lang/String; code   (line 140)
+                    LDC "Code must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; code   (line 141)
+                    GETSTATIC java.util.Locale.ENGLISH Ljava/util/Locale;
+                    INVOKEVIRTUAL java.lang.String.toUpperCase (Ljava/util/Locale;)Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 142)
+                    GETFIELD org.springframework.core.Constants.fieldCache Ljava/util/Map;
+                    ALOAD_2     // Ljava/lang/String; codeToUse
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/Object; val   (line 143)
+                    IFNONNULL L0
+                    NEW org.springframework.core.ConstantException   (line 144)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/Constants; this
+                    GETFIELD org.springframework.core.Constants.className Ljava/lang/String;
+                    ALOAD_2     // Ljava/lang/String; codeToUse
+                    LDC "not found"
+                    INVOKESPECIAL org.springframework.core.ConstantException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_3     // Ljava/lang/Object; val   (line 146)
+                    ARETURN
+  end public Object asObject(String) throws org.springframework.core.ConstantException
+
+  public java.util.Set getNames(String):
+                    ALOAD_1     // Ljava/lang/String; namePrefix   (line 161)
+                    IFNULL L0
+                    ALOAD_1     // Ljava/lang/String; namePrefix
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    GETSTATIC java.util.Locale.ENGLISH Ljava/util/Locale;
+                    INVOKEVIRTUAL java.lang.String.toUpperCase (Ljava/util/Locale;)Ljava/lang/String;
+                    GOTO L1
+                L0: LDC ""
+                L1: ASTORE_2
+                    NEW java.util.HashSet   (line 162)
+                    DUP
+                    INVOKESPECIAL java.util.HashSet.<init> ()V
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 163)
+                    GETFIELD org.springframework.core.Constants.fieldCache Ljava/util/Map;
+                    INVOKEINTERFACE java.util.Map.keySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 5
+                    GOTO L3
+                L2: ALOAD 5
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/String; code   (line 164)
+                    ALOAD_2     // Ljava/lang/String; prefixToUse
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L3
+                    ALOAD_3     // Ljava/util/Set; names   (line 165)
+                    ALOAD 4     // Ljava/lang/String; code
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L3: ALOAD 5   (line 163)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L2
+                    ALOAD_3     // Ljava/util/Set; names   (line 168)
+                    ARETURN
+  end public java.util.Set getNames(String)
+
+  public java.util.Set getNamesForProperty(String):
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 179)
+                    ALOAD_0     // Lorg/springframework/core/Constants; this
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL org.springframework.core.Constants.propertyToConstantNamePrefix (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.core.Constants.getNames (Ljava/lang/String;)Ljava/util/Set;
+                    ARETURN
+  end public java.util.Set getNamesForProperty(String)
+
+  public java.util.Set getNamesForSuffix(String):
+                    ALOAD_1     // Ljava/lang/String; nameSuffix   (line 193)
+                    IFNULL L0
+                    ALOAD_1     // Ljava/lang/String; nameSuffix
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    GETSTATIC java.util.Locale.ENGLISH Ljava/util/Locale;
+                    INVOKEVIRTUAL java.lang.String.toUpperCase (Ljava/util/Locale;)Ljava/lang/String;
+                    GOTO L1
+                L0: LDC ""
+                L1: ASTORE_2
+                    NEW java.util.HashSet   (line 194)
+                    DUP
+                    INVOKESPECIAL java.util.HashSet.<init> ()V
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 195)
+                    GETFIELD org.springframework.core.Constants.fieldCache Ljava/util/Map;
+                    INVOKEINTERFACE java.util.Map.keySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 5
+                    GOTO L3
+                L2: ALOAD 5
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/String; code   (line 196)
+                    ALOAD_2     // Ljava/lang/String; suffixToUse
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L3
+                    ALOAD_3     // Ljava/util/Set; names   (line 197)
+                    ALOAD 4     // Ljava/lang/String; code
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L3: ALOAD 5   (line 195)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L2
+                    ALOAD_3     // Ljava/util/Set; names   (line 200)
+                    ARETURN
+  end public java.util.Set getNamesForSuffix(String)
+
+  public java.util.Set getValues(String):
+                    ALOAD_1     // Ljava/lang/String; namePrefix   (line 215)
+                    IFNULL L0
+                    ALOAD_1     // Ljava/lang/String; namePrefix
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    GETSTATIC java.util.Locale.ENGLISH Ljava/util/Locale;
+                    INVOKEVIRTUAL java.lang.String.toUpperCase (Ljava/util/Locale;)Ljava/lang/String;
+                    GOTO L1
+                L0: LDC ""
+                L1: ASTORE_2
+                    NEW java.util.HashSet   (line 216)
+                    DUP
+                    INVOKESPECIAL java.util.HashSet.<init> ()V
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 217)
+                    GETFIELD org.springframework.core.Constants.fieldCache Ljava/util/Map;
+                    INVOKEINTERFACE java.util.Map.keySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 5
+                    GOTO L3
+                L2: ALOAD 5
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/String; code   (line 218)
+                    ALOAD_2     // Ljava/lang/String; prefixToUse
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L3
+                    ALOAD_3     // Ljava/util/Set; values   (line 219)
+                    ALOAD_0     // Lorg/springframework/core/Constants; this
+                    GETFIELD org.springframework.core.Constants.fieldCache Ljava/util/Map;
+                    ALOAD 4     // Ljava/lang/String; code
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L3: ALOAD 5   (line 217)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L2
+                    ALOAD_3     // Ljava/util/Set; values   (line 222)
+                    ARETURN
+  end public java.util.Set getValues(String)
+
+  public java.util.Set getValuesForProperty(String):
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 233)
+                    ALOAD_0     // Lorg/springframework/core/Constants; this
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL org.springframework.core.Constants.propertyToConstantNamePrefix (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.core.Constants.getValues (Ljava/lang/String;)Ljava/util/Set;
+                    ARETURN
+  end public java.util.Set getValuesForProperty(String)
+
+  public java.util.Set getValuesForSuffix(String):
+                    ALOAD_1     // Ljava/lang/String; nameSuffix   (line 247)
+                    IFNULL L0
+                    ALOAD_1     // Ljava/lang/String; nameSuffix
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    GETSTATIC java.util.Locale.ENGLISH Ljava/util/Locale;
+                    INVOKEVIRTUAL java.lang.String.toUpperCase (Ljava/util/Locale;)Ljava/lang/String;
+                    GOTO L1
+                L0: LDC ""
+                L1: ASTORE_2
+                    NEW java.util.HashSet   (line 248)
+                    DUP
+                    INVOKESPECIAL java.util.HashSet.<init> ()V
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 249)
+                    GETFIELD org.springframework.core.Constants.fieldCache Ljava/util/Map;
+                    INVOKEINTERFACE java.util.Map.keySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 5
+                    GOTO L3
+                L2: ALOAD 5
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/String; code   (line 250)
+                    ALOAD_2     // Ljava/lang/String; suffixToUse
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L3
+                    ALOAD_3     // Ljava/util/Set; values   (line 251)
+                    ALOAD_0     // Lorg/springframework/core/Constants; this
+                    GETFIELD org.springframework.core.Constants.fieldCache Ljava/util/Map;
+                    ALOAD 4     // Ljava/lang/String; code
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L3: ALOAD 5   (line 249)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L2
+                    ALOAD_3     // Ljava/util/Set; values   (line 254)
+                    ARETURN
+  end public java.util.Set getValuesForSuffix(String)
+
+  public String toCode(Object, String) throws org.springframework.core.ConstantException:
+                    ALOAD_2     // Ljava/lang/String; namePrefix   (line 267)
+                    IFNULL L0
+                    ALOAD_2     // Ljava/lang/String; namePrefix
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    GETSTATIC java.util.Locale.ENGLISH Ljava/util/Locale;
+                    INVOKEVIRTUAL java.lang.String.toUpperCase (Ljava/util/Locale;)Ljava/lang/String;
+                    GOTO L1
+                L0: ACONST_NULL
+                L1: ASTORE_3
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 268)
+                    GETFIELD org.springframework.core.Constants.fieldCache Ljava/util/Map;
+                    INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 5
+                    GOTO L3
+                L2: ALOAD 5
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.util.Map$Entry
+                    ASTORE 4
+                    ALOAD 4     // Ljava/util/Map$Entry; entry   (line 269)
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ALOAD_3     // Ljava/lang/String; prefixToUse
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L3
+                    ALOAD 4     // Ljava/util/Map$Entry; entry
+                    INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L3
+                    ALOAD 4     // Ljava/util/Map$Entry; entry   (line 270)
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ARETURN
+                L3: ALOAD 5   (line 268)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L2
+                    NEW org.springframework.core.ConstantException   (line 273)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/Constants; this
+                    GETFIELD org.springframework.core.Constants.className Ljava/lang/String;
+                    ALOAD_3     // Ljava/lang/String; prefixToUse
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKESPECIAL org.springframework.core.ConstantException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+                    ATHROW
+  end public String toCode(Object, String) throws org.springframework.core.ConstantException
+
+  public String toCodeForProperty(Object, String) throws org.springframework.core.ConstantException:
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 286)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    ALOAD_0     // Lorg/springframework/core/Constants; this
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL org.springframework.core.Constants.propertyToConstantNamePrefix (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.core.Constants.toCode (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end public String toCodeForProperty(Object, String) throws org.springframework.core.ConstantException
+
+  public String toCodeForSuffix(Object, String) throws org.springframework.core.ConstantException:
+                    ALOAD_2     // Ljava/lang/String; nameSuffix   (line 298)
+                    IFNULL L0
+                    ALOAD_2     // Ljava/lang/String; nameSuffix
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    GETSTATIC java.util.Locale.ENGLISH Ljava/util/Locale;
+                    INVOKEVIRTUAL java.lang.String.toUpperCase (Ljava/util/Locale;)Ljava/lang/String;
+                    GOTO L1
+                L0: ACONST_NULL
+                L1: ASTORE_3
+                    ALOAD_0     // Lorg/springframework/core/Constants; this   (line 299)
+                    GETFIELD org.springframework.core.Constants.fieldCache Ljava/util/Map;
+                    INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 5
+                    GOTO L3
+                L2: ALOAD 5
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.util.Map$Entry
+                    ASTORE 4
+                    ALOAD 4     // Ljava/util/Map$Entry; entry   (line 300)
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ALOAD_3     // Ljava/lang/String; suffixToUse
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L3
+                    ALOAD 4     // Ljava/util/Map$Entry; entry
+                    INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L3
+                    ALOAD 4     // Ljava/util/Map$Entry; entry   (line 301)
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ARETURN
+                L3: ALOAD 5   (line 299)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L2
+                    NEW org.springframework.core.ConstantException   (line 304)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/Constants; this
+                    GETFIELD org.springframework.core.Constants.className Ljava/lang/String;
+                    ALOAD_3     // Ljava/lang/String; suffixToUse
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKESPECIAL org.springframework.core.ConstantException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+                    ATHROW
+  end public String toCodeForSuffix(Object, String) throws org.springframework.core.ConstantException
+
+  public String propertyToConstantNamePrefix(String):
+                    NEW java.lang.StringBuilder   (line 322)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 323)
+                    ISTORE_3
+                    GOTO L3
+                L0: ALOAD_1     // Ljava/lang/String; propertyName   (line 324)
+                    ILOAD_3     // I i
+                    INVOKEVIRTUAL java.lang.String.charAt (I)C
+                    ISTORE 4
+                    ILOAD 4     // C c   (line 325)
+                    INVOKESTATIC java.lang.Character.isUpperCase (C)Z
+                    IFEQ L1
+                    ALOAD_2     // Ljava/lang/StringBuilder; parsedPrefix   (line 326)
+                    LDC "_"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_2     // Ljava/lang/StringBuilder; parsedPrefix   (line 327)
+                    ILOAD 4     // C c
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L2
+                L1: ALOAD_2     // Ljava/lang/StringBuilder; parsedPrefix   (line 330)
+                    ILOAD 4     // C c
+                    INVOKESTATIC java.lang.Character.toUpperCase (C)C
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+                L2: IINC_3 1     // I i   (line 323)
+                L3: ILOAD_3     // I i
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IF_ICMPLT L0
+                    ALOAD_2     // Ljava/lang/StringBuilder; parsedPrefix   (line 333)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String propertyToConstantNamePrefix(String)
+
+end public class org.springframework.core.Constants
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.core.ConstantException'
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

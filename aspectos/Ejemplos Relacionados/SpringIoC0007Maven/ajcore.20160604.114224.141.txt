@@ -1,0 +1,1953 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114224.141.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.core.convert.TypeDescriptor extends java.lang.Object:
+  static final java.lang.annotation.Annotation[] EMPTY_ANNOTATION_ARRAY
+  private static final java.util.Map typeDescriptorCache [Signature(Ljava/util/Map<Ljava/lang/Class<*>;Lorg/springframework/core/convert/TypeDescriptor;>;)]
+  private final Class type [Signature(Ljava/lang/Class<*>;)]
+  private final org.springframework.core.convert.TypeDescriptor elementTypeDescriptor
+  private final org.springframework.core.convert.TypeDescriptor mapKeyTypeDescriptor
+  private final org.springframework.core.convert.TypeDescriptor mapValueTypeDescriptor
+  private final java.lang.annotation.Annotation[] annotations
+  static void <clinit>():
+    staticinitialization(void org.springframework.core.convert.TypeDescriptor.<clinit>())
+    |               ICONST_0   (line 39)
+    |               ANEWARRAY java.lang.annotation.Annotation
+    |               PUTSTATIC org.springframework.core.convert.TypeDescriptor.EMPTY_ANNOTATION_ARRAY [Ljava/lang/annotation/Annotation;
+    |               NEW java.util.HashMap   (line 41)
+    |               DUP
+    |               INVOKESPECIAL java.util.HashMap.<init> ()V
+    |               PUTSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 44)
+    |               GETSTATIC java.lang.Boolean.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Boolean.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 45)
+    |               LDC java.lang.Boolean
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Boolean
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 46)
+    |               GETSTATIC java.lang.Byte.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Byte.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 47)
+    |               LDC java.lang.Byte
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Byte
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 48)
+    |               GETSTATIC java.lang.Character.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Character.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 49)
+    |               LDC java.lang.Character
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Character
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 50)
+    |               GETSTATIC java.lang.Short.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Short.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 51)
+    |               LDC java.lang.Short
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Short
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 52)
+    |               GETSTATIC java.lang.Integer.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Integer.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 53)
+    |               LDC java.lang.Integer
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Integer
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 54)
+    |               GETSTATIC java.lang.Long.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Long.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 55)
+    |               LDC java.lang.Long
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Long
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 56)
+    |               GETSTATIC java.lang.Float.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Float.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 57)
+    |               LDC java.lang.Float
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Float
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 58)
+    |               GETSTATIC java.lang.Double.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Double.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 59)
+    |               LDC java.lang.Double
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Double
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 60)
+    |               LDC java.lang.String
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.String
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               RETURN   (line 37)
+    staticinitialization(void org.springframework.core.convert.TypeDescriptor.<clinit>())
+  end static void <clinit>()
+
+  public void <init>(org.springframework.core.MethodParameter):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 81)
+                    NEW org.springframework.core.convert.ParameterDescriptor
+                    DUP
+                    ALOAD_1     // Lorg/springframework/core/MethodParameter; methodParameter
+                    INVOKESPECIAL org.springframework.core.convert.ParameterDescriptor.<init> (Lorg/springframework/core/MethodParameter;)V
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Lorg/springframework/core/convert/AbstractDescriptor;)V
+    constructor-execution(void org.springframework.core.convert.TypeDescriptor.<init>(org.springframework.core.MethodParameter))
+    |               RETURN   (line 82)
+    constructor-execution(void org.springframework.core.convert.TypeDescriptor.<init>(org.springframework.core.MethodParameter))
+  end public void <init>(org.springframework.core.MethodParameter)
+
+  public void <init>(java.lang.reflect.Field):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 90)
+                    NEW org.springframework.core.convert.FieldDescriptor
+                    DUP
+                    ALOAD_1     // Ljava/lang/reflect/Field; field
+                    INVOKESPECIAL org.springframework.core.convert.FieldDescriptor.<init> (Ljava/lang/reflect/Field;)V
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Lorg/springframework/core/convert/AbstractDescriptor;)V
+    constructor-execution(void org.springframework.core.convert.TypeDescriptor.<init>(java.lang.reflect.Field))
+    |               RETURN   (line 91)
+    constructor-execution(void org.springframework.core.convert.TypeDescriptor.<init>(java.lang.reflect.Field))
+  end public void <init>(java.lang.reflect.Field)
+
+  public void <init>(org.springframework.core.convert.Property):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 99)
+                    NEW org.springframework.core.convert.BeanPropertyDescriptor
+                    DUP
+                    ALOAD_1     // Lorg/springframework/core/convert/Property; property
+                    INVOKESPECIAL org.springframework.core.convert.BeanPropertyDescriptor.<init> (Lorg/springframework/core/convert/Property;)V
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Lorg/springframework/core/convert/AbstractDescriptor;)V
+    constructor-execution(void org.springframework.core.convert.TypeDescriptor.<init>(org.springframework.core.convert.Property))
+    |               RETURN   (line 100)
+    constructor-execution(void org.springframework.core.convert.TypeDescriptor.<init>(org.springframework.core.convert.Property))
+  end public void <init>(org.springframework.core.convert.Property)
+
+  public static org.springframework.core.convert.TypeDescriptor valueOf(Class):
+                    GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 111)
+                    ALOAD_0     // Ljava/lang/Class; type
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.convert.TypeDescriptor
+                    ASTORE_1
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; desc   (line 112)
+                    IFNULL L0
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; desc
+                    GOTO L1
+                L0: NEW org.springframework.core.convert.TypeDescriptor
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; type
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+                L1: ARETURN
+  end public static org.springframework.core.convert.TypeDescriptor valueOf(Class)
+
+  public static org.springframework.core.convert.TypeDescriptor collection(Class, org.springframework.core.convert.TypeDescriptor):
+                    LDC java.util.Collection   (line 125)
+                    ALOAD_0     // Ljava/lang/Class; collectionType
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFNE L0
+                    NEW java.lang.IllegalArgumentException   (line 126)
+                    DUP
+                    LDC "collectionType must be a java.util.Collection"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: NEW org.springframework.core.convert.TypeDescriptor   (line 128)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; collectionType
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; elementTypeDescriptor
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;)V
+                    ARETURN
+  end public static org.springframework.core.convert.TypeDescriptor collection(Class, org.springframework.core.convert.TypeDescriptor)
+
+  public static org.springframework.core.convert.TypeDescriptor map(Class, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor):
+                    LDC java.util.Map   (line 142)
+                    ALOAD_0     // Ljava/lang/Class; mapType
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFNE L0
+                    NEW java.lang.IllegalArgumentException   (line 143)
+                    DUP
+                    LDC "mapType must be a java.util.Map"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: NEW org.springframework.core.convert.TypeDescriptor   (line 145)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; mapType
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; keyTypeDescriptor
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; valueTypeDescriptor
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)V
+                    ARETURN
+  end public static org.springframework.core.convert.TypeDescriptor map(Class, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor)
+
+  public static org.springframework.core.convert.TypeDescriptor nested(org.springframework.core.MethodParameter, int):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; methodParameter   (line 163)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getNestingLevel ()I
+                    ICONST_1
+                    IF_ICMPEQ L0
+                    NEW java.lang.IllegalArgumentException   (line 164)
+                    DUP
+                    LDC "methodParameter nesting level must be 1: use the nestingLevel parameter to specify the desired nestingLevel for nested type traversal"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: NEW org.springframework.core.convert.ParameterDescriptor   (line 166)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; methodParameter
+                    INVOKESPECIAL org.springframework.core.convert.ParameterDescriptor.<init> (Lorg/springframework/core/MethodParameter;)V
+                    ILOAD_1     // I nestingLevel
+                    INVOKESTATIC org.springframework.core.convert.TypeDescriptor.nested (Lorg/springframework/core/convert/AbstractDescriptor;I)Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public static org.springframework.core.convert.TypeDescriptor nested(org.springframework.core.MethodParameter, int)
+
+  public static org.springframework.core.convert.TypeDescriptor nested(java.lang.reflect.Field, int):
+                    NEW org.springframework.core.convert.FieldDescriptor   (line 183)
+                    DUP
+                    ALOAD_0     // Ljava/lang/reflect/Field; field
+                    INVOKESPECIAL org.springframework.core.convert.FieldDescriptor.<init> (Ljava/lang/reflect/Field;)V
+                    ILOAD_1     // I nestingLevel
+                    INVOKESTATIC org.springframework.core.convert.TypeDescriptor.nested (Lorg/springframework/core/convert/AbstractDescriptor;I)Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public static org.springframework.core.convert.TypeDescriptor nested(java.lang.reflect.Field, int)
+
+  public static org.springframework.core.convert.TypeDescriptor nested(org.springframework.core.convert.Property, int):
+                    NEW org.springframework.core.convert.BeanPropertyDescriptor   (line 200)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/convert/Property; property
+                    INVOKESPECIAL org.springframework.core.convert.BeanPropertyDescriptor.<init> (Lorg/springframework/core/convert/Property;)V
+                    ILOAD_1     // I nestingLevel
+                    INVOKESTATIC org.springframework.core.convert.TypeDescriptor.nested (Lorg/springframework/core/convert/AbstractDescriptor;I)Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public static org.springframework.core.convert.TypeDescriptor nested(org.springframework.core.convert.Property, int)
+
+  public static org.springframework.core.convert.TypeDescriptor forObject(Object):
+                    ALOAD_0     // Ljava/lang/Object; source   (line 211)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/Object; source
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.core.convert.TypeDescriptor.valueOf (Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;
+                    GOTO L1
+                L0: ACONST_NULL
+                L1: ARETURN
+  end public static org.springframework.core.convert.TypeDescriptor forObject(Object)
+
+  public Class getType():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 223)
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.type Ljava/lang/Class;
+                    ARETURN
+  end public Class getType()
+
+  public Class getObjectType():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 231)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.resolvePrimitiveIfNecessary (Ljava/lang/Class;)Ljava/lang/Class;
+                    ARETURN
+  end public Class getObjectType()
+
+  public org.springframework.core.convert.TypeDescriptor narrow(Object):
+                    ALOAD_1     // Ljava/lang/Object; value   (line 246)
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 247)
+                    ARETURN
+                L0: NEW org.springframework.core.convert.TypeDescriptor   (line 249)
+                    DUP
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.elementTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 250)
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.mapKeyTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.mapValueTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.annotations [Ljava/lang/annotation/Annotation;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;[Ljava/lang/annotation/Annotation;)V   (line 249)
+                    ARETURN
+  end public org.springframework.core.convert.TypeDescriptor narrow(Object)
+
+  public String getName():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 257)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.getQualifiedName (Ljava/lang/Class;)Ljava/lang/String;
+                    ARETURN
+  end public String getName()
+
+  public boolean isPrimitive():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 264)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IRETURN
+  end public boolean isPrimitive()
+
+  public java.lang.annotation.Annotation[] getAnnotations():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 272)
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.annotations [Ljava/lang/annotation/Annotation;
+                    ARETURN
+  end public java.lang.annotation.Annotation[] getAnnotations()
+
+  public java.lang.annotation.Annotation getAnnotation(Class):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 280)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getAnnotations ()[Ljava/lang/annotation/Annotation;
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L2
+                L0: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/annotation/Annotation; annotation   (line 281)
+                    INVOKEINTERFACE java.lang.annotation.Annotation.annotationType ()Ljava/lang/Class;
+                    ALOAD_1     // Ljava/lang/Class; annotationType
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_2     // Ljava/lang/annotation/Annotation; annotation   (line 282)
+                    ARETURN
+                L1: IINC_3 1   (line 280)
+                L2: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L0
+                    ACONST_NULL   (line 285)
+                    ARETURN
+  end public java.lang.annotation.Annotation getAnnotation(Class)
+
+  public boolean isAssignableTo(org.springframework.core.convert.TypeDescriptor):
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor   (line 299)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getObjectType ()Ljava/lang/Class;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getObjectType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    ISTORE_2
+                    ILOAD_2     // Z typesAssignable   (line 300)
+                    IFNE L0
+                    ICONST_0   (line 301)
+                    IRETURN
+                L0: ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 303)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isArray ()Z
+                    IFEQ L1
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isArray ()Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 304)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isAssignableTo (Lorg/springframework/core/convert/TypeDescriptor;)Z
+                    IRETURN
+                L1: ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 306)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isCollection ()Z
+                    IFEQ L2
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isCollection ()Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 307)
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.isNestedAssignable (Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z
+                    IRETURN
+                L2: ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 309)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isMap ()Z
+                    IFEQ L4
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isMap ()Z
+                    IFEQ L4
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 310)
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.isNestedAssignable (Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z
+                    IFEQ L3
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 311)
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.isNestedAssignable (Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z
+                    IFEQ L3
+                    ICONST_1
+                    IRETURN
+                L3: ICONST_0
+                    IRETURN   (line 310)
+                L4: ICONST_1   (line 314)
+                    IRETURN
+  end public boolean isAssignableTo(org.springframework.core.convert.TypeDescriptor)
+
+  public boolean isCollection():
+                    LDC java.util.Collection   (line 324)
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IRETURN
+  end public boolean isCollection()
+
+  public boolean isArray():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 331)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IRETURN
+  end public boolean isArray()
+
+  public org.springframework.core.convert.TypeDescriptor getElementTypeDescriptor():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 342)
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.assertCollectionOrArray ()V
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 343)
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.elementTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public org.springframework.core.convert.TypeDescriptor getElementTypeDescriptor()
+
+  public org.springframework.core.convert.TypeDescriptor elementTypeDescriptor(Object):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 358)
+                    ALOAD_1     // Ljava/lang/Object; element
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.narrow (Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;)Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public org.springframework.core.convert.TypeDescriptor elementTypeDescriptor(Object)
+
+  public boolean isMap():
+                    LDC java.util.Map   (line 367)
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IRETURN
+  end public boolean isMap()
+
+  public org.springframework.core.convert.TypeDescriptor getMapKeyTypeDescriptor():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 377)
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.assertMap ()V
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 378)
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.mapKeyTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public org.springframework.core.convert.TypeDescriptor getMapKeyTypeDescriptor()
+
+  public org.springframework.core.convert.TypeDescriptor getMapKeyTypeDescriptor(Object):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 393)
+                    ALOAD_1     // Ljava/lang/Object; mapKey
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.narrow (Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;)Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public org.springframework.core.convert.TypeDescriptor getMapKeyTypeDescriptor(Object)
+
+  public org.springframework.core.convert.TypeDescriptor getMapValueTypeDescriptor():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 403)
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.assertMap ()V
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 404)
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.mapValueTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public org.springframework.core.convert.TypeDescriptor getMapValueTypeDescriptor()
+
+  public org.springframework.core.convert.TypeDescriptor getMapValueTypeDescriptor(Object):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 418)
+                    ALOAD_1     // Ljava/lang/Object; mapValue
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.narrow (Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;)Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public org.springframework.core.convert.TypeDescriptor getMapValueTypeDescriptor(Object)
+
+  public Class getElementType():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 431)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    ARETURN
+  end public Class getElementType()
+
+  public Class getMapKeyType():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 441)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    ARETURN
+  end public Class getMapKeyType()
+
+  public Class getMapValueType():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 451)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    ARETURN
+  end public Class getMapValueType()
+
+  void <init>(org.springframework.core.convert.AbstractDescriptor):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 456)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 457)
+                    ALOAD_1     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.AbstractDescriptor.getType ()Ljava/lang/Class;
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.type Ljava/lang/Class;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 458)
+                    ALOAD_1     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.AbstractDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.elementTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 459)
+                    ALOAD_1     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.AbstractDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.mapKeyTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 460)
+                    ALOAD_1     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.AbstractDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.mapValueTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 461)
+                    ALOAD_1     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.AbstractDescriptor.getAnnotations ()[Ljava/lang/annotation/Annotation;
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.annotations [Ljava/lang/annotation/Annotation;
+                    RETURN   (line 462)
+  end void <init>(org.springframework.core.convert.AbstractDescriptor)
+
+  static java.lang.annotation.Annotation[] nullSafeAnnotations(java.lang.annotation.Annotation[]):
+                    ALOAD_0     // [Ljava/lang/annotation/Annotation; annotations   (line 465)
+                    IFNULL L0
+                    ALOAD_0     // [Ljava/lang/annotation/Annotation; annotations
+                    GOTO L1
+                L0: GETSTATIC org.springframework.core.convert.TypeDescriptor.EMPTY_ANNOTATION_ARRAY [Ljava/lang/annotation/Annotation;
+                L1: ARETURN
+  end static java.lang.annotation.Annotation[] nullSafeAnnotations(java.lang.annotation.Annotation[])
+
+  private void <init>(Class):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 472)
+                    NEW org.springframework.core.convert.ClassDescriptor
+                    DUP
+                    ALOAD_1     // Ljava/lang/Class; type
+                    INVOKESPECIAL org.springframework.core.convert.ClassDescriptor.<init> (Ljava/lang/Class;)V
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Lorg/springframework/core/convert/AbstractDescriptor;)V
+                    RETURN   (line 473)
+  end private void <init>(Class)
+
+  private void <init>(Class, org.springframework.core.convert.TypeDescriptor):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 476)
+                    ALOAD_1     // Ljava/lang/Class; collectionType
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; elementTypeDescriptor
+                    ACONST_NULL
+                    ACONST_NULL
+                    GETSTATIC org.springframework.core.convert.TypeDescriptor.EMPTY_ANNOTATION_ARRAY [Ljava/lang/annotation/Annotation;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;[Ljava/lang/annotation/Annotation;)V
+                    RETURN   (line 477)
+  end private void <init>(Class, org.springframework.core.convert.TypeDescriptor)
+
+  private void <init>(Class, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 480)
+                    ALOAD_1     // Ljava/lang/Class; mapType
+                    ACONST_NULL
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; keyTypeDescriptor
+                    ALOAD_3     // Lorg/springframework/core/convert/TypeDescriptor; valueTypeDescriptor
+                    GETSTATIC org.springframework.core.convert.TypeDescriptor.EMPTY_ANNOTATION_ARRAY [Ljava/lang/annotation/Annotation;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;[Ljava/lang/annotation/Annotation;)V
+                    RETURN   (line 481)
+  end private void <init>(Class, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor)
+
+  private void <init>(Class, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor, java.lang.annotation.Annotation[]):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 483)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 486)
+                    ALOAD_1     // Ljava/lang/Class; type
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.type Ljava/lang/Class;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 487)
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; elementTypeDescriptor
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.elementTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 488)
+                    ALOAD_3     // Lorg/springframework/core/convert/TypeDescriptor; mapKeyTypeDescriptor
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.mapKeyTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 489)
+                    ALOAD 4     // Lorg/springframework/core/convert/TypeDescriptor; mapValueTypeDescriptor
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.mapValueTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 490)
+                    ALOAD 5     // [Ljava/lang/annotation/Annotation; annotations
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.annotations [Ljava/lang/annotation/Annotation;
+                    RETURN   (line 491)
+  end private void <init>(Class, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor, java.lang.annotation.Annotation[])
+
+  private static org.springframework.core.convert.TypeDescriptor nested(org.springframework.core.convert.AbstractDescriptor, int):
+                    ICONST_0   (line 494)
+                    ISTORE_2
+                    GOTO L2
+                L0: ALOAD_0     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor   (line 495)
+                    INVOKEVIRTUAL org.springframework.core.convert.AbstractDescriptor.nested ()Lorg/springframework/core/convert/AbstractDescriptor;
+                    ASTORE_0     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor
+                    ALOAD_0     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor   (line 496)
+                    IFNONNULL L1
+                    ACONST_NULL   (line 497)
+                    ARETURN
+                L1: IINC_2 1     // I i   (line 494)
+                L2: ILOAD_2     // I i
+                    ILOAD_1     // I nestingLevel
+                    IF_ICMPLT L0
+                    NEW org.springframework.core.convert.TypeDescriptor   (line 500)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Lorg/springframework/core/convert/AbstractDescriptor;)V
+                    ARETURN
+  end private static org.springframework.core.convert.TypeDescriptor nested(org.springframework.core.convert.AbstractDescriptor, int)
+
+  private void assertCollectionOrArray():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 507)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isCollection ()Z
+                    IFNE L0
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isArray ()Z
+                    IFNE L0
+                    NEW java.lang.IllegalStateException   (line 508)
+                    DUP
+                    LDC_W "Not a java.util.Collection or Array"
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: RETURN   (line 510)
+  end private void assertCollectionOrArray()
+
+  private void assertMap():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 513)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isMap ()Z
+                    IFNE L0
+                    NEW java.lang.IllegalStateException   (line 514)
+                    DUP
+                    LDC_W "Not a java.util.Map"
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: RETURN   (line 516)
+  end private void assertMap()
+
+  private org.springframework.core.convert.TypeDescriptor narrow(Object, org.springframework.core.convert.TypeDescriptor):
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor   (line 519)
+                    IFNULL L0
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor   (line 520)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.narrow (Ljava/lang/Object;)Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+                L0: ALOAD_1     // Ljava/lang/Object; value   (line 523)
+                    IFNULL L1
+                    NEW org.springframework.core.convert.TypeDescriptor
+                    DUP
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ACONST_NULL
+                    ACONST_NULL
+                    ACONST_NULL
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.annotations [Ljava/lang/annotation/Annotation;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;[Ljava/lang/annotation/Annotation;)V
+                    GOTO L2
+                L1: ACONST_NULL
+                L2: ARETURN
+  end private org.springframework.core.convert.TypeDescriptor narrow(Object, org.springframework.core.convert.TypeDescriptor)
+
+  private boolean isNestedAssignable(org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor):
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; nestedTypeDescriptor   (line 528)
+                    IFNULL L0
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; otherNestedTypeDescriptor
+                    IFNONNULL L1
+                L0: ICONST_1   (line 529)
+                    IRETURN
+                L1: ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; nestedTypeDescriptor   (line 531)
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; otherNestedTypeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isAssignableTo (Lorg/springframework/core/convert/TypeDescriptor;)Z
+                    IRETURN
+  end private boolean isNestedAssignable(org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor)
+
+  private String wildcard(org.springframework.core.convert.TypeDescriptor):
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor   (line 535)
+                    IFNULL L0
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.toString ()Ljava/lang/String;
+                    GOTO L1
+                L0: LDC_W "?"
+                L1: ARETURN
+  end private String wildcard(org.springframework.core.convert.TypeDescriptor)
+
+  public boolean equals(Object):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 540)
+                    ALOAD_1     // Ljava/lang/Object; obj
+                    IF_ACMPNE L0
+                    ICONST_1   (line 541)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/Object; obj   (line 543)
+                    INSTANCEOF org.springframework.core.convert.TypeDescriptor
+                    IFNE L1
+                    ICONST_0   (line 544)
+                    IRETURN
+                L1: ALOAD_1     // Ljava/lang/Object; obj   (line 546)
+                    CHECKCAST org.springframework.core.convert.TypeDescriptor
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 547)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; other
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFNE L2
+                    ICONST_0   (line 548)
+                    IRETURN
+                L2: ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 550)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getAnnotations ()[Ljava/lang/annotation/Annotation;
+                    ASTORE_3
+                    ALOAD_3     // [Ljava/lang/annotation/Annotation; annotations   (line 551)
+                    ARRAYLENGTH
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; other
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getAnnotations ()[Ljava/lang/annotation/Annotation;
+                    ARRAYLENGTH
+                    IF_ICMPEQ L3
+                    ICONST_0   (line 552)
+                    IRETURN
+                L3: ALOAD_3     // [Ljava/lang/annotation/Annotation; annotations   (line 554)
+                    DUP
+                    ASTORE 7
+                    ARRAYLENGTH
+                    ISTORE 6
+                    ICONST_0
+                    ISTORE 5
+                    GOTO L6
+                L4: ALOAD 7
+                    ILOAD 5
+                    AALOAD
+                    ASTORE 4
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; other   (line 555)
+                    ALOAD 4     // Ljava/lang/annotation/Annotation; ann
+                    INVOKEINTERFACE java.lang.annotation.Annotation.annotationType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getAnnotation (Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+                    IFNONNULL L5
+                    ICONST_0   (line 556)
+                    IRETURN
+                L5: IINC 5 1   (line 554)
+                L6: ILOAD 5
+                    ILOAD 6
+                    IF_ICMPLT L4
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 559)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isCollection ()Z
+                    IFNE L7
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isArray ()Z
+                    IFEQ L8
+                L7: ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 560)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; other
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IRETURN
+                L8: ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 562)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isMap ()Z
+                    IFEQ L10
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 563)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; other
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L9
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 564)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; other
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L9
+                    ICONST_1
+                    IRETURN
+                L9: ICONST_0
+                    IRETURN   (line 563)
+               L10: ICONST_1   (line 567)
+                    IRETURN
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 572)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    IRETURN
+  end public int hashCode()
+
+  public String toString():
+                    NEW java.lang.StringBuilder   (line 576)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_1
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 577)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getAnnotations ()[Ljava/lang/annotation/Annotation;
+                    ASTORE_2
+                    ALOAD_2     // [Ljava/lang/annotation/Annotation; anns   (line 578)
+                    DUP
+                    ASTORE 6
+                    ARRAYLENGTH
+                    ISTORE 5
+                    ICONST_0
+                    ISTORE 4
+                    GOTO L1
+                L0: ALOAD 6
+                    ILOAD 4
+                    AALOAD
+                    ASTORE_3
+                    ALOAD_1     // Ljava/lang/StringBuilder; builder   (line 579)
+                    LDC_W "@"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/lang/annotation/Annotation; ann
+                    INVOKEINTERFACE java.lang.annotation.Annotation.annotationType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    BIPUSH 32
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+                    IINC 4 1   (line 578)
+                L1: ILOAD 4
+                    ILOAD 5
+                    IF_ICMPLT L0
+                    ALOAD_1     // Ljava/lang/StringBuilder; builder   (line 581)
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.getQualifiedName (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 582)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isMap ()Z
+                    IFEQ L2
+                    ALOAD_1     // Ljava/lang/StringBuilder; builder   (line 583)
+                    LDC_W "<"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.wildcard (Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/StringBuilder; builder   (line 584)
+                    LDC_W ", "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.wildcard (Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W ">"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L3
+                L2: ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 586)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isCollection ()Z
+                    IFEQ L3
+                    ALOAD_1     // Ljava/lang/StringBuilder; builder   (line 587)
+                    LDC_W "<"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.wildcard (Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W ">"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L3: ALOAD_1     // Ljava/lang/StringBuilder; builder   (line 589)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+end public class org.springframework.core.convert.TypeDescriptor
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.core.convert.TypeDescriptor extends java.lang.Object:
+  static final java.lang.annotation.Annotation[] EMPTY_ANNOTATION_ARRAY
+  private static final java.util.Map typeDescriptorCache [Signature(Ljava/util/Map<Ljava/lang/Class<*>;Lorg/springframework/core/convert/TypeDescriptor;>;)]
+  private final Class type [Signature(Ljava/lang/Class<*>;)]
+  private final org.springframework.core.convert.TypeDescriptor elementTypeDescriptor
+  private final org.springframework.core.convert.TypeDescriptor mapKeyTypeDescriptor
+  private final org.springframework.core.convert.TypeDescriptor mapValueTypeDescriptor
+  private final java.lang.annotation.Annotation[] annotations
+  static void <clinit>():
+    staticinitialization(void org.springframework.core.convert.TypeDescriptor.<clinit>())
+    |               ICONST_0   (line 39)
+    |               ANEWARRAY java.lang.annotation.Annotation
+    |               PUTSTATIC org.springframework.core.convert.TypeDescriptor.EMPTY_ANNOTATION_ARRAY [Ljava/lang/annotation/Annotation;
+    |               NEW java.util.HashMap   (line 41)
+    |               DUP
+    |               INVOKESPECIAL java.util.HashMap.<init> ()V
+    |               PUTSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 44)
+    |               GETSTATIC java.lang.Boolean.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Boolean.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 45)
+    |               LDC java.lang.Boolean
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Boolean
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 46)
+    |               GETSTATIC java.lang.Byte.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Byte.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 47)
+    |               LDC java.lang.Byte
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Byte
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 48)
+    |               GETSTATIC java.lang.Character.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Character.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 49)
+    |               LDC java.lang.Character
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Character
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 50)
+    |               GETSTATIC java.lang.Short.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Short.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 51)
+    |               LDC java.lang.Short
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Short
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 52)
+    |               GETSTATIC java.lang.Integer.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Integer.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 53)
+    |               LDC java.lang.Integer
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Integer
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 54)
+    |               GETSTATIC java.lang.Long.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Long.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 55)
+    |               LDC java.lang.Long
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Long
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 56)
+    |               GETSTATIC java.lang.Float.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Float.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 57)
+    |               LDC java.lang.Float
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Float
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 58)
+    |               GETSTATIC java.lang.Double.TYPE Ljava/lang/Class;
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               GETSTATIC java.lang.Double.TYPE Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 59)
+    |               LDC java.lang.Double
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.Double
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 60)
+    |               LDC java.lang.String
+    |               NEW org.springframework.core.convert.TypeDescriptor
+    |               DUP
+    |               LDC java.lang.String
+    |               INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               RETURN   (line 37)
+    staticinitialization(void org.springframework.core.convert.TypeDescriptor.<clinit>())
+  end static void <clinit>()
+
+  public void <init>(org.springframework.core.MethodParameter):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 81)
+                    NEW org.springframework.core.convert.ParameterDescriptor
+                    DUP
+                    ALOAD_1     // Lorg/springframework/core/MethodParameter; methodParameter
+                    INVOKESPECIAL org.springframework.core.convert.ParameterDescriptor.<init> (Lorg/springframework/core/MethodParameter;)V
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Lorg/springframework/core/convert/AbstractDescriptor;)V
+    constructor-execution(void org.springframework.core.convert.TypeDescriptor.<init>(org.springframework.core.MethodParameter))
+    |               RETURN   (line 82)
+    constructor-execution(void org.springframework.core.convert.TypeDescriptor.<init>(org.springframework.core.MethodParameter))
+  end public void <init>(org.springframework.core.MethodParameter)
+
+  public void <init>(java.lang.reflect.Field):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 90)
+                    NEW org.springframework.core.convert.FieldDescriptor
+                    DUP
+                    ALOAD_1     // Ljava/lang/reflect/Field; field
+                    INVOKESPECIAL org.springframework.core.convert.FieldDescriptor.<init> (Ljava/lang/reflect/Field;)V
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Lorg/springframework/core/convert/AbstractDescriptor;)V
+    constructor-execution(void org.springframework.core.convert.TypeDescriptor.<init>(java.lang.reflect.Field))
+    |               RETURN   (line 91)
+    constructor-execution(void org.springframework.core.convert.TypeDescriptor.<init>(java.lang.reflect.Field))
+  end public void <init>(java.lang.reflect.Field)
+
+  public void <init>(org.springframework.core.convert.Property):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 99)
+                    NEW org.springframework.core.convert.BeanPropertyDescriptor
+                    DUP
+                    ALOAD_1     // Lorg/springframework/core/convert/Property; property
+                    INVOKESPECIAL org.springframework.core.convert.BeanPropertyDescriptor.<init> (Lorg/springframework/core/convert/Property;)V
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Lorg/springframework/core/convert/AbstractDescriptor;)V
+    constructor-execution(void org.springframework.core.convert.TypeDescriptor.<init>(org.springframework.core.convert.Property))
+    |               RETURN   (line 100)
+    constructor-execution(void org.springframework.core.convert.TypeDescriptor.<init>(org.springframework.core.convert.Property))
+  end public void <init>(org.springframework.core.convert.Property)
+
+  public static org.springframework.core.convert.TypeDescriptor valueOf(Class):
+                    GETSTATIC org.springframework.core.convert.TypeDescriptor.typeDescriptorCache Ljava/util/Map;   (line 111)
+                    ALOAD_0     // Ljava/lang/Class; type
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.convert.TypeDescriptor
+                    ASTORE_1
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; desc   (line 112)
+                    IFNULL L0
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; desc
+                    GOTO L1
+                L0: NEW org.springframework.core.convert.TypeDescriptor
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; type
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;)V
+                L1: ARETURN
+  end public static org.springframework.core.convert.TypeDescriptor valueOf(Class)
+
+  public static org.springframework.core.convert.TypeDescriptor collection(Class, org.springframework.core.convert.TypeDescriptor):
+                    LDC java.util.Collection   (line 125)
+                    ALOAD_0     // Ljava/lang/Class; collectionType
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFNE L0
+                    NEW java.lang.IllegalArgumentException   (line 126)
+                    DUP
+                    LDC "collectionType must be a java.util.Collection"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: NEW org.springframework.core.convert.TypeDescriptor   (line 128)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; collectionType
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; elementTypeDescriptor
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;)V
+                    ARETURN
+  end public static org.springframework.core.convert.TypeDescriptor collection(Class, org.springframework.core.convert.TypeDescriptor)
+
+  public static org.springframework.core.convert.TypeDescriptor map(Class, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor):
+                    LDC java.util.Map   (line 142)
+                    ALOAD_0     // Ljava/lang/Class; mapType
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFNE L0
+                    NEW java.lang.IllegalArgumentException   (line 143)
+                    DUP
+                    LDC "mapType must be a java.util.Map"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: NEW org.springframework.core.convert.TypeDescriptor   (line 145)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; mapType
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; keyTypeDescriptor
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; valueTypeDescriptor
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)V
+                    ARETURN
+  end public static org.springframework.core.convert.TypeDescriptor map(Class, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor)
+
+  public static org.springframework.core.convert.TypeDescriptor nested(org.springframework.core.MethodParameter, int):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; methodParameter   (line 163)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getNestingLevel ()I
+                    ICONST_1
+                    IF_ICMPEQ L0
+                    NEW java.lang.IllegalArgumentException   (line 164)
+                    DUP
+                    LDC "methodParameter nesting level must be 1: use the nestingLevel parameter to specify the desired nestingLevel for nested type traversal"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: NEW org.springframework.core.convert.ParameterDescriptor   (line 166)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; methodParameter
+                    INVOKESPECIAL org.springframework.core.convert.ParameterDescriptor.<init> (Lorg/springframework/core/MethodParameter;)V
+                    ILOAD_1     // I nestingLevel
+                    INVOKESTATIC org.springframework.core.convert.TypeDescriptor.nested (Lorg/springframework/core/convert/AbstractDescriptor;I)Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public static org.springframework.core.convert.TypeDescriptor nested(org.springframework.core.MethodParameter, int)
+
+  public static org.springframework.core.convert.TypeDescriptor nested(java.lang.reflect.Field, int):
+                    NEW org.springframework.core.convert.FieldDescriptor   (line 183)
+                    DUP
+                    ALOAD_0     // Ljava/lang/reflect/Field; field
+                    INVOKESPECIAL org.springframework.core.convert.FieldDescriptor.<init> (Ljava/lang/reflect/Field;)V
+                    ILOAD_1     // I nestingLevel
+                    INVOKESTATIC org.springframework.core.convert.TypeDescriptor.nested (Lorg/springframework/core/convert/AbstractDescriptor;I)Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public static org.springframework.core.convert.TypeDescriptor nested(java.lang.reflect.Field, int)
+
+  public static org.springframework.core.convert.TypeDescriptor nested(org.springframework.core.convert.Property, int):
+                    NEW org.springframework.core.convert.BeanPropertyDescriptor   (line 200)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/convert/Property; property
+                    INVOKESPECIAL org.springframework.core.convert.BeanPropertyDescriptor.<init> (Lorg/springframework/core/convert/Property;)V
+                    ILOAD_1     // I nestingLevel
+                    INVOKESTATIC org.springframework.core.convert.TypeDescriptor.nested (Lorg/springframework/core/convert/AbstractDescriptor;I)Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public static org.springframework.core.convert.TypeDescriptor nested(org.springframework.core.convert.Property, int)
+
+  public static org.springframework.core.convert.TypeDescriptor forObject(Object):
+                    ALOAD_0     // Ljava/lang/Object; source   (line 211)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/Object; source
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.core.convert.TypeDescriptor.valueOf (Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;
+                    GOTO L1
+                L0: ACONST_NULL
+                L1: ARETURN
+  end public static org.springframework.core.convert.TypeDescriptor forObject(Object)
+
+  public Class getType():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 223)
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.type Ljava/lang/Class;
+                    ARETURN
+  end public Class getType()
+
+  public Class getObjectType():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 231)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.resolvePrimitiveIfNecessary (Ljava/lang/Class;)Ljava/lang/Class;
+                    ARETURN
+  end public Class getObjectType()
+
+  public org.springframework.core.convert.TypeDescriptor narrow(Object):
+                    ALOAD_1     // Ljava/lang/Object; value   (line 246)
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 247)
+                    ARETURN
+                L0: NEW org.springframework.core.convert.TypeDescriptor   (line 249)
+                    DUP
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.elementTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 250)
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.mapKeyTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.mapValueTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.annotations [Ljava/lang/annotation/Annotation;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;[Ljava/lang/annotation/Annotation;)V   (line 249)
+                    ARETURN
+  end public org.springframework.core.convert.TypeDescriptor narrow(Object)
+
+  public String getName():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 257)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.getQualifiedName (Ljava/lang/Class;)Ljava/lang/String;
+                    ARETURN
+  end public String getName()
+
+  public boolean isPrimitive():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 264)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IRETURN
+  end public boolean isPrimitive()
+
+  public java.lang.annotation.Annotation[] getAnnotations():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 272)
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.annotations [Ljava/lang/annotation/Annotation;
+                    ARETURN
+  end public java.lang.annotation.Annotation[] getAnnotations()
+
+  public java.lang.annotation.Annotation getAnnotation(Class):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 280)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getAnnotations ()[Ljava/lang/annotation/Annotation;
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L2
+                L0: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/annotation/Annotation; annotation   (line 281)
+                    INVOKEINTERFACE java.lang.annotation.Annotation.annotationType ()Ljava/lang/Class;
+                    ALOAD_1     // Ljava/lang/Class; annotationType
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_2     // Ljava/lang/annotation/Annotation; annotation   (line 282)
+                    ARETURN
+                L1: IINC_3 1   (line 280)
+                L2: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L0
+                    ACONST_NULL   (line 285)
+                    ARETURN
+  end public java.lang.annotation.Annotation getAnnotation(Class)
+
+  public boolean isAssignableTo(org.springframework.core.convert.TypeDescriptor):
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor   (line 299)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getObjectType ()Ljava/lang/Class;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getObjectType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    ISTORE_2
+                    ILOAD_2     // Z typesAssignable   (line 300)
+                    IFNE L0
+                    ICONST_0   (line 301)
+                    IRETURN
+                L0: ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 303)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isArray ()Z
+                    IFEQ L1
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isArray ()Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 304)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isAssignableTo (Lorg/springframework/core/convert/TypeDescriptor;)Z
+                    IRETURN
+                L1: ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 306)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isCollection ()Z
+                    IFEQ L2
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isCollection ()Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 307)
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.isNestedAssignable (Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z
+                    IRETURN
+                L2: ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 309)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isMap ()Z
+                    IFEQ L4
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isMap ()Z
+                    IFEQ L4
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 310)
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.isNestedAssignable (Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z
+                    IFEQ L3
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 311)
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.isNestedAssignable (Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z
+                    IFEQ L3
+                    ICONST_1
+                    IRETURN
+                L3: ICONST_0
+                    IRETURN   (line 310)
+                L4: ICONST_1   (line 314)
+                    IRETURN
+  end public boolean isAssignableTo(org.springframework.core.convert.TypeDescriptor)
+
+  public boolean isCollection():
+                    LDC java.util.Collection   (line 324)
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IRETURN
+  end public boolean isCollection()
+
+  public boolean isArray():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 331)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IRETURN
+  end public boolean isArray()
+
+  public org.springframework.core.convert.TypeDescriptor getElementTypeDescriptor():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 342)
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.assertCollectionOrArray ()V
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 343)
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.elementTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public org.springframework.core.convert.TypeDescriptor getElementTypeDescriptor()
+
+  public org.springframework.core.convert.TypeDescriptor elementTypeDescriptor(Object):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 358)
+                    ALOAD_1     // Ljava/lang/Object; element
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.narrow (Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;)Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public org.springframework.core.convert.TypeDescriptor elementTypeDescriptor(Object)
+
+  public boolean isMap():
+                    LDC java.util.Map   (line 367)
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IRETURN
+  end public boolean isMap()
+
+  public org.springframework.core.convert.TypeDescriptor getMapKeyTypeDescriptor():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 377)
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.assertMap ()V
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 378)
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.mapKeyTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public org.springframework.core.convert.TypeDescriptor getMapKeyTypeDescriptor()
+
+  public org.springframework.core.convert.TypeDescriptor getMapKeyTypeDescriptor(Object):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 393)
+                    ALOAD_1     // Ljava/lang/Object; mapKey
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.narrow (Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;)Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public org.springframework.core.convert.TypeDescriptor getMapKeyTypeDescriptor(Object)
+
+  public org.springframework.core.convert.TypeDescriptor getMapValueTypeDescriptor():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 403)
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.assertMap ()V
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 404)
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.mapValueTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public org.springframework.core.convert.TypeDescriptor getMapValueTypeDescriptor()
+
+  public org.springframework.core.convert.TypeDescriptor getMapValueTypeDescriptor(Object):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 418)
+                    ALOAD_1     // Ljava/lang/Object; mapValue
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.narrow (Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;)Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+  end public org.springframework.core.convert.TypeDescriptor getMapValueTypeDescriptor(Object)
+
+  public Class getElementType():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 431)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    ARETURN
+  end public Class getElementType()
+
+  public Class getMapKeyType():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 441)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    ARETURN
+  end public Class getMapKeyType()
+
+  public Class getMapValueType():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 451)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    ARETURN
+  end public Class getMapValueType()
+
+  void <init>(org.springframework.core.convert.AbstractDescriptor):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 456)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 457)
+                    ALOAD_1     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.AbstractDescriptor.getType ()Ljava/lang/Class;
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.type Ljava/lang/Class;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 458)
+                    ALOAD_1     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.AbstractDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.elementTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 459)
+                    ALOAD_1     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.AbstractDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.mapKeyTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 460)
+                    ALOAD_1     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.AbstractDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.mapValueTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 461)
+                    ALOAD_1     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.AbstractDescriptor.getAnnotations ()[Ljava/lang/annotation/Annotation;
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.annotations [Ljava/lang/annotation/Annotation;
+                    RETURN   (line 462)
+  end void <init>(org.springframework.core.convert.AbstractDescriptor)
+
+  static java.lang.annotation.Annotation[] nullSafeAnnotations(java.lang.annotation.Annotation[]):
+                    ALOAD_0     // [Ljava/lang/annotation/Annotation; annotations   (line 465)
+                    IFNULL L0
+                    ALOAD_0     // [Ljava/lang/annotation/Annotation; annotations
+                    GOTO L1
+                L0: GETSTATIC org.springframework.core.convert.TypeDescriptor.EMPTY_ANNOTATION_ARRAY [Ljava/lang/annotation/Annotation;
+                L1: ARETURN
+  end static java.lang.annotation.Annotation[] nullSafeAnnotations(java.lang.annotation.Annotation[])
+
+  private void <init>(Class):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 472)
+                    NEW org.springframework.core.convert.ClassDescriptor
+                    DUP
+                    ALOAD_1     // Ljava/lang/Class; type
+                    INVOKESPECIAL org.springframework.core.convert.ClassDescriptor.<init> (Ljava/lang/Class;)V
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Lorg/springframework/core/convert/AbstractDescriptor;)V
+                    RETURN   (line 473)
+  end private void <init>(Class)
+
+  private void <init>(Class, org.springframework.core.convert.TypeDescriptor):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 476)
+                    ALOAD_1     // Ljava/lang/Class; collectionType
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; elementTypeDescriptor
+                    ACONST_NULL
+                    ACONST_NULL
+                    GETSTATIC org.springframework.core.convert.TypeDescriptor.EMPTY_ANNOTATION_ARRAY [Ljava/lang/annotation/Annotation;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;[Ljava/lang/annotation/Annotation;)V
+                    RETURN   (line 477)
+  end private void <init>(Class, org.springframework.core.convert.TypeDescriptor)
+
+  private void <init>(Class, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 480)
+                    ALOAD_1     // Ljava/lang/Class; mapType
+                    ACONST_NULL
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; keyTypeDescriptor
+                    ALOAD_3     // Lorg/springframework/core/convert/TypeDescriptor; valueTypeDescriptor
+                    GETSTATIC org.springframework.core.convert.TypeDescriptor.EMPTY_ANNOTATION_ARRAY [Ljava/lang/annotation/Annotation;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;[Ljava/lang/annotation/Annotation;)V
+                    RETURN   (line 481)
+  end private void <init>(Class, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor)
+
+  private void <init>(Class, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor, java.lang.annotation.Annotation[]):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 483)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 486)
+                    ALOAD_1     // Ljava/lang/Class; type
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.type Ljava/lang/Class;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 487)
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; elementTypeDescriptor
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.elementTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 488)
+                    ALOAD_3     // Lorg/springframework/core/convert/TypeDescriptor; mapKeyTypeDescriptor
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.mapKeyTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 489)
+                    ALOAD 4     // Lorg/springframework/core/convert/TypeDescriptor; mapValueTypeDescriptor
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.mapValueTypeDescriptor Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 490)
+                    ALOAD 5     // [Ljava/lang/annotation/Annotation; annotations
+                    PUTFIELD org.springframework.core.convert.TypeDescriptor.annotations [Ljava/lang/annotation/Annotation;
+                    RETURN   (line 491)
+  end private void <init>(Class, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor, java.lang.annotation.Annotation[])
+
+  private static org.springframework.core.convert.TypeDescriptor nested(org.springframework.core.convert.AbstractDescriptor, int):
+                    ICONST_0   (line 494)
+                    ISTORE_2
+                    GOTO L2
+                L0: ALOAD_0     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor   (line 495)
+                    INVOKEVIRTUAL org.springframework.core.convert.AbstractDescriptor.nested ()Lorg/springframework/core/convert/AbstractDescriptor;
+                    ASTORE_0     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor
+                    ALOAD_0     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor   (line 496)
+                    IFNONNULL L1
+                    ACONST_NULL   (line 497)
+                    ARETURN
+                L1: IINC_2 1     // I i   (line 494)
+                L2: ILOAD_2     // I i
+                    ILOAD_1     // I nestingLevel
+                    IF_ICMPLT L0
+                    NEW org.springframework.core.convert.TypeDescriptor   (line 500)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/convert/AbstractDescriptor; descriptor
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Lorg/springframework/core/convert/AbstractDescriptor;)V
+                    ARETURN
+  end private static org.springframework.core.convert.TypeDescriptor nested(org.springframework.core.convert.AbstractDescriptor, int)
+
+  private void assertCollectionOrArray():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 507)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isCollection ()Z
+                    IFNE L0
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isArray ()Z
+                    IFNE L0
+                    NEW java.lang.IllegalStateException   (line 508)
+                    DUP
+                    LDC_W "Not a java.util.Collection or Array"
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: RETURN   (line 510)
+  end private void assertCollectionOrArray()
+
+  private void assertMap():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 513)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isMap ()Z
+                    IFNE L0
+                    NEW java.lang.IllegalStateException   (line 514)
+                    DUP
+                    LDC_W "Not a java.util.Map"
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: RETURN   (line 516)
+  end private void assertMap()
+
+  private org.springframework.core.convert.TypeDescriptor narrow(Object, org.springframework.core.convert.TypeDescriptor):
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor   (line 519)
+                    IFNULL L0
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor   (line 520)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.narrow (Ljava/lang/Object;)Lorg/springframework/core/convert/TypeDescriptor;
+                    ARETURN
+                L0: ALOAD_1     // Ljava/lang/Object; value   (line 523)
+                    IFNULL L1
+                    NEW org.springframework.core.convert.TypeDescriptor
+                    DUP
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ACONST_NULL
+                    ACONST_NULL
+                    ACONST_NULL
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    GETFIELD org.springframework.core.convert.TypeDescriptor.annotations [Ljava/lang/annotation/Annotation;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;[Ljava/lang/annotation/Annotation;)V
+                    GOTO L2
+                L1: ACONST_NULL
+                L2: ARETURN
+  end private org.springframework.core.convert.TypeDescriptor narrow(Object, org.springframework.core.convert.TypeDescriptor)
+
+  private boolean isNestedAssignable(org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor):
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; nestedTypeDescriptor   (line 528)
+                    IFNULL L0
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; otherNestedTypeDescriptor
+                    IFNONNULL L1
+                L0: ICONST_1   (line 529)
+                    IRETURN
+                L1: ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; nestedTypeDescriptor   (line 531)
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; otherNestedTypeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isAssignableTo (Lorg/springframework/core/convert/TypeDescriptor;)Z
+                    IRETURN
+  end private boolean isNestedAssignable(org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor)
+
+  private String wildcard(org.springframework.core.convert.TypeDescriptor):
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor   (line 535)
+                    IFNULL L0
+                    ALOAD_1     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.toString ()Ljava/lang/String;
+                    GOTO L1
+                L0: LDC_W "?"
+                L1: ARETURN
+  end private String wildcard(org.springframework.core.convert.TypeDescriptor)
+
+  public boolean equals(Object):
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 540)
+                    ALOAD_1     // Ljava/lang/Object; obj
+                    IF_ACMPNE L0
+                    ICONST_1   (line 541)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/Object; obj   (line 543)
+                    INSTANCEOF org.springframework.core.convert.TypeDescriptor
+                    IFNE L1
+                    ICONST_0   (line 544)
+                    IRETURN
+                L1: ALOAD_1     // Ljava/lang/Object; obj   (line 546)
+                    CHECKCAST org.springframework.core.convert.TypeDescriptor
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 547)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; other
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFNE L2
+                    ICONST_0   (line 548)
+                    IRETURN
+                L2: ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 550)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getAnnotations ()[Ljava/lang/annotation/Annotation;
+                    ASTORE_3
+                    ALOAD_3     // [Ljava/lang/annotation/Annotation; annotations   (line 551)
+                    ARRAYLENGTH
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; other
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getAnnotations ()[Ljava/lang/annotation/Annotation;
+                    ARRAYLENGTH
+                    IF_ICMPEQ L3
+                    ICONST_0   (line 552)
+                    IRETURN
+                L3: ALOAD_3     // [Ljava/lang/annotation/Annotation; annotations   (line 554)
+                    DUP
+                    ASTORE 7
+                    ARRAYLENGTH
+                    ISTORE 6
+                    ICONST_0
+                    ISTORE 5
+                    GOTO L6
+                L4: ALOAD 7
+                    ILOAD 5
+                    AALOAD
+                    ASTORE 4
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; other   (line 555)
+                    ALOAD 4     // Ljava/lang/annotation/Annotation; ann
+                    INVOKEINTERFACE java.lang.annotation.Annotation.annotationType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getAnnotation (Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+                    IFNONNULL L5
+                    ICONST_0   (line 556)
+                    IRETURN
+                L5: IINC 5 1   (line 554)
+                L6: ILOAD 5
+                    ILOAD 6
+                    IF_ICMPLT L4
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 559)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isCollection ()Z
+                    IFNE L7
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isArray ()Z
+                    IFEQ L8
+                L7: ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 560)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; other
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IRETURN
+                L8: ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 562)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isMap ()Z
+                    IFEQ L10
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 563)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; other
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L9
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 564)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; other
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L9
+                    ICONST_1
+                    IRETURN
+                L9: ICONST_0
+                    IRETURN   (line 563)
+               L10: ICONST_1   (line 567)
+                    IRETURN
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 572)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    IRETURN
+  end public int hashCode()
+
+  public String toString():
+                    NEW java.lang.StringBuilder   (line 576)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_1
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 577)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getAnnotations ()[Ljava/lang/annotation/Annotation;
+                    ASTORE_2
+                    ALOAD_2     // [Ljava/lang/annotation/Annotation; anns   (line 578)
+                    DUP
+                    ASTORE 6
+                    ARRAYLENGTH
+                    ISTORE 5
+                    ICONST_0
+                    ISTORE 4
+                    GOTO L1
+                L0: ALOAD 6
+                    ILOAD 4
+                    AALOAD
+                    ASTORE_3
+                    ALOAD_1     // Ljava/lang/StringBuilder; builder   (line 579)
+                    LDC_W "@"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/lang/annotation/Annotation; ann
+                    INVOKEINTERFACE java.lang.annotation.Annotation.annotationType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    BIPUSH 32
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+                    IINC 4 1   (line 578)
+                L1: ILOAD 4
+                    ILOAD 5
+                    IF_ICMPLT L0
+                    ALOAD_1     // Ljava/lang/StringBuilder; builder   (line 581)
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getType ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.getQualifiedName (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 582)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isMap ()Z
+                    IFEQ L2
+                    ALOAD_1     // Ljava/lang/StringBuilder; builder   (line 583)
+                    LDC_W "<"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapKeyTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.wildcard (Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/StringBuilder; builder   (line 584)
+                    LDC_W ", "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMapValueTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.wildcard (Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W ">"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L3
+                L2: ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this   (line 586)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.isCollection ()Z
+                    IFEQ L3
+                    ALOAD_1     // Ljava/lang/StringBuilder; builder   (line 587)
+                    LDC_W "<"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    ALOAD_0     // Lorg/springframework/core/convert/TypeDescriptor; this
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getElementTypeDescriptor ()Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.wildcard (Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W ">"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L3: ALOAD_1     // Ljava/lang/StringBuilder; builder   (line 589)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+end public class org.springframework.core.convert.TypeDescriptor
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:665)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:615)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1752)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1464)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1273)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:394)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:281)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:95)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:52)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:516)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1365)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:649)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.curso.spring.springioc0007.Main.init(Main.java:29)
+	at com.curso.spring.springioc0007.Main.main(Main.java:24)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

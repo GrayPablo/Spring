@@ -1,0 +1,1317 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114259.642.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.beans.CachedIntrospectionResults extends java.lang.Object:
+  private static final org.apache.commons.logging.Log logger
+  static final java.util.Set acceptedClassLoaders [Signature(Ljava/util/Set<Ljava/lang/ClassLoader;>;)]
+  static final java.util.Map classCache [Signature(Ljava/util/Map<Ljava/lang/Class;Ljava/lang/Object;>;)]
+  private final java.beans.BeanInfo beanInfo
+  private final java.util.Map propertyDescriptorCache [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/beans/PropertyDescriptor;>;)]
+  static void <clinit>():
+    staticinitialization(void org.springframework.beans.CachedIntrospectionResults.<clinit>())
+    |               LDC org.springframework.beans.CachedIntrospectionResults   (line 61)
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;
+    |               NEW java.util.HashSet   (line 67)
+    |               DUP
+    |               INVOKESPECIAL java.util.HashSet.<init> ()V
+    |               INVOKESTATIC java.util.Collections.synchronizedSet (Ljava/util/Set;)Ljava/util/Set;
+    |               PUTSTATIC org.springframework.beans.CachedIntrospectionResults.acceptedClassLoaders Ljava/util/Set;
+    |               NEW java.util.WeakHashMap   (line 74)
+    |               DUP
+    |               INVOKESPECIAL java.util.WeakHashMap.<init> ()V
+    |               INVOKESTATIC java.util.Collections.synchronizedMap (Ljava/util/Map;)Ljava/util/Map;
+    |               PUTSTATIC org.springframework.beans.CachedIntrospectionResults.classCache Ljava/util/Map;
+    |               RETURN   (line 59)
+    staticinitialization(void org.springframework.beans.CachedIntrospectionResults.<clinit>())
+  end static void <clinit>()
+
+  public static void acceptClassLoader(ClassLoader):
+                    ALOAD_0     // Ljava/lang/ClassLoader; classLoader   (line 90)
+                    IFNULL L0
+                    GETSTATIC org.springframework.beans.CachedIntrospectionResults.acceptedClassLoaders Ljava/util/Set;   (line 91)
+                    ALOAD_0     // Ljava/lang/ClassLoader; classLoader
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L0: RETURN   (line 93)
+  end public static void acceptClassLoader(ClassLoader)
+
+  public static void clearClassLoader(ClassLoader):
+                    ALOAD_0     // Ljava/lang/ClassLoader; classLoader   (line 103)
+                    IFNONNULL L0
+                    RETURN   (line 104)
+                L0: GETSTATIC org.springframework.beans.CachedIntrospectionResults.classCache Ljava/util/Map;   (line 106)
+                    DUP
+                    ASTORE_1
+                    MONITORENTER
+    finally -> E1
+    |               GETSTATIC org.springframework.beans.CachedIntrospectionResults.classCache Ljava/util/Map;   (line 107)
+    |               INVOKEINTERFACE java.util.Map.keySet ()Ljava/util/Set;
+    |               INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+    |               ASTORE_2
+    |               GOTO L2
+    |           L1: ALOAD_2     // Ljava/util/Iterator; it   (line 108)
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST java.lang.Class
+    |               ASTORE_3
+    |               ALOAD_3     // Ljava/lang/Class; beanClass   (line 109)
+    |               INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+    |               ALOAD_0     // Ljava/lang/ClassLoader; classLoader
+    |               INVOKESTATIC org.springframework.beans.CachedIntrospectionResults.isUnderneathClassLoader (Ljava/lang/ClassLoader;Ljava/lang/ClassLoader;)Z
+    |               IFEQ L2
+    |               ALOAD_2     // Ljava/util/Iterator; it   (line 110)
+    |               INVOKEINTERFACE java.util.Iterator.remove ()V
+    |           L2: ALOAD_2     // Ljava/util/Iterator; it   (line 107)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L1
+    |               ALOAD_1   (line 106)
+    |               MONITOREXIT
+    finally -> E1
+                    GOTO L3
+    finally -> E1
+    |           E1: ALOAD_1
+    |               MONITOREXIT
+    finally -> E1
+                    ATHROW
+                L3: GETSTATIC org.springframework.beans.CachedIntrospectionResults.acceptedClassLoaders Ljava/util/Set;   (line 114)
+                    DUP
+                    ASTORE_1
+                    MONITORENTER
+    finally -> E3
+    |               GETSTATIC org.springframework.beans.CachedIntrospectionResults.acceptedClassLoaders Ljava/util/Set;   (line 115)
+    |               INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+    |               ASTORE_2
+    |               GOTO L5
+    |           L4: ALOAD_2     // Ljava/util/Iterator; it   (line 116)
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST java.lang.ClassLoader
+    |               ASTORE_3
+    |               ALOAD_3     // Ljava/lang/ClassLoader; registeredLoader   (line 117)
+    |               ALOAD_0     // Ljava/lang/ClassLoader; classLoader
+    |               INVOKESTATIC org.springframework.beans.CachedIntrospectionResults.isUnderneathClassLoader (Ljava/lang/ClassLoader;Ljava/lang/ClassLoader;)Z
+    |               IFEQ L5
+    |               ALOAD_2     // Ljava/util/Iterator; it   (line 118)
+    |               INVOKEINTERFACE java.util.Iterator.remove ()V
+    |           L5: ALOAD_2     // Ljava/util/Iterator; it   (line 115)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L4
+    |               ALOAD_1   (line 114)
+    |               MONITOREXIT
+    finally -> E3
+                    GOTO L6
+    finally -> E3
+    |           E3: ALOAD_1
+    |               MONITOREXIT
+    finally -> E3
+                    ATHROW
+                L6: RETURN   (line 122)
+  end public static void clearClassLoader(ClassLoader)
+
+  static org.springframework.beans.CachedIntrospectionResults forClass(Class) throws org.springframework.beans.BeansException:
+                    GETSTATIC org.springframework.beans.CachedIntrospectionResults.classCache Ljava/util/Map;   (line 134)
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Object; value   (line 135)
+                    INSTANCEOF java.lang.ref.Reference
+                    IFEQ L0
+                    ALOAD_2     // Ljava/lang/Object; value   (line 136)
+                    CHECKCAST java.lang.ref.Reference
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/ref/Reference; ref   (line 137)
+                    INVOKEVIRTUAL java.lang.ref.Reference.get ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.CachedIntrospectionResults
+                    ASTORE_1
+                    GOTO L1
+                L0: ALOAD_2     // Ljava/lang/Object; value   (line 140)
+                    CHECKCAST org.springframework.beans.CachedIntrospectionResults
+                    ASTORE_1
+                L1: ALOAD_1     // Lorg/springframework/beans/CachedIntrospectionResults; results   (line 142)
+                    IFNONNULL L7
+                    ALOAD_0     // Ljava/lang/Class; beanClass   (line 146)
+                    LDC org.springframework.beans.CachedIntrospectionResults
+                    INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+                    INVOKESTATIC org.springframework.util.ClassUtils.isCacheSafe (Ljava/lang/Class;Ljava/lang/ClassLoader;)Z
+                    IFNE L2
+                    ALOAD_0     // Ljava/lang/Class; beanClass   (line 147)
+                    INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+                    INVOKESTATIC org.springframework.beans.CachedIntrospectionResults.isClassLoaderAccepted (Ljava/lang/ClassLoader;)Z
+                    IFNE L2
+                    ICONST_0
+                    GOTO L3
+                L2: ICONST_1
+                L3: ISTORE_3   (line 145)
+                    ILOAD_3     // Z fullyCacheable   (line 148)
+                    IFNE L4
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "BeanInfo"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+                    INVOKESTATIC org.springframework.util.ClassUtils.isPresent (Ljava/lang/String;Ljava/lang/ClassLoader;)Z
+                    IFNE L5
+                L4: NEW org.springframework.beans.CachedIntrospectionResults   (line 149)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    ILOAD_3     // Z fullyCacheable
+                    INVOKESPECIAL org.springframework.beans.CachedIntrospectionResults.<init> (Ljava/lang/Class;Z)V
+                    ASTORE_1     // Lorg/springframework/beans/CachedIntrospectionResults; results
+                    GETSTATIC org.springframework.beans.CachedIntrospectionResults.classCache Ljava/util/Map;   (line 150)
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    ALOAD_1     // Lorg/springframework/beans/CachedIntrospectionResults; results
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    GOTO L7
+                L5: GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 153)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L6
+                    GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 154)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Not strongly caching class ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "] because it is not cache-safe"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L6: NEW org.springframework.beans.CachedIntrospectionResults   (line 156)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.beans.CachedIntrospectionResults.<init> (Ljava/lang/Class;Z)V
+                    ASTORE_1     // Lorg/springframework/beans/CachedIntrospectionResults; results
+                    GETSTATIC org.springframework.beans.CachedIntrospectionResults.classCache Ljava/util/Map;   (line 157)
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    NEW java.lang.ref.WeakReference
+                    DUP
+                    ALOAD_1     // Lorg/springframework/beans/CachedIntrospectionResults; results
+                    INVOKESPECIAL java.lang.ref.WeakReference.<init> (Ljava/lang/Object;)V
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                L7: ALOAD_1     // Lorg/springframework/beans/CachedIntrospectionResults; results   (line 160)
+                    ARETURN
+  end static org.springframework.beans.CachedIntrospectionResults forClass(Class) throws org.springframework.beans.BeansException
+
+  private static boolean isClassLoaderAccepted(ClassLoader):
+                    GETSTATIC org.springframework.beans.CachedIntrospectionResults.acceptedClassLoaders Ljava/util/Set;   (line 174)
+                    GETSTATIC org.springframework.beans.CachedIntrospectionResults.acceptedClassLoaders Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.size ()I
+                    ANEWARRAY java.lang.ClassLoader
+                    INVOKEINTERFACE java.util.Set.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Ljava.lang.ClassLoader;
+                    ASTORE_1   (line 173)
+                    ALOAD_1     // [Ljava/lang/ClassLoader; acceptedLoaderArray   (line 175)
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L2
+                L0: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_0     // Ljava/lang/ClassLoader; classLoader   (line 176)
+                    ALOAD_2     // Ljava/lang/ClassLoader; registeredLoader
+                    INVOKESTATIC org.springframework.beans.CachedIntrospectionResults.isUnderneathClassLoader (Ljava/lang/ClassLoader;Ljava/lang/ClassLoader;)Z
+                    IFEQ L1
+                    ICONST_1   (line 177)
+                    IRETURN
+                L1: IINC_3 1   (line 175)
+                L2: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L0
+                    ICONST_0   (line 180)
+                    IRETURN
+  end private static boolean isClassLoaderAccepted(ClassLoader)
+
+  private static boolean isUnderneathClassLoader(ClassLoader, ClassLoader):
+                    ALOAD_0     // Ljava/lang/ClassLoader; candidate   (line 190)
+                    IFNONNULL L0
+                    ICONST_0   (line 191)
+                    IRETURN
+                L0: ALOAD_0     // Ljava/lang/ClassLoader; candidate   (line 193)
+                    ALOAD_1     // Ljava/lang/ClassLoader; parent
+                    IF_ACMPNE L1
+                    ICONST_1   (line 194)
+                    IRETURN
+                L1: ALOAD_0     // Ljava/lang/ClassLoader; candidate   (line 196)
+                    ASTORE_2
+                    GOTO L3   (line 197)
+                L2: ALOAD_2     // Ljava/lang/ClassLoader; classLoaderToCheck   (line 198)
+                    INVOKEVIRTUAL java.lang.ClassLoader.getParent ()Ljava/lang/ClassLoader;
+                    ASTORE_2     // Ljava/lang/ClassLoader; classLoaderToCheck
+                    ALOAD_2     // Ljava/lang/ClassLoader; classLoaderToCheck   (line 199)
+                    ALOAD_1     // Ljava/lang/ClassLoader; parent
+                    IF_ACMPNE L3
+                    ICONST_1   (line 200)
+                    IRETURN
+                L3: ALOAD_2     // Ljava/lang/ClassLoader; classLoaderToCheck   (line 197)
+                    IFNONNULL L2
+                    ICONST_0   (line 203)
+                    IRETURN
+  end private static boolean isUnderneathClassLoader(ClassLoader, ClassLoader)
+
+  private void <init>(Class, boolean) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 219)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.CachedIntrospectionResults.<init>(java.lang.Class, boolean))
+    | catch java.beans.IntrospectionException -> E0
+    | |             GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 221)
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+    | |             IFEQ L0
+    | |             GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 222)
+    | |             NEW java.lang.StringBuilder
+    | |             DUP
+    | |             LDC "Getting BeanInfo for class ["
+    | |             INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    | |             ALOAD_1     // Ljava/lang/Class; beanClass
+    | |             INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             LDC "]"
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;)V
+    | |         L0: ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 224)
+    | |             NEW org.springframework.beans.ExtendedBeanInfo
+    | |             DUP
+    | |             ALOAD_1     // Ljava/lang/Class; beanClass
+    | |             INVOKESTATIC java.beans.Introspector.getBeanInfo (Ljava/lang/Class;)Ljava/beans/BeanInfo;
+    | |             INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.<init> (Ljava/beans/BeanInfo;)V
+    | |             PUTFIELD org.springframework.beans.CachedIntrospectionResults.beanInfo Ljava/beans/BeanInfo;
+    | |             ALOAD_1     // Ljava/lang/Class; beanClass   (line 230)
+    | |             ASTORE_3
+    | |         L1: ALOAD_3     // Ljava/lang/Class; classToFlush   (line 232)
+    | |             INVOKESTATIC java.beans.Introspector.flushFromCaches (Ljava/lang/Class;)V
+    | |             ALOAD_3     // Ljava/lang/Class; classToFlush   (line 233)
+    | |             INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+    | |             ASTORE_3     // Ljava/lang/Class; classToFlush
+    | |             ALOAD_3     // Ljava/lang/Class; classToFlush   (line 235)
+    | |             IFNONNULL L1
+    | |             GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 237)
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+    | |             IFEQ L2
+    | |             GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 238)
+    | |             NEW java.lang.StringBuilder
+    | |             DUP
+    | |             LDC "Caching PropertyDescriptors for class ["
+    | |             INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    | |             ALOAD_1     // Ljava/lang/Class; beanClass
+    | |             INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             LDC "]"
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;)V
+    | |         L2: ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 240)
+    | |             NEW java.util.LinkedHashMap
+    | |             DUP
+    | |             INVOKESPECIAL java.util.LinkedHashMap.<init> ()V
+    | |             PUTFIELD org.springframework.beans.CachedIntrospectionResults.propertyDescriptorCache Ljava/util/Map;
+    | |             ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 243)
+    | |             GETFIELD org.springframework.beans.CachedIntrospectionResults.beanInfo Ljava/beans/BeanInfo;
+    | |             INVOKEINTERFACE java.beans.BeanInfo.getPropertyDescriptors ()[Ljava/beans/PropertyDescriptor;
+    | |             ASTORE 4
+    | |             ALOAD 4     // [Ljava/beans/PropertyDescriptor; pds   (line 244)
+    | |             DUP
+    | |             ASTORE 8
+    | |             ARRAYLENGTH
+    | |             ISTORE 7
+    | |             ICONST_0
+    | |             ISTORE 6
+    | |             GOTO L12
+    | |         L3: ALOAD 8
+    | |             ILOAD 6
+    | |             AALOAD
+    | |             ASTORE 5
+    | |             LDC java.lang.Class   (line 245)
+    | |             ALOAD_1     // Ljava/lang/Class; beanClass
+    | |             INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+    | |             IFEQ L4
+    | |             LDC "classLoader"
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd
+    | |             INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+    | |             INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    | |             IFEQ L4
+    | |             GOTO L11   (line 247)
+    | |         L4: GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 249)
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+    | |             IFEQ L9
+    | |             GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 250)
+    | |             NEW java.lang.StringBuilder
+    | |             DUP
+    | |             LDC_W "Found bean property '"
+    | |             INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd
+    | |             INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             LDC_W "'"
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd   (line 251)
+    | |             INVOKEVIRTUAL java.beans.PropertyDescriptor.getPropertyType ()Ljava/lang/Class;
+    | |             IFNULL L5
+    | |             NEW java.lang.StringBuilder
+    | |             DUP
+    | |             LDC_W " of type ["
+    | |             INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd
+    | |             INVOKEVIRTUAL java.beans.PropertyDescriptor.getPropertyType ()Ljava/lang/Class;
+    | |             INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             LDC "]"
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    | |             GOTO L6
+    | |         L5: LDC_W ""
+    | |         L6: INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd   (line 252)
+    | |             INVOKEVIRTUAL java.beans.PropertyDescriptor.getPropertyEditorClass ()Ljava/lang/Class;
+    | |             IFNULL L7
+    | |             NEW java.lang.StringBuilder   (line 253)
+    | |             DUP
+    | |             LDC_W "; editor ["
+    | |             INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd
+    | |             INVOKEVIRTUAL java.beans.PropertyDescriptor.getPropertyEditorClass ()Ljava/lang/Class;
+    | |             INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             LDC "]"
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    | |             GOTO L8
+    | |         L7: LDC_W ""
+    | |         L8: INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;   (line 252)
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;)V   (line 250)
+    | |         L9: ILOAD_2     // Z cacheFullMetadata   (line 255)
+    | |             IFEQ L10
+    | |             ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 256)
+    | |             ALOAD_1     // Ljava/lang/Class; beanClass
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd
+    | |             INVOKESPECIAL org.springframework.beans.CachedIntrospectionResults.buildGenericTypeAwarePropertyDescriptor (Ljava/lang/Class;Ljava/beans/PropertyDescriptor;)Ljava/beans/PropertyDescriptor;
+    | |             ASTORE 5     // Ljava/beans/PropertyDescriptor; pd
+    | |        L10: ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 258)
+    | |             GETFIELD org.springframework.beans.CachedIntrospectionResults.propertyDescriptorCache Ljava/util/Map;
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd
+    | |             INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd
+    | |             INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    | |             POP
+    | |        L11: IINC 6 1   (line 244)
+    | |        L12: ILOAD 6
+    | |             ILOAD 7
+    | |             IF_ICMPLT L3
+    | catch java.beans.IntrospectionException -> E0
+    |               GOTO L13
+    |           E0: ASTORE_3   (line 261)
+    |               NEW org.springframework.beans.FatalBeanException   (line 262)
+    |               DUP
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               LDC_W "Failed to obtain BeanInfo for class ["
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD_1     // Ljava/lang/Class; beanClass
+    |               INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "]"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               ALOAD_3     // Ljava/beans/IntrospectionException; ex
+    |               INVOKESPECIAL org.springframework.beans.FatalBeanException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+    |               ATHROW
+    |          L13: RETURN   (line 264)
+    constructor-execution(void org.springframework.beans.CachedIntrospectionResults.<init>(java.lang.Class, boolean))
+  end private void <init>(Class, boolean) throws org.springframework.beans.BeansException
+
+  java.beans.BeanInfo getBeanInfo():
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 267)
+                    GETFIELD org.springframework.beans.CachedIntrospectionResults.beanInfo Ljava/beans/BeanInfo;
+                    ARETURN
+  end java.beans.BeanInfo getBeanInfo()
+
+  Class getBeanClass():
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 271)
+                    GETFIELD org.springframework.beans.CachedIntrospectionResults.beanInfo Ljava/beans/BeanInfo;
+                    INVOKEINTERFACE java.beans.BeanInfo.getBeanDescriptor ()Ljava/beans/BeanDescriptor;
+                    INVOKEVIRTUAL java.beans.BeanDescriptor.getBeanClass ()Ljava/lang/Class;
+                    ARETURN
+  end Class getBeanClass()
+
+  java.beans.PropertyDescriptor getPropertyDescriptor(String):
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 275)
+                    GETFIELD org.springframework.beans.CachedIntrospectionResults.propertyDescriptorCache Ljava/util/Map;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.beans.PropertyDescriptor
+                    ASTORE_2
+                    ALOAD_2     // Ljava/beans/PropertyDescriptor; pd   (line 276)
+                    IFNONNULL L0
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKESTATIC org.springframework.util.StringUtils.hasLength (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 278)
+                    GETFIELD org.springframework.beans.CachedIntrospectionResults.propertyDescriptorCache Ljava/util/Map;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; name
+                    ICONST_0
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.toLowerCase ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; name
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.beans.PropertyDescriptor
+                    ASTORE_2     // Ljava/beans/PropertyDescriptor; pd
+                    ALOAD_2     // Ljava/beans/PropertyDescriptor; pd   (line 279)
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 280)
+                    GETFIELD org.springframework.beans.CachedIntrospectionResults.propertyDescriptorCache Ljava/util/Map;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; name
+                    ICONST_0
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.toUpperCase ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; name
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.beans.PropertyDescriptor
+                    ASTORE_2     // Ljava/beans/PropertyDescriptor; pd
+                L0: ALOAD_2     // Ljava/beans/PropertyDescriptor; pd   (line 283)
+                    IFNULL L1
+                    ALOAD_2     // Ljava/beans/PropertyDescriptor; pd
+                    INSTANCEOF org.springframework.beans.GenericTypeAwarePropertyDescriptor
+                    IFEQ L2
+                L1: ALOAD_2     // Ljava/beans/PropertyDescriptor; pd
+                    GOTO L3
+                L2: ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 284)
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this
+                    INVOKEVIRTUAL org.springframework.beans.CachedIntrospectionResults.getBeanClass ()Ljava/lang/Class;
+                    ALOAD_2     // Ljava/beans/PropertyDescriptor; pd
+                    INVOKESPECIAL org.springframework.beans.CachedIntrospectionResults.buildGenericTypeAwarePropertyDescriptor (Ljava/lang/Class;Ljava/beans/PropertyDescriptor;)Ljava/beans/PropertyDescriptor;
+                L3: ARETURN   (line 283)
+  end java.beans.PropertyDescriptor getPropertyDescriptor(String)
+
+  java.beans.PropertyDescriptor[] getPropertyDescriptors():
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 288)
+                    GETFIELD org.springframework.beans.CachedIntrospectionResults.propertyDescriptorCache Ljava/util/Map;
+                    INVOKEINTERFACE java.util.Map.size ()I
+                    ANEWARRAY java.beans.PropertyDescriptor
+                    ASTORE_1
+                    ICONST_0   (line 289)
+                    ISTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 290)
+                    GETFIELD org.springframework.beans.CachedIntrospectionResults.propertyDescriptorCache Ljava/util/Map;
+                    INVOKEINTERFACE java.util.Map.values ()Ljava/util/Collection;
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE 4
+                    GOTO L3
+                L0: ALOAD 4
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.beans.PropertyDescriptor
+                    ASTORE_3
+                    ALOAD_1     // [Ljava/beans/PropertyDescriptor; pds   (line 291)
+                    ILOAD_2     // I i
+                    ALOAD_3     // Ljava/beans/PropertyDescriptor; pd
+                    INSTANCEOF org.springframework.beans.GenericTypeAwarePropertyDescriptor
+                    IFEQ L1
+                    ALOAD_3     // Ljava/beans/PropertyDescriptor; pd
+                    GOTO L2
+                L1: ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 292)
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this
+                    INVOKEVIRTUAL org.springframework.beans.CachedIntrospectionResults.getBeanClass ()Ljava/lang/Class;
+                    ALOAD_3     // Ljava/beans/PropertyDescriptor; pd
+                    INVOKESPECIAL org.springframework.beans.CachedIntrospectionResults.buildGenericTypeAwarePropertyDescriptor (Ljava/lang/Class;Ljava/beans/PropertyDescriptor;)Ljava/beans/PropertyDescriptor;
+                L2: AASTORE   (line 291)
+                    IINC_2 1     // I i   (line 293)
+                L3: ALOAD 4   (line 290)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ALOAD_1     // [Ljava/beans/PropertyDescriptor; pds   (line 295)
+                    ARETURN
+  end java.beans.PropertyDescriptor[] getPropertyDescriptors()
+
+  private java.beans.PropertyDescriptor buildGenericTypeAwarePropertyDescriptor(Class, java.beans.PropertyDescriptor):
+    catch java.beans.IntrospectionException -> E0
+    |               NEW org.springframework.beans.GenericTypeAwarePropertyDescriptor   (line 300)
+    |               DUP
+    |               ALOAD_1     // Ljava/lang/Class; beanClass
+    |               ALOAD_2     // Ljava/beans/PropertyDescriptor; pd
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+    |               ALOAD_2     // Ljava/beans/PropertyDescriptor; pd
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+    |               ALOAD_2     // Ljava/beans/PropertyDescriptor; pd   (line 301)
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+    |               ALOAD_2     // Ljava/beans/PropertyDescriptor; pd
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getPropertyEditorClass ()Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.beans.GenericTypeAwarePropertyDescriptor.<init> (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/Class;)V   (line 300)
+    catch java.beans.IntrospectionException -> E0
+                    ARETURN
+                E0: ASTORE_3   (line 303)
+                    NEW org.springframework.beans.FatalBeanException   (line 304)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Failed to re-introspect class ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/Class; beanClass
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD_3     // Ljava/beans/IntrospectionException; ex
+                    INVOKESPECIAL org.springframework.beans.FatalBeanException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ATHROW
+  end private java.beans.PropertyDescriptor buildGenericTypeAwarePropertyDescriptor(Class, java.beans.PropertyDescriptor)
+end public class org.springframework.beans.CachedIntrospectionResults
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.beans.CachedIntrospectionResults extends java.lang.Object:
+  private static final org.apache.commons.logging.Log logger
+  static final java.util.Set acceptedClassLoaders [Signature(Ljava/util/Set<Ljava/lang/ClassLoader;>;)]
+  static final java.util.Map classCache [Signature(Ljava/util/Map<Ljava/lang/Class;Ljava/lang/Object;>;)]
+  private final java.beans.BeanInfo beanInfo
+  private final java.util.Map propertyDescriptorCache [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/beans/PropertyDescriptor;>;)]
+  static void <clinit>():
+    staticinitialization(void org.springframework.beans.CachedIntrospectionResults.<clinit>())
+    |               LDC org.springframework.beans.CachedIntrospectionResults   (line 61)
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;
+    |               NEW java.util.HashSet   (line 67)
+    |               DUP
+    |               INVOKESPECIAL java.util.HashSet.<init> ()V
+    |               INVOKESTATIC java.util.Collections.synchronizedSet (Ljava/util/Set;)Ljava/util/Set;
+    |               PUTSTATIC org.springframework.beans.CachedIntrospectionResults.acceptedClassLoaders Ljava/util/Set;
+    |               NEW java.util.WeakHashMap   (line 74)
+    |               DUP
+    |               INVOKESPECIAL java.util.WeakHashMap.<init> ()V
+    |               INVOKESTATIC java.util.Collections.synchronizedMap (Ljava/util/Map;)Ljava/util/Map;
+    |               PUTSTATIC org.springframework.beans.CachedIntrospectionResults.classCache Ljava/util/Map;
+    |               RETURN   (line 59)
+    staticinitialization(void org.springframework.beans.CachedIntrospectionResults.<clinit>())
+  end static void <clinit>()
+
+  public static void acceptClassLoader(ClassLoader):
+                    ALOAD_0     // Ljava/lang/ClassLoader; classLoader   (line 90)
+                    IFNULL L0
+                    GETSTATIC org.springframework.beans.CachedIntrospectionResults.acceptedClassLoaders Ljava/util/Set;   (line 91)
+                    ALOAD_0     // Ljava/lang/ClassLoader; classLoader
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L0: RETURN   (line 93)
+  end public static void acceptClassLoader(ClassLoader)
+
+  public static void clearClassLoader(ClassLoader):
+                    ALOAD_0     // Ljava/lang/ClassLoader; classLoader   (line 103)
+                    IFNONNULL L0
+                    RETURN   (line 104)
+                L0: GETSTATIC org.springframework.beans.CachedIntrospectionResults.classCache Ljava/util/Map;   (line 106)
+                    DUP
+                    ASTORE_1
+                    MONITORENTER
+    finally -> E1
+    |               GETSTATIC org.springframework.beans.CachedIntrospectionResults.classCache Ljava/util/Map;   (line 107)
+    |               INVOKEINTERFACE java.util.Map.keySet ()Ljava/util/Set;
+    |               INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+    |               ASTORE_2
+    |               GOTO L2
+    |           L1: ALOAD_2     // Ljava/util/Iterator; it   (line 108)
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST java.lang.Class
+    |               ASTORE_3
+    |               ALOAD_3     // Ljava/lang/Class; beanClass   (line 109)
+    |               INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+    |               ALOAD_0     // Ljava/lang/ClassLoader; classLoader
+    |               INVOKESTATIC org.springframework.beans.CachedIntrospectionResults.isUnderneathClassLoader (Ljava/lang/ClassLoader;Ljava/lang/ClassLoader;)Z
+    |               IFEQ L2
+    |               ALOAD_2     // Ljava/util/Iterator; it   (line 110)
+    |               INVOKEINTERFACE java.util.Iterator.remove ()V
+    |           L2: ALOAD_2     // Ljava/util/Iterator; it   (line 107)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L1
+    |               ALOAD_1   (line 106)
+    |               MONITOREXIT
+    finally -> E1
+                    GOTO L3
+    finally -> E1
+    |           E1: ALOAD_1
+    |               MONITOREXIT
+    finally -> E1
+                    ATHROW
+                L3: GETSTATIC org.springframework.beans.CachedIntrospectionResults.acceptedClassLoaders Ljava/util/Set;   (line 114)
+                    DUP
+                    ASTORE_1
+                    MONITORENTER
+    finally -> E3
+    |               GETSTATIC org.springframework.beans.CachedIntrospectionResults.acceptedClassLoaders Ljava/util/Set;   (line 115)
+    |               INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+    |               ASTORE_2
+    |               GOTO L5
+    |           L4: ALOAD_2     // Ljava/util/Iterator; it   (line 116)
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST java.lang.ClassLoader
+    |               ASTORE_3
+    |               ALOAD_3     // Ljava/lang/ClassLoader; registeredLoader   (line 117)
+    |               ALOAD_0     // Ljava/lang/ClassLoader; classLoader
+    |               INVOKESTATIC org.springframework.beans.CachedIntrospectionResults.isUnderneathClassLoader (Ljava/lang/ClassLoader;Ljava/lang/ClassLoader;)Z
+    |               IFEQ L5
+    |               ALOAD_2     // Ljava/util/Iterator; it   (line 118)
+    |               INVOKEINTERFACE java.util.Iterator.remove ()V
+    |           L5: ALOAD_2     // Ljava/util/Iterator; it   (line 115)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L4
+    |               ALOAD_1   (line 114)
+    |               MONITOREXIT
+    finally -> E3
+                    GOTO L6
+    finally -> E3
+    |           E3: ALOAD_1
+    |               MONITOREXIT
+    finally -> E3
+                    ATHROW
+                L6: RETURN   (line 122)
+  end public static void clearClassLoader(ClassLoader)
+
+  static org.springframework.beans.CachedIntrospectionResults forClass(Class) throws org.springframework.beans.BeansException:
+                    GETSTATIC org.springframework.beans.CachedIntrospectionResults.classCache Ljava/util/Map;   (line 134)
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Object; value   (line 135)
+                    INSTANCEOF java.lang.ref.Reference
+                    IFEQ L0
+                    ALOAD_2     // Ljava/lang/Object; value   (line 136)
+                    CHECKCAST java.lang.ref.Reference
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/ref/Reference; ref   (line 137)
+                    INVOKEVIRTUAL java.lang.ref.Reference.get ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.CachedIntrospectionResults
+                    ASTORE_1
+                    GOTO L1
+                L0: ALOAD_2     // Ljava/lang/Object; value   (line 140)
+                    CHECKCAST org.springframework.beans.CachedIntrospectionResults
+                    ASTORE_1
+                L1: ALOAD_1     // Lorg/springframework/beans/CachedIntrospectionResults; results   (line 142)
+                    IFNONNULL L7
+                    ALOAD_0     // Ljava/lang/Class; beanClass   (line 146)
+                    LDC org.springframework.beans.CachedIntrospectionResults
+                    INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+                    INVOKESTATIC org.springframework.util.ClassUtils.isCacheSafe (Ljava/lang/Class;Ljava/lang/ClassLoader;)Z
+                    IFNE L2
+                    ALOAD_0     // Ljava/lang/Class; beanClass   (line 147)
+                    INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+                    INVOKESTATIC org.springframework.beans.CachedIntrospectionResults.isClassLoaderAccepted (Ljava/lang/ClassLoader;)Z
+                    IFNE L2
+                    ICONST_0
+                    GOTO L3
+                L2: ICONST_1
+                L3: ISTORE_3   (line 145)
+                    ILOAD_3     // Z fullyCacheable   (line 148)
+                    IFNE L4
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "BeanInfo"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+                    INVOKESTATIC org.springframework.util.ClassUtils.isPresent (Ljava/lang/String;Ljava/lang/ClassLoader;)Z
+                    IFNE L5
+                L4: NEW org.springframework.beans.CachedIntrospectionResults   (line 149)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    ILOAD_3     // Z fullyCacheable
+                    INVOKESPECIAL org.springframework.beans.CachedIntrospectionResults.<init> (Ljava/lang/Class;Z)V
+                    ASTORE_1     // Lorg/springframework/beans/CachedIntrospectionResults; results
+                    GETSTATIC org.springframework.beans.CachedIntrospectionResults.classCache Ljava/util/Map;   (line 150)
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    ALOAD_1     // Lorg/springframework/beans/CachedIntrospectionResults; results
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    GOTO L7
+                L5: GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 153)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L6
+                    GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 154)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Not strongly caching class ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "] because it is not cache-safe"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L6: NEW org.springframework.beans.CachedIntrospectionResults   (line 156)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.beans.CachedIntrospectionResults.<init> (Ljava/lang/Class;Z)V
+                    ASTORE_1     // Lorg/springframework/beans/CachedIntrospectionResults; results
+                    GETSTATIC org.springframework.beans.CachedIntrospectionResults.classCache Ljava/util/Map;   (line 157)
+                    ALOAD_0     // Ljava/lang/Class; beanClass
+                    NEW java.lang.ref.WeakReference
+                    DUP
+                    ALOAD_1     // Lorg/springframework/beans/CachedIntrospectionResults; results
+                    INVOKESPECIAL java.lang.ref.WeakReference.<init> (Ljava/lang/Object;)V
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                L7: ALOAD_1     // Lorg/springframework/beans/CachedIntrospectionResults; results   (line 160)
+                    ARETURN
+  end static org.springframework.beans.CachedIntrospectionResults forClass(Class) throws org.springframework.beans.BeansException
+
+  private static boolean isClassLoaderAccepted(ClassLoader):
+                    GETSTATIC org.springframework.beans.CachedIntrospectionResults.acceptedClassLoaders Ljava/util/Set;   (line 174)
+                    GETSTATIC org.springframework.beans.CachedIntrospectionResults.acceptedClassLoaders Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.size ()I
+                    ANEWARRAY java.lang.ClassLoader
+                    INVOKEINTERFACE java.util.Set.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Ljava.lang.ClassLoader;
+                    ASTORE_1   (line 173)
+                    ALOAD_1     // [Ljava/lang/ClassLoader; acceptedLoaderArray   (line 175)
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L2
+                L0: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_0     // Ljava/lang/ClassLoader; classLoader   (line 176)
+                    ALOAD_2     // Ljava/lang/ClassLoader; registeredLoader
+                    INVOKESTATIC org.springframework.beans.CachedIntrospectionResults.isUnderneathClassLoader (Ljava/lang/ClassLoader;Ljava/lang/ClassLoader;)Z
+                    IFEQ L1
+                    ICONST_1   (line 177)
+                    IRETURN
+                L1: IINC_3 1   (line 175)
+                L2: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L0
+                    ICONST_0   (line 180)
+                    IRETURN
+  end private static boolean isClassLoaderAccepted(ClassLoader)
+
+  private static boolean isUnderneathClassLoader(ClassLoader, ClassLoader):
+                    ALOAD_0     // Ljava/lang/ClassLoader; candidate   (line 190)
+                    IFNONNULL L0
+                    ICONST_0   (line 191)
+                    IRETURN
+                L0: ALOAD_0     // Ljava/lang/ClassLoader; candidate   (line 193)
+                    ALOAD_1     // Ljava/lang/ClassLoader; parent
+                    IF_ACMPNE L1
+                    ICONST_1   (line 194)
+                    IRETURN
+                L1: ALOAD_0     // Ljava/lang/ClassLoader; candidate   (line 196)
+                    ASTORE_2
+                    GOTO L3   (line 197)
+                L2: ALOAD_2     // Ljava/lang/ClassLoader; classLoaderToCheck   (line 198)
+                    INVOKEVIRTUAL java.lang.ClassLoader.getParent ()Ljava/lang/ClassLoader;
+                    ASTORE_2     // Ljava/lang/ClassLoader; classLoaderToCheck
+                    ALOAD_2     // Ljava/lang/ClassLoader; classLoaderToCheck   (line 199)
+                    ALOAD_1     // Ljava/lang/ClassLoader; parent
+                    IF_ACMPNE L3
+                    ICONST_1   (line 200)
+                    IRETURN
+                L3: ALOAD_2     // Ljava/lang/ClassLoader; classLoaderToCheck   (line 197)
+                    IFNONNULL L2
+                    ICONST_0   (line 203)
+                    IRETURN
+  end private static boolean isUnderneathClassLoader(ClassLoader, ClassLoader)
+
+  private void <init>(Class, boolean) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 219)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.CachedIntrospectionResults.<init>(java.lang.Class, boolean))
+    | catch java.beans.IntrospectionException -> E0
+    | |             GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 221)
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+    | |             IFEQ L0
+    | |             GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 222)
+    | |             NEW java.lang.StringBuilder
+    | |             DUP
+    | |             LDC "Getting BeanInfo for class ["
+    | |             INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    | |             ALOAD_1     // Ljava/lang/Class; beanClass
+    | |             INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             LDC "]"
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;)V
+    | |         L0: ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 224)
+    | |             NEW org.springframework.beans.ExtendedBeanInfo
+    | |             DUP
+    | |             ALOAD_1     // Ljava/lang/Class; beanClass
+    | |             INVOKESTATIC java.beans.Introspector.getBeanInfo (Ljava/lang/Class;)Ljava/beans/BeanInfo;
+    | |             INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.<init> (Ljava/beans/BeanInfo;)V
+    | |             PUTFIELD org.springframework.beans.CachedIntrospectionResults.beanInfo Ljava/beans/BeanInfo;
+    | |             ALOAD_1     // Ljava/lang/Class; beanClass   (line 230)
+    | |             ASTORE_3
+    | |         L1: ALOAD_3     // Ljava/lang/Class; classToFlush   (line 232)
+    | |             INVOKESTATIC java.beans.Introspector.flushFromCaches (Ljava/lang/Class;)V
+    | |             ALOAD_3     // Ljava/lang/Class; classToFlush   (line 233)
+    | |             INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+    | |             ASTORE_3     // Ljava/lang/Class; classToFlush
+    | |             ALOAD_3     // Ljava/lang/Class; classToFlush   (line 235)
+    | |             IFNONNULL L1
+    | |             GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 237)
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+    | |             IFEQ L2
+    | |             GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 238)
+    | |             NEW java.lang.StringBuilder
+    | |             DUP
+    | |             LDC "Caching PropertyDescriptors for class ["
+    | |             INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    | |             ALOAD_1     // Ljava/lang/Class; beanClass
+    | |             INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             LDC "]"
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;)V
+    | |         L2: ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 240)
+    | |             NEW java.util.LinkedHashMap
+    | |             DUP
+    | |             INVOKESPECIAL java.util.LinkedHashMap.<init> ()V
+    | |             PUTFIELD org.springframework.beans.CachedIntrospectionResults.propertyDescriptorCache Ljava/util/Map;
+    | |             ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 243)
+    | |             GETFIELD org.springframework.beans.CachedIntrospectionResults.beanInfo Ljava/beans/BeanInfo;
+    | |             INVOKEINTERFACE java.beans.BeanInfo.getPropertyDescriptors ()[Ljava/beans/PropertyDescriptor;
+    | |             ASTORE 4
+    | |             ALOAD 4     // [Ljava/beans/PropertyDescriptor; pds   (line 244)
+    | |             DUP
+    | |             ASTORE 8
+    | |             ARRAYLENGTH
+    | |             ISTORE 7
+    | |             ICONST_0
+    | |             ISTORE 6
+    | |             GOTO L12
+    | |         L3: ALOAD 8
+    | |             ILOAD 6
+    | |             AALOAD
+    | |             ASTORE 5
+    | |             LDC java.lang.Class   (line 245)
+    | |             ALOAD_1     // Ljava/lang/Class; beanClass
+    | |             INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+    | |             IFEQ L4
+    | |             LDC "classLoader"
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd
+    | |             INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+    | |             INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    | |             IFEQ L4
+    | |             GOTO L11   (line 247)
+    | |         L4: GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 249)
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+    | |             IFEQ L9
+    | |             GETSTATIC org.springframework.beans.CachedIntrospectionResults.logger Lorg/apache/commons/logging/Log;   (line 250)
+    | |             NEW java.lang.StringBuilder
+    | |             DUP
+    | |             LDC_W "Found bean property '"
+    | |             INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd
+    | |             INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             LDC_W "'"
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd   (line 251)
+    | |             INVOKEVIRTUAL java.beans.PropertyDescriptor.getPropertyType ()Ljava/lang/Class;
+    | |             IFNULL L5
+    | |             NEW java.lang.StringBuilder
+    | |             DUP
+    | |             LDC_W " of type ["
+    | |             INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd
+    | |             INVOKEVIRTUAL java.beans.PropertyDescriptor.getPropertyType ()Ljava/lang/Class;
+    | |             INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             LDC "]"
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    | |             GOTO L6
+    | |         L5: LDC_W ""
+    | |         L6: INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd   (line 252)
+    | |             INVOKEVIRTUAL java.beans.PropertyDescriptor.getPropertyEditorClass ()Ljava/lang/Class;
+    | |             IFNULL L7
+    | |             NEW java.lang.StringBuilder   (line 253)
+    | |             DUP
+    | |             LDC_W "; editor ["
+    | |             INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd
+    | |             INVOKEVIRTUAL java.beans.PropertyDescriptor.getPropertyEditorClass ()Ljava/lang/Class;
+    | |             INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             LDC "]"
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    | |             GOTO L8
+    | |         L7: LDC_W ""
+    | |         L8: INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;   (line 252)
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;)V   (line 250)
+    | |         L9: ILOAD_2     // Z cacheFullMetadata   (line 255)
+    | |             IFEQ L10
+    | |             ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 256)
+    | |             ALOAD_1     // Ljava/lang/Class; beanClass
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd
+    | |             INVOKESPECIAL org.springframework.beans.CachedIntrospectionResults.buildGenericTypeAwarePropertyDescriptor (Ljava/lang/Class;Ljava/beans/PropertyDescriptor;)Ljava/beans/PropertyDescriptor;
+    | |             ASTORE 5     // Ljava/beans/PropertyDescriptor; pd
+    | |        L10: ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 258)
+    | |             GETFIELD org.springframework.beans.CachedIntrospectionResults.propertyDescriptorCache Ljava/util/Map;
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd
+    | |             INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+    | |             ALOAD 5     // Ljava/beans/PropertyDescriptor; pd
+    | |             INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    | |             POP
+    | |        L11: IINC 6 1   (line 244)
+    | |        L12: ILOAD 6
+    | |             ILOAD 7
+    | |             IF_ICMPLT L3
+    | catch java.beans.IntrospectionException -> E0
+    |               GOTO L13
+    |           E0: ASTORE_3   (line 261)
+    |               NEW org.springframework.beans.FatalBeanException   (line 262)
+    |               DUP
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               LDC_W "Failed to obtain BeanInfo for class ["
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD_1     // Ljava/lang/Class; beanClass
+    |               INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "]"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               ALOAD_3     // Ljava/beans/IntrospectionException; ex
+    |               INVOKESPECIAL org.springframework.beans.FatalBeanException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+    |               ATHROW
+    |          L13: RETURN   (line 264)
+    constructor-execution(void org.springframework.beans.CachedIntrospectionResults.<init>(java.lang.Class, boolean))
+  end private void <init>(Class, boolean) throws org.springframework.beans.BeansException
+
+  java.beans.BeanInfo getBeanInfo():
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 267)
+                    GETFIELD org.springframework.beans.CachedIntrospectionResults.beanInfo Ljava/beans/BeanInfo;
+                    ARETURN
+  end java.beans.BeanInfo getBeanInfo()
+
+  Class getBeanClass():
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 271)
+                    GETFIELD org.springframework.beans.CachedIntrospectionResults.beanInfo Ljava/beans/BeanInfo;
+                    INVOKEINTERFACE java.beans.BeanInfo.getBeanDescriptor ()Ljava/beans/BeanDescriptor;
+                    INVOKEVIRTUAL java.beans.BeanDescriptor.getBeanClass ()Ljava/lang/Class;
+                    ARETURN
+  end Class getBeanClass()
+
+  java.beans.PropertyDescriptor getPropertyDescriptor(String):
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 275)
+                    GETFIELD org.springframework.beans.CachedIntrospectionResults.propertyDescriptorCache Ljava/util/Map;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.beans.PropertyDescriptor
+                    ASTORE_2
+                    ALOAD_2     // Ljava/beans/PropertyDescriptor; pd   (line 276)
+                    IFNONNULL L0
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKESTATIC org.springframework.util.StringUtils.hasLength (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 278)
+                    GETFIELD org.springframework.beans.CachedIntrospectionResults.propertyDescriptorCache Ljava/util/Map;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; name
+                    ICONST_0
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.toLowerCase ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; name
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.beans.PropertyDescriptor
+                    ASTORE_2     // Ljava/beans/PropertyDescriptor; pd
+                    ALOAD_2     // Ljava/beans/PropertyDescriptor; pd   (line 279)
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 280)
+                    GETFIELD org.springframework.beans.CachedIntrospectionResults.propertyDescriptorCache Ljava/util/Map;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; name
+                    ICONST_0
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.toUpperCase ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; name
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.beans.PropertyDescriptor
+                    ASTORE_2     // Ljava/beans/PropertyDescriptor; pd
+                L0: ALOAD_2     // Ljava/beans/PropertyDescriptor; pd   (line 283)
+                    IFNULL L1
+                    ALOAD_2     // Ljava/beans/PropertyDescriptor; pd
+                    INSTANCEOF org.springframework.beans.GenericTypeAwarePropertyDescriptor
+                    IFEQ L2
+                L1: ALOAD_2     // Ljava/beans/PropertyDescriptor; pd
+                    GOTO L3
+                L2: ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 284)
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this
+                    INVOKEVIRTUAL org.springframework.beans.CachedIntrospectionResults.getBeanClass ()Ljava/lang/Class;
+                    ALOAD_2     // Ljava/beans/PropertyDescriptor; pd
+                    INVOKESPECIAL org.springframework.beans.CachedIntrospectionResults.buildGenericTypeAwarePropertyDescriptor (Ljava/lang/Class;Ljava/beans/PropertyDescriptor;)Ljava/beans/PropertyDescriptor;
+                L3: ARETURN   (line 283)
+  end java.beans.PropertyDescriptor getPropertyDescriptor(String)
+
+  java.beans.PropertyDescriptor[] getPropertyDescriptors():
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 288)
+                    GETFIELD org.springframework.beans.CachedIntrospectionResults.propertyDescriptorCache Ljava/util/Map;
+                    INVOKEINTERFACE java.util.Map.size ()I
+                    ANEWARRAY java.beans.PropertyDescriptor
+                    ASTORE_1
+                    ICONST_0   (line 289)
+                    ISTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 290)
+                    GETFIELD org.springframework.beans.CachedIntrospectionResults.propertyDescriptorCache Ljava/util/Map;
+                    INVOKEINTERFACE java.util.Map.values ()Ljava/util/Collection;
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE 4
+                    GOTO L3
+                L0: ALOAD 4
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.beans.PropertyDescriptor
+                    ASTORE_3
+                    ALOAD_1     // [Ljava/beans/PropertyDescriptor; pds   (line 291)
+                    ILOAD_2     // I i
+                    ALOAD_3     // Ljava/beans/PropertyDescriptor; pd
+                    INSTANCEOF org.springframework.beans.GenericTypeAwarePropertyDescriptor
+                    IFEQ L1
+                    ALOAD_3     // Ljava/beans/PropertyDescriptor; pd
+                    GOTO L2
+                L1: ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this   (line 292)
+                    ALOAD_0     // Lorg/springframework/beans/CachedIntrospectionResults; this
+                    INVOKEVIRTUAL org.springframework.beans.CachedIntrospectionResults.getBeanClass ()Ljava/lang/Class;
+                    ALOAD_3     // Ljava/beans/PropertyDescriptor; pd
+                    INVOKESPECIAL org.springframework.beans.CachedIntrospectionResults.buildGenericTypeAwarePropertyDescriptor (Ljava/lang/Class;Ljava/beans/PropertyDescriptor;)Ljava/beans/PropertyDescriptor;
+                L2: AASTORE   (line 291)
+                    IINC_2 1     // I i   (line 293)
+                L3: ALOAD 4   (line 290)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ALOAD_1     // [Ljava/beans/PropertyDescriptor; pds   (line 295)
+                    ARETURN
+  end java.beans.PropertyDescriptor[] getPropertyDescriptors()
+
+  private java.beans.PropertyDescriptor buildGenericTypeAwarePropertyDescriptor(Class, java.beans.PropertyDescriptor):
+    catch java.beans.IntrospectionException -> E0
+    |               NEW org.springframework.beans.GenericTypeAwarePropertyDescriptor   (line 300)
+    |               DUP
+    |               ALOAD_1     // Ljava/lang/Class; beanClass
+    |               ALOAD_2     // Ljava/beans/PropertyDescriptor; pd
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+    |               ALOAD_2     // Ljava/beans/PropertyDescriptor; pd
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+    |               ALOAD_2     // Ljava/beans/PropertyDescriptor; pd   (line 301)
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+    |               ALOAD_2     // Ljava/beans/PropertyDescriptor; pd
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getPropertyEditorClass ()Ljava/lang/Class;
+    |               INVOKESPECIAL org.springframework.beans.GenericTypeAwarePropertyDescriptor.<init> (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/Class;)V   (line 300)
+    catch java.beans.IntrospectionException -> E0
+                    ARETURN
+                E0: ASTORE_3   (line 303)
+                    NEW org.springframework.beans.FatalBeanException   (line 304)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Failed to re-introspect class ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/Class; beanClass
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD_3     // Ljava/beans/IntrospectionException; ex
+                    INVOKESPECIAL org.springframework.beans.FatalBeanException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ATHROW
+  end private java.beans.PropertyDescriptor buildGenericTypeAwarePropertyDescriptor(Class, java.beans.PropertyDescriptor)
+end public class org.springframework.beans.CachedIntrospectionResults
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:665)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:615)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1752)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1464)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1273)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:394)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:281)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:95)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:52)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.BeanWrapperImpl.getCachedIntrospectionResults(BeanWrapperImpl.java:324)
+	at org.springframework.beans.BeanWrapperImpl.getPropertyDescriptorInternal(BeanWrapperImpl.java:354)
+	at org.springframework.beans.BeanWrapperImpl.isWritableProperty(BeanWrapperImpl.java:430)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:649)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.curso.spring.springioc0007.Main.init(Main.java:29)
+	at com.curso.spring.springioc0007.Main.main(Main.java:24)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

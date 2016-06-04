@@ -1,0 +1,590 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114038.092.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+info using configuration file:/C:/Users/usuario/.m2/repository/org/springframework/spring-aspects/3.1.2.RELEASE/spring-aspects-3.1.2.RELEASE.jar!/META-INF/aop.xml
+debug weaving 'org.springframework.core.NamedThreadLocal'
+abort trouble in: 
+public class org.springframework.core.NamedThreadLocal extends java.lang.ThreadLocal:
+  private final String name
+  public void <init>(String):
+                    ALOAD_0     // Lorg/springframework/core/NamedThreadLocal; this   (line 38)
+                    INVOKESPECIAL java.lang.ThreadLocal.<init> ()V
+    constructor-execution(void org.springframework.core.NamedThreadLocal.<init>(java.lang.String))
+    |               ALOAD_1     // Ljava/lang/String; name   (line 39)
+    |               LDC "Name must not be empty"
+    |               INVOKESTATIC org.springframework.util.Assert.hasText (Ljava/lang/String;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/core/NamedThreadLocal; this   (line 40)
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               PUTFIELD org.springframework.core.NamedThreadLocal.name Ljava/lang/String;
+    |               RETURN   (line 41)
+    constructor-execution(void org.springframework.core.NamedThreadLocal.<init>(java.lang.String))
+  end public void <init>(String)
+
+  public String toString():
+                    ALOAD_0     // Lorg/springframework/core/NamedThreadLocal; this   (line 45)
+                    GETFIELD org.springframework.core.NamedThreadLocal.name Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+end public class org.springframework.core.NamedThreadLocal
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.beans.factory.config.DependencyDescriptor'
+abort trouble in: 
+public class org.springframework.beans.factory.config.DependencyDescriptor extends java.lang.Object implements java.io.Serializable:
+  private transient org.springframework.core.MethodParameter methodParameter
+  private transient java.lang.reflect.Field field
+  private Class declaringClass
+  private String methodName
+  private Class[] parameterTypes
+  private int parameterIndex
+  private String fieldName
+  private final boolean required
+  private final boolean eager
+  private int nestingLevel
+  private transient java.lang.annotation.Annotation[] fieldAnnotations
+  public void <init>(org.springframework.core.MethodParameter, boolean):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 72)
+                    ALOAD_1     // Lorg/springframework/core/MethodParameter; methodParameter
+                    ILOAD_2     // Z required
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.beans.factory.config.DependencyDescriptor.<init> (Lorg/springframework/core/MethodParameter;ZZ)V
+    constructor-execution(void org.springframework.beans.factory.config.DependencyDescriptor.<init>(org.springframework.core.MethodParameter, boolean))
+    |               RETURN   (line 73)
+    constructor-execution(void org.springframework.beans.factory.config.DependencyDescriptor.<init>(org.springframework.core.MethodParameter, boolean))
+  end public void <init>(org.springframework.core.MethodParameter, boolean)
+
+  public void <init>(org.springframework.core.MethodParameter, boolean, boolean):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 82)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.DependencyDescriptor.<init>(org.springframework.core.MethodParameter, boolean, boolean))
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 60)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.nestingLevel I
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; methodParameter   (line 83)
+    |               LDC "MethodParameter must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 84)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; methodParameter
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 85)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; methodParameter
+    |               INVOKEVIRTUAL org.springframework.core.MethodParameter.getDeclaringClass ()Ljava/lang/Class;
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.declaringClass Ljava/lang/Class;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 86)
+    |               GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;
+    |               INVOKEVIRTUAL org.springframework.core.MethodParameter.getMethod ()Ljava/lang/reflect/Method;
+    |               IFNULL L0
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 87)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; methodParameter
+    |               INVOKEVIRTUAL org.springframework.core.MethodParameter.getMethod ()Ljava/lang/reflect/Method;
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 88)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; methodParameter
+    |               INVOKEVIRTUAL org.springframework.core.MethodParameter.getMethod ()Ljava/lang/reflect/Method;
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.parameterTypes [Ljava/lang/Class;
+    |               GOTO L1
+    |           L0: ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 91)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; methodParameter
+    |               INVOKEVIRTUAL org.springframework.core.MethodParameter.getConstructor ()Ljava/lang/reflect/Constructor;
+    |               INVOKEVIRTUAL java.lang.reflect.Constructor.getParameterTypes ()[Ljava/lang/Class;
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.parameterTypes [Ljava/lang/Class;
+    |           L1: ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 93)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; methodParameter
+    |               INVOKEVIRTUAL org.springframework.core.MethodParameter.getParameterIndex ()I
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.parameterIndex I
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 94)
+    |               ILOAD_2     // Z required
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.required Z
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 95)
+    |               ILOAD_3     // Z eager
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.eager Z
+    |               RETURN   (line 96)
+    constructor-execution(void org.springframework.beans.factory.config.DependencyDescriptor.<init>(org.springframework.core.MethodParameter, boolean, boolean))
+  end public void <init>(org.springframework.core.MethodParameter, boolean, boolean)
+
+  public void <init>(java.lang.reflect.Field, boolean):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 105)
+                    ALOAD_1     // Ljava/lang/reflect/Field; field
+                    ILOAD_2     // Z required
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.beans.factory.config.DependencyDescriptor.<init> (Ljava/lang/reflect/Field;ZZ)V
+    constructor-execution(void org.springframework.beans.factory.config.DependencyDescriptor.<init>(java.lang.reflect.Field, boolean))
+    |               RETURN   (line 106)
+    constructor-execution(void org.springframework.beans.factory.config.DependencyDescriptor.<init>(java.lang.reflect.Field, boolean))
+  end public void <init>(java.lang.reflect.Field, boolean)
+
+  public void <init>(java.lang.reflect.Field, boolean, boolean):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 115)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.DependencyDescriptor.<init>(java.lang.reflect.Field, boolean, boolean))
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 60)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.nestingLevel I
+    |               ALOAD_1     // Ljava/lang/reflect/Field; field   (line 116)
+    |               LDC "Field must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 117)
+    |               ALOAD_1     // Ljava/lang/reflect/Field; field
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 118)
+    |               ALOAD_1     // Ljava/lang/reflect/Field; field
+    |               INVOKEVIRTUAL java.lang.reflect.Field.getDeclaringClass ()Ljava/lang/Class;
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.declaringClass Ljava/lang/Class;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 119)
+    |               ALOAD_1     // Ljava/lang/reflect/Field; field
+    |               INVOKEVIRTUAL java.lang.reflect.Field.getName ()Ljava/lang/String;
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.fieldName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 120)
+    |               ILOAD_2     // Z required
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.required Z
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 121)
+    |               ILOAD_3     // Z eager
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.eager Z
+    |               RETURN   (line 122)
+    constructor-execution(void org.springframework.beans.factory.config.DependencyDescriptor.<init>(java.lang.reflect.Field, boolean, boolean))
+  end public void <init>(java.lang.reflect.Field, boolean, boolean)
+
+  public org.springframework.core.MethodParameter getMethodParameter():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 131)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;
+                    ARETURN
+  end public org.springframework.core.MethodParameter getMethodParameter()
+
+  public java.lang.reflect.Field getField():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 140)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+                    ARETURN
+  end public java.lang.reflect.Field getField()
+
+  public boolean isRequired():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 147)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.required Z
+                    IRETURN
+  end public boolean isRequired()
+
+  public boolean isEager():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 155)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.eager Z
+                    IRETURN
+  end public boolean isEager()
+
+  public void increaseNestingLevel():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 160)
+                    DUP
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.nestingLevel I
+                    ICONST_1
+                    IADD
+                    PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.nestingLevel I
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 161)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 162)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.increaseNestingLevel ()V
+                L0: RETURN   (line 164)
+  end public void increaseNestingLevel()
+
+  public void initParameterNameDiscovery(org.springframework.core.ParameterNameDiscoverer):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 173)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 174)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;
+                    ALOAD_1     // Lorg/springframework/core/ParameterNameDiscoverer; parameterNameDiscoverer
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.initParameterNameDiscovery (Lorg/springframework/core/ParameterNameDiscoverer;)V
+                L0: RETURN   (line 176)
+  end public void initParameterNameDiscovery(org.springframework.core.ParameterNameDiscoverer)
+
+  public String getDependencyName():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 183)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+                    INVOKEVIRTUAL java.lang.reflect.Field.getName ()Ljava/lang/String;
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getParameterName ()Ljava/lang/String;
+                L1: ARETURN
+  end public String getDependencyName()
+
+  public Class getDependencyType():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 191)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+                    IFNULL L3
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 192)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.nestingLevel I
+                    ICONST_1
+                    IF_ICMPLE L2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 193)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+                    INVOKEVIRTUAL java.lang.reflect.Field.getGenericType ()Ljava/lang/reflect/Type;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/reflect/Type; type   (line 194)
+                    INSTANCEOF java.lang.reflect.ParameterizedType
+                    IFEQ L1
+                    ALOAD_1     // Ljava/lang/reflect/Type; type   (line 195)
+                    CHECKCAST java.lang.reflect.ParameterizedType
+                    INVOKEINTERFACE java.lang.reflect.ParameterizedType.getActualTypeArguments ()[Ljava/lang/reflect/Type;
+                    ICONST_0
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/reflect/Type; arg   (line 196)
+                    INSTANCEOF java.lang.Class
+                    IFEQ L0
+                    ALOAD_2     // Ljava/lang/reflect/Type; arg   (line 197)
+                    CHECKCAST java.lang.Class
+                    ARETURN
+                L0: ALOAD_2     // Ljava/lang/reflect/Type; arg   (line 199)
+                    INSTANCEOF java.lang.reflect.ParameterizedType
+                    IFEQ L1
+                    ALOAD_2     // Ljava/lang/reflect/Type; arg   (line 200)
+                    CHECKCAST java.lang.reflect.ParameterizedType
+                    INVOKEINTERFACE java.lang.reflect.ParameterizedType.getRawType ()Ljava/lang/reflect/Type;
+                    ASTORE_2     // Ljava/lang/reflect/Type; arg
+                    ALOAD_2     // Ljava/lang/reflect/Type; arg   (line 201)
+                    INSTANCEOF java.lang.Class
+                    IFEQ L1
+                    ALOAD_2     // Ljava/lang/reflect/Type; arg   (line 202)
+                    CHECKCAST java.lang.Class
+                    ARETURN
+                L1: LDC java.lang.Object   (line 206)
+                    ARETURN
+                L2: ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 209)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+                    INVOKEVIRTUAL java.lang.reflect.Field.getType ()Ljava/lang/Class;
+                    ARETURN
+                L3: ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 213)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getNestedParameterType ()Ljava/lang/Class;
+                    ARETURN
+  end public Class getDependencyType()
+
+  public Class getCollectionType():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 222)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 223)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.nestingLevel I
+                    INVOKESTATIC org.springframework.core.GenericCollectionTypeResolver.getCollectionFieldType (Ljava/lang/reflect/Field;I)Ljava/lang/Class;
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 224)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;
+                    INVOKESTATIC org.springframework.core.GenericCollectionTypeResolver.getCollectionParameterType (Lorg/springframework/core/MethodParameter;)Ljava/lang/Class;
+                L1: ARETURN   (line 222)
+  end public Class getCollectionType()
+
+  public Class getMapKeyType():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 232)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 233)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.nestingLevel I
+                    INVOKESTATIC org.springframework.core.GenericCollectionTypeResolver.getMapKeyFieldType (Ljava/lang/reflect/Field;I)Ljava/lang/Class;
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 234)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;
+                    INVOKESTATIC org.springframework.core.GenericCollectionTypeResolver.getMapKeyParameterType (Lorg/springframework/core/MethodParameter;)Ljava/lang/Class;
+                L1: ARETURN   (line 232)
+  end public Class getMapKeyType()
+
+  public Class getMapValueType():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 242)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 243)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.nestingLevel I
+                    INVOKESTATIC org.springframework.core.GenericCollectionTypeResolver.getMapValueFieldType (Ljava/lang/reflect/Field;I)Ljava/lang/Class;
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 244)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;
+                    INVOKESTATIC org.springframework.core.GenericCollectionTypeResolver.getMapValueParameterType (Lorg/springframework/core/MethodParameter;)Ljava/lang/Class;
+                L1: ARETURN   (line 242)
+  end public Class getMapValueType()
+
+  public java.lang.annotation.Annotation[] getAnnotations():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 251)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+                    IFNULL L1
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 252)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.fieldAnnotations [Ljava/lang/annotation/Annotation;
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 253)
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+                    INVOKEVIRTUAL java.lang.reflect.Field.getAnnotations ()[Ljava/lang/annotation/Annotation;
+                    PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.fieldAnnotations [Ljava/lang/annotation/Annotation;
+                L0: ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 255)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.fieldAnnotations [Ljava/lang/annotation/Annotation;
+                    ARETURN
+                L1: ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 258)
+                    GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getParameterAnnotations ()[Ljava/lang/annotation/Annotation;
+                    ARETURN
+  end public java.lang.annotation.Annotation[] getAnnotations()
+
+  private void readObject(java.io.ObjectInputStream) throws java.io.IOException, java.lang.ClassNotFoundException:
+                    ALOAD_1     // Ljava/io/ObjectInputStream; ois   (line 269)
+                    INVOKEVIRTUAL java.io.ObjectInputStream.defaultReadObject ()V
+    catch java.lang.Throwable -> E0
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 273)
+    |               GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.fieldName Ljava/lang/String;
+    |               IFNULL L0
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 274)
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this
+    |               GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.declaringClass Ljava/lang/Class;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this
+    |               GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.fieldName Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.Class.getDeclaredField (Ljava/lang/String;)Ljava/lang/reflect/Field;
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.field Ljava/lang/reflect/Field;
+    |               GOTO L5
+    |           L0: ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 277)
+    |               GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodName Ljava/lang/String;
+    |               IFNULL L1
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 278)
+    |               NEW org.springframework.core.MethodParameter
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 279)
+    |               GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.declaringClass Ljava/lang/Class;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this
+    |               GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this
+    |               GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.parameterTypes [Ljava/lang/Class;
+    |               INVOKEVIRTUAL java.lang.Class.getDeclaredMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this
+    |               GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.parameterIndex I
+    |               INVOKESPECIAL org.springframework.core.MethodParameter.<init> (Ljava/lang/reflect/Method;I)V
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;   (line 278)
+    |               GOTO L2
+    |           L1: ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 282)
+    |               NEW org.springframework.core.MethodParameter
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 283)
+    |               GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.declaringClass Ljava/lang/Class;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this
+    |               GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.parameterTypes [Ljava/lang/Class;
+    |               INVOKEVIRTUAL java.lang.Class.getDeclaredConstructor ([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this
+    |               GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.parameterIndex I
+    |               INVOKESPECIAL org.springframework.core.MethodParameter.<init> (Ljava/lang/reflect/Constructor;I)V
+    |               PUTFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;   (line 282)
+    |           L2: ICONST_1   (line 285)
+    |               ISTORE_2
+    |               GOTO L4
+    |           L3: ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this   (line 286)
+    |               GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.methodParameter Lorg/springframework/core/MethodParameter;
+    |               INVOKEVIRTUAL org.springframework.core.MethodParameter.increaseNestingLevel ()V
+    |               IINC_2 1     // I i   (line 285)
+    |           L4: ILOAD_2     // I i
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/DependencyDescriptor; this
+    |               GETFIELD org.springframework.beans.factory.config.DependencyDescriptor.nestingLevel I
+    |               IF_ICMPLT L3
+    catch java.lang.Throwable -> E0
+                    GOTO L5
+                E0: ASTORE_2   (line 290)
+                    NEW java.lang.IllegalStateException   (line 291)
+                    DUP
+                    LDC "Could not find original class structure"
+                    ALOAD_2     // Ljava/lang/Throwable; ex
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ATHROW
+                L5: RETURN   (line 293)
+  end private void readObject(java.io.ObjectInputStream) throws java.io.IOException, java.lang.ClassNotFoundException
+
+end public class org.springframework.beans.factory.config.DependencyDescriptor
+ -- (ClassFormatException) File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:292)
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:224)
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:205)
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:107)
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:363)
+	at org.aspectj.weaver.World.resolve(World.java:258)
+	at org.aspectj.weaver.World.resolve(World.java:180)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:238)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:484)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:70)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:189)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:173)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:119)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:74)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:391)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:336)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:300)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:106)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:146)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:52)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:146)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:146)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:70)
+	at org.aspectj.weaver.Advice.match(Advice.java:106)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:140)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2980)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2489)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:486)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:98)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1733)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1464)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1273)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:394)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:281)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:95)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:52)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.createBeanFactory(AbstractRefreshableApplicationContext.java:195)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:128)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:527)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:441)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.curso.spring.springioc0007.Main.init(Main.java:29)
+	at com.curso.spring.springioc0007.Main.main(Main.java:24)
+
+debug weaving 'org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$AutowireByTypeDependencyDescriptor'
+abort trouble in: 
+ class org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$AutowireByTypeDependencyDescriptor extends org.springframework.beans.factory.config.DependencyDescriptor:
+  public void <init>(org.springframework.core.MethodParameter, boolean):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory$AutowireByTypeDependencyDescriptor; this   (line 1618)
+                    ALOAD_1     // Lorg/springframework/core/MethodParameter; methodParameter
+                    ICONST_0
+                    ILOAD_2     // Z eager
+                    INVOKESPECIAL org.springframework.beans.factory.config.DependencyDescriptor.<init> (Lorg/springframework/core/MethodParameter;ZZ)V
+    constructor-execution(void org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$AutowireByTypeDependencyDescriptor.<init>(org.springframework.core.MethodParameter, boolean))
+    |               RETURN   (line 1619)
+    constructor-execution(void org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$AutowireByTypeDependencyDescriptor.<init>(org.springframework.core.MethodParameter, boolean))
+  end public void <init>(org.springframework.core.MethodParameter, boolean)
+
+  public String getDependencyName():
+                    ACONST_NULL   (line 1623)
+                    ARETURN
+  end public String getDependencyName()
+
+end  class org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$AutowireByTypeDependencyDescriptor
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.beans.factory.UnsatisfiedDependencyException'
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

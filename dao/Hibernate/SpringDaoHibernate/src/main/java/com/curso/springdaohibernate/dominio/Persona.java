@@ -12,10 +12,14 @@ public class Persona implements Serializable {
 
     private Integer id;
     private String nombre;
-    private Set<Aficion> aficionesInternas = new HashSet<Aficion>();
+    private final Set<Aficion> aficionesInternas = new HashSet<>();
     private List<Aficion> aficiones;
 
     public Persona() {
+    }
+
+    public Persona(String nombre) {
+        this.nombre = nombre;
     }
 
     public void setNombre(String nombre) {
@@ -30,24 +34,16 @@ public class Persona implements Serializable {
         return id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
     @Override
     public String toString() {
-        return "Mi nombre es " + getNombre();
+        return "Mi nombre es " + nombre;
     }
 
     public List<Aficion> getAficiones() {
-        return Collections.unmodifiableList(new ArrayList<Aficion>(aficionesInternas));
+        return Collections.unmodifiableList(new ArrayList<>(aficionesInternas));
     }
 
-    public Set<Aficion> getAficionesInternas() {
-        return aficionesInternas;
-    }
-
-    protected void setAficionesInternas(Set<Aficion> aficionesInternas) {
-        this.aficionesInternas = aficionesInternas;
+    public Boolean nuevaAficion(Aficion a){
+        return aficionesInternas.add(a);
     }
 }

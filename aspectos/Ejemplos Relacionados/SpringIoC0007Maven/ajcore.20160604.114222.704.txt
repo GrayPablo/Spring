@@ -1,0 +1,732 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114222.704.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+info using configuration file:/C:/Users/usuario/.m2/repository/org/springframework/spring-aspects/3.1.2.RELEASE/spring-aspects-3.1.2.RELEASE.jar!/META-INF/aop.xml
+debug weaving 'org.springframework.core.Conventions'
+abort trouble in: 
+public abstract class org.springframework.core.Conventions extends java.lang.Object:
+  private static final String PLURAL_SUFFIX = "List"
+  private static final java.util.Set ignoredInterfaces [Signature(Ljava/util/Set<Ljava/lang/Class;>;)]
+  static void <clinit>():
+    staticinitialization(void org.springframework.core.Conventions.<clinit>())
+    |               NEW java.util.HashSet   (line 51)
+    |               DUP
+    |               INVOKESPECIAL java.util.HashSet.<init> ()V
+    |               PUTSTATIC org.springframework.core.Conventions.ignoredInterfaces Ljava/util/Set;
+    |               GETSTATIC org.springframework.core.Conventions.ignoredInterfaces Ljava/util/Set;   (line 54)
+    |               LDC java.io.Serializable
+    |               INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+    |               POP
+    |               GETSTATIC org.springframework.core.Conventions.ignoredInterfaces Ljava/util/Set;   (line 55)
+    |               LDC java.io.Externalizable
+    |               INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+    |               POP
+    |               GETSTATIC org.springframework.core.Conventions.ignoredInterfaces Ljava/util/Set;   (line 56)
+    |               LDC java.lang.Cloneable
+    |               INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+    |               POP
+    |               GETSTATIC org.springframework.core.Conventions.ignoredInterfaces Ljava/util/Set;   (line 57)
+    |               LDC java.lang.Comparable
+    |               INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+    |               POP
+    |               RETURN   (line 39)
+    staticinitialization(void org.springframework.core.Conventions.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/core/Conventions; this   (line 39)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.Conventions.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.core.Conventions.<init>())
+  end public void <init>()
+
+  public static String getVariableName(Object):
+                    ALOAD_0     // Ljava/lang/Object; value   (line 77)
+                    LDC "Value must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ICONST_0   (line 79)
+                    ISTORE_2
+                    ALOAD_0     // Ljava/lang/Object; value   (line 81)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Object; value   (line 82)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getComponentType ()Ljava/lang/Class;
+                    ASTORE_1
+                    ICONST_1   (line 83)
+                    ISTORE_2     // Z pluralize
+                    GOTO L3
+                L0: ALOAD_0     // Ljava/lang/Object; value   (line 85)
+                    INSTANCEOF java.util.Collection
+                    IFEQ L2
+                    ALOAD_0     // Ljava/lang/Object; value   (line 86)
+                    CHECKCAST java.util.Collection
+                    ASTORE_3
+                    ALOAD_3     // Ljava/util/Collection; collection   (line 87)
+                    INVOKEINTERFACE java.util.Collection.isEmpty ()Z
+                    IFEQ L1
+                    NEW java.lang.IllegalArgumentException   (line 88)
+                    DUP
+                    LDC "Cannot generate variable name for an empty Collection"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L1: ALOAD_3     // Ljava/util/Collection; collection   (line 90)
+                    INVOKESTATIC org.springframework.core.Conventions.peekAhead (Ljava/util/Collection;)Ljava/lang/Object;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Object; valueToCheck   (line 91)
+                    INVOKESTATIC org.springframework.core.Conventions.getClassForValue (Ljava/lang/Object;)Ljava/lang/Class;
+                    ASTORE_1
+                    ICONST_1   (line 92)
+                    ISTORE_2     // Z pluralize
+                    GOTO L3
+                L2: ALOAD_0     // Ljava/lang/Object; value   (line 95)
+                    INVOKESTATIC org.springframework.core.Conventions.getClassForValue (Ljava/lang/Object;)Ljava/lang/Class;
+                    ASTORE_1
+                L3: ALOAD_1     // Ljava/lang/Class; valueClass   (line 98)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getShortNameAsProperty (Ljava/lang/Class;)Ljava/lang/String;
+                    ASTORE_3
+                    ILOAD_2     // Z pluralize   (line 99)
+                    IFEQ L4
+                    ALOAD_3     // Ljava/lang/String; name
+                    INVOKESTATIC org.springframework.core.Conventions.pluralize (Ljava/lang/String;)Ljava/lang/String;
+                    GOTO L5
+                L4: ALOAD_3     // Ljava/lang/String; name
+                L5: ARETURN
+  end public static String getVariableName(Object)
+
+  public static String getVariableNameForParameter(org.springframework.core.MethodParameter):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; parameter   (line 109)
+                    LDC "MethodParameter must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ICONST_0   (line 111)
+                    ISTORE_2
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; parameter   (line 113)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getParameterType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; parameter   (line 114)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getParameterType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getComponentType ()Ljava/lang/Class;
+                    ASTORE_1
+                    ICONST_1   (line 115)
+                    ISTORE_2     // Z pluralize
+                    GOTO L3
+                L0: LDC java.util.Collection   (line 117)
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; parameter
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getParameterType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; parameter   (line 118)
+                    INVOKESTATIC org.springframework.core.GenericCollectionTypeResolver.getCollectionParameterType (Lorg/springframework/core/MethodParameter;)Ljava/lang/Class;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/Class; valueClass   (line 119)
+                    IFNONNULL L1
+                    NEW java.lang.IllegalArgumentException   (line 120)
+                    DUP
+                    LDC "Cannot generate variable name for non-typed Collection parameter type"   (line 121)
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 120)
+                    ATHROW
+                L1: ICONST_1   (line 123)
+                    ISTORE_2     // Z pluralize
+                    GOTO L3
+                L2: ALOAD_0     // Lorg/springframework/core/MethodParameter; parameter   (line 126)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getParameterType ()Ljava/lang/Class;
+                    ASTORE_1
+                L3: ALOAD_1     // Ljava/lang/Class; valueClass   (line 129)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getShortNameAsProperty (Ljava/lang/Class;)Ljava/lang/String;
+                    ASTORE_3
+                    ILOAD_2     // Z pluralize   (line 130)
+                    IFEQ L4
+                    ALOAD_3     // Ljava/lang/String; name
+                    INVOKESTATIC org.springframework.core.Conventions.pluralize (Ljava/lang/String;)Ljava/lang/String;
+                    GOTO L5
+                L4: ALOAD_3     // Ljava/lang/String; name
+                L5: ARETURN
+  end public static String getVariableNameForParameter(org.springframework.core.MethodParameter)
+
+  public static String getVariableNameForReturnType(java.lang.reflect.Method):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 140)
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    ACONST_NULL
+                    INVOKESTATIC org.springframework.core.Conventions.getVariableNameForReturnType (Ljava/lang/reflect/Method;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/String;
+                    ARETURN
+  end public static String getVariableNameForReturnType(java.lang.reflect.Method)
+
+  public static String getVariableNameForReturnType(java.lang.reflect.Method, Object):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 153)
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKESTATIC org.springframework.core.Conventions.getVariableNameForReturnType (Ljava/lang/reflect/Method;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/String;
+                    ARETURN
+  end public static String getVariableNameForReturnType(java.lang.reflect.Method, Object)
+
+  public static String getVariableNameForReturnType(java.lang.reflect.Method, Class, Object):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 167)
+                    LDC "Method must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    LDC java.lang.Object   (line 169)
+                    ALOAD_1     // Ljava/lang/Class; resolvedType
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_2     // Ljava/lang/Object; value   (line 170)
+                    IFNONNULL L0
+                    NEW java.lang.IllegalArgumentException   (line 171)
+                    DUP
+                    LDC "Cannot generate variable name for an Object return type with null value"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_2     // Ljava/lang/Object; value   (line 173)
+                    INVOKESTATIC org.springframework.core.Conventions.getVariableName (Ljava/lang/Object;)Ljava/lang/String;
+                    ARETURN
+                L1: ICONST_0   (line 177)
+                    ISTORE 4
+                    ALOAD_1     // Ljava/lang/Class; resolvedType   (line 179)
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L2
+                    ALOAD_1     // Ljava/lang/Class; resolvedType   (line 180)
+                    INVOKEVIRTUAL java.lang.Class.getComponentType ()Ljava/lang/Class;
+                    ASTORE_3
+                    ICONST_1   (line 181)
+                    ISTORE 4     // Z pluralize
+                    GOTO L7
+                L2: LDC java.util.Collection   (line 183)
+                    ALOAD_1     // Ljava/lang/Class; resolvedType
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFEQ L6
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 184)
+                    INVOKESTATIC org.springframework.core.GenericCollectionTypeResolver.getCollectionReturnType (Ljava/lang/reflect/Method;)Ljava/lang/Class;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/Class; valueClass   (line 185)
+                    IFNONNULL L5
+                    ALOAD_2     // Ljava/lang/Object; value   (line 186)
+                    INSTANCEOF java.util.Collection
+                    IFNE L3
+                    NEW java.lang.IllegalArgumentException   (line 187)
+                    DUP
+                    LDC "Cannot generate variable name for non-typed Collection return type and a non-Collection value"   (line 188)
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 187)
+                    ATHROW
+                L3: ALOAD_2     // Ljava/lang/Object; value   (line 190)
+                    CHECKCAST java.util.Collection
+                    ASTORE 5
+                    ALOAD 5     // Ljava/util/Collection; collection   (line 191)
+                    INVOKEINTERFACE java.util.Collection.isEmpty ()Z
+                    IFEQ L4
+                    NEW java.lang.IllegalArgumentException   (line 192)
+                    DUP
+                    LDC "Cannot generate variable name for non-typed Collection return type and an empty Collection value"   (line 193)
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 192)
+                    ATHROW
+                L4: ALOAD 5     // Ljava/util/Collection; collection   (line 195)
+                    INVOKESTATIC org.springframework.core.Conventions.peekAhead (Ljava/util/Collection;)Ljava/lang/Object;
+                    ASTORE 6
+                    ALOAD 6     // Ljava/lang/Object; valueToCheck   (line 196)
+                    INVOKESTATIC org.springframework.core.Conventions.getClassForValue (Ljava/lang/Object;)Ljava/lang/Class;
+                    ASTORE_3     // Ljava/lang/Class; valueClass
+                L5: ICONST_1   (line 198)
+                    ISTORE 4     // Z pluralize
+                    GOTO L7
+                L6: ALOAD_1     // Ljava/lang/Class; resolvedType   (line 201)
+                    ASTORE_3
+                L7: ALOAD_3     // Ljava/lang/Class; valueClass   (line 204)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getShortNameAsProperty (Ljava/lang/Class;)Ljava/lang/String;
+                    ASTORE 5
+                    ILOAD 4     // Z pluralize   (line 205)
+                    IFEQ L8
+                    ALOAD 5     // Ljava/lang/String; name
+                    INVOKESTATIC org.springframework.core.Conventions.pluralize (Ljava/lang/String;)Ljava/lang/String;
+                    GOTO L9
+                L8: ALOAD 5     // Ljava/lang/String; name
+                L9: ARETURN
+  end public static String getVariableNameForReturnType(java.lang.reflect.Method, Class, Object)
+
+  public static String attributeNameToPropertyName(String):
+                    ALOAD_0     // Ljava/lang/String; attributeName   (line 214)
+                    LDC "'attributeName' must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/String; attributeName   (line 215)
+                    LDC "-"
+                    INVOKEVIRTUAL java.lang.String.contains (Ljava/lang/CharSequence;)Z
+                    IFNE L0
+                    ALOAD_0     // Ljava/lang/String; attributeName   (line 216)
+                    ARETURN
+                L0: ALOAD_0     // Ljava/lang/String; attributeName   (line 218)
+                    INVOKEVIRTUAL java.lang.String.toCharArray ()[C
+                    ASTORE_1
+                    ALOAD_1     // [C chars   (line 219)
+                    ARRAYLENGTH
+                    ICONST_1
+                    ISUB
+                    NEWARRAY 5
+                    ASTORE_2
+                    ICONST_0   (line 220)
+                    ISTORE_3
+                    ICONST_0   (line 221)
+                    ISTORE 4
+                    ALOAD_1     // [C chars   (line 222)
+                    DUP
+                    ASTORE 8
+                    ARRAYLENGTH
+                    ISTORE 7
+                    ICONST_0
+                    ISTORE 6
+                    GOTO L5
+                L1: ALOAD 8
+                    ILOAD 6
+                    CALOAD
+                    ISTORE 5
+                    ILOAD 5     // C c   (line 223)
+                    BIPUSH 45
+                    IF_ICMPNE L2
+                    ICONST_1   (line 224)
+                    ISTORE 4     // Z upperCaseNext
+                    GOTO L4
+                L2: ILOAD 4     // Z upperCaseNext   (line 226)
+                    IFEQ L3
+                    ALOAD_2     // [C result   (line 227)
+                    ILOAD_3     // I currPos
+                    IINC_3 1     // I currPos
+                    ILOAD 5     // C c
+                    INVOKESTATIC java.lang.Character.toUpperCase (C)C
+                    CASTORE
+                    ICONST_0   (line 228)
+                    ISTORE 4     // Z upperCaseNext
+                    GOTO L4
+                L3: ALOAD_2     // [C result   (line 231)
+                    ILOAD_3     // I currPos
+                    IINC_3 1     // I currPos
+                    ILOAD 5     // C c
+                    CASTORE
+                L4: IINC 6 1   (line 222)
+                L5: ILOAD 6
+                    ILOAD 7
+                    IF_ICMPLT L1
+                    NEW java.lang.String   (line 234)
+                    DUP
+                    ALOAD_2     // [C result
+                    ICONST_0
+                    ILOAD_3     // I currPos
+                    INVOKESPECIAL java.lang.String.<init> ([CII)V
+                    ARETURN
+  end public static String attributeNameToPropertyName(String)
+
+  public static String getQualifiedAttributeName(Class, String):
+                    ALOAD_0     // Ljava/lang/Class; enclosingClass   (line 243)
+                    LDC "'enclosingClass' must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; attributeName   (line 244)
+                    LDC "'attributeName' must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    NEW java.lang.StringBuilder   (line 245)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; enclosingClass
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "."
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; attributeName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String getQualifiedAttributeName(Class, String)
+
+  private static Class getClassForValue(Object):
+                    ALOAD_0     // Ljava/lang/Object; value   (line 259)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/Class; valueClass   (line 260)
+                    INVOKESTATIC java.lang.reflect.Proxy.isProxyClass (Ljava/lang/Class;)Z
+                    IFEQ L3
+                    ALOAD_1     // Ljava/lang/Class; valueClass   (line 261)
+                    INVOKEVIRTUAL java.lang.Class.getInterfaces ()[Ljava/lang/Class;
+                    ASTORE_2
+                    ALOAD_2     // [Ljava/lang/Class; ifcs   (line 262)
+                    DUP
+                    ASTORE 6
+                    ARRAYLENGTH
+                    ISTORE 5
+                    ICONST_0
+                    ISTORE 4
+                    GOTO L2
+                L0: ALOAD 6
+                    ILOAD 4
+                    AALOAD
+                    ASTORE_3
+                    GETSTATIC org.springframework.core.Conventions.ignoredInterfaces Ljava/util/Set;   (line 263)
+                    ALOAD_3     // Ljava/lang/Class; ifc
+                    INVOKEINTERFACE java.util.Set.contains (Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_3     // Ljava/lang/Class; ifc   (line 264)
+                    ARETURN
+                L1: IINC 4 1   (line 262)
+                L2: ILOAD 4
+                    ILOAD 5
+                    IF_ICMPLT L0
+                    GOTO L4
+                L3: ALOAD_1     // Ljava/lang/Class; valueClass   (line 268)
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    BIPUSH 36
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (I)I
+                    ICONST_M1
+                    IF_ICMPEQ L4
+                    ALOAD_1     // Ljava/lang/Class; valueClass
+                    INVOKEVIRTUAL java.lang.Class.getDeclaringClass ()Ljava/lang/Class;
+                    IFNONNULL L4
+                    ALOAD_1     // Ljava/lang/Class; valueClass   (line 271)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ASTORE_1     // Ljava/lang/Class; valueClass
+                L4: ALOAD_1     // Ljava/lang/Class; valueClass   (line 273)
+                    ARETURN
+  end private static Class getClassForValue(Object)
+
+  private static String pluralize(String):
+                    NEW java.lang.StringBuilder   (line 280)
+                    DUP
+                    ALOAD_0     // Ljava/lang/String; name
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "List"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end private static String pluralize(String)
+
+  private static Object peekAhead(java.util.Collection):
+                    ALOAD_0     // Ljava/util/Collection; collection   (line 289)
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/util/Iterator; it   (line 290)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    NEW java.lang.IllegalStateException   (line 291)
+                    DUP
+                    LDC "Unable to peek ahead in non-empty collection - no element found"   (line 292)
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 291)
+                    ATHROW
+                L0: ALOAD_1     // Ljava/util/Iterator; it   (line 294)
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Object; value   (line 295)
+                    IFNONNULL L1
+                    NEW java.lang.IllegalStateException   (line 296)
+                    DUP
+                    LDC_W "Unable to peek ahead in non-empty collection - only null element found"   (line 297)
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 296)
+                    ATHROW
+                L1: ALOAD_2     // Ljava/lang/Object; value   (line 299)
+                    ARETURN
+  end private static Object peekAhead(java.util.Collection)
+end public abstract class org.springframework.core.Conventions
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.context.expression.StandardBeanExpressionResolver'
+abort trouble in: 
+public class org.springframework.context.expression.StandardBeanExpressionResolver extends java.lang.Object implements org.springframework.beans.factory.config.BeanExpressionResolver:
+  public static final String DEFAULT_EXPRESSION_PREFIX = "#{"
+  public static final String DEFAULT_EXPRESSION_SUFFIX = "}"
+  private String expressionPrefix
+  private String expressionSuffix
+  private org.springframework.expression.ExpressionParser expressionParser
+  private final java.util.Map expressionCache [Signature(Ljava/util/Map<Ljava/lang/String;Lorg/springframework/expression/Expression;>;)]
+  private final java.util.Map evaluationCache [Signature(Ljava/util/Map<Lorg/springframework/beans/factory/config/BeanExpressionContext;Lorg/springframework/expression/spel/support/StandardEvaluationContext;>;)]
+  private final org.springframework.expression.ParserContext beanExpressionParserContext
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 48)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.context.expression.StandardBeanExpressionResolver.<init>())
+    |               ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 57)
+    |               LDC "#{"
+    |               PUTFIELD org.springframework.context.expression.StandardBeanExpressionResolver.expressionPrefix Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 59)
+    |               LDC "}"
+    |               PUTFIELD org.springframework.context.expression.StandardBeanExpressionResolver.expressionSuffix Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 61)
+    |               NEW org.springframework.expression.spel.standard.SpelExpressionParser
+    |               DUP
+    |               INVOKESPECIAL org.springframework.expression.spel.standard.SpelExpressionParser.<init> ()V
+    |               PUTFIELD org.springframework.context.expression.StandardBeanExpressionResolver.expressionParser Lorg/springframework/expression/ExpressionParser;
+    |               ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 63)
+    |               NEW java.util.concurrent.ConcurrentHashMap
+    |               DUP
+    |               INVOKESPECIAL java.util.concurrent.ConcurrentHashMap.<init> ()V
+    |               PUTFIELD org.springframework.context.expression.StandardBeanExpressionResolver.expressionCache Ljava/util/Map;
+    |               ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 65)
+    |               NEW java.util.concurrent.ConcurrentHashMap   (line 66)
+    |               DUP
+    |               INVOKESPECIAL java.util.concurrent.ConcurrentHashMap.<init> ()V
+    |               PUTFIELD org.springframework.context.expression.StandardBeanExpressionResolver.evaluationCache Ljava/util/Map;
+    |               ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 68)
+    |               NEW org.springframework.context.expression.StandardBeanExpressionResolver$1
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this
+    |               INVOKESPECIAL org.springframework.context.expression.StandardBeanExpressionResolver$1.<init> (Lorg/springframework/context/expression/StandardBeanExpressionResolver;)V
+    |               PUTFIELD org.springframework.context.expression.StandardBeanExpressionResolver.beanExpressionParserContext Lorg/springframework/expression/ParserContext;
+    |               RETURN   (line 48)
+    constructor-execution(void org.springframework.context.expression.StandardBeanExpressionResolver.<init>())
+  end public void <init>()
+
+  public void setExpressionPrefix(String):
+                    ALOAD_1     // Ljava/lang/String; expressionPrefix   (line 87)
+                    LDC "Expression prefix must not be empty"
+                    INVOKESTATIC org.springframework.util.Assert.hasText (Ljava/lang/String;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 88)
+                    ALOAD_1     // Ljava/lang/String; expressionPrefix
+                    PUTFIELD org.springframework.context.expression.StandardBeanExpressionResolver.expressionPrefix Ljava/lang/String;
+                    RETURN   (line 89)
+  end public void setExpressionPrefix(String)
+
+  public void setExpressionSuffix(String):
+                    ALOAD_1     // Ljava/lang/String; expressionSuffix   (line 97)
+                    LDC "Expression suffix must not be empty"
+                    INVOKESTATIC org.springframework.util.Assert.hasText (Ljava/lang/String;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 98)
+                    ALOAD_1     // Ljava/lang/String; expressionSuffix
+                    PUTFIELD org.springframework.context.expression.StandardBeanExpressionResolver.expressionSuffix Ljava/lang/String;
+                    RETURN   (line 99)
+  end public void setExpressionSuffix(String)
+
+  public void setExpressionParser(org.springframework.expression.ExpressionParser):
+                    ALOAD_1     // Lorg/springframework/expression/ExpressionParser; expressionParser   (line 107)
+                    LDC "ExpressionParser must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 108)
+                    ALOAD_1     // Lorg/springframework/expression/ExpressionParser; expressionParser
+                    PUTFIELD org.springframework.context.expression.StandardBeanExpressionResolver.expressionParser Lorg/springframework/expression/ExpressionParser;
+                    RETURN   (line 109)
+  end public void setExpressionParser(org.springframework.expression.ExpressionParser)
+
+  public Object evaluate(String, org.springframework.beans.factory.config.BeanExpressionContext) throws org.springframework.beans.BeansException:
+                    ALOAD_1     // Ljava/lang/String; value   (line 113)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasLength (Ljava/lang/String;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/lang/String; value   (line 114)
+                    ARETURN
+    catch java.lang.Exception -> E0
+    |           L0: ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 117)
+    |               GETFIELD org.springframework.context.expression.StandardBeanExpressionResolver.expressionCache Ljava/util/Map;
+    |               ALOAD_1     // Ljava/lang/String; value
+    |               INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               CHECKCAST org.springframework.expression.Expression
+    |               ASTORE_3
+    |               ALOAD_3     // Lorg/springframework/expression/Expression; expr   (line 118)
+    |               IFNONNULL L1
+    |               ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 119)
+    |               GETFIELD org.springframework.context.expression.StandardBeanExpressionResolver.expressionParser Lorg/springframework/expression/ExpressionParser;
+    |               ALOAD_1     // Ljava/lang/String; value
+    |               ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this
+    |               GETFIELD org.springframework.context.expression.StandardBeanExpressionResolver.beanExpressionParserContext Lorg/springframework/expression/ParserContext;
+    |               INVOKEINTERFACE org.springframework.expression.ExpressionParser.parseExpression (Ljava/lang/String;Lorg/springframework/expression/ParserContext;)Lorg/springframework/expression/Expression;
+    |               ASTORE_3     // Lorg/springframework/expression/Expression; expr
+    |               ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 120)
+    |               GETFIELD org.springframework.context.expression.StandardBeanExpressionResolver.expressionCache Ljava/util/Map;
+    |               ALOAD_1     // Ljava/lang/String; value
+    |               ALOAD_3     // Lorg/springframework/expression/Expression; expr
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |           L1: ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 122)
+    |               GETFIELD org.springframework.context.expression.StandardBeanExpressionResolver.evaluationCache Ljava/util/Map;
+    |               ALOAD_2     // Lorg/springframework/beans/factory/config/BeanExpressionContext; evalContext
+    |               INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               CHECKCAST org.springframework.expression.spel.support.StandardEvaluationContext
+    |               ASTORE 4
+    |               ALOAD 4     // Lorg/springframework/expression/spel/support/StandardEvaluationContext; sec   (line 123)
+    |               IFNONNULL L3
+    |               NEW org.springframework.expression.spel.support.StandardEvaluationContext   (line 124)
+    |               DUP
+    |               INVOKESPECIAL org.springframework.expression.spel.support.StandardEvaluationContext.<init> ()V
+    |               ASTORE 4     // Lorg/springframework/expression/spel/support/StandardEvaluationContext; sec
+    |               ALOAD 4     // Lorg/springframework/expression/spel/support/StandardEvaluationContext; sec   (line 125)
+    |               ALOAD_2     // Lorg/springframework/beans/factory/config/BeanExpressionContext; evalContext
+    |               INVOKEVIRTUAL org.springframework.expression.spel.support.StandardEvaluationContext.setRootObject (Ljava/lang/Object;)V
+    |               ALOAD 4     // Lorg/springframework/expression/spel/support/StandardEvaluationContext; sec   (line 126)
+    |               NEW org.springframework.context.expression.BeanExpressionContextAccessor
+    |               DUP
+    |               INVOKESPECIAL org.springframework.context.expression.BeanExpressionContextAccessor.<init> ()V
+    |               INVOKEVIRTUAL org.springframework.expression.spel.support.StandardEvaluationContext.addPropertyAccessor (Lorg/springframework/expression/PropertyAccessor;)V
+    |               ALOAD 4     // Lorg/springframework/expression/spel/support/StandardEvaluationContext; sec   (line 127)
+    |               NEW org.springframework.context.expression.BeanFactoryAccessor
+    |               DUP
+    |               INVOKESPECIAL org.springframework.context.expression.BeanFactoryAccessor.<init> ()V
+    |               INVOKEVIRTUAL org.springframework.expression.spel.support.StandardEvaluationContext.addPropertyAccessor (Lorg/springframework/expression/PropertyAccessor;)V
+    |               ALOAD 4     // Lorg/springframework/expression/spel/support/StandardEvaluationContext; sec   (line 128)
+    |               NEW org.springframework.context.expression.MapAccessor
+    |               DUP
+    |               INVOKESPECIAL org.springframework.context.expression.MapAccessor.<init> ()V
+    |               INVOKEVIRTUAL org.springframework.expression.spel.support.StandardEvaluationContext.addPropertyAccessor (Lorg/springframework/expression/PropertyAccessor;)V
+    |               ALOAD 4     // Lorg/springframework/expression/spel/support/StandardEvaluationContext; sec   (line 129)
+    |               NEW org.springframework.context.expression.EnvironmentAccessor
+    |               DUP
+    |               INVOKESPECIAL org.springframework.context.expression.EnvironmentAccessor.<init> ()V
+    |               INVOKEVIRTUAL org.springframework.expression.spel.support.StandardEvaluationContext.addPropertyAccessor (Lorg/springframework/expression/PropertyAccessor;)V
+    |               ALOAD 4     // Lorg/springframework/expression/spel/support/StandardEvaluationContext; sec   (line 130)
+    |               NEW org.springframework.context.expression.BeanFactoryResolver
+    |               DUP
+    |               ALOAD_2     // Lorg/springframework/beans/factory/config/BeanExpressionContext; evalContext
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.BeanExpressionContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableBeanFactory;
+    |               INVOKESPECIAL org.springframework.context.expression.BeanFactoryResolver.<init> (Lorg/springframework/beans/factory/BeanFactory;)V
+    |               INVOKEVIRTUAL org.springframework.expression.spel.support.StandardEvaluationContext.setBeanResolver (Lorg/springframework/expression/BeanResolver;)V
+    |               ALOAD 4     // Lorg/springframework/expression/spel/support/StandardEvaluationContext; sec   (line 131)
+    |               NEW org.springframework.expression.spel.support.StandardTypeLocator
+    |               DUP
+    |               ALOAD_2     // Lorg/springframework/beans/factory/config/BeanExpressionContext; evalContext
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.BeanExpressionContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableBeanFactory;
+    |               INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableBeanFactory.getBeanClassLoader ()Ljava/lang/ClassLoader;
+    |               INVOKESPECIAL org.springframework.expression.spel.support.StandardTypeLocator.<init> (Ljava/lang/ClassLoader;)V
+    |               INVOKEVIRTUAL org.springframework.expression.spel.support.StandardEvaluationContext.setTypeLocator (Lorg/springframework/expression/TypeLocator;)V
+    |               ALOAD_2     // Lorg/springframework/beans/factory/config/BeanExpressionContext; evalContext   (line 132)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.BeanExpressionContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableBeanFactory;
+    |               INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableBeanFactory.getConversionService ()Lorg/springframework/core/convert/ConversionService;
+    |               ASTORE 5
+    |               ALOAD 5     // Lorg/springframework/core/convert/ConversionService; conversionService   (line 133)
+    |               IFNULL L2
+    |               ALOAD 4     // Lorg/springframework/expression/spel/support/StandardEvaluationContext; sec   (line 134)
+    |               NEW org.springframework.expression.spel.support.StandardTypeConverter
+    |               DUP
+    |               ALOAD 5     // Lorg/springframework/core/convert/ConversionService; conversionService
+    |               INVOKESPECIAL org.springframework.expression.spel.support.StandardTypeConverter.<init> (Lorg/springframework/core/convert/ConversionService;)V
+    |               INVOKEVIRTUAL org.springframework.expression.spel.support.StandardEvaluationContext.setTypeConverter (Lorg/springframework/expression/TypeConverter;)V
+    |           L2: ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 136)
+    |               ALOAD 4     // Lorg/springframework/expression/spel/support/StandardEvaluationContext; sec
+    |               INVOKEVIRTUAL org.springframework.context.expression.StandardBeanExpressionResolver.customizeEvaluationContext (Lorg/springframework/expression/spel/support/StandardEvaluationContext;)V
+    |               ALOAD_0     // Lorg/springframework/context/expression/StandardBeanExpressionResolver; this   (line 137)
+    |               GETFIELD org.springframework.context.expression.StandardBeanExpressionResolver.evaluationCache Ljava/util/Map;
+    |               ALOAD_2     // Lorg/springframework/beans/factory/config/BeanExpressionContext; evalContext
+    |               ALOAD 4     // Lorg/springframework/expression/spel/support/StandardEvaluationContext; sec
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |           L3: ALOAD_3     // Lorg/springframework/expression/Expression; expr   (line 139)
+    |               ALOAD 4     // Lorg/springframework/expression/spel/support/StandardEvaluationContext; sec
+    |               INVOKEINTERFACE org.springframework.expression.Expression.getValue (Lorg/springframework/expression/EvaluationContext;)Ljava/lang/Object;
+    catch java.lang.Exception -> E0
+                    ARETURN
+                E0: ASTORE_3   (line 141)
+                    NEW org.springframework.beans.factory.BeanExpressionException   (line 142)
+                    DUP
+                    LDC "Expression parsing failed"
+                    ALOAD_3     // Ljava/lang/Exception; ex
+                    INVOKESPECIAL org.springframework.beans.factory.BeanExpressionException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ATHROW
+  end public Object evaluate(String, org.springframework.beans.factory.config.BeanExpressionContext) throws org.springframework.beans.BeansException
+
+  protected void customizeEvaluationContext(org.springframework.expression.spel.support.StandardEvaluationContext):
+                    RETURN   (line 151)
+  end protected void customizeEvaluationContext(org.springframework.expression.spel.support.StandardEvaluationContext)
+
+  static String access$0(org.springframework.context.expression.StandardBeanExpressionResolver):
+                    ALOAD_0   (line 57)
+                    GETFIELD org.springframework.context.expression.StandardBeanExpressionResolver.expressionPrefix Ljava/lang/String;
+                    ARETURN
+  end static String access$0(org.springframework.context.expression.StandardBeanExpressionResolver)
+
+  static String access$1(org.springframework.context.expression.StandardBeanExpressionResolver):
+                    ALOAD_0   (line 59)
+                    GETFIELD org.springframework.context.expression.StandardBeanExpressionResolver.expressionSuffix Ljava/lang/String;
+                    ARETURN
+  end static String access$1(org.springframework.context.expression.StandardBeanExpressionResolver)
+
+end public class org.springframework.context.expression.StandardBeanExpressionResolver
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.expression.PropertyAccessor'
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

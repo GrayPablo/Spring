@@ -1,6 +1,5 @@
 SpringAspectos0001 Creación de aspectos, advice e introducciones
 SpringAspectos0002 Creación de anotaciones y su uso con aspectos
-SpringAspectos0003 Creación de anotaciones, uso con aspectos con persistencia integrada
 SpringAspectos0004 Ejemplo del uso de LTW (Load Time Weaving)
 SpringAspectos0005 Práctica Usuarios Roles
 AspectJSinSpring: Uso de AspectJ directamente desde Java en colaboración con Maven

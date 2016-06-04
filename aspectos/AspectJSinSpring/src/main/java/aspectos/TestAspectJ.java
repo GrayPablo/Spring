@@ -7,10 +7,11 @@ package aspectos;
 /**
  *
  * @author jose maria
- */
-public aspect TestAspectJ {
-    pointcut ejecucionset() : call(* set*(..));
-    after() : ejecucionset() {
-        System.out.println("se ha ejecutado un método set: " + thisJoinPoint);
-    }
-}
+// */
+//public aspect TestAspectJ {
+//    pointcut ejecucionset() : call(* set*(..));
+//    after() : ejecucionset() {
+//        System.out.println("se ha ejecutado un método set: " + thisJoinPoint);
+//    }
+//}
+public class TestAspectJ{}

@@ -1,0 +1,329 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114221.357.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+info using configuration file:/C:/Users/usuario/.m2/repository/org/springframework/spring-aspects/3.1.2.RELEASE/spring-aspects-3.1.2.RELEASE.jar!/META-INF/aop.xml
+debug weaving 'org.springframework.util.xml.XmlValidationModeDetector'
+abort trouble in: 
+public class org.springframework.util.xml.XmlValidationModeDetector extends java.lang.Object:
+  public static final int VALIDATION_NONE = 0
+  public static final int VALIDATION_AUTO = 1
+  public static final int VALIDATION_DTD = 2
+  public static final int VALIDATION_XSD = 3
+  private static final String DOCTYPE = "DOCTYPE"
+  private static final String START_COMMENT = "<!--"
+  private static final String END_COMMENT = "-->"
+  private boolean inComment
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/util/xml/XmlValidationModeDetector; this   (line 34)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.util.xml.XmlValidationModeDetector.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.util.xml.XmlValidationModeDetector.<init>())
+  end public void <init>()
+
+  public int detectValidationMode(java.io.InputStream) throws java.io.IOException:
+                    NEW java.io.BufferedReader   (line 91)
+                    DUP
+                    NEW java.io.InputStreamReader
+                    DUP
+                    ALOAD_1     // Ljava/io/InputStream; inputStream
+                    INVOKESPECIAL java.io.InputStreamReader.<init> (Ljava/io/InputStream;)V
+                    INVOKESPECIAL java.io.BufferedReader.<init> (Ljava/io/Reader;)V
+                    ASTORE_2
+    finally -> E2
+    | catch java.io.CharConversionException -> E0
+    | |             ICONST_0   (line 93)
+    | |             ISTORE_3
+    | |             GOTO L3   (line 95)
+    | |         L0: ALOAD_0     // Lorg/springframework/util/xml/XmlValidationModeDetector; this   (line 96)
+    | |             ALOAD 4     // Ljava/lang/String; content
+    | |             INVOKESPECIAL org.springframework.util.xml.XmlValidationModeDetector.consumeCommentTokens (Ljava/lang/String;)Ljava/lang/String;
+    | |             ASTORE 4     // Ljava/lang/String; content
+    | |             ALOAD_0     // Lorg/springframework/util/xml/XmlValidationModeDetector; this   (line 97)
+    | |             GETFIELD org.springframework.util.xml.XmlValidationModeDetector.inComment Z
+    | |             IFNE L3
+    | |             ALOAD 4     // Ljava/lang/String; content
+    | |             INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+    | |             IFNE L1
+    | |             GOTO L3   (line 98)
+    | |         L1: ALOAD_0     // Lorg/springframework/util/xml/XmlValidationModeDetector; this   (line 100)
+    | |             ALOAD 4     // Ljava/lang/String; content
+    | |             INVOKESPECIAL org.springframework.util.xml.XmlValidationModeDetector.hasDoctype (Ljava/lang/String;)Z
+    | |             IFEQ L2
+    | |             ICONST_1   (line 101)
+    | |             ISTORE_3     // Z isDtdValidated
+    | |             GOTO L4   (line 102)
+    | |         L2: ALOAD_0     // Lorg/springframework/util/xml/XmlValidationModeDetector; this   (line 104)
+    | |             ALOAD 4     // Ljava/lang/String; content
+    | |             INVOKESPECIAL org.springframework.util.xml.XmlValidationModeDetector.hasOpeningTag (Ljava/lang/String;)Z
+    | |             IFEQ L3
+    | |             GOTO L4   (line 106)
+    | |         L3: ALOAD_2     // Ljava/io/BufferedReader; reader   (line 95)
+    | |             INVOKEVIRTUAL java.io.BufferedReader.readLine ()Ljava/lang/String;
+    | |             DUP
+    | |             ASTORE 4
+    | |             IFNONNULL L0
+    | |         L4: ILOAD_3     // Z isDtdValidated   (line 109)
+    | |             IFEQ L5
+    | |             ICONST_2
+    | |             GOTO L6
+    | |         L5: ICONST_3
+    | |         L6: ISTORE 6
+    | catch java.io.CharConversionException -> E0
+    finally -> E2
+                    ALOAD_2     // Ljava/io/BufferedReader; reader   (line 117)
+                    INVOKEVIRTUAL java.io.BufferedReader.close ()V
+                    ILOAD 6   (line 109)
+                    IRETURN
+    finally -> E2
+    |           E0: POP   (line 111)
+    finally -> E2
+                    ALOAD_2     // Ljava/io/BufferedReader; reader   (line 117)
+                    INVOKEVIRTUAL java.io.BufferedReader.close ()V
+                    ICONST_1   (line 114)
+                    IRETURN
+                E2: ASTORE 5   (line 116)
+                    ALOAD_2     // Ljava/io/BufferedReader; reader   (line 117)
+                    INVOKEVIRTUAL java.io.BufferedReader.close ()V
+                    ALOAD 5   (line 118)
+                    ATHROW
+  end public int detectValidationMode(java.io.InputStream) throws java.io.IOException
+
+  private boolean hasDoctype(String):
+                    ALOAD_1     // Ljava/lang/String; content   (line 126)
+                    LDC "DOCTYPE"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ICONST_M1
+                    IF_ICMPLE L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end private boolean hasDoctype(String)
+
+  private boolean hasOpeningTag(String):
+                    ALOAD_0     // Lorg/springframework/util/xml/XmlValidationModeDetector; this   (line 135)
+                    GETFIELD org.springframework.util.xml.XmlValidationModeDetector.inComment Z
+                    IFEQ L0
+                    ICONST_0   (line 136)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/String; content   (line 138)
+                    BIPUSH 60
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ISTORE_2
+                    ILOAD_2     // I openTagIndex   (line 139)
+                    ICONST_M1
+                    IF_ICMPLE L1
+                    ALOAD_1     // Ljava/lang/String; content
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ILOAD_2     // I openTagIndex
+                    IF_ICMPLE L1
+                    ALOAD_1     // Ljava/lang/String; content
+                    ILOAD_2     // I openTagIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.charAt (I)C
+                    INVOKESTATIC java.lang.Character.isLetter (C)Z
+                    IFEQ L1
+                    ICONST_1
+                    IRETURN
+                L1: ICONST_0
+                    IRETURN
+  end private boolean hasOpeningTag(String)
+
+  private String consumeCommentTokens(String):
+                    ALOAD_1     // Ljava/lang/String; line   (line 149)
+                    LDC "<!--"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ICONST_M1
+                    IF_ICMPNE L1
+                    ALOAD_1     // Ljava/lang/String; line
+                    LDC "-->"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ICONST_M1
+                    IF_ICMPNE L1
+                    ALOAD_1     // Ljava/lang/String; line   (line 150)
+                    ARETURN
+                L0: ALOAD_0     // Lorg/springframework/util/xml/XmlValidationModeDetector; this   (line 153)
+                    GETFIELD org.springframework.util.xml.XmlValidationModeDetector.inComment Z
+                    IFNE L1
+                    ALOAD_1     // Ljava/lang/String; line
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    LDC "<!--"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFNE L1
+                    ALOAD_1     // Ljava/lang/String; line   (line 154)
+                    ARETURN
+                L1: ALOAD_0     // Lorg/springframework/util/xml/XmlValidationModeDetector; this   (line 152)
+                    ALOAD_1     // Ljava/lang/String; line
+                    INVOKESPECIAL org.springframework.util.xml.XmlValidationModeDetector.consume (Ljava/lang/String;)Ljava/lang/String;
+                    DUP
+                    ASTORE_1     // Ljava/lang/String; line
+                    IFNONNULL L0
+                    ALOAD_1     // Ljava/lang/String; line   (line 157)
+                    ARETURN
+  end private String consumeCommentTokens(String)
+
+  private String consume(String):
+                    ALOAD_0     // Lorg/springframework/util/xml/XmlValidationModeDetector; this   (line 165)
+                    GETFIELD org.springframework.util.xml.XmlValidationModeDetector.inComment Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/util/xml/XmlValidationModeDetector; this
+                    ALOAD_1     // Ljava/lang/String; line
+                    INVOKESPECIAL org.springframework.util.xml.XmlValidationModeDetector.endComment (Ljava/lang/String;)I
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/util/xml/XmlValidationModeDetector; this
+                    ALOAD_1     // Ljava/lang/String; line
+                    INVOKESPECIAL org.springframework.util.xml.XmlValidationModeDetector.startComment (Ljava/lang/String;)I
+                L1: ISTORE_2
+                    ILOAD_2     // I index   (line 166)
+                    ICONST_M1
+                    IF_ICMPNE L2
+                    ACONST_NULL
+                    GOTO L3
+                L2: ALOAD_1     // Ljava/lang/String; line
+                    ILOAD_2     // I index
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                L3: ARETURN
+  end private String consume(String)
+
+  private int startComment(String):
+                    ALOAD_0     // Lorg/springframework/util/xml/XmlValidationModeDetector; this   (line 174)
+                    ALOAD_1     // Ljava/lang/String; line
+                    LDC "<!--"
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.util.xml.XmlValidationModeDetector.commentToken (Ljava/lang/String;Ljava/lang/String;Z)I
+                    IRETURN
+  end private int startComment(String)
+
+  private int endComment(String):
+                    ALOAD_0     // Lorg/springframework/util/xml/XmlValidationModeDetector; this   (line 178)
+                    ALOAD_1     // Ljava/lang/String; line
+                    LDC "-->"
+                    ICONST_0
+                    INVOKESPECIAL org.springframework.util.xml.XmlValidationModeDetector.commentToken (Ljava/lang/String;Ljava/lang/String;Z)I
+                    IRETURN
+  end private int endComment(String)
+
+  private int commentToken(String, String, boolean):
+                    ALOAD_1     // Ljava/lang/String; line   (line 187)
+                    ALOAD_2     // Ljava/lang/String; token
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ISTORE 4
+                    ILOAD 4     // I index   (line 188)
+                    ICONST_M1
+                    IF_ICMPLE L0
+                    ALOAD_0     // Lorg/springframework/util/xml/XmlValidationModeDetector; this   (line 189)
+                    ILOAD_3     // Z inCommentIfPresent
+                    PUTFIELD org.springframework.util.xml.XmlValidationModeDetector.inComment Z
+                L0: ILOAD 4     // I index   (line 191)
+                    ICONST_M1
+                    IF_ICMPNE L1
+                    ILOAD 4     // I index
+                    GOTO L2
+                L1: ILOAD 4     // I index
+                    ALOAD_2     // Ljava/lang/String; token
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                L2: IRETURN
+  end private int commentToken(String, String, boolean)
+
+end public class org.springframework.util.xml.XmlValidationModeDetector
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.beans.factory.xml.ResourceEntityResolver'
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

@@ -1,0 +1,410 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114040.934.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+info using configuration file:/C:/Users/usuario/.m2/repository/org/springframework/spring-aspects/3.1.2.RELEASE/spring-aspects-3.1.2.RELEASE.jar!/META-INF/aop.xml
+debug weaving 'org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser'
+abort trouble in: 
+public abstract class org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser extends org.springframework.beans.factory.xml.AbstractBeanDefinitionParser:
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/AbstractSingleBeanDefinitionParser; this   (line 46)
+                    INVOKESPECIAL org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser.<init>())
+  end public void <init>()
+
+  protected final org.springframework.beans.factory.support.AbstractBeanDefinition parseInternal(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext):
+                    INVOKESTATIC org.springframework.beans.factory.support.BeanDefinitionBuilder.genericBeanDefinition ()Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;   (line 61)
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/AbstractSingleBeanDefinitionParser; this   (line 62)
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser.getParentName (Lorg/w3c/dom/Element;)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/String; parentName   (line 63)
+                    IFNULL L0
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 64)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.getRawBeanDefinition ()Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
+                    ALOAD 4     // Ljava/lang/String; parentName
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanDefinition.setParentName (Ljava/lang/String;)V
+                L0: ALOAD_0     // Lorg/springframework/beans/factory/xml/AbstractSingleBeanDefinitionParser; this   (line 66)
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser.getBeanClass (Lorg/w3c/dom/Element;)Ljava/lang/Class;
+                    ASTORE 5
+                    ALOAD 5     // Ljava/lang/Class; beanClass   (line 67)
+                    IFNULL L1
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 68)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.getRawBeanDefinition ()Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
+                    ALOAD 5     // Ljava/lang/Class; beanClass
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanDefinition.setBeanClass (Ljava/lang/Class;)V
+                    GOTO L2
+                L1: ALOAD_0     // Lorg/springframework/beans/factory/xml/AbstractSingleBeanDefinitionParser; this   (line 71)
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser.getBeanClassName (Lorg/w3c/dom/Element;)Ljava/lang/String;
+                    ASTORE 6
+                    ALOAD 6     // Ljava/lang/String; beanClassName   (line 72)
+                    IFNULL L2
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 73)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.getRawBeanDefinition ()Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
+                    ALOAD 6     // Ljava/lang/String; beanClassName
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanDefinition.setBeanClassName (Ljava/lang/String;)V
+                L2: ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 76)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.getRawBeanDefinition ()Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.extractSource (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanDefinition.setSource (Ljava/lang/Object;)V
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 77)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.isNested ()Z
+                    IFEQ L3
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 79)
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getContainingBeanDefinition ()Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getScope ()Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.setScope (Ljava/lang/String;)Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;
+                    POP
+                L3: ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 81)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.isDefaultLazyInit ()Z
+                    IFEQ L4
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 83)
+                    ICONST_1
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.setLazyInit (Z)Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;
+                    POP
+                L4: ALOAD_0     // Lorg/springframework/beans/factory/xml/AbstractSingleBeanDefinitionParser; this   (line 85)
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser.doParse (Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/xml/ParserContext;Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;)V
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 86)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.getBeanDefinition ()Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
+                    ARETURN
+  end protected final org.springframework.beans.factory.support.AbstractBeanDefinition parseInternal(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext)
+
+  protected String getParentName(org.w3c.dom.Element):
+                    ACONST_NULL   (line 99)
+                    ARETURN
+  end protected String getParentName(org.w3c.dom.Element)
+
+  protected Class getBeanClass(org.w3c.dom.Element):
+                    ACONST_NULL   (line 115)
+                    ARETURN
+  end protected Class getBeanClass(org.w3c.dom.Element)
+
+  protected String getBeanClassName(org.w3c.dom.Element):
+                    ACONST_NULL   (line 126)
+                    ARETURN
+  end protected String getBeanClassName(org.w3c.dom.Element)
+
+  protected void doParse(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext, org.springframework.beans.factory.support.BeanDefinitionBuilder):
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/AbstractSingleBeanDefinitionParser; this   (line 140)
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser.doParse (Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;)V
+                    RETURN   (line 141)
+  end protected void doParse(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext, org.springframework.beans.factory.support.BeanDefinitionBuilder)
+
+  protected void doParse(org.w3c.dom.Element, org.springframework.beans.factory.support.BeanDefinitionBuilder):
+                    RETURN   (line 151)
+  end protected void doParse(org.w3c.dom.Element, org.springframework.beans.factory.support.BeanDefinitionBuilder)
+
+end public abstract class org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.beans.factory.xml.AbstractBeanDefinitionParser'
+abort trouble in: 
+public abstract class org.springframework.beans.factory.xml.AbstractBeanDefinitionParser extends java.lang.Object implements org.springframework.beans.factory.xml.BeanDefinitionParser:
+  public static final String ID_ATTRIBUTE = "id"
+  public static final String NAME_ATTRIBUTE = "name"
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/AbstractBeanDefinitionParser; this   (line 50)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.<init>())
+  end public void <init>()
+
+  public final org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext):
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/AbstractBeanDefinitionParser; this   (line 59)
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.parseInternal (Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/xml/ParserContext;)Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
+                    ASTORE_3
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; definition   (line 60)
+                    IFNULL L2
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.isNested ()Z
+                    IFNE L2
+    catch org.springframework.beans.factory.BeanDefinitionStoreException -> E0
+    |               ALOAD_0     // Lorg/springframework/beans/factory/xml/AbstractBeanDefinitionParser; this   (line 62)
+    |               ALOAD_1     // Lorg/w3c/dom/Element; element
+    |               ALOAD_3     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; definition
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.resolveId (Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/support/AbstractBeanDefinition;Lorg/springframework/beans/factory/xml/ParserContext;)Ljava/lang/String;
+    |               ASTORE 4
+    |               ALOAD 4     // Ljava/lang/String; id   (line 63)
+    |               INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+    |               IFNE L0
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 64)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getReaderContext ()Lorg/springframework/beans/factory/xml/XmlReaderContext;
+    |               NEW java.lang.StringBuilder   (line 65)
+    |               DUP
+    |               LDC "Id is required for element '"
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getDelegate ()Lorg/springframework/beans/factory/xml/BeanDefinitionParserDelegate;
+    |               ALOAD_1     // Lorg/w3c/dom/Element; element
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.getLocalName (Lorg/w3c/dom/Node;)Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "' when used as a top-level tag"   (line 66)
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;   (line 65)
+    |               ALOAD_1     // Lorg/w3c/dom/Element; element   (line 66)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.error (Ljava/lang/String;Ljava/lang/Object;)V   (line 64)
+    |           L0: ICONST_0   (line 68)
+    |               ANEWARRAY java.lang.String
+    |               ASTORE 5
+    |               ALOAD_1     // Lorg/w3c/dom/Element; element   (line 69)
+    |               LDC "name"
+    |               INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+    |               ASTORE 6
+    |               ALOAD 6     // Ljava/lang/String; name   (line 70)
+    |               INVOKESTATIC org.springframework.util.StringUtils.hasLength (Ljava/lang/String;)Z
+    |               IFEQ L1
+    |               ALOAD 6     // Ljava/lang/String; name   (line 71)
+    |               INVOKESTATIC org.springframework.util.StringUtils.commaDelimitedListToStringArray (Ljava/lang/String;)[Ljava/lang/String;
+    |               INVOKESTATIC org.springframework.util.StringUtils.trimArrayElements ([Ljava/lang/String;)[Ljava/lang/String;
+    |               ASTORE 5     // [Ljava/lang/String; aliases
+    |           L1: NEW org.springframework.beans.factory.config.BeanDefinitionHolder   (line 73)
+    |               DUP
+    |               ALOAD_3     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; definition
+    |               ALOAD 4     // Ljava/lang/String; id
+    |               ALOAD 5     // [Ljava/lang/String; aliases
+    |               INVOKESPECIAL org.springframework.beans.factory.config.BeanDefinitionHolder.<init> (Lorg/springframework/beans/factory/config/BeanDefinition;Ljava/lang/String;[Ljava/lang/String;)V
+    |               ASTORE 7
+    |               ALOAD_0     // Lorg/springframework/beans/factory/xml/AbstractBeanDefinitionParser; this   (line 74)
+    |               ALOAD 7     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; holder
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getRegistry ()Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.registerBeanDefinition (Lorg/springframework/beans/factory/config/BeanDefinitionHolder;Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/xml/AbstractBeanDefinitionParser; this   (line 75)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.shouldFireEvents ()Z
+    |               IFEQ L2
+    |               NEW org.springframework.beans.factory.parsing.BeanComponentDefinition   (line 76)
+    |               DUP
+    |               ALOAD 7     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; holder
+    |               INVOKESPECIAL org.springframework.beans.factory.parsing.BeanComponentDefinition.<init> (Lorg/springframework/beans/factory/config/BeanDefinitionHolder;)V
+    |               ASTORE 8
+    |               ALOAD_0     // Lorg/springframework/beans/factory/xml/AbstractBeanDefinitionParser; this   (line 77)
+    |               ALOAD 8     // Lorg/springframework/beans/factory/parsing/BeanComponentDefinition; componentDefinition
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.postProcessComponentDefinition (Lorg/springframework/beans/factory/parsing/BeanComponentDefinition;)V
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 78)
+    |               ALOAD 8     // Lorg/springframework/beans/factory/parsing/BeanComponentDefinition; componentDefinition
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.registerComponent (Lorg/springframework/beans/factory/parsing/ComponentDefinition;)V
+    catch org.springframework.beans.factory.BeanDefinitionStoreException -> E0
+                    GOTO L2
+                E0: ASTORE 4   (line 81)
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 82)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getReaderContext ()Lorg/springframework/beans/factory/xml/XmlReaderContext;
+                    ALOAD 4     // Lorg/springframework/beans/factory/BeanDefinitionStoreException; ex
+                    INVOKEVIRTUAL org.springframework.beans.factory.BeanDefinitionStoreException.getMessage ()Ljava/lang/String;
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.error (Ljava/lang/String;Ljava/lang/Object;)V
+                    ACONST_NULL   (line 83)
+                    ARETURN
+                L2: ALOAD_3     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; definition   (line 86)
+                    ARETURN
+  end public final org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext)
+
+  protected String resolveId(org.w3c.dom.Element, org.springframework.beans.factory.support.AbstractBeanDefinition, org.springframework.beans.factory.xml.ParserContext) throws org.springframework.beans.factory.BeanDefinitionStoreException:
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/AbstractBeanDefinitionParser; this   (line 105)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.shouldGenerateId ()Z
+                    IFEQ L0
+                    ALOAD_3     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 106)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getReaderContext ()Lorg/springframework/beans/factory/xml/XmlReaderContext;
+                    ALOAD_2     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; definition
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.generateBeanName (Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/String;
+                    ARETURN
+                L0: ALOAD_1     // Lorg/w3c/dom/Element; element   (line 109)
+                    LDC "id"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/String; id   (line 110)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFNE L1
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/AbstractBeanDefinitionParser; this
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.shouldGenerateIdAsFallback ()Z
+                    IFEQ L1
+                    ALOAD_3     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 111)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getReaderContext ()Lorg/springframework/beans/factory/xml/XmlReaderContext;
+                    ALOAD_2     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; definition
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.generateBeanName (Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/String;
+                    ASTORE 4     // Ljava/lang/String; id
+                L1: ALOAD 4     // Ljava/lang/String; id   (line 113)
+                    ARETURN
+  end protected String resolveId(org.w3c.dom.Element, org.springframework.beans.factory.support.AbstractBeanDefinition, org.springframework.beans.factory.xml.ParserContext) throws org.springframework.beans.factory.BeanDefinitionStoreException
+
+  protected void registerBeanDefinition(org.springframework.beans.factory.config.BeanDefinitionHolder, org.springframework.beans.factory.support.BeanDefinitionRegistry):
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; definition   (line 132)
+                    ALOAD_2     // Lorg/springframework/beans/factory/support/BeanDefinitionRegistry; registry
+                    INVOKESTATIC org.springframework.beans.factory.support.BeanDefinitionReaderUtils.registerBeanDefinition (Lorg/springframework/beans/factory/config/BeanDefinitionHolder;Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;)V
+                    RETURN   (line 133)
+  end protected void registerBeanDefinition(org.springframework.beans.factory.config.BeanDefinitionHolder, org.springframework.beans.factory.support.BeanDefinitionRegistry)
+
+  protected abstract org.springframework.beans.factory.support.AbstractBeanDefinition parseInternal(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext);
+
+  protected boolean shouldGenerateId():
+                    ICONST_0   (line 156)
+                    IRETURN
+  end protected boolean shouldGenerateId()
+
+  protected boolean shouldGenerateIdAsFallback():
+                    ICONST_0   (line 168)
+                    IRETURN
+  end protected boolean shouldGenerateIdAsFallback()
+
+  protected boolean shouldFireEvents():
+                    ICONST_1   (line 184)
+                    IRETURN
+  end protected boolean shouldFireEvents()
+
+  protected void postProcessComponentDefinition(org.springframework.beans.factory.parsing.BeanComponentDefinition):
+                    RETURN   (line 198)
+  end protected void postProcessComponentDefinition(org.springframework.beans.factory.parsing.BeanComponentDefinition)
+
+end public abstract class org.springframework.beans.factory.xml.AbstractBeanDefinitionParser
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.context.config.PropertyOverrideBeanDefinitionParser'
+abort trouble in: 
+ class org.springframework.context.config.PropertyOverrideBeanDefinitionParser extends org.springframework.context.config.AbstractPropertyLoadingBeanDefinitionParser:
+  void <init>():
+                    ALOAD_0     // Lorg/springframework/context/config/PropertyOverrideBeanDefinitionParser; this   (line 31)
+                    INVOKESPECIAL org.springframework.context.config.AbstractPropertyLoadingBeanDefinitionParser.<init> ()V
+    constructor-execution(void org.springframework.context.config.PropertyOverrideBeanDefinitionParser.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.context.config.PropertyOverrideBeanDefinitionParser.<init>())
+  end void <init>()
+
+  protected Class getBeanClass(org.w3c.dom.Element):
+                    LDC org.springframework.beans.factory.config.PropertyOverrideConfigurer   (line 35)
+                    ARETURN
+  end protected Class getBeanClass(org.w3c.dom.Element)
+
+  protected void doParse(org.w3c.dom.Element, org.springframework.beans.factory.support.BeanDefinitionBuilder):
+                    ALOAD_0     // Lorg/springframework/context/config/PropertyOverrideBeanDefinitionParser; this   (line 41)
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    ALOAD_2     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder
+                    INVOKESPECIAL org.springframework.context.config.AbstractPropertyLoadingBeanDefinitionParser.doParse (Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;)V
+                    ALOAD_2     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 42)
+                    LDC "ignoreInvalidKeys"
+                    ALOAD_1     // Lorg/w3c/dom/Element; element   (line 43)
+                    LDC "ignore-unresolvable"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKESTATIC java.lang.Boolean.valueOf (Ljava/lang/String;)Ljava/lang/Boolean;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.addPropertyValue (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;   (line 42)
+                    POP
+                    RETURN   (line 45)
+  end protected void doParse(org.w3c.dom.Element, org.springframework.beans.factory.support.BeanDefinitionBuilder)
+
+end  class org.springframework.context.config.PropertyOverrideBeanDefinitionParser
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.context.annotation.AnnotationConfigBeanDefinitionParser'
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

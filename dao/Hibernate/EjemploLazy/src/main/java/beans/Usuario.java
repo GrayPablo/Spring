@@ -28,7 +28,7 @@ public class Usuario implements Serializable {
     private String nombre;
     private String clave;
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, fetch = FetchType.LAZY,orphanRemoval = true)
-    private Set<Rol> roles = new HashSet<Rol>();
+    private Set<Rol> roles = new HashSet<>();
 
     public Usuario() {
     }

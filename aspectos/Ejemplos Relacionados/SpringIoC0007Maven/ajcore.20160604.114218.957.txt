@@ -1,0 +1,1335 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114218.957.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public abstract class org.springframework.core.env.AbstractEnvironment extends java.lang.Object implements org.springframework.core.env.ConfigurableEnvironment:
+  public static final String ACTIVE_PROFILES_PROPERTY_NAME = "spring.profiles.active"
+  public static final String DEFAULT_PROFILES_PROPERTY_NAME = "spring.profiles.default"
+  protected static final String RESERVED_DEFAULT_PROFILE_NAME = "default"
+  protected final org.apache.commons.logging.Log logger
+  private java.util.Set activeProfiles [Signature(Ljava/util/Set<Ljava/lang/String;>;)]
+  private java.util.Set defaultProfiles [Signature(Ljava/util/Set<Ljava/lang/String;>;)]
+  private final org.springframework.core.env.MutablePropertySources propertySources
+  private final org.springframework.core.env.ConfigurablePropertyResolver propertyResolver
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 111)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.env.AbstractEnvironment.<init>())
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 90)
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 92)
+    |               NEW java.util.LinkedHashSet
+    |               DUP
+    |               INVOKESPECIAL java.util.LinkedHashSet.<init> ()V
+    |               PUTFIELD org.springframework.core.env.AbstractEnvironment.activeProfiles Ljava/util/Set;
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 94)
+    |               NEW java.util.LinkedHashSet   (line 95)
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+    |               INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.getReservedDefaultProfiles ()Ljava/util/Set;
+    |               INVOKESPECIAL java.util.LinkedHashSet.<init> (Ljava/util/Collection;)V
+    |               PUTFIELD org.springframework.core.env.AbstractEnvironment.defaultProfiles Ljava/util/Set;
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 97)
+    |               NEW org.springframework.core.env.MutablePropertySources   (line 98)
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+    |               INVOKESPECIAL org.springframework.core.env.MutablePropertySources.<init> (Lorg/apache/commons/logging/Log;)V
+    |               PUTFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 100)
+    |               NEW org.springframework.core.env.PropertySourcesPropertyResolver   (line 101)
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+    |               INVOKESPECIAL org.springframework.core.env.PropertySourcesPropertyResolver.<init> (Lorg/springframework/core/env/PropertySources;)V
+    |               PUTFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 112)
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKEVIRTUAL java.lang.Class.getSimpleName ()Ljava/lang/String;
+    |               ASTORE_1
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 113)
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+    |               IFEQ L0
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 114)
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+    |               LDC "Initializing new %s"
+    |               ICONST_1
+    |               ANEWARRAY java.lang.Object
+    |               DUP
+    |               ICONST_0
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               AASTORE
+    |               INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+    |           L0: ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 117)
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+    |               INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.customizePropertySources (Lorg/springframework/core/env/MutablePropertySources;)V
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 119)
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+    |               IFEQ L1
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 120)
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+    |               LDC "Initialized %s with PropertySources %s"   (line 121)
+    |               ICONST_2
+    |               ANEWARRAY java.lang.Object
+    |               DUP
+    |               ICONST_0
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               AASTORE
+    |               DUP
+    |               ICONST_1
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+    |               AASTORE   (line 120)
+    |               INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+    |           L1: RETURN   (line 123)
+    constructor-execution(void org.springframework.core.env.AbstractEnvironment.<init>())
+  end public void <init>()
+
+  protected void customizePropertySources(org.springframework.core.env.MutablePropertySources):
+                    RETURN   (line 203)
+  end protected void customizePropertySources(org.springframework.core.env.MutablePropertySources)
+
+  protected java.util.Set getReservedDefaultProfiles():
+                    LDC "default"   (line 213)
+                    INVOKESTATIC java.util.Collections.singleton (Ljava/lang/Object;)Ljava/util/Set;
+                    ARETURN
+  end protected java.util.Set getReservedDefaultProfiles()
+
+  public String[] getActiveProfiles():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 222)
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.doGetActiveProfiles ()Ljava/util/Set;
+                    INVOKESTATIC org.springframework.util.StringUtils.toStringArray (Ljava/util/Collection;)[Ljava/lang/String;
+                    ARETURN
+  end public String[] getActiveProfiles()
+
+  protected java.util.Set doGetActiveProfiles():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 234)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.activeProfiles Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.isEmpty ()Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 235)
+                    LDC "spring.profiles.active"
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.getProperty (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/String; profiles   (line 236)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 237)
+                    ALOAD_1     // Ljava/lang/String; profiles
+                    INVOKESTATIC org.springframework.util.StringUtils.trimAllWhitespace (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.commaDelimitedListToStringArray (Ljava/lang/String;)[Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.setActiveProfiles ([Ljava/lang/String;)V
+                L0: ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 240)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.activeProfiles Ljava/util/Set;
+                    ARETURN
+  end protected java.util.Set doGetActiveProfiles()
+
+  public transient void setActiveProfiles(String[]):
+                    ALOAD_1     // [Ljava/lang/String; profiles   (line 244)
+                    LDC "Profile array must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 245)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.activeProfiles Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.clear ()V
+                    ALOAD_1     // [Ljava/lang/String; profiles   (line 246)
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L1
+                L0: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 247)
+                    ALOAD_2     // Ljava/lang/String; profile
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.addActiveProfile (Ljava/lang/String;)V
+                    IINC_3 1   (line 246)
+                L1: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L0
+                    RETURN   (line 249)
+  end public transient void setActiveProfiles(String[])
+
+  public void addActiveProfile(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 252)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 253)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+                    LDC "Activating profile '%s'"
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; profile
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L0: ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 255)
+                    ALOAD_1     // Ljava/lang/String; profile
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.validateProfile (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 256)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.activeProfiles Ljava/util/Set;
+                    ALOAD_1     // Ljava/lang/String; profile
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    RETURN   (line 257)
+  end public void addActiveProfile(String)
+
+  public String[] getDefaultProfiles():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 260)
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.doGetDefaultProfiles ()Ljava/util/Set;
+                    INVOKESTATIC org.springframework.util.StringUtils.toStringArray (Ljava/util/Collection;)[Ljava/lang/String;
+                    ARETURN
+  end public String[] getDefaultProfiles()
+
+  protected java.util.Set doGetDefaultProfiles():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 276)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.defaultProfiles Ljava/util/Set;
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.getReservedDefaultProfiles ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 277)
+                    LDC "spring.profiles.default"
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.getProperty (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/String; profiles   (line 278)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 279)
+                    ALOAD_1     // Ljava/lang/String; profiles
+                    INVOKESTATIC org.springframework.util.StringUtils.trimAllWhitespace (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.commaDelimitedListToStringArray (Ljava/lang/String;)[Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.setDefaultProfiles ([Ljava/lang/String;)V
+                L0: ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 282)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.defaultProfiles Ljava/util/Set;
+                    ARETURN
+  end protected java.util.Set doGetDefaultProfiles()
+
+  public transient void setDefaultProfiles(String[]):
+                    ALOAD_1     // [Ljava/lang/String; profiles   (line 293)
+                    LDC "Profile array must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 294)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.defaultProfiles Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.clear ()V
+                    ALOAD_1     // [Ljava/lang/String; profiles   (line 295)
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L1
+                L0: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 296)
+                    ALOAD_2     // Ljava/lang/String; profile
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.validateProfile (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 297)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.defaultProfiles Ljava/util/Set;
+                    ALOAD_2     // Ljava/lang/String; profile
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    IINC_3 1   (line 295)
+                L1: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L0
+                    RETURN   (line 299)
+  end public transient void setDefaultProfiles(String[])
+
+  public transient boolean acceptsProfiles(String[]):
+                    ALOAD_1     // [Ljava/lang/String; profiles   (line 302)
+                    LDC "Must specify at least one profile"
+                    INVOKESTATIC org.springframework.util.Assert.notEmpty ([Ljava/lang/Object;Ljava/lang/String;)V
+                    ICONST_0   (line 303)
+                    ISTORE_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 304)
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.doGetActiveProfiles ()Ljava/util/Set;
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 305)
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.doGetDefaultProfiles ()Ljava/util/Set;
+                    ASTORE 4
+                    ALOAD_1     // [Ljava/lang/String; profiles   (line 306)
+                    DUP
+                    ASTORE 8
+                    ARRAYLENGTH
+                    ISTORE 7
+                    ICONST_0
+                    ISTORE 6
+                    GOTO L3
+                L0: ALOAD 8
+                    ILOAD 6
+                    AALOAD
+                    ASTORE 5
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 307)
+                    ALOAD 5     // Ljava/lang/String; profile
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.validateProfile (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/util/Set; activeProfiles   (line 308)
+                    ALOAD 5     // Ljava/lang/String; profile
+                    INVOKEINTERFACE java.util.Set.contains (Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_3     // Ljava/util/Set; activeProfiles   (line 309)
+                    INVOKEINTERFACE java.util.Set.isEmpty ()Z
+                    IFEQ L2
+                    ALOAD 4     // Ljava/util/Set; defaultProfiles
+                    ALOAD 5     // Ljava/lang/String; profile
+                    INVOKEINTERFACE java.util.Set.contains (Ljava/lang/Object;)Z
+                    IFEQ L2
+                L1: ICONST_1   (line 310)
+                    ISTORE_2     // Z activeProfileFound
+                    GOTO L4   (line 311)
+                L2: IINC 6 1   (line 306)
+                L3: ILOAD 6
+                    ILOAD 7
+                    IF_ICMPLT L0
+                L4: ILOAD_2     // Z activeProfileFound   (line 314)
+                    IRETURN
+  end public transient boolean acceptsProfiles(String[])
+
+  protected void validateProfile(String):
+                    ALOAD_1     // Ljava/lang/String; profile   (line 327)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Invalid profile ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; profile
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]: must contain text"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.Assert.hasText (Ljava/lang/String;Ljava/lang/String;)V
+                    RETURN   (line 328)
+  end protected void validateProfile(String)
+
+  public org.springframework.core.env.MutablePropertySources getPropertySources():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 331)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+                    ARETURN
+  end public org.springframework.core.env.MutablePropertySources getPropertySources()
+
+  public java.util.Map getSystemEnvironment():
+    catch java.security.AccessControlException -> E0
+    |               INVOKESTATIC java.lang.System.getenv ()Ljava/util/Map;   (line 338)
+    |               ASTORE_1
+    catch java.security.AccessControlException -> E0
+                    GOTO L0
+                E0: POP   (line 340)
+                    NEW org.springframework.core.env.AbstractEnvironment$1   (line 341)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+                    INVOKESPECIAL org.springframework.core.env.AbstractEnvironment$1.<init> (Lorg/springframework/core/env/AbstractEnvironment;)V
+                    ASTORE_1
+                L0: ALOAD_1     // Ljava/util/Map; systemEnvironment   (line 359)
+                    ARETURN
+  end public java.util.Map getSystemEnvironment()
+
+  public java.util.Map getSystemProperties():
+    catch java.security.AccessControlException -> E0
+    |               INVOKESTATIC java.lang.System.getProperties ()Ljava/util/Properties;   (line 366)
+    |               ASTORE_1
+    catch java.security.AccessControlException -> E0
+                    GOTO L0
+                E0: POP   (line 368)
+                    NEW org.springframework.core.env.AbstractEnvironment$2   (line 369)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+                    INVOKESPECIAL org.springframework.core.env.AbstractEnvironment$2.<init> (Lorg/springframework/core/env/AbstractEnvironment;)V
+                    ASTORE_1
+                L0: ALOAD_1     // Ljava/util/Map; systemProperties   (line 387)
+                    ARETURN
+  end public java.util.Map getSystemProperties()
+
+  public void merge(org.springframework.core.env.ConfigurableEnvironment):
+                    ALOAD_1     // Lorg/springframework/core/env/ConfigurableEnvironment; parent   (line 391)
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurableEnvironment.getPropertySources ()Lorg/springframework/core/env/MutablePropertySources;
+                    INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L1
+                L0: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.env.PropertySource
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 392)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; ps
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.contains (Ljava/lang/String;)Z
+                    IFNE L1
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 393)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; ps
+                    INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.addLast (Lorg/springframework/core/env/PropertySource;)V
+                L1: ALOAD_3   (line 391)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ALOAD_1     // Lorg/springframework/core/env/ConfigurableEnvironment; parent   (line 396)
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurableEnvironment.getActiveProfiles ()[Ljava/lang/String;
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L3
+                L2: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 397)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.activeProfiles Ljava/util/Set;
+                    ALOAD_2     // Ljava/lang/String; profile
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    IINC_3 1   (line 396)
+                L3: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L2
+                    ALOAD_1     // Lorg/springframework/core/env/ConfigurableEnvironment; parent   (line 399)
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurableEnvironment.getDefaultProfiles ()[Ljava/lang/String;
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L5
+                L4: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 400)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.defaultProfiles Ljava/util/Set;
+                    ALOAD_2     // Ljava/lang/String; profile
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    IINC_3 1   (line 399)
+                L5: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L4
+                    RETURN   (line 402)
+  end public void merge(org.springframework.core.env.ConfigurableEnvironment)
+
+  public boolean containsProperty(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 410)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.containsProperty (Ljava/lang/String;)Z
+                    IRETURN
+  end public boolean containsProperty(String)
+
+  public String getProperty(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 414)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getProperty (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end public String getProperty(String)
+
+  public String getProperty(String, String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 418)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    ALOAD_2     // Ljava/lang/String; defaultValue
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getProperty (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end public String getProperty(String, String)
+
+  public Object getProperty(String, Class):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 422)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    ALOAD_2     // Ljava/lang/Class; targetType
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getProperty (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    ARETURN
+  end public Object getProperty(String, Class)
+
+  public Object getProperty(String, Class, Object):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 426)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    ALOAD_2     // Ljava/lang/Class; targetType
+                    ALOAD_3     // Ljava/lang/Object; defaultValue
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getProperty (Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+  end public Object getProperty(String, Class, Object)
+
+  public Class getPropertyAsClass(String, Class):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 430)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    ALOAD_2     // Ljava/lang/Class; targetType
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getPropertyAsClass (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Class;
+                    ARETURN
+  end public Class getPropertyAsClass(String, Class)
+
+  public String getRequiredProperty(String) throws java.lang.IllegalStateException:
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 434)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getRequiredProperty (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end public String getRequiredProperty(String) throws java.lang.IllegalStateException
+
+  public Object getRequiredProperty(String, Class) throws java.lang.IllegalStateException:
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 438)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    ALOAD_2     // Ljava/lang/Class; targetType
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getRequiredProperty (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    ARETURN
+  end public Object getRequiredProperty(String, Class) throws java.lang.IllegalStateException
+
+  public transient void setRequiredProperties(String[]):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 442)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // [Ljava/lang/String; requiredProperties
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.setRequiredProperties ([Ljava/lang/String;)V
+                    RETURN   (line 443)
+  end public transient void setRequiredProperties(String[])
+
+  public void validateRequiredProperties() throws org.springframework.core.env.MissingRequiredPropertiesException:
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 446)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.validateRequiredProperties ()V
+                    RETURN   (line 447)
+  end public void validateRequiredProperties() throws org.springframework.core.env.MissingRequiredPropertiesException
+
+  public String resolvePlaceholders(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 450)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; text
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.resolvePlaceholders (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end public String resolvePlaceholders(String)
+
+  public String resolveRequiredPlaceholders(String) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 454)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; text
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.resolveRequiredPlaceholders (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end public String resolveRequiredPlaceholders(String) throws java.lang.IllegalArgumentException
+
+  public void setConversionService(org.springframework.core.convert.support.ConfigurableConversionService):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 458)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Lorg/springframework/core/convert/support/ConfigurableConversionService; conversionService
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.setConversionService (Lorg/springframework/core/convert/support/ConfigurableConversionService;)V
+                    RETURN   (line 459)
+  end public void setConversionService(org.springframework.core.convert.support.ConfigurableConversionService)
+
+  public org.springframework.core.convert.support.ConfigurableConversionService getConversionService():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 462)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getConversionService ()Lorg/springframework/core/convert/support/ConfigurableConversionService;
+                    ARETURN
+  end public org.springframework.core.convert.support.ConfigurableConversionService getConversionService()
+
+  public void setPlaceholderPrefix(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 466)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; placeholderPrefix
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.setPlaceholderPrefix (Ljava/lang/String;)V
+                    RETURN   (line 467)
+  end public void setPlaceholderPrefix(String)
+
+  public void setPlaceholderSuffix(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 471)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; placeholderSuffix
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.setPlaceholderSuffix (Ljava/lang/String;)V
+                    RETURN   (line 472)
+  end public void setPlaceholderSuffix(String)
+
+  public void setValueSeparator(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 476)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; valueSeparator
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.setValueSeparator (Ljava/lang/String;)V
+                    RETURN   (line 477)
+  end public void setValueSeparator(String)
+
+  public String toString():
+                    LDC_W "%s {activeProfiles=%s, defaultProfiles=%s, propertySources=%s}"   (line 482)
+                    ICONST_4
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 483)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getSimpleName ()Ljava/lang/String;
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.activeProfiles Ljava/util/Set;
+                    AASTORE
+                    DUP
+                    ICONST_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.defaultProfiles Ljava/util/Set;
+                    AASTORE
+                    DUP
+                    ICONST_3
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 484)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+                    AASTORE   (line 482)
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+end public abstract class org.springframework.core.env.AbstractEnvironment
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+org.aspectj.bridge.AbortException: trouble in: 
+public abstract class org.springframework.core.env.AbstractEnvironment extends java.lang.Object implements org.springframework.core.env.ConfigurableEnvironment:
+  public static final String ACTIVE_PROFILES_PROPERTY_NAME = "spring.profiles.active"
+  public static final String DEFAULT_PROFILES_PROPERTY_NAME = "spring.profiles.default"
+  protected static final String RESERVED_DEFAULT_PROFILE_NAME = "default"
+  protected final org.apache.commons.logging.Log logger
+  private java.util.Set activeProfiles [Signature(Ljava/util/Set<Ljava/lang/String;>;)]
+  private java.util.Set defaultProfiles [Signature(Ljava/util/Set<Ljava/lang/String;>;)]
+  private final org.springframework.core.env.MutablePropertySources propertySources
+  private final org.springframework.core.env.ConfigurablePropertyResolver propertyResolver
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 111)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.env.AbstractEnvironment.<init>())
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 90)
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 92)
+    |               NEW java.util.LinkedHashSet
+    |               DUP
+    |               INVOKESPECIAL java.util.LinkedHashSet.<init> ()V
+    |               PUTFIELD org.springframework.core.env.AbstractEnvironment.activeProfiles Ljava/util/Set;
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 94)
+    |               NEW java.util.LinkedHashSet   (line 95)
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+    |               INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.getReservedDefaultProfiles ()Ljava/util/Set;
+    |               INVOKESPECIAL java.util.LinkedHashSet.<init> (Ljava/util/Collection;)V
+    |               PUTFIELD org.springframework.core.env.AbstractEnvironment.defaultProfiles Ljava/util/Set;
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 97)
+    |               NEW org.springframework.core.env.MutablePropertySources   (line 98)
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+    |               INVOKESPECIAL org.springframework.core.env.MutablePropertySources.<init> (Lorg/apache/commons/logging/Log;)V
+    |               PUTFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 100)
+    |               NEW org.springframework.core.env.PropertySourcesPropertyResolver   (line 101)
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+    |               INVOKESPECIAL org.springframework.core.env.PropertySourcesPropertyResolver.<init> (Lorg/springframework/core/env/PropertySources;)V
+    |               PUTFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 112)
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKEVIRTUAL java.lang.Class.getSimpleName ()Ljava/lang/String;
+    |               ASTORE_1
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 113)
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+    |               IFEQ L0
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 114)
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+    |               LDC "Initializing new %s"
+    |               ICONST_1
+    |               ANEWARRAY java.lang.Object
+    |               DUP
+    |               ICONST_0
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               AASTORE
+    |               INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+    |           L0: ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 117)
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+    |               INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.customizePropertySources (Lorg/springframework/core/env/MutablePropertySources;)V
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 119)
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+    |               IFEQ L1
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 120)
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+    |               LDC "Initialized %s with PropertySources %s"   (line 121)
+    |               ICONST_2
+    |               ANEWARRAY java.lang.Object
+    |               DUP
+    |               ICONST_0
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               AASTORE
+    |               DUP
+    |               ICONST_1
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+    |               GETFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+    |               AASTORE   (line 120)
+    |               INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+    |           L1: RETURN   (line 123)
+    constructor-execution(void org.springframework.core.env.AbstractEnvironment.<init>())
+  end public void <init>()
+
+  protected void customizePropertySources(org.springframework.core.env.MutablePropertySources):
+                    RETURN   (line 203)
+  end protected void customizePropertySources(org.springframework.core.env.MutablePropertySources)
+
+  protected java.util.Set getReservedDefaultProfiles():
+                    LDC "default"   (line 213)
+                    INVOKESTATIC java.util.Collections.singleton (Ljava/lang/Object;)Ljava/util/Set;
+                    ARETURN
+  end protected java.util.Set getReservedDefaultProfiles()
+
+  public String[] getActiveProfiles():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 222)
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.doGetActiveProfiles ()Ljava/util/Set;
+                    INVOKESTATIC org.springframework.util.StringUtils.toStringArray (Ljava/util/Collection;)[Ljava/lang/String;
+                    ARETURN
+  end public String[] getActiveProfiles()
+
+  protected java.util.Set doGetActiveProfiles():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 234)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.activeProfiles Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.isEmpty ()Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 235)
+                    LDC "spring.profiles.active"
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.getProperty (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/String; profiles   (line 236)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 237)
+                    ALOAD_1     // Ljava/lang/String; profiles
+                    INVOKESTATIC org.springframework.util.StringUtils.trimAllWhitespace (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.commaDelimitedListToStringArray (Ljava/lang/String;)[Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.setActiveProfiles ([Ljava/lang/String;)V
+                L0: ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 240)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.activeProfiles Ljava/util/Set;
+                    ARETURN
+  end protected java.util.Set doGetActiveProfiles()
+
+  public transient void setActiveProfiles(String[]):
+                    ALOAD_1     // [Ljava/lang/String; profiles   (line 244)
+                    LDC "Profile array must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 245)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.activeProfiles Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.clear ()V
+                    ALOAD_1     // [Ljava/lang/String; profiles   (line 246)
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L1
+                L0: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 247)
+                    ALOAD_2     // Ljava/lang/String; profile
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.addActiveProfile (Ljava/lang/String;)V
+                    IINC_3 1   (line 246)
+                L1: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L0
+                    RETURN   (line 249)
+  end public transient void setActiveProfiles(String[])
+
+  public void addActiveProfile(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 252)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 253)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.logger Lorg/apache/commons/logging/Log;
+                    LDC "Activating profile '%s'"
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; profile
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L0: ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 255)
+                    ALOAD_1     // Ljava/lang/String; profile
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.validateProfile (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 256)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.activeProfiles Ljava/util/Set;
+                    ALOAD_1     // Ljava/lang/String; profile
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    RETURN   (line 257)
+  end public void addActiveProfile(String)
+
+  public String[] getDefaultProfiles():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 260)
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.doGetDefaultProfiles ()Ljava/util/Set;
+                    INVOKESTATIC org.springframework.util.StringUtils.toStringArray (Ljava/util/Collection;)[Ljava/lang/String;
+                    ARETURN
+  end public String[] getDefaultProfiles()
+
+  protected java.util.Set doGetDefaultProfiles():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 276)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.defaultProfiles Ljava/util/Set;
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.getReservedDefaultProfiles ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 277)
+                    LDC "spring.profiles.default"
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.getProperty (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/String; profiles   (line 278)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 279)
+                    ALOAD_1     // Ljava/lang/String; profiles
+                    INVOKESTATIC org.springframework.util.StringUtils.trimAllWhitespace (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.commaDelimitedListToStringArray (Ljava/lang/String;)[Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.setDefaultProfiles ([Ljava/lang/String;)V
+                L0: ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 282)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.defaultProfiles Ljava/util/Set;
+                    ARETURN
+  end protected java.util.Set doGetDefaultProfiles()
+
+  public transient void setDefaultProfiles(String[]):
+                    ALOAD_1     // [Ljava/lang/String; profiles   (line 293)
+                    LDC "Profile array must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 294)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.defaultProfiles Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.clear ()V
+                    ALOAD_1     // [Ljava/lang/String; profiles   (line 295)
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L1
+                L0: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 296)
+                    ALOAD_2     // Ljava/lang/String; profile
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.validateProfile (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 297)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.defaultProfiles Ljava/util/Set;
+                    ALOAD_2     // Ljava/lang/String; profile
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    IINC_3 1   (line 295)
+                L1: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L0
+                    RETURN   (line 299)
+  end public transient void setDefaultProfiles(String[])
+
+  public transient boolean acceptsProfiles(String[]):
+                    ALOAD_1     // [Ljava/lang/String; profiles   (line 302)
+                    LDC "Must specify at least one profile"
+                    INVOKESTATIC org.springframework.util.Assert.notEmpty ([Ljava/lang/Object;Ljava/lang/String;)V
+                    ICONST_0   (line 303)
+                    ISTORE_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 304)
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.doGetActiveProfiles ()Ljava/util/Set;
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 305)
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.doGetDefaultProfiles ()Ljava/util/Set;
+                    ASTORE 4
+                    ALOAD_1     // [Ljava/lang/String; profiles   (line 306)
+                    DUP
+                    ASTORE 8
+                    ARRAYLENGTH
+                    ISTORE 7
+                    ICONST_0
+                    ISTORE 6
+                    GOTO L3
+                L0: ALOAD 8
+                    ILOAD 6
+                    AALOAD
+                    ASTORE 5
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 307)
+                    ALOAD 5     // Ljava/lang/String; profile
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractEnvironment.validateProfile (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/util/Set; activeProfiles   (line 308)
+                    ALOAD 5     // Ljava/lang/String; profile
+                    INVOKEINTERFACE java.util.Set.contains (Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_3     // Ljava/util/Set; activeProfiles   (line 309)
+                    INVOKEINTERFACE java.util.Set.isEmpty ()Z
+                    IFEQ L2
+                    ALOAD 4     // Ljava/util/Set; defaultProfiles
+                    ALOAD 5     // Ljava/lang/String; profile
+                    INVOKEINTERFACE java.util.Set.contains (Ljava/lang/Object;)Z
+                    IFEQ L2
+                L1: ICONST_1   (line 310)
+                    ISTORE_2     // Z activeProfileFound
+                    GOTO L4   (line 311)
+                L2: IINC 6 1   (line 306)
+                L3: ILOAD 6
+                    ILOAD 7
+                    IF_ICMPLT L0
+                L4: ILOAD_2     // Z activeProfileFound   (line 314)
+                    IRETURN
+  end public transient boolean acceptsProfiles(String[])
+
+  protected void validateProfile(String):
+                    ALOAD_1     // Ljava/lang/String; profile   (line 327)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Invalid profile ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; profile
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]: must contain text"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.Assert.hasText (Ljava/lang/String;Ljava/lang/String;)V
+                    RETURN   (line 328)
+  end protected void validateProfile(String)
+
+  public org.springframework.core.env.MutablePropertySources getPropertySources():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 331)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+                    ARETURN
+  end public org.springframework.core.env.MutablePropertySources getPropertySources()
+
+  public java.util.Map getSystemEnvironment():
+    catch java.security.AccessControlException -> E0
+    |               INVOKESTATIC java.lang.System.getenv ()Ljava/util/Map;   (line 338)
+    |               ASTORE_1
+    catch java.security.AccessControlException -> E0
+                    GOTO L0
+                E0: POP   (line 340)
+                    NEW org.springframework.core.env.AbstractEnvironment$1   (line 341)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+                    INVOKESPECIAL org.springframework.core.env.AbstractEnvironment$1.<init> (Lorg/springframework/core/env/AbstractEnvironment;)V
+                    ASTORE_1
+                L0: ALOAD_1     // Ljava/util/Map; systemEnvironment   (line 359)
+                    ARETURN
+  end public java.util.Map getSystemEnvironment()
+
+  public java.util.Map getSystemProperties():
+    catch java.security.AccessControlException -> E0
+    |               INVOKESTATIC java.lang.System.getProperties ()Ljava/util/Properties;   (line 366)
+    |               ASTORE_1
+    catch java.security.AccessControlException -> E0
+                    GOTO L0
+                E0: POP   (line 368)
+                    NEW org.springframework.core.env.AbstractEnvironment$2   (line 369)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+                    INVOKESPECIAL org.springframework.core.env.AbstractEnvironment$2.<init> (Lorg/springframework/core/env/AbstractEnvironment;)V
+                    ASTORE_1
+                L0: ALOAD_1     // Ljava/util/Map; systemProperties   (line 387)
+                    ARETURN
+  end public java.util.Map getSystemProperties()
+
+  public void merge(org.springframework.core.env.ConfigurableEnvironment):
+                    ALOAD_1     // Lorg/springframework/core/env/ConfigurableEnvironment; parent   (line 391)
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurableEnvironment.getPropertySources ()Lorg/springframework/core/env/MutablePropertySources;
+                    INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L1
+                L0: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.env.PropertySource
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 392)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; ps
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.contains (Ljava/lang/String;)Z
+                    IFNE L1
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 393)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; ps
+                    INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.addLast (Lorg/springframework/core/env/PropertySource;)V
+                L1: ALOAD_3   (line 391)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ALOAD_1     // Lorg/springframework/core/env/ConfigurableEnvironment; parent   (line 396)
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurableEnvironment.getActiveProfiles ()[Ljava/lang/String;
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L3
+                L2: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 397)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.activeProfiles Ljava/util/Set;
+                    ALOAD_2     // Ljava/lang/String; profile
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    IINC_3 1   (line 396)
+                L3: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L2
+                    ALOAD_1     // Lorg/springframework/core/env/ConfigurableEnvironment; parent   (line 399)
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurableEnvironment.getDefaultProfiles ()[Ljava/lang/String;
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L5
+                L4: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 400)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.defaultProfiles Ljava/util/Set;
+                    ALOAD_2     // Ljava/lang/String; profile
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    IINC_3 1   (line 399)
+                L5: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L4
+                    RETURN   (line 402)
+  end public void merge(org.springframework.core.env.ConfigurableEnvironment)
+
+  public boolean containsProperty(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 410)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.containsProperty (Ljava/lang/String;)Z
+                    IRETURN
+  end public boolean containsProperty(String)
+
+  public String getProperty(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 414)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getProperty (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end public String getProperty(String)
+
+  public String getProperty(String, String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 418)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    ALOAD_2     // Ljava/lang/String; defaultValue
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getProperty (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end public String getProperty(String, String)
+
+  public Object getProperty(String, Class):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 422)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    ALOAD_2     // Ljava/lang/Class; targetType
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getProperty (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    ARETURN
+  end public Object getProperty(String, Class)
+
+  public Object getProperty(String, Class, Object):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 426)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    ALOAD_2     // Ljava/lang/Class; targetType
+                    ALOAD_3     // Ljava/lang/Object; defaultValue
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getProperty (Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+  end public Object getProperty(String, Class, Object)
+
+  public Class getPropertyAsClass(String, Class):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 430)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    ALOAD_2     // Ljava/lang/Class; targetType
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getPropertyAsClass (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Class;
+                    ARETURN
+  end public Class getPropertyAsClass(String, Class)
+
+  public String getRequiredProperty(String) throws java.lang.IllegalStateException:
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 434)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getRequiredProperty (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end public String getRequiredProperty(String) throws java.lang.IllegalStateException
+
+  public Object getRequiredProperty(String, Class) throws java.lang.IllegalStateException:
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 438)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; key
+                    ALOAD_2     // Ljava/lang/Class; targetType
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getRequiredProperty (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    ARETURN
+  end public Object getRequiredProperty(String, Class) throws java.lang.IllegalStateException
+
+  public transient void setRequiredProperties(String[]):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 442)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // [Ljava/lang/String; requiredProperties
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.setRequiredProperties ([Ljava/lang/String;)V
+                    RETURN   (line 443)
+  end public transient void setRequiredProperties(String[])
+
+  public void validateRequiredProperties() throws org.springframework.core.env.MissingRequiredPropertiesException:
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 446)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.validateRequiredProperties ()V
+                    RETURN   (line 447)
+  end public void validateRequiredProperties() throws org.springframework.core.env.MissingRequiredPropertiesException
+
+  public String resolvePlaceholders(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 450)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; text
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.resolvePlaceholders (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end public String resolvePlaceholders(String)
+
+  public String resolveRequiredPlaceholders(String) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 454)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; text
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.resolveRequiredPlaceholders (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end public String resolveRequiredPlaceholders(String) throws java.lang.IllegalArgumentException
+
+  public void setConversionService(org.springframework.core.convert.support.ConfigurableConversionService):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 458)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Lorg/springframework/core/convert/support/ConfigurableConversionService; conversionService
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.setConversionService (Lorg/springframework/core/convert/support/ConfigurableConversionService;)V
+                    RETURN   (line 459)
+  end public void setConversionService(org.springframework.core.convert.support.ConfigurableConversionService)
+
+  public org.springframework.core.convert.support.ConfigurableConversionService getConversionService():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 462)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.getConversionService ()Lorg/springframework/core/convert/support/ConfigurableConversionService;
+                    ARETURN
+  end public org.springframework.core.convert.support.ConfigurableConversionService getConversionService()
+
+  public void setPlaceholderPrefix(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 466)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; placeholderPrefix
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.setPlaceholderPrefix (Ljava/lang/String;)V
+                    RETURN   (line 467)
+  end public void setPlaceholderPrefix(String)
+
+  public void setPlaceholderSuffix(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 471)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; placeholderSuffix
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.setPlaceholderSuffix (Ljava/lang/String;)V
+                    RETURN   (line 472)
+  end public void setPlaceholderSuffix(String)
+
+  public void setValueSeparator(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 476)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertyResolver Lorg/springframework/core/env/ConfigurablePropertyResolver;
+                    ALOAD_1     // Ljava/lang/String; valueSeparator
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurablePropertyResolver.setValueSeparator (Ljava/lang/String;)V
+                    RETURN   (line 477)
+  end public void setValueSeparator(String)
+
+  public String toString():
+                    LDC_W "%s {activeProfiles=%s, defaultProfiles=%s, propertySources=%s}"   (line 482)
+                    ICONST_4
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 483)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getSimpleName ()Ljava/lang/String;
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.activeProfiles Ljava/util/Set;
+                    AASTORE
+                    DUP
+                    ICONST_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.defaultProfiles Ljava/util/Set;
+                    AASTORE
+                    DUP
+                    ICONST_3
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractEnvironment; this   (line 484)
+                    GETFIELD org.springframework.core.env.AbstractEnvironment.propertySources Lorg/springframework/core/env/MutablePropertySources;
+                    AASTORE   (line 482)
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+end public abstract class org.springframework.core.env.AbstractEnvironment
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:665)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:615)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1752)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1464)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1273)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:394)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:281)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:95)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:52)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.context.support.AbstractApplicationContext.createEnvironment(AbstractApplicationContext.java:432)
+	at org.springframework.context.support.AbstractApplicationContext.<init>(AbstractApplicationContext.java:227)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.<init>(AbstractRefreshableApplicationContext.java:90)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.<init>(AbstractRefreshableConfigApplicationContext.java:59)
+	at org.springframework.context.support.AbstractXmlApplicationContext.<init>(AbstractXmlApplicationContext.java:61)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:136)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.curso.spring.springioc0007.Main.init(Main.java:29)
+	at com.curso.spring.springioc0007.Main.main(Main.java:24)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

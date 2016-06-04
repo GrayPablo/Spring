@@ -1,0 +1,1487 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114043.342.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.core.MethodParameter extends java.lang.Object:
+  private final java.lang.reflect.Method method
+  private final java.lang.reflect.Constructor constructor
+  private final int parameterIndex
+  private Class parameterType [Signature(Ljava/lang/Class<*>;)]
+  private java.lang.reflect.Type genericParameterType
+  private java.lang.annotation.Annotation[] parameterAnnotations
+  private org.springframework.core.ParameterNameDiscoverer parameterNameDiscoverer
+  private String parameterName
+  private int nestingLevel
+  java.util.Map typeIndexesPerLevel [Signature(Ljava/util/Map<Ljava/lang/Integer;Ljava/lang/Integer;>;)]
+  java.util.Map typeVariableMap [Signature(Ljava/util/Map<Ljava/lang/reflect/TypeVariable;Ljava/lang/reflect/Type;>;)]
+  private int hash
+  public void <init>(java.lang.reflect.Method, int):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 77)
+                    ALOAD_1     // Ljava/lang/reflect/Method; method
+                    ILOAD_2     // I parameterIndex
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.core.MethodParameter.<init> (Ljava/lang/reflect/Method;II)V
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Method, int))
+    |               RETURN   (line 78)
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Method, int))
+  end public void <init>(java.lang.reflect.Method, int)
+
+  public void <init>(java.lang.reflect.Method, int, int):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 90)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Method, int, int))
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 61)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 68)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.core.MethodParameter.hash I
+    |               ALOAD_1     // Ljava/lang/reflect/Method; method   (line 91)
+    |               LDC "Method must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 92)
+    |               ALOAD_1     // Ljava/lang/reflect/Method; method
+    |               PUTFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 93)
+    |               ILOAD_2     // I parameterIndex
+    |               PUTFIELD org.springframework.core.MethodParameter.parameterIndex I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 94)
+    |               ILOAD_3     // I nestingLevel
+    |               PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 95)
+    |               ACONST_NULL
+    |               PUTFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+    |               RETURN   (line 96)
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Method, int, int))
+  end public void <init>(java.lang.reflect.Method, int, int)
+
+  public void <init>(java.lang.reflect.Constructor, int):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 104)
+                    ALOAD_1     // Ljava/lang/reflect/Constructor; constructor
+                    ILOAD_2     // I parameterIndex
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.core.MethodParameter.<init> (Ljava/lang/reflect/Constructor;II)V
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Constructor, int))
+    |               RETURN   (line 105)
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Constructor, int))
+  end public void <init>(java.lang.reflect.Constructor, int)
+
+  public void <init>(java.lang.reflect.Constructor, int, int):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 115)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Constructor, int, int))
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 61)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 68)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.core.MethodParameter.hash I
+    |               ALOAD_1     // Ljava/lang/reflect/Constructor; constructor   (line 116)
+    |               LDC "Constructor must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 117)
+    |               ALOAD_1     // Ljava/lang/reflect/Constructor; constructor
+    |               PUTFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 118)
+    |               ILOAD_2     // I parameterIndex
+    |               PUTFIELD org.springframework.core.MethodParameter.parameterIndex I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 119)
+    |               ILOAD_3     // I nestingLevel
+    |               PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 120)
+    |               ACONST_NULL
+    |               PUTFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+    |               RETURN   (line 121)
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Constructor, int, int))
+  end public void <init>(java.lang.reflect.Constructor, int, int)
+
+  public void <init>(org.springframework.core.MethodParameter):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 128)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(org.springframework.core.MethodParameter))
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 61)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 68)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.core.MethodParameter.hash I
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original   (line 129)
+    |               LDC "Original must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 130)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+    |               PUTFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 131)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+    |               PUTFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 132)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+    |               PUTFIELD org.springframework.core.MethodParameter.parameterIndex I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 133)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.parameterType Ljava/lang/Class;
+    |               PUTFIELD org.springframework.core.MethodParameter.parameterType Ljava/lang/Class;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 134)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.genericParameterType Ljava/lang/reflect/Type;
+    |               PUTFIELD org.springframework.core.MethodParameter.genericParameterType Ljava/lang/reflect/Type;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 135)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.parameterAnnotations [Ljava/lang/annotation/Annotation;
+    |               PUTFIELD org.springframework.core.MethodParameter.parameterAnnotations [Ljava/lang/annotation/Annotation;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 136)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.parameterNameDiscoverer Lorg/springframework/core/ParameterNameDiscoverer;
+    |               PUTFIELD org.springframework.core.MethodParameter.parameterNameDiscoverer Lorg/springframework/core/ParameterNameDiscoverer;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 137)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.parameterName Ljava/lang/String;
+    |               PUTFIELD org.springframework.core.MethodParameter.parameterName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 138)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+    |               PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 139)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.typeIndexesPerLevel Ljava/util/Map;
+    |               PUTFIELD org.springframework.core.MethodParameter.typeIndexesPerLevel Ljava/util/Map;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 140)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.typeVariableMap Ljava/util/Map;
+    |               PUTFIELD org.springframework.core.MethodParameter.typeVariableMap Ljava/util/Map;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 141)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.hash I
+    |               PUTFIELD org.springframework.core.MethodParameter.hash I
+    |               RETURN   (line 142)
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(org.springframework.core.MethodParameter))
+  end public void <init>(org.springframework.core.MethodParameter)
+
+  public java.lang.reflect.Method getMethod():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 151)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    ARETURN
+  end public java.lang.reflect.Method getMethod()
+
+  public java.lang.reflect.Constructor getConstructor():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 160)
+                    GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+                    ARETURN
+  end public java.lang.reflect.Constructor getConstructor()
+
+  private java.lang.reflect.Member getMember():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 168)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+                L1: ARETURN
+  end private java.lang.reflect.Member getMember()
+
+  private java.lang.reflect.AnnotatedElement getAnnotatedElement():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 176)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+                L1: ARETURN
+  end private java.lang.reflect.AnnotatedElement getAnnotatedElement()
+
+  public Class getDeclaringClass():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 183)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getMember ()Ljava/lang/reflect/Member;
+                    INVOKEINTERFACE java.lang.reflect.Member.getDeclaringClass ()Ljava/lang/Class;
+                    ARETURN
+  end public Class getDeclaringClass()
+
+  public int getParameterIndex():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 191)
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    IRETURN
+  end public int getParameterIndex()
+
+  void setParameterType(Class):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 198)
+                    ALOAD_1     // Ljava/lang/Class; parameterType
+                    PUTFIELD org.springframework.core.MethodParameter.parameterType Ljava/lang/Class;
+                    RETURN   (line 199)
+  end void setParameterType(Class)
+
+  public Class getParameterType():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 206)
+                    GETFIELD org.springframework.core.MethodParameter.parameterType Ljava/lang/Class;
+                    IFNONNULL L5
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 207)
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    IFGE L2
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 208)
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    GOTO L1
+                L0: ACONST_NULL
+                L1: PUTFIELD org.springframework.core.MethodParameter.parameterType Ljava/lang/Class;
+                    GOTO L5
+                L2: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 211)
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L3
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 212)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    AALOAD
+                    GOTO L4
+                L3: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 213)
+                    GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+                    INVOKEVIRTUAL java.lang.reflect.Constructor.getParameterTypes ()[Ljava/lang/Class;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    AALOAD
+                L4: PUTFIELD org.springframework.core.MethodParameter.parameterType Ljava/lang/Class;   (line 211)
+                L5: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 216)
+                    GETFIELD org.springframework.core.MethodParameter.parameterType Ljava/lang/Class;
+                    ARETURN
+  end public Class getParameterType()
+
+  public java.lang.reflect.Type getGenericParameterType():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 224)
+                    GETFIELD org.springframework.core.MethodParameter.genericParameterType Ljava/lang/reflect/Type;
+                    IFNONNULL L5
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 225)
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    IFGE L2
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 226)
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getGenericReturnType ()Ljava/lang/reflect/Type;
+                    GOTO L1
+                L0: ACONST_NULL
+                L1: PUTFIELD org.springframework.core.MethodParameter.genericParameterType Ljava/lang/reflect/Type;
+                    GOTO L5
+                L2: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 229)
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L3
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 230)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getGenericParameterTypes ()[Ljava/lang/reflect/Type;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    AALOAD
+                    GOTO L4
+                L3: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 231)
+                    GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+                    INVOKEVIRTUAL java.lang.reflect.Constructor.getGenericParameterTypes ()[Ljava/lang/reflect/Type;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    AALOAD
+                L4: PUTFIELD org.springframework.core.MethodParameter.genericParameterType Ljava/lang/reflect/Type;   (line 229)
+                L5: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 234)
+                    GETFIELD org.springframework.core.MethodParameter.genericParameterType Ljava/lang/reflect/Type;
+                    ARETURN
+  end public java.lang.reflect.Type getGenericParameterType()
+
+  public Class getNestedParameterType():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 238)
+                    GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    ICONST_1
+                    IF_ICMPLE L4
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 239)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getGenericParameterType ()Ljava/lang/reflect/Type;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/reflect/Type; type   (line 240)
+                    INSTANCEOF java.lang.reflect.ParameterizedType
+                    IFEQ L3
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 241)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getTypeIndexForCurrentLevel ()Ljava/lang/Integer;
+                    ASTORE_2
+                    ALOAD_1     // Ljava/lang/reflect/Type; type   (line 242)
+                    CHECKCAST java.lang.reflect.ParameterizedType
+                    INVOKEINTERFACE java.lang.reflect.ParameterizedType.getActualTypeArguments ()[Ljava/lang/reflect/Type;
+                    ALOAD_2     // Ljava/lang/Integer; index
+                    IFNULL L0
+                    ALOAD_2     // Ljava/lang/Integer; index
+                    INVOKEVIRTUAL java.lang.Integer.intValue ()I
+                    GOTO L1
+                L0: ICONST_0
+                L1: AALOAD
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/reflect/Type; arg   (line 243)
+                    INSTANCEOF java.lang.Class
+                    IFEQ L2
+                    ALOAD_3     // Ljava/lang/reflect/Type; arg   (line 244)
+                    CHECKCAST java.lang.Class
+                    ARETURN
+                L2: ALOAD_3     // Ljava/lang/reflect/Type; arg   (line 246)
+                    INSTANCEOF java.lang.reflect.ParameterizedType
+                    IFEQ L3
+                    ALOAD_3     // Ljava/lang/reflect/Type; arg   (line 247)
+                    CHECKCAST java.lang.reflect.ParameterizedType
+                    INVOKEINTERFACE java.lang.reflect.ParameterizedType.getRawType ()Ljava/lang/reflect/Type;
+                    ASTORE_3     // Ljava/lang/reflect/Type; arg
+                    ALOAD_3     // Ljava/lang/reflect/Type; arg   (line 248)
+                    INSTANCEOF java.lang.Class
+                    IFEQ L3
+                    ALOAD_3     // Ljava/lang/reflect/Type; arg   (line 249)
+                    CHECKCAST java.lang.Class
+                    ARETURN
+                L3: LDC java.lang.Object   (line 253)
+                    ARETURN
+                L4: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 256)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getParameterType ()Ljava/lang/Class;
+                    ARETURN
+  end public Class getNestedParameterType()
+
+  public java.lang.annotation.Annotation[] getMethodAnnotations():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 264)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getAnnotatedElement ()Ljava/lang/reflect/AnnotatedElement;
+                    INVOKEINTERFACE java.lang.reflect.AnnotatedElement.getAnnotations ()[Ljava/lang/annotation/Annotation;
+                    ARETURN
+  end public java.lang.annotation.Annotation[] getMethodAnnotations()
+
+  public java.lang.annotation.Annotation getMethodAnnotation(Class):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 274)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getAnnotatedElement ()Ljava/lang/reflect/AnnotatedElement;
+                    ALOAD_1     // Ljava/lang/Class; annotationType
+                    INVOKEINTERFACE java.lang.reflect.AnnotatedElement.getAnnotation (Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+                    ARETURN
+  end public java.lang.annotation.Annotation getMethodAnnotation(Class)
+
+  public java.lang.annotation.Annotation[] getParameterAnnotations():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 281)
+                    GETFIELD org.springframework.core.MethodParameter.parameterAnnotations [Ljava/lang/annotation/Annotation;
+                    IFNONNULL L3
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 282)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 283)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterAnnotations ()[[Ljava/lang/annotation/Annotation;
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+                    INVOKEVIRTUAL java.lang.reflect.Constructor.getParameterAnnotations ()[[Ljava/lang/annotation/Annotation;
+                L1: ASTORE_1   (line 282)
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 284)
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    IFLT L2
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    ALOAD_1     // [[Ljava/lang/annotation/Annotation; annotationArray
+                    ARRAYLENGTH
+                    IF_ICMPGE L2
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 285)
+                    ALOAD_1     // [[Ljava/lang/annotation/Annotation; annotationArray
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    AALOAD
+                    PUTFIELD org.springframework.core.MethodParameter.parameterAnnotations [Ljava/lang/annotation/Annotation;
+                    GOTO L3
+                L2: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 288)
+                    ICONST_0
+                    ANEWARRAY java.lang.annotation.Annotation
+                    PUTFIELD org.springframework.core.MethodParameter.parameterAnnotations [Ljava/lang/annotation/Annotation;
+                L3: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 291)
+                    GETFIELD org.springframework.core.MethodParameter.parameterAnnotations [Ljava/lang/annotation/Annotation;
+                    ARETURN
+  end public java.lang.annotation.Annotation[] getParameterAnnotations()
+
+  public java.lang.annotation.Annotation getParameterAnnotation(Class):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 301)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getParameterAnnotations ()[Ljava/lang/annotation/Annotation;
+                    ASTORE_2
+                    ALOAD_2     // [Ljava/lang/annotation/Annotation; anns   (line 302)
+                    DUP
+                    ASTORE 6
+                    ARRAYLENGTH
+                    ISTORE 5
+                    ICONST_0
+                    ISTORE 4
+                    GOTO L2
+                L0: ALOAD 6
+                    ILOAD 4
+                    AALOAD
+                    ASTORE_3
+                    ALOAD_1     // Ljava/lang/Class; annotationType   (line 303)
+                    ALOAD_3     // Ljava/lang/annotation/Annotation; ann
+                    INVOKEVIRTUAL java.lang.Class.isInstance (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_3     // Ljava/lang/annotation/Annotation; ann   (line 304)
+                    ARETURN
+                L1: IINC 4 1   (line 302)
+                L2: ILOAD 4
+                    ILOAD 5
+                    IF_ICMPLT L0
+                    ACONST_NULL   (line 307)
+                    ARETURN
+  end public java.lang.annotation.Annotation getParameterAnnotation(Class)
+
+  public boolean hasParameterAnnotations():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 314)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getParameterAnnotations ()[Ljava/lang/annotation/Annotation;
+                    ARRAYLENGTH
+                    IFEQ L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public boolean hasParameterAnnotations()
+
+  public boolean hasParameterAnnotation(Class):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 321)
+                    ALOAD_1     // Ljava/lang/Class; annotationType
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getParameterAnnotation (Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+                    IFNULL L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public boolean hasParameterAnnotation(Class)
+
+  public void initParameterNameDiscovery(org.springframework.core.ParameterNameDiscoverer):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 331)
+                    ALOAD_1     // Lorg/springframework/core/ParameterNameDiscoverer; parameterNameDiscoverer
+                    PUTFIELD org.springframework.core.MethodParameter.parameterNameDiscoverer Lorg/springframework/core/ParameterNameDiscoverer;
+                    RETURN   (line 332)
+  end public void initParameterNameDiscovery(org.springframework.core.ParameterNameDiscoverer)
+
+  public String getParameterName():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 342)
+                    GETFIELD org.springframework.core.MethodParameter.parameterNameDiscoverer Lorg/springframework/core/ParameterNameDiscoverer;
+                    IFNULL L3
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 343)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 344)
+                    GETFIELD org.springframework.core.MethodParameter.parameterNameDiscoverer Lorg/springframework/core/ParameterNameDiscoverer;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    INVOKEINTERFACE org.springframework.core.ParameterNameDiscoverer.getParameterNames (Ljava/lang/reflect/Method;)[Ljava/lang/String;
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 345)
+                    GETFIELD org.springframework.core.MethodParameter.parameterNameDiscoverer Lorg/springframework/core/ParameterNameDiscoverer;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+                    INVOKEINTERFACE org.springframework.core.ParameterNameDiscoverer.getParameterNames (Ljava/lang/reflect/Constructor;)[Ljava/lang/String;
+                L1: ASTORE_1   (line 343)
+                    ALOAD_1     // [Ljava/lang/String; parameterNames   (line 346)
+                    IFNULL L2
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 347)
+                    ALOAD_1     // [Ljava/lang/String; parameterNames
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    AALOAD
+                    PUTFIELD org.springframework.core.MethodParameter.parameterName Ljava/lang/String;
+                L2: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 349)
+                    ACONST_NULL
+                    PUTFIELD org.springframework.core.MethodParameter.parameterNameDiscoverer Lorg/springframework/core/ParameterNameDiscoverer;
+                L3: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 351)
+                    GETFIELD org.springframework.core.MethodParameter.parameterName Ljava/lang/String;
+                    ARETURN
+  end public String getParameterName()
+
+  public void increaseNestingLevel():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 359)
+                    DUP
+                    GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    ICONST_1
+                    IADD
+                    PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    RETURN   (line 360)
+  end public void increaseNestingLevel()
+
+  public void decreaseNestingLevel():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 367)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getTypeIndexesPerLevel ()Ljava/util/Map;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    INVOKEINTERFACE java.util.Map.remove (Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 368)
+                    DUP
+                    GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    ICONST_1
+                    ISUB
+                    PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    RETURN   (line 369)
+  end public void decreaseNestingLevel()
+
+  public int getNestingLevel():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 377)
+                    GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    IRETURN
+  end public int getNestingLevel()
+
+  public void setTypeIndexForCurrentLevel(int):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 387)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getTypeIndexesPerLevel ()Ljava/util/Map;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    ILOAD_1     // I typeIndex
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    RETURN   (line 388)
+  end public void setTypeIndexForCurrentLevel(int)
+
+  public Integer getTypeIndexForCurrentLevel():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 397)
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getTypeIndexForLevel (I)Ljava/lang/Integer;
+                    ARETURN
+  end public Integer getTypeIndexForCurrentLevel()
+
+  public Integer getTypeIndexForLevel(int):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 407)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getTypeIndexesPerLevel ()Ljava/util/Map;
+                    ILOAD_1     // I nestingLevel
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.Integer
+                    ARETURN
+  end public Integer getTypeIndexForLevel(int)
+
+  private java.util.Map getTypeIndexesPerLevel():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 414)
+                    GETFIELD org.springframework.core.MethodParameter.typeIndexesPerLevel Ljava/util/Map;
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 415)
+                    NEW java.util.HashMap
+                    DUP
+                    ICONST_4
+                    INVOKESPECIAL java.util.HashMap.<init> (I)V
+                    PUTFIELD org.springframework.core.MethodParameter.typeIndexesPerLevel Ljava/util/Map;
+                L0: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 417)
+                    GETFIELD org.springframework.core.MethodParameter.typeIndexesPerLevel Ljava/util/Map;
+                    ARETURN
+  end private java.util.Map getTypeIndexesPerLevel()
+
+  public static org.springframework.core.MethodParameter forMethodOrConstructor(Object, int):
+                    ALOAD_0     // Ljava/lang/Object; methodOrConstructor   (line 430)
+                    INSTANCEOF java.lang.reflect.Method
+                    IFEQ L0
+                    NEW org.springframework.core.MethodParameter   (line 431)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Object; methodOrConstructor
+                    CHECKCAST java.lang.reflect.Method
+                    ILOAD_1     // I parameterIndex
+                    INVOKESPECIAL org.springframework.core.MethodParameter.<init> (Ljava/lang/reflect/Method;I)V
+                    ARETURN
+                L0: ALOAD_0     // Ljava/lang/Object; methodOrConstructor   (line 433)
+                    INSTANCEOF java.lang.reflect.Constructor
+                    IFEQ L1
+                    NEW org.springframework.core.MethodParameter   (line 434)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Object; methodOrConstructor
+                    CHECKCAST java.lang.reflect.Constructor
+                    ILOAD_1     // I parameterIndex
+                    INVOKESPECIAL org.springframework.core.MethodParameter.<init> (Ljava/lang/reflect/Constructor;I)V
+                    ARETURN
+                L1: NEW java.lang.IllegalArgumentException   (line 437)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 438)
+                    DUP
+                    LDC_W "Given object ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Object; methodOrConstructor
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC_W "] is neither a Method nor a Constructor"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 437)
+                    ATHROW
+  end public static org.springframework.core.MethodParameter forMethodOrConstructor(Object, int)
+
+  public boolean equals(Object):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 444)
+                    ALOAD_1     // Ljava/lang/Object; obj
+                    IF_ACMPNE L0
+                    ICONST_1   (line 445)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/Object; obj   (line 447)
+                    IFNULL L3
+                    ALOAD_1     // Ljava/lang/Object; obj
+                    INSTANCEOF org.springframework.core.MethodParameter
+                    IFEQ L3
+                    ALOAD_1     // Ljava/lang/Object; obj   (line 448)
+                    CHECKCAST org.springframework.core.MethodParameter
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 450)
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    ALOAD_2     // Lorg/springframework/core/MethodParameter; other
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    IF_ICMPEQ L1
+                    ICONST_0   (line 451)
+                    IRETURN
+                L1: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 453)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getMember ()Ljava/lang/reflect/Member;
+                    ALOAD_2     // Lorg/springframework/core/MethodParameter; other
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getMember ()Ljava/lang/reflect/Member;
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ICONST_1   (line 454)
+                    IRETURN
+                L2: ICONST_0   (line 457)
+                    IRETURN
+                L3: ICONST_0   (line 460)
+                    IRETURN
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 466)
+                    GETFIELD org.springframework.core.MethodParameter.hash I
+                    ISTORE_1
+                    ILOAD_1     // I result   (line 467)
+                    IFNE L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 468)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getMember ()Ljava/lang/reflect/Member;
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    ISTORE_1     // I result
+                    BIPUSH 31   (line 469)
+                    ILOAD_1     // I result
+                    IMUL
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    IADD
+                    ISTORE_1     // I result
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 470)
+                    ILOAD_1     // I result
+                    PUTFIELD org.springframework.core.MethodParameter.hash I
+                L0: ILOAD_1     // I result   (line 472)
+                    IRETURN
+  end public int hashCode()
+
+end public class org.springframework.core.MethodParameter
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.core.MethodParameter extends java.lang.Object:
+  private final java.lang.reflect.Method method
+  private final java.lang.reflect.Constructor constructor
+  private final int parameterIndex
+  private Class parameterType [Signature(Ljava/lang/Class<*>;)]
+  private java.lang.reflect.Type genericParameterType
+  private java.lang.annotation.Annotation[] parameterAnnotations
+  private org.springframework.core.ParameterNameDiscoverer parameterNameDiscoverer
+  private String parameterName
+  private int nestingLevel
+  java.util.Map typeIndexesPerLevel [Signature(Ljava/util/Map<Ljava/lang/Integer;Ljava/lang/Integer;>;)]
+  java.util.Map typeVariableMap [Signature(Ljava/util/Map<Ljava/lang/reflect/TypeVariable;Ljava/lang/reflect/Type;>;)]
+  private int hash
+  public void <init>(java.lang.reflect.Method, int):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 77)
+                    ALOAD_1     // Ljava/lang/reflect/Method; method
+                    ILOAD_2     // I parameterIndex
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.core.MethodParameter.<init> (Ljava/lang/reflect/Method;II)V
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Method, int))
+    |               RETURN   (line 78)
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Method, int))
+  end public void <init>(java.lang.reflect.Method, int)
+
+  public void <init>(java.lang.reflect.Method, int, int):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 90)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Method, int, int))
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 61)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 68)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.core.MethodParameter.hash I
+    |               ALOAD_1     // Ljava/lang/reflect/Method; method   (line 91)
+    |               LDC "Method must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 92)
+    |               ALOAD_1     // Ljava/lang/reflect/Method; method
+    |               PUTFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 93)
+    |               ILOAD_2     // I parameterIndex
+    |               PUTFIELD org.springframework.core.MethodParameter.parameterIndex I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 94)
+    |               ILOAD_3     // I nestingLevel
+    |               PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 95)
+    |               ACONST_NULL
+    |               PUTFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+    |               RETURN   (line 96)
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Method, int, int))
+  end public void <init>(java.lang.reflect.Method, int, int)
+
+  public void <init>(java.lang.reflect.Constructor, int):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 104)
+                    ALOAD_1     // Ljava/lang/reflect/Constructor; constructor
+                    ILOAD_2     // I parameterIndex
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.core.MethodParameter.<init> (Ljava/lang/reflect/Constructor;II)V
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Constructor, int))
+    |               RETURN   (line 105)
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Constructor, int))
+  end public void <init>(java.lang.reflect.Constructor, int)
+
+  public void <init>(java.lang.reflect.Constructor, int, int):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 115)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Constructor, int, int))
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 61)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 68)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.core.MethodParameter.hash I
+    |               ALOAD_1     // Ljava/lang/reflect/Constructor; constructor   (line 116)
+    |               LDC "Constructor must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 117)
+    |               ALOAD_1     // Ljava/lang/reflect/Constructor; constructor
+    |               PUTFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 118)
+    |               ILOAD_2     // I parameterIndex
+    |               PUTFIELD org.springframework.core.MethodParameter.parameterIndex I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 119)
+    |               ILOAD_3     // I nestingLevel
+    |               PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 120)
+    |               ACONST_NULL
+    |               PUTFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+    |               RETURN   (line 121)
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(java.lang.reflect.Constructor, int, int))
+  end public void <init>(java.lang.reflect.Constructor, int, int)
+
+  public void <init>(org.springframework.core.MethodParameter):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 128)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(org.springframework.core.MethodParameter))
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 61)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 68)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.core.MethodParameter.hash I
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original   (line 129)
+    |               LDC "Original must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 130)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+    |               PUTFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 131)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+    |               PUTFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 132)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+    |               PUTFIELD org.springframework.core.MethodParameter.parameterIndex I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 133)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.parameterType Ljava/lang/Class;
+    |               PUTFIELD org.springframework.core.MethodParameter.parameterType Ljava/lang/Class;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 134)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.genericParameterType Ljava/lang/reflect/Type;
+    |               PUTFIELD org.springframework.core.MethodParameter.genericParameterType Ljava/lang/reflect/Type;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 135)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.parameterAnnotations [Ljava/lang/annotation/Annotation;
+    |               PUTFIELD org.springframework.core.MethodParameter.parameterAnnotations [Ljava/lang/annotation/Annotation;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 136)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.parameterNameDiscoverer Lorg/springframework/core/ParameterNameDiscoverer;
+    |               PUTFIELD org.springframework.core.MethodParameter.parameterNameDiscoverer Lorg/springframework/core/ParameterNameDiscoverer;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 137)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.parameterName Ljava/lang/String;
+    |               PUTFIELD org.springframework.core.MethodParameter.parameterName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 138)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+    |               PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 139)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.typeIndexesPerLevel Ljava/util/Map;
+    |               PUTFIELD org.springframework.core.MethodParameter.typeIndexesPerLevel Ljava/util/Map;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 140)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.typeVariableMap Ljava/util/Map;
+    |               PUTFIELD org.springframework.core.MethodParameter.typeVariableMap Ljava/util/Map;
+    |               ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 141)
+    |               ALOAD_1     // Lorg/springframework/core/MethodParameter; original
+    |               GETFIELD org.springframework.core.MethodParameter.hash I
+    |               PUTFIELD org.springframework.core.MethodParameter.hash I
+    |               RETURN   (line 142)
+    constructor-execution(void org.springframework.core.MethodParameter.<init>(org.springframework.core.MethodParameter))
+  end public void <init>(org.springframework.core.MethodParameter)
+
+  public java.lang.reflect.Method getMethod():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 151)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    ARETURN
+  end public java.lang.reflect.Method getMethod()
+
+  public java.lang.reflect.Constructor getConstructor():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 160)
+                    GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+                    ARETURN
+  end public java.lang.reflect.Constructor getConstructor()
+
+  private java.lang.reflect.Member getMember():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 168)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+                L1: ARETURN
+  end private java.lang.reflect.Member getMember()
+
+  private java.lang.reflect.AnnotatedElement getAnnotatedElement():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 176)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+                L1: ARETURN
+  end private java.lang.reflect.AnnotatedElement getAnnotatedElement()
+
+  public Class getDeclaringClass():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 183)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getMember ()Ljava/lang/reflect/Member;
+                    INVOKEINTERFACE java.lang.reflect.Member.getDeclaringClass ()Ljava/lang/Class;
+                    ARETURN
+  end public Class getDeclaringClass()
+
+  public int getParameterIndex():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 191)
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    IRETURN
+  end public int getParameterIndex()
+
+  void setParameterType(Class):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 198)
+                    ALOAD_1     // Ljava/lang/Class; parameterType
+                    PUTFIELD org.springframework.core.MethodParameter.parameterType Ljava/lang/Class;
+                    RETURN   (line 199)
+  end void setParameterType(Class)
+
+  public Class getParameterType():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 206)
+                    GETFIELD org.springframework.core.MethodParameter.parameterType Ljava/lang/Class;
+                    IFNONNULL L5
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 207)
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    IFGE L2
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 208)
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    GOTO L1
+                L0: ACONST_NULL
+                L1: PUTFIELD org.springframework.core.MethodParameter.parameterType Ljava/lang/Class;
+                    GOTO L5
+                L2: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 211)
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L3
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 212)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    AALOAD
+                    GOTO L4
+                L3: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 213)
+                    GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+                    INVOKEVIRTUAL java.lang.reflect.Constructor.getParameterTypes ()[Ljava/lang/Class;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    AALOAD
+                L4: PUTFIELD org.springframework.core.MethodParameter.parameterType Ljava/lang/Class;   (line 211)
+                L5: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 216)
+                    GETFIELD org.springframework.core.MethodParameter.parameterType Ljava/lang/Class;
+                    ARETURN
+  end public Class getParameterType()
+
+  public java.lang.reflect.Type getGenericParameterType():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 224)
+                    GETFIELD org.springframework.core.MethodParameter.genericParameterType Ljava/lang/reflect/Type;
+                    IFNONNULL L5
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 225)
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    IFGE L2
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 226)
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getGenericReturnType ()Ljava/lang/reflect/Type;
+                    GOTO L1
+                L0: ACONST_NULL
+                L1: PUTFIELD org.springframework.core.MethodParameter.genericParameterType Ljava/lang/reflect/Type;
+                    GOTO L5
+                L2: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 229)
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L3
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 230)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getGenericParameterTypes ()[Ljava/lang/reflect/Type;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    AALOAD
+                    GOTO L4
+                L3: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 231)
+                    GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+                    INVOKEVIRTUAL java.lang.reflect.Constructor.getGenericParameterTypes ()[Ljava/lang/reflect/Type;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    AALOAD
+                L4: PUTFIELD org.springframework.core.MethodParameter.genericParameterType Ljava/lang/reflect/Type;   (line 229)
+                L5: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 234)
+                    GETFIELD org.springframework.core.MethodParameter.genericParameterType Ljava/lang/reflect/Type;
+                    ARETURN
+  end public java.lang.reflect.Type getGenericParameterType()
+
+  public Class getNestedParameterType():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 238)
+                    GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    ICONST_1
+                    IF_ICMPLE L4
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 239)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getGenericParameterType ()Ljava/lang/reflect/Type;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/reflect/Type; type   (line 240)
+                    INSTANCEOF java.lang.reflect.ParameterizedType
+                    IFEQ L3
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 241)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getTypeIndexForCurrentLevel ()Ljava/lang/Integer;
+                    ASTORE_2
+                    ALOAD_1     // Ljava/lang/reflect/Type; type   (line 242)
+                    CHECKCAST java.lang.reflect.ParameterizedType
+                    INVOKEINTERFACE java.lang.reflect.ParameterizedType.getActualTypeArguments ()[Ljava/lang/reflect/Type;
+                    ALOAD_2     // Ljava/lang/Integer; index
+                    IFNULL L0
+                    ALOAD_2     // Ljava/lang/Integer; index
+                    INVOKEVIRTUAL java.lang.Integer.intValue ()I
+                    GOTO L1
+                L0: ICONST_0
+                L1: AALOAD
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/reflect/Type; arg   (line 243)
+                    INSTANCEOF java.lang.Class
+                    IFEQ L2
+                    ALOAD_3     // Ljava/lang/reflect/Type; arg   (line 244)
+                    CHECKCAST java.lang.Class
+                    ARETURN
+                L2: ALOAD_3     // Ljava/lang/reflect/Type; arg   (line 246)
+                    INSTANCEOF java.lang.reflect.ParameterizedType
+                    IFEQ L3
+                    ALOAD_3     // Ljava/lang/reflect/Type; arg   (line 247)
+                    CHECKCAST java.lang.reflect.ParameterizedType
+                    INVOKEINTERFACE java.lang.reflect.ParameterizedType.getRawType ()Ljava/lang/reflect/Type;
+                    ASTORE_3     // Ljava/lang/reflect/Type; arg
+                    ALOAD_3     // Ljava/lang/reflect/Type; arg   (line 248)
+                    INSTANCEOF java.lang.Class
+                    IFEQ L3
+                    ALOAD_3     // Ljava/lang/reflect/Type; arg   (line 249)
+                    CHECKCAST java.lang.Class
+                    ARETURN
+                L3: LDC java.lang.Object   (line 253)
+                    ARETURN
+                L4: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 256)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getParameterType ()Ljava/lang/Class;
+                    ARETURN
+  end public Class getNestedParameterType()
+
+  public java.lang.annotation.Annotation[] getMethodAnnotations():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 264)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getAnnotatedElement ()Ljava/lang/reflect/AnnotatedElement;
+                    INVOKEINTERFACE java.lang.reflect.AnnotatedElement.getAnnotations ()[Ljava/lang/annotation/Annotation;
+                    ARETURN
+  end public java.lang.annotation.Annotation[] getMethodAnnotations()
+
+  public java.lang.annotation.Annotation getMethodAnnotation(Class):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 274)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getAnnotatedElement ()Ljava/lang/reflect/AnnotatedElement;
+                    ALOAD_1     // Ljava/lang/Class; annotationType
+                    INVOKEINTERFACE java.lang.reflect.AnnotatedElement.getAnnotation (Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+                    ARETURN
+  end public java.lang.annotation.Annotation getMethodAnnotation(Class)
+
+  public java.lang.annotation.Annotation[] getParameterAnnotations():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 281)
+                    GETFIELD org.springframework.core.MethodParameter.parameterAnnotations [Ljava/lang/annotation/Annotation;
+                    IFNONNULL L3
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 282)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 283)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterAnnotations ()[[Ljava/lang/annotation/Annotation;
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+                    INVOKEVIRTUAL java.lang.reflect.Constructor.getParameterAnnotations ()[[Ljava/lang/annotation/Annotation;
+                L1: ASTORE_1   (line 282)
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 284)
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    IFLT L2
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    ALOAD_1     // [[Ljava/lang/annotation/Annotation; annotationArray
+                    ARRAYLENGTH
+                    IF_ICMPGE L2
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 285)
+                    ALOAD_1     // [[Ljava/lang/annotation/Annotation; annotationArray
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    AALOAD
+                    PUTFIELD org.springframework.core.MethodParameter.parameterAnnotations [Ljava/lang/annotation/Annotation;
+                    GOTO L3
+                L2: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 288)
+                    ICONST_0
+                    ANEWARRAY java.lang.annotation.Annotation
+                    PUTFIELD org.springframework.core.MethodParameter.parameterAnnotations [Ljava/lang/annotation/Annotation;
+                L3: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 291)
+                    GETFIELD org.springframework.core.MethodParameter.parameterAnnotations [Ljava/lang/annotation/Annotation;
+                    ARETURN
+  end public java.lang.annotation.Annotation[] getParameterAnnotations()
+
+  public java.lang.annotation.Annotation getParameterAnnotation(Class):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 301)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getParameterAnnotations ()[Ljava/lang/annotation/Annotation;
+                    ASTORE_2
+                    ALOAD_2     // [Ljava/lang/annotation/Annotation; anns   (line 302)
+                    DUP
+                    ASTORE 6
+                    ARRAYLENGTH
+                    ISTORE 5
+                    ICONST_0
+                    ISTORE 4
+                    GOTO L2
+                L0: ALOAD 6
+                    ILOAD 4
+                    AALOAD
+                    ASTORE_3
+                    ALOAD_1     // Ljava/lang/Class; annotationType   (line 303)
+                    ALOAD_3     // Ljava/lang/annotation/Annotation; ann
+                    INVOKEVIRTUAL java.lang.Class.isInstance (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_3     // Ljava/lang/annotation/Annotation; ann   (line 304)
+                    ARETURN
+                L1: IINC 4 1   (line 302)
+                L2: ILOAD 4
+                    ILOAD 5
+                    IF_ICMPLT L0
+                    ACONST_NULL   (line 307)
+                    ARETURN
+  end public java.lang.annotation.Annotation getParameterAnnotation(Class)
+
+  public boolean hasParameterAnnotations():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 314)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getParameterAnnotations ()[Ljava/lang/annotation/Annotation;
+                    ARRAYLENGTH
+                    IFEQ L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public boolean hasParameterAnnotations()
+
+  public boolean hasParameterAnnotation(Class):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 321)
+                    ALOAD_1     // Ljava/lang/Class; annotationType
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getParameterAnnotation (Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+                    IFNULL L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public boolean hasParameterAnnotation(Class)
+
+  public void initParameterNameDiscovery(org.springframework.core.ParameterNameDiscoverer):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 331)
+                    ALOAD_1     // Lorg/springframework/core/ParameterNameDiscoverer; parameterNameDiscoverer
+                    PUTFIELD org.springframework.core.MethodParameter.parameterNameDiscoverer Lorg/springframework/core/ParameterNameDiscoverer;
+                    RETURN   (line 332)
+  end public void initParameterNameDiscovery(org.springframework.core.ParameterNameDiscoverer)
+
+  public String getParameterName():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 342)
+                    GETFIELD org.springframework.core.MethodParameter.parameterNameDiscoverer Lorg/springframework/core/ParameterNameDiscoverer;
+                    IFNULL L3
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 343)
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 344)
+                    GETFIELD org.springframework.core.MethodParameter.parameterNameDiscoverer Lorg/springframework/core/ParameterNameDiscoverer;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.method Ljava/lang/reflect/Method;
+                    INVOKEINTERFACE org.springframework.core.ParameterNameDiscoverer.getParameterNames (Ljava/lang/reflect/Method;)[Ljava/lang/String;
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 345)
+                    GETFIELD org.springframework.core.MethodParameter.parameterNameDiscoverer Lorg/springframework/core/ParameterNameDiscoverer;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.constructor Ljava/lang/reflect/Constructor;
+                    INVOKEINTERFACE org.springframework.core.ParameterNameDiscoverer.getParameterNames (Ljava/lang/reflect/Constructor;)[Ljava/lang/String;
+                L1: ASTORE_1   (line 343)
+                    ALOAD_1     // [Ljava/lang/String; parameterNames   (line 346)
+                    IFNULL L2
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 347)
+                    ALOAD_1     // [Ljava/lang/String; parameterNames
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    AALOAD
+                    PUTFIELD org.springframework.core.MethodParameter.parameterName Ljava/lang/String;
+                L2: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 349)
+                    ACONST_NULL
+                    PUTFIELD org.springframework.core.MethodParameter.parameterNameDiscoverer Lorg/springframework/core/ParameterNameDiscoverer;
+                L3: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 351)
+                    GETFIELD org.springframework.core.MethodParameter.parameterName Ljava/lang/String;
+                    ARETURN
+  end public String getParameterName()
+
+  public void increaseNestingLevel():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 359)
+                    DUP
+                    GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    ICONST_1
+                    IADD
+                    PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    RETURN   (line 360)
+  end public void increaseNestingLevel()
+
+  public void decreaseNestingLevel():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 367)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getTypeIndexesPerLevel ()Ljava/util/Map;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    INVOKEINTERFACE java.util.Map.remove (Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 368)
+                    DUP
+                    GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    ICONST_1
+                    ISUB
+                    PUTFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    RETURN   (line 369)
+  end public void decreaseNestingLevel()
+
+  public int getNestingLevel():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 377)
+                    GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    IRETURN
+  end public int getNestingLevel()
+
+  public void setTypeIndexForCurrentLevel(int):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 387)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getTypeIndexesPerLevel ()Ljava/util/Map;
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    ILOAD_1     // I typeIndex
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    RETURN   (line 388)
+  end public void setTypeIndexForCurrentLevel(int)
+
+  public Integer getTypeIndexForCurrentLevel():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 397)
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.nestingLevel I
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.getTypeIndexForLevel (I)Ljava/lang/Integer;
+                    ARETURN
+  end public Integer getTypeIndexForCurrentLevel()
+
+  public Integer getTypeIndexForLevel(int):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 407)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getTypeIndexesPerLevel ()Ljava/util/Map;
+                    ILOAD_1     // I nestingLevel
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.Integer
+                    ARETURN
+  end public Integer getTypeIndexForLevel(int)
+
+  private java.util.Map getTypeIndexesPerLevel():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 414)
+                    GETFIELD org.springframework.core.MethodParameter.typeIndexesPerLevel Ljava/util/Map;
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 415)
+                    NEW java.util.HashMap
+                    DUP
+                    ICONST_4
+                    INVOKESPECIAL java.util.HashMap.<init> (I)V
+                    PUTFIELD org.springframework.core.MethodParameter.typeIndexesPerLevel Ljava/util/Map;
+                L0: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 417)
+                    GETFIELD org.springframework.core.MethodParameter.typeIndexesPerLevel Ljava/util/Map;
+                    ARETURN
+  end private java.util.Map getTypeIndexesPerLevel()
+
+  public static org.springframework.core.MethodParameter forMethodOrConstructor(Object, int):
+                    ALOAD_0     // Ljava/lang/Object; methodOrConstructor   (line 430)
+                    INSTANCEOF java.lang.reflect.Method
+                    IFEQ L0
+                    NEW org.springframework.core.MethodParameter   (line 431)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Object; methodOrConstructor
+                    CHECKCAST java.lang.reflect.Method
+                    ILOAD_1     // I parameterIndex
+                    INVOKESPECIAL org.springframework.core.MethodParameter.<init> (Ljava/lang/reflect/Method;I)V
+                    ARETURN
+                L0: ALOAD_0     // Ljava/lang/Object; methodOrConstructor   (line 433)
+                    INSTANCEOF java.lang.reflect.Constructor
+                    IFEQ L1
+                    NEW org.springframework.core.MethodParameter   (line 434)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Object; methodOrConstructor
+                    CHECKCAST java.lang.reflect.Constructor
+                    ILOAD_1     // I parameterIndex
+                    INVOKESPECIAL org.springframework.core.MethodParameter.<init> (Ljava/lang/reflect/Constructor;I)V
+                    ARETURN
+                L1: NEW java.lang.IllegalArgumentException   (line 437)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 438)
+                    DUP
+                    LDC_W "Given object ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Object; methodOrConstructor
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC_W "] is neither a Method nor a Constructor"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 437)
+                    ATHROW
+  end public static org.springframework.core.MethodParameter forMethodOrConstructor(Object, int)
+
+  public boolean equals(Object):
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 444)
+                    ALOAD_1     // Ljava/lang/Object; obj
+                    IF_ACMPNE L0
+                    ICONST_1   (line 445)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/Object; obj   (line 447)
+                    IFNULL L3
+                    ALOAD_1     // Ljava/lang/Object; obj
+                    INSTANCEOF org.springframework.core.MethodParameter
+                    IFEQ L3
+                    ALOAD_1     // Ljava/lang/Object; obj   (line 448)
+                    CHECKCAST org.springframework.core.MethodParameter
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 450)
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    ALOAD_2     // Lorg/springframework/core/MethodParameter; other
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    IF_ICMPEQ L1
+                    ICONST_0   (line 451)
+                    IRETURN
+                L1: ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 453)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getMember ()Ljava/lang/reflect/Member;
+                    ALOAD_2     // Lorg/springframework/core/MethodParameter; other
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getMember ()Ljava/lang/reflect/Member;
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ICONST_1   (line 454)
+                    IRETURN
+                L2: ICONST_0   (line 457)
+                    IRETURN
+                L3: ICONST_0   (line 460)
+                    IRETURN
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 466)
+                    GETFIELD org.springframework.core.MethodParameter.hash I
+                    ISTORE_1
+                    ILOAD_1     // I result   (line 467)
+                    IFNE L0
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 468)
+                    INVOKESPECIAL org.springframework.core.MethodParameter.getMember ()Ljava/lang/reflect/Member;
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    ISTORE_1     // I result
+                    BIPUSH 31   (line 469)
+                    ILOAD_1     // I result
+                    IMUL
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this
+                    GETFIELD org.springframework.core.MethodParameter.parameterIndex I
+                    IADD
+                    ISTORE_1     // I result
+                    ALOAD_0     // Lorg/springframework/core/MethodParameter; this   (line 470)
+                    ILOAD_1     // I result
+                    PUTFIELD org.springframework.core.MethodParameter.hash I
+                L0: ILOAD_1     // I result   (line 472)
+                    IRETURN
+  end public int hashCode()
+
+end public class org.springframework.core.MethodParameter
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:665)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:615)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1752)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1464)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1273)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:394)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:281)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:95)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:52)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.GenericTypeAwarePropertyDescriptor.getWriteMethodParameter(GenericTypeAwarePropertyDescriptor.java:149)
+	at org.springframework.beans.GenericTypeAwarePropertyDescriptor.getPropertyType(GenericTypeAwarePropertyDescriptor.java:132)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:516)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1365)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:649)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.curso.spring.springioc0007.Main.init(Main.java:29)
+	at com.curso.spring.springioc0007.Main.main(Main.java:24)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

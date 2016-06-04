@@ -24,6 +24,7 @@ public class ServicioPersonaImpl implements ServicioPersona {
         return personaDao.insertPersona(una);
     }
 
+    @Override
     public void updatePersona(Persona una) {
         personaDao.updatePersona(una);
     }

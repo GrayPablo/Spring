@@ -24,7 +24,7 @@ public class HibernateUtil {
 
     private static final Logger LOG = Logger.getLogger(HibernateUtil.class.getName());
 
-    private static final Optional<SessionFactory> sessionFactory = getSf();
+    private static final Optional<SessionFactory> SESSIONFACTORY = getSf();
 
     private static Optional<SessionFactory> getSf() {
         try {
@@ -39,11 +39,11 @@ public class HibernateUtil {
     }
 
     public static Optional<SessionFactory> getSessionFactory() {
-        return sessionFactory;
+        return SESSIONFACTORY;
     }
 
     public static void close() {
-        sessionFactory.ifPresent(s -> s.close());
+        SESSIONFACTORY.ifPresent(s -> s.close());
         LOG.log(Level.INFO, "Factoría de sesiones cerrada");
     }
 }

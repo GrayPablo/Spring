@@ -1,0 +1,1643 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114223.994.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+ class org.springframework.beans.ExtendedBeanInfo extends java.lang.Object implements java.beans.BeanInfo:
+  private final org.apache.commons.logging.Log logger
+  private final java.beans.BeanInfo delegate
+  private final java.util.SortedSet propertyDescriptors [Signature(Ljava/util/SortedSet<Ljava/beans/PropertyDescriptor;>;)]
+  public void <init>(java.beans.BeanInfo) throws java.beans.IntrospectionException:
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 75)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.ExtendedBeanInfo.<init>(java.beans.BeanInfo))
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 58)
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTFIELD org.springframework.beans.ExtendedBeanInfo.logger Lorg/apache/commons/logging/Log;
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 62)
+    |               NEW java.util.TreeSet   (line 63)
+    |               DUP
+    |               NEW org.springframework.beans.ExtendedBeanInfo$PropertyDescriptorComparator
+    |               DUP
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo$PropertyDescriptorComparator.<init> ()V
+    |               INVOKESPECIAL java.util.TreeSet.<init> (Ljava/util/Comparator;)V
+    |               PUTFIELD org.springframework.beans.ExtendedBeanInfo.propertyDescriptors Ljava/util/SortedSet;
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 76)
+    |               ALOAD_1     // Ljava/beans/BeanInfo; delegate
+    |               PUTFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+    |               ALOAD_1     // Ljava/beans/BeanInfo; delegate   (line 79)
+    |               INVOKEINTERFACE java.beans.BeanInfo.getMethodDescriptors ()[Ljava/beans/MethodDescriptor;
+    |               DUP
+    |               ASTORE 5
+    |               ARRAYLENGTH
+    |               ISTORE 4
+    |               ICONST_0
+    |               ISTORE_3
+    |               GOTO L24
+    |           L0: ALOAD 5
+    |               ILOAD_3
+    |               AALOAD
+    |               ASTORE_2
+    |               ALOAD_2     // Ljava/beans/MethodDescriptor; md   (line 80)
+    |               INVOKEVIRTUAL java.beans.MethodDescriptor.getMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 6
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method   (line 83)
+    |               INVOKESTATIC org.springframework.util.ReflectionUtils.isObjectMethod (Ljava/lang/reflect/Method;)Z
+    |               IFEQ L1
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               LDC "get"
+    |               INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+    |               IFNE L1
+    |               GOTO L23   (line 84)
+    |           L1: ALOAD 6     // Ljava/lang/reflect/Method; method   (line 88)
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               LDC "set"
+    |               INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+    |               IFEQ L7
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+    |               ARRAYLENGTH
+    |               ICONST_1
+    |               IF_ICMPNE L7
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 89)
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.propertyNameFor (Ljava/lang/reflect/Method;)Ljava/lang/String;
+    |               ASTORE 7
+    |               ALOAD 7     // Ljava/lang/String; propertyName   (line 90)
+    |               INVOKEVIRTUAL java.lang.String.length ()I
+    |               IFNE L2
+    |               GOTO L23   (line 91)
+    |           L2: ALOAD_1     // Ljava/beans/BeanInfo; delegate   (line 93)
+    |               INVOKEINTERFACE java.beans.BeanInfo.getPropertyDescriptors ()[Ljava/beans/PropertyDescriptor;
+    |               DUP
+    |               ASTORE 11
+    |               ARRAYLENGTH
+    |               ISTORE 10
+    |               ICONST_0
+    |               ISTORE 9
+    |               GOTO L6
+    |           L3: ALOAD 11
+    |               ILOAD 9
+    |               AALOAD
+    |               ASTORE 8
+    |               ALOAD 8     // Ljava/beans/PropertyDescriptor; pd   (line 94)
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 12
+    |               ALOAD 8     // Ljava/beans/PropertyDescriptor; pd   (line 95)
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 13
+    |               ALOAD 13     // Ljava/lang/reflect/Method; writeMethod   (line 97)
+    |               IFNULL L4
+    |               ALOAD 13     // Ljava/lang/reflect/Method; writeMethod   (line 98)
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFEQ L4
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 100)
+    |               ALOAD 8     // Ljava/beans/PropertyDescriptor; pd
+    |               ALOAD 7     // Ljava/lang/String; propertyName
+    |               ALOAD 12     // Ljava/lang/reflect/Method; readMethod
+    |               ALOAD 13     // Ljava/lang/reflect/Method; writeMethod
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23   (line 101)
+    |           L4: ALOAD 12     // Ljava/lang/reflect/Method; readMethod   (line 104)
+    |               IFNULL L5
+    |               ALOAD 12     // Ljava/lang/reflect/Method; readMethod   (line 105)
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this
+    |               ALOAD 7     // Ljava/lang/String; propertyName
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.getterMethodNameFor (Ljava/lang/String;)Ljava/lang/Object;
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFEQ L5
+    |               ALOAD 12     // Ljava/lang/reflect/Method; readMethod   (line 106)
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+    |               ICONST_0
+    |               AALOAD
+    |               INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+    |               IFEQ L5
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 107)
+    |               ALOAD 8     // Ljava/beans/PropertyDescriptor; pd
+    |               ALOAD 7     // Ljava/lang/String; propertyName
+    |               ALOAD 12     // Ljava/lang/reflect/Method; readMethod
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23   (line 108)
+    |           L5: IINC 9 1   (line 93)
+    |           L6: ILOAD 9
+    |               ILOAD 10
+    |               IF_ICMPLT L3
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 113)
+    |               ACONST_NULL
+    |               ALOAD 7     // Ljava/lang/String; propertyName
+    |               ACONST_NULL
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23   (line 114)
+    |           L7: ALOAD 6     // Ljava/lang/reflect/Method; method   (line 118)
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               LDC "set"
+    |               INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+    |               IFEQ L15
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+    |               ARRAYLENGTH
+    |               ICONST_2
+    |               IF_ICMPNE L15
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+    |               ICONST_0
+    |               AALOAD
+    |               GETSTATIC java.lang.Integer.TYPE Ljava/lang/Class;
+    |               INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+    |               IFEQ L15
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 119)
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.propertyNameFor (Ljava/lang/reflect/Method;)Ljava/lang/String;
+    |               ASTORE 7
+    |               ALOAD 7     // Ljava/lang/String; propertyName   (line 120)
+    |               INVOKEVIRTUAL java.lang.String.length ()I
+    |               IFNE L8
+    |               GOTO L23   (line 121)
+    |           L8: ALOAD_1     // Ljava/beans/BeanInfo; delegate   (line 124)
+    |               INVOKEINTERFACE java.beans.BeanInfo.getPropertyDescriptors ()[Ljava/beans/PropertyDescriptor;
+    |               DUP
+    |               ASTORE 11
+    |               ARRAYLENGTH
+    |               ISTORE 10
+    |               ICONST_0
+    |               ISTORE 9
+    |               GOTO L14
+    |           L9: ALOAD 11
+    |               ILOAD 9
+    |               AALOAD
+    |               ASTORE 8
+    |               ALOAD 8     // Ljava/beans/PropertyDescriptor; pd   (line 125)
+    |               INSTANCEOF java.beans.IndexedPropertyDescriptor
+    |               IFNE L10
+    |               GOTO L13   (line 126)
+    |          L10: ALOAD 8     // Ljava/beans/PropertyDescriptor; pd   (line 128)
+    |               CHECKCAST java.beans.IndexedPropertyDescriptor
+    |               ASTORE 12
+    |               ALOAD 12     // Ljava/beans/IndexedPropertyDescriptor; ipd   (line 129)
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 13
+    |               ALOAD 12     // Ljava/beans/IndexedPropertyDescriptor; ipd   (line 130)
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 14
+    |               ALOAD 12     // Ljava/beans/IndexedPropertyDescriptor; ipd   (line 131)
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedReadMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 15
+    |               ALOAD 12     // Ljava/beans/IndexedPropertyDescriptor; ipd   (line 132)
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedWriteMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 16
+    |               ALOAD 16     // Ljava/lang/reflect/Method; indexedWriteMethod   (line 134)
+    |               IFNULL L11
+    |               ALOAD 16     // Ljava/lang/reflect/Method; indexedWriteMethod   (line 135)
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFNE L12
+    |          L11: ALOAD 6     // Ljava/lang/reflect/Method; method   (line 136)
+    |               ASTORE 16     // Ljava/lang/reflect/Method; indexedWriteMethod
+    |          L12: ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 139)
+    |               ALOAD 8     // Ljava/beans/PropertyDescriptor; pd
+    |               ALOAD 7     // Ljava/lang/String; propertyName
+    |               ALOAD 13     // Ljava/lang/reflect/Method; readMethod
+    |               ALOAD 14     // Ljava/lang/reflect/Method; writeMethod
+    |               ALOAD 15     // Ljava/lang/reflect/Method; indexedReadMethod
+    |               ALOAD 16     // Ljava/lang/reflect/Method; indexedWriteMethod
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23   (line 140)
+    |          L13: IINC 9 1   (line 124)
+    |          L14: ILOAD 9
+    |               ILOAD 10
+    |               IF_ICMPLT L9
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 144)
+    |               ACONST_NULL
+    |               ALOAD 7     // Ljava/lang/String; propertyName
+    |               ACONST_NULL
+    |               ACONST_NULL
+    |               ACONST_NULL
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23   (line 145)
+    |          L15: ALOAD_1     // Ljava/beans/BeanInfo; delegate   (line 149)
+    |               INVOKEINTERFACE java.beans.BeanInfo.getPropertyDescriptors ()[Ljava/beans/PropertyDescriptor;
+    |               DUP
+    |               ASTORE 10
+    |               ARRAYLENGTH
+    |               ISTORE 9
+    |               ICONST_0
+    |               ISTORE 8
+    |               GOTO L22
+    |          L16: ALOAD 10
+    |               ILOAD 8
+    |               AALOAD
+    |               ASTORE 7
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd   (line 151)
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+    |               ASTORE 11
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd   (line 152)
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 12
+    |               ALOAD 12     // Ljava/lang/reflect/Method; readMethod   (line 153)
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getDeclaringClass ()Ljava/lang/Class;
+    |               INVOKESTATIC org.springframework.util.ClassUtils.getMostSpecificMethod (Ljava/lang/reflect/Method;Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    |               ASTORE 13
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 154)
+    |               GETFIELD org.springframework.beans.ExtendedBeanInfo.propertyDescriptors Ljava/util/SortedSet;
+    |               INVOKEINTERFACE java.util.SortedSet.iterator ()Ljava/util/Iterator;
+    |               ASTORE 15
+    |               GOTO L18
+    |          L17: ALOAD 15
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST java.beans.PropertyDescriptor
+    |               ASTORE 14
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method   (line 155)
+    |               ALOAD 13     // Ljava/lang/reflect/Method; mostSpecificReadMethod
+    |               INVOKEVIRTUAL java.lang.reflect.Method.equals (Ljava/lang/Object;)Z
+    |               IFEQ L18
+    |               ALOAD 14     // Ljava/beans/PropertyDescriptor; existingPD   (line 156)
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+    |               ALOAD 11     // Ljava/lang/String; propertyName
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFEQ L18
+    |               ALOAD 14     // Ljava/beans/PropertyDescriptor; existingPD   (line 157)
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+    |               IFNONNULL L23
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 159)
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               ALOAD 11     // Ljava/lang/String; propertyName
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23   (line 162)
+    |          L18: ALOAD 15   (line 154)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L17
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method   (line 165)
+    |               ALOAD 13     // Ljava/lang/reflect/Method; mostSpecificReadMethod
+    |               INVOKEVIRTUAL java.lang.reflect.Method.equals (Ljava/lang/Object;)Z
+    |               IFNE L19
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd   (line 166)
+    |               INSTANCEOF java.beans.IndexedPropertyDescriptor
+    |               IFEQ L21
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               CHECKCAST java.beans.IndexedPropertyDescriptor
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedReadMethod ()Ljava/lang/reflect/Method;
+    |               INVOKEVIRTUAL java.lang.reflect.Method.equals (Ljava/lang/Object;)Z
+    |               IFEQ L21
+    |          L19: ALOAD 7     // Ljava/beans/PropertyDescriptor; pd   (line 168)
+    |               INSTANCEOF java.beans.IndexedPropertyDescriptor
+    |               IFEQ L20
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 169)
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               ALOAD 11     // Ljava/lang/String; propertyName
+    |               ALOAD 12     // Ljava/lang/reflect/Method; readMethod
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               CHECKCAST java.beans.IndexedPropertyDescriptor
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedReadMethod ()Ljava/lang/reflect/Method;
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               CHECKCAST java.beans.IndexedPropertyDescriptor
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedWriteMethod ()Ljava/lang/reflect/Method;
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23
+    |          L20: ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 171)
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               ALOAD 11     // Ljava/lang/String; propertyName
+    |               ALOAD 12     // Ljava/lang/reflect/Method; readMethod
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23   (line 173)
+    |          L21: IINC 8 1   (line 149)
+    |          L22: ILOAD 8
+    |               ILOAD 9
+    |               IF_ICMPLT L16
+    |          L23: IINC_3 1   (line 79)
+    |          L24: ILOAD_3
+    |               ILOAD 4
+    |               IF_ICMPLT L0
+    |               RETURN   (line 177)
+    constructor-execution(void org.springframework.beans.ExtendedBeanInfo.<init>(java.beans.BeanInfo))
+  end public void <init>(java.beans.BeanInfo) throws java.beans.IntrospectionException
+
+  private void addOrUpdatePropertyDescriptor(java.beans.PropertyDescriptor, String, java.lang.reflect.Method, java.lang.reflect.Method) throws java.beans.IntrospectionException:
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 180)
+                    ALOAD_1     // Ljava/beans/PropertyDescriptor; pd
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+                    ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+                    ACONST_NULL
+                    ACONST_NULL
+                    INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+                    RETURN   (line 181)
+  end private void addOrUpdatePropertyDescriptor(java.beans.PropertyDescriptor, String, java.lang.reflect.Method, java.lang.reflect.Method) throws java.beans.IntrospectionException
+
+  private void addOrUpdatePropertyDescriptor(java.beans.PropertyDescriptor, String, java.lang.reflect.Method, java.lang.reflect.Method, java.lang.reflect.Method, java.lang.reflect.Method) throws java.beans.IntrospectionException:
+                    ALOAD_2     // Ljava/lang/String; propertyName   (line 184)
+                    LDC "propertyName may not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/beans/PropertyDescriptor; pd   (line 185)
+                    IFNONNULL L0
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    GOTO L1
+                L0: ALOAD_1     // Ljava/beans/PropertyDescriptor; pd
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+                L1: ASTORE_2     // Ljava/lang/String; propertyName
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 186)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.propertyDescriptors Ljava/util/SortedSet;
+                    INVOKEINTERFACE java.util.SortedSet.iterator ()Ljava/util/Iterator;
+                    ASTORE 8
+                    GOTO L16
+                L2: ALOAD 8
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.beans.PropertyDescriptor
+                    ASTORE 7
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 187)
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L16
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 189)
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+                    IFNULL L4
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod   (line 190)
+                    IFNULL L3
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    IF_ACMPNE L17
+                L3: ALOAD 4     // Ljava/lang/reflect/Method; writeMethod   (line 191)
+                    IFNULL L4
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_0
+                    AALOAD
+                    IF_ACMPEQ L4
+                    GOTO L17   (line 193)
+                L4: ALOAD_3     // Ljava/lang/reflect/Method; readMethod   (line 197)
+                    IFNULL L5
+    catch java.beans.IntrospectionException -> E0
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 199)
+    |               ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.setReadMethod (Ljava/lang/reflect/Method;)V
+    catch java.beans.IntrospectionException -> E0
+                    GOTO L5
+                E0: POP   (line 200)
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 202)
+                    ACONST_NULL
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.setWriteMethod (Ljava/lang/reflect/Method;)V
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 203)
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.setReadMethod (Ljava/lang/reflect/Method;)V
+                L5: ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 208)
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+                    IFNULL L7
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod   (line 209)
+                    IFNULL L6
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_0
+                    AALOAD
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    IF_ACMPNE L17
+                L6: ALOAD 4     // Ljava/lang/reflect/Method; writeMethod   (line 210)
+                    IFNULL L7
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_0
+                    AALOAD
+                    ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_0
+                    AALOAD
+                    IF_ACMPEQ L7
+                    GOTO L17   (line 212)
+                L7: ALOAD 4     // Ljava/lang/reflect/Method; writeMethod   (line 216)
+                    IFNULL L9
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 217)
+                    INSTANCEOF java.beans.IndexedPropertyDescriptor
+                    IFEQ L8
+                    ALOAD 4     // Ljava/lang/reflect/Method; writeMethod   (line 218)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_0
+                    AALOAD
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L9
+                L8: ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 219)
+                    ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.setWriteMethod (Ljava/lang/reflect/Method;)V
+                L9: ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 223)
+                    INSTANCEOF java.beans.IndexedPropertyDescriptor
+                    IFEQ L15
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 224)
+                    CHECKCAST java.beans.IndexedPropertyDescriptor
+                    ASTORE 9
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD   (line 227)
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedReadMethod ()Ljava/lang/reflect/Method;
+                    IFNULL L11
+                    ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod   (line 228)
+                    IFNULL L10
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedReadMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    IF_ACMPNE L17
+               L10: ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod   (line 229)
+                    IFNULL L11
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedReadMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_1
+                    AALOAD
+                    IF_ACMPEQ L11
+                    GOTO L17   (line 231)
+    catch java.beans.IntrospectionException -> E1
+    |          L11: ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod   (line 236)
+    |               IFNULL L12
+    |               ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD   (line 237)
+    |               ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.setIndexedReadMethod (Ljava/lang/reflect/Method;)V
+    catch java.beans.IntrospectionException -> E1
+                    GOTO L12
+                E1: POP   (line 239)
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD   (line 241)
+                    ACONST_NULL
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.setIndexedWriteMethod (Ljava/lang/reflect/Method;)V
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD   (line 242)
+                    ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.setIndexedReadMethod (Ljava/lang/reflect/Method;)V
+               L12: ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD   (line 246)
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedWriteMethod ()Ljava/lang/reflect/Method;
+                    IFNULL L14
+                    ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod   (line 247)
+                    IFNULL L13
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedWriteMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_1
+                    AALOAD
+                    ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    IF_ACMPNE L17
+               L13: ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod   (line 248)
+                    IFNULL L14
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedWriteMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_1
+                    AALOAD
+                    ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_1
+                    AALOAD
+                    IF_ACMPEQ L14
+                    GOTO L17   (line 250)
+               L14: ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod   (line 254)
+                    IFNULL L15
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD   (line 255)
+                    ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.setIndexedWriteMethod (Ljava/lang/reflect/Method;)V
+               L15: RETURN   (line 260)
+               L16: ALOAD 8   (line 186)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L2
+               L17: ALOAD_1     // Ljava/beans/PropertyDescriptor; pd   (line 265)
+                    IFNONNULL L20
+    catch java.beans.IntrospectionException -> E2
+    |               ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod   (line 267)
+    |               IFNONNULL L18
+    |               ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod
+    |               IFNONNULL L18
+    |               NEW java.beans.PropertyDescriptor   (line 268)
+    |               DUP
+    |               ALOAD_2     // Ljava/lang/String; propertyName
+    |               ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+    |               ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+    |               INVOKESPECIAL java.beans.PropertyDescriptor.<init> (Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               ASTORE_1     // Ljava/beans/PropertyDescriptor; pd
+    |               GOTO L19
+    |          L18: NEW java.beans.IndexedPropertyDescriptor   (line 271)
+    |               DUP
+    |               ALOAD_2     // Ljava/lang/String; propertyName
+    |               ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+    |               ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+    |               ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod
+    |               ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod
+    |               INVOKESPECIAL java.beans.IndexedPropertyDescriptor.<init> (Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               ASTORE_1     // Ljava/beans/PropertyDescriptor; pd
+    |          L19: ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 273)
+    |               GETFIELD org.springframework.beans.ExtendedBeanInfo.propertyDescriptors Ljava/util/SortedSet;
+    |               ALOAD_1     // Ljava/beans/PropertyDescriptor; pd
+    |               INVOKEINTERFACE java.util.SortedSet.add (Ljava/lang/Object;)Z
+    |               POP
+    catch java.beans.IntrospectionException -> E2
+                    GOTO L23
+                E2: ASTORE 7   (line 274)
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 275)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.logger Lorg/apache/commons/logging/Log;
+                    LDC "Could not create new PropertyDescriptor for readMethod [%s] writeMethod [%s] indexedReadMethod [%s] indexedWriteMethod [%s] for property [%s]. Reason: %s"
+                    BIPUSH 6
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod   (line 277)
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+                    AASTORE
+                    DUP
+                    ICONST_2
+                    ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod
+                    AASTORE
+                    DUP
+                    ICONST_3
+                    ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod
+                    AASTORE
+                    DUP
+                    ICONST_4
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    AASTORE
+                    DUP
+                    ICONST_5
+                    ALOAD 7     // Ljava/beans/IntrospectionException; ex
+                    INVOKEVIRTUAL java.beans.IntrospectionException.getMessage ()Ljava/lang/String;
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 275)
+                    GOTO L23
+               L20: ALOAD_1     // Ljava/beans/PropertyDescriptor; pd   (line 282)
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.setReadMethod (Ljava/lang/reflect/Method;)V
+    catch java.beans.IntrospectionException -> E3
+    |               ALOAD_1     // Ljava/beans/PropertyDescriptor; pd   (line 284)
+    |               ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.setWriteMethod (Ljava/lang/reflect/Method;)V
+    catch java.beans.IntrospectionException -> E3
+                    GOTO L21
+                E3: ASTORE 7   (line 285)
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 286)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.logger Lorg/apache/commons/logging/Log;
+                    LDC "Could not add write method [%s] for property [%s]. Reason: %s"
+                    ICONST_3
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD 4     // Ljava/lang/reflect/Method; writeMethod   (line 287)
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    AASTORE
+                    DUP
+                    ICONST_2
+                    ALOAD 7     // Ljava/beans/IntrospectionException; ex
+                    INVOKEVIRTUAL java.beans.IntrospectionException.getMessage ()Ljava/lang/String;
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 286)
+               L21: ALOAD_1     // Ljava/beans/PropertyDescriptor; pd   (line 290)
+                    INSTANCEOF java.beans.IndexedPropertyDescriptor
+                    IFEQ L22
+                    ALOAD_1     // Ljava/beans/PropertyDescriptor; pd   (line 291)
+                    CHECKCAST java.beans.IndexedPropertyDescriptor
+                    ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.setIndexedReadMethod (Ljava/lang/reflect/Method;)V
+    catch java.beans.IntrospectionException -> E4
+    |               ALOAD_1     // Ljava/beans/PropertyDescriptor; pd   (line 293)
+    |               CHECKCAST java.beans.IndexedPropertyDescriptor
+    |               ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.setIndexedWriteMethod (Ljava/lang/reflect/Method;)V
+    catch java.beans.IntrospectionException -> E4
+                    GOTO L22
+                E4: ASTORE 7   (line 294)
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 295)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.logger Lorg/apache/commons/logging/Log;
+                    LDC "Could not add indexed write method [%s] for property [%s]. Reason: %s"
+                    ICONST_3
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod   (line 296)
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    AASTORE
+                    DUP
+                    ICONST_2
+                    ALOAD 7     // Ljava/beans/IntrospectionException; ex
+                    INVOKEVIRTUAL java.beans.IntrospectionException.getMessage ()Ljava/lang/String;
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 295)
+               L22: ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 300)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.propertyDescriptors Ljava/util/SortedSet;
+                    ALOAD_1     // Ljava/beans/PropertyDescriptor; pd
+                    INVOKEINTERFACE java.util.SortedSet.add (Ljava/lang/Object;)Z
+                    POP
+               L23: RETURN   (line 302)
+  end private void addOrUpdatePropertyDescriptor(java.beans.PropertyDescriptor, String, java.lang.reflect.Method, java.lang.reflect.Method, java.lang.reflect.Method, java.lang.reflect.Method) throws java.beans.IntrospectionException
+
+  private String propertyNameFor(java.lang.reflect.Method):
+                    ALOAD_1     // Ljava/lang/reflect/Method; method   (line 305)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    ICONST_3
+                    ALOAD_1     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    INVOKESTATIC java.beans.Introspector.decapitalize (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end private String propertyNameFor(java.lang.reflect.Method)
+
+  private Object getterMethodNameFor(String):
+                    NEW java.lang.StringBuilder   (line 309)
+                    DUP
+                    LDC "get"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKESTATIC org.springframework.util.StringUtils.capitalize (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end private Object getterMethodNameFor(String)
+
+  public java.beans.BeanInfo[] getAdditionalBeanInfo():
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 313)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+                    INVOKEINTERFACE java.beans.BeanInfo.getAdditionalBeanInfo ()[Ljava/beans/BeanInfo;
+                    ARETURN
+  end public java.beans.BeanInfo[] getAdditionalBeanInfo()
+
+  public java.beans.BeanDescriptor getBeanDescriptor():
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 317)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+                    INVOKEINTERFACE java.beans.BeanInfo.getBeanDescriptor ()Ljava/beans/BeanDescriptor;
+                    ARETURN
+  end public java.beans.BeanDescriptor getBeanDescriptor()
+
+  public int getDefaultEventIndex():
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 321)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+                    INVOKEINTERFACE java.beans.BeanInfo.getDefaultEventIndex ()I
+                    IRETURN
+  end public int getDefaultEventIndex()
+
+  public int getDefaultPropertyIndex():
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 325)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+                    INVOKEINTERFACE java.beans.BeanInfo.getDefaultPropertyIndex ()I
+                    IRETURN
+  end public int getDefaultPropertyIndex()
+
+  public java.beans.EventSetDescriptor[] getEventSetDescriptors():
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 329)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+                    INVOKEINTERFACE java.beans.BeanInfo.getEventSetDescriptors ()[Ljava/beans/EventSetDescriptor;
+                    ARETURN
+  end public java.beans.EventSetDescriptor[] getEventSetDescriptors()
+
+  public java.awt.Image getIcon(int):
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 333)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+                    ILOAD_1     // I arg0
+                    INVOKEINTERFACE java.beans.BeanInfo.getIcon (I)Ljava/awt/Image;
+                    ARETURN
+  end public java.awt.Image getIcon(int)
+
+  public java.beans.MethodDescriptor[] getMethodDescriptors():
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 337)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+                    INVOKEINTERFACE java.beans.BeanInfo.getMethodDescriptors ()[Ljava/beans/MethodDescriptor;
+                    ARETURN
+  end public java.beans.MethodDescriptor[] getMethodDescriptors()
+
+  public java.beans.PropertyDescriptor[] getPropertyDescriptors():
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 347)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.propertyDescriptors Ljava/util/SortedSet;
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.propertyDescriptors Ljava/util/SortedSet;
+                    INVOKEINTERFACE java.util.SortedSet.size ()I
+                    ANEWARRAY java.beans.PropertyDescriptor
+                    INVOKEINTERFACE java.util.SortedSet.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Ljava.beans.PropertyDescriptor;
+                    ARETURN
+  end public java.beans.PropertyDescriptor[] getPropertyDescriptors()
+
+end  class org.springframework.beans.ExtendedBeanInfo
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+org.aspectj.bridge.AbortException: trouble in: 
+ class org.springframework.beans.ExtendedBeanInfo extends java.lang.Object implements java.beans.BeanInfo:
+  private final org.apache.commons.logging.Log logger
+  private final java.beans.BeanInfo delegate
+  private final java.util.SortedSet propertyDescriptors [Signature(Ljava/util/SortedSet<Ljava/beans/PropertyDescriptor;>;)]
+  public void <init>(java.beans.BeanInfo) throws java.beans.IntrospectionException:
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 75)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.ExtendedBeanInfo.<init>(java.beans.BeanInfo))
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 58)
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTFIELD org.springframework.beans.ExtendedBeanInfo.logger Lorg/apache/commons/logging/Log;
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 62)
+    |               NEW java.util.TreeSet   (line 63)
+    |               DUP
+    |               NEW org.springframework.beans.ExtendedBeanInfo$PropertyDescriptorComparator
+    |               DUP
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo$PropertyDescriptorComparator.<init> ()V
+    |               INVOKESPECIAL java.util.TreeSet.<init> (Ljava/util/Comparator;)V
+    |               PUTFIELD org.springframework.beans.ExtendedBeanInfo.propertyDescriptors Ljava/util/SortedSet;
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 76)
+    |               ALOAD_1     // Ljava/beans/BeanInfo; delegate
+    |               PUTFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+    |               ALOAD_1     // Ljava/beans/BeanInfo; delegate   (line 79)
+    |               INVOKEINTERFACE java.beans.BeanInfo.getMethodDescriptors ()[Ljava/beans/MethodDescriptor;
+    |               DUP
+    |               ASTORE 5
+    |               ARRAYLENGTH
+    |               ISTORE 4
+    |               ICONST_0
+    |               ISTORE_3
+    |               GOTO L24
+    |           L0: ALOAD 5
+    |               ILOAD_3
+    |               AALOAD
+    |               ASTORE_2
+    |               ALOAD_2     // Ljava/beans/MethodDescriptor; md   (line 80)
+    |               INVOKEVIRTUAL java.beans.MethodDescriptor.getMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 6
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method   (line 83)
+    |               INVOKESTATIC org.springframework.util.ReflectionUtils.isObjectMethod (Ljava/lang/reflect/Method;)Z
+    |               IFEQ L1
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               LDC "get"
+    |               INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+    |               IFNE L1
+    |               GOTO L23   (line 84)
+    |           L1: ALOAD 6     // Ljava/lang/reflect/Method; method   (line 88)
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               LDC "set"
+    |               INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+    |               IFEQ L7
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+    |               ARRAYLENGTH
+    |               ICONST_1
+    |               IF_ICMPNE L7
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 89)
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.propertyNameFor (Ljava/lang/reflect/Method;)Ljava/lang/String;
+    |               ASTORE 7
+    |               ALOAD 7     // Ljava/lang/String; propertyName   (line 90)
+    |               INVOKEVIRTUAL java.lang.String.length ()I
+    |               IFNE L2
+    |               GOTO L23   (line 91)
+    |           L2: ALOAD_1     // Ljava/beans/BeanInfo; delegate   (line 93)
+    |               INVOKEINTERFACE java.beans.BeanInfo.getPropertyDescriptors ()[Ljava/beans/PropertyDescriptor;
+    |               DUP
+    |               ASTORE 11
+    |               ARRAYLENGTH
+    |               ISTORE 10
+    |               ICONST_0
+    |               ISTORE 9
+    |               GOTO L6
+    |           L3: ALOAD 11
+    |               ILOAD 9
+    |               AALOAD
+    |               ASTORE 8
+    |               ALOAD 8     // Ljava/beans/PropertyDescriptor; pd   (line 94)
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 12
+    |               ALOAD 8     // Ljava/beans/PropertyDescriptor; pd   (line 95)
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 13
+    |               ALOAD 13     // Ljava/lang/reflect/Method; writeMethod   (line 97)
+    |               IFNULL L4
+    |               ALOAD 13     // Ljava/lang/reflect/Method; writeMethod   (line 98)
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFEQ L4
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 100)
+    |               ALOAD 8     // Ljava/beans/PropertyDescriptor; pd
+    |               ALOAD 7     // Ljava/lang/String; propertyName
+    |               ALOAD 12     // Ljava/lang/reflect/Method; readMethod
+    |               ALOAD 13     // Ljava/lang/reflect/Method; writeMethod
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23   (line 101)
+    |           L4: ALOAD 12     // Ljava/lang/reflect/Method; readMethod   (line 104)
+    |               IFNULL L5
+    |               ALOAD 12     // Ljava/lang/reflect/Method; readMethod   (line 105)
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this
+    |               ALOAD 7     // Ljava/lang/String; propertyName
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.getterMethodNameFor (Ljava/lang/String;)Ljava/lang/Object;
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFEQ L5
+    |               ALOAD 12     // Ljava/lang/reflect/Method; readMethod   (line 106)
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+    |               ICONST_0
+    |               AALOAD
+    |               INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+    |               IFEQ L5
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 107)
+    |               ALOAD 8     // Ljava/beans/PropertyDescriptor; pd
+    |               ALOAD 7     // Ljava/lang/String; propertyName
+    |               ALOAD 12     // Ljava/lang/reflect/Method; readMethod
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23   (line 108)
+    |           L5: IINC 9 1   (line 93)
+    |           L6: ILOAD 9
+    |               ILOAD 10
+    |               IF_ICMPLT L3
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 113)
+    |               ACONST_NULL
+    |               ALOAD 7     // Ljava/lang/String; propertyName
+    |               ACONST_NULL
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23   (line 114)
+    |           L7: ALOAD 6     // Ljava/lang/reflect/Method; method   (line 118)
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               LDC "set"
+    |               INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+    |               IFEQ L15
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+    |               ARRAYLENGTH
+    |               ICONST_2
+    |               IF_ICMPNE L15
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+    |               ICONST_0
+    |               AALOAD
+    |               GETSTATIC java.lang.Integer.TYPE Ljava/lang/Class;
+    |               INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+    |               IFEQ L15
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 119)
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.propertyNameFor (Ljava/lang/reflect/Method;)Ljava/lang/String;
+    |               ASTORE 7
+    |               ALOAD 7     // Ljava/lang/String; propertyName   (line 120)
+    |               INVOKEVIRTUAL java.lang.String.length ()I
+    |               IFNE L8
+    |               GOTO L23   (line 121)
+    |           L8: ALOAD_1     // Ljava/beans/BeanInfo; delegate   (line 124)
+    |               INVOKEINTERFACE java.beans.BeanInfo.getPropertyDescriptors ()[Ljava/beans/PropertyDescriptor;
+    |               DUP
+    |               ASTORE 11
+    |               ARRAYLENGTH
+    |               ISTORE 10
+    |               ICONST_0
+    |               ISTORE 9
+    |               GOTO L14
+    |           L9: ALOAD 11
+    |               ILOAD 9
+    |               AALOAD
+    |               ASTORE 8
+    |               ALOAD 8     // Ljava/beans/PropertyDescriptor; pd   (line 125)
+    |               INSTANCEOF java.beans.IndexedPropertyDescriptor
+    |               IFNE L10
+    |               GOTO L13   (line 126)
+    |          L10: ALOAD 8     // Ljava/beans/PropertyDescriptor; pd   (line 128)
+    |               CHECKCAST java.beans.IndexedPropertyDescriptor
+    |               ASTORE 12
+    |               ALOAD 12     // Ljava/beans/IndexedPropertyDescriptor; ipd   (line 129)
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 13
+    |               ALOAD 12     // Ljava/beans/IndexedPropertyDescriptor; ipd   (line 130)
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 14
+    |               ALOAD 12     // Ljava/beans/IndexedPropertyDescriptor; ipd   (line 131)
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedReadMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 15
+    |               ALOAD 12     // Ljava/beans/IndexedPropertyDescriptor; ipd   (line 132)
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedWriteMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 16
+    |               ALOAD 16     // Ljava/lang/reflect/Method; indexedWriteMethod   (line 134)
+    |               IFNULL L11
+    |               ALOAD 16     // Ljava/lang/reflect/Method; indexedWriteMethod   (line 135)
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFNE L12
+    |          L11: ALOAD 6     // Ljava/lang/reflect/Method; method   (line 136)
+    |               ASTORE 16     // Ljava/lang/reflect/Method; indexedWriteMethod
+    |          L12: ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 139)
+    |               ALOAD 8     // Ljava/beans/PropertyDescriptor; pd
+    |               ALOAD 7     // Ljava/lang/String; propertyName
+    |               ALOAD 13     // Ljava/lang/reflect/Method; readMethod
+    |               ALOAD 14     // Ljava/lang/reflect/Method; writeMethod
+    |               ALOAD 15     // Ljava/lang/reflect/Method; indexedReadMethod
+    |               ALOAD 16     // Ljava/lang/reflect/Method; indexedWriteMethod
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23   (line 140)
+    |          L13: IINC 9 1   (line 124)
+    |          L14: ILOAD 9
+    |               ILOAD 10
+    |               IF_ICMPLT L9
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 144)
+    |               ACONST_NULL
+    |               ALOAD 7     // Ljava/lang/String; propertyName
+    |               ACONST_NULL
+    |               ACONST_NULL
+    |               ACONST_NULL
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23   (line 145)
+    |          L15: ALOAD_1     // Ljava/beans/BeanInfo; delegate   (line 149)
+    |               INVOKEINTERFACE java.beans.BeanInfo.getPropertyDescriptors ()[Ljava/beans/PropertyDescriptor;
+    |               DUP
+    |               ASTORE 10
+    |               ARRAYLENGTH
+    |               ISTORE 9
+    |               ICONST_0
+    |               ISTORE 8
+    |               GOTO L22
+    |          L16: ALOAD 10
+    |               ILOAD 8
+    |               AALOAD
+    |               ASTORE 7
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd   (line 151)
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+    |               ASTORE 11
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd   (line 152)
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+    |               ASTORE 12
+    |               ALOAD 12     // Ljava/lang/reflect/Method; readMethod   (line 153)
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getDeclaringClass ()Ljava/lang/Class;
+    |               INVOKESTATIC org.springframework.util.ClassUtils.getMostSpecificMethod (Ljava/lang/reflect/Method;Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    |               ASTORE 13
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 154)
+    |               GETFIELD org.springframework.beans.ExtendedBeanInfo.propertyDescriptors Ljava/util/SortedSet;
+    |               INVOKEINTERFACE java.util.SortedSet.iterator ()Ljava/util/Iterator;
+    |               ASTORE 15
+    |               GOTO L18
+    |          L17: ALOAD 15
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST java.beans.PropertyDescriptor
+    |               ASTORE 14
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method   (line 155)
+    |               ALOAD 13     // Ljava/lang/reflect/Method; mostSpecificReadMethod
+    |               INVOKEVIRTUAL java.lang.reflect.Method.equals (Ljava/lang/Object;)Z
+    |               IFEQ L18
+    |               ALOAD 14     // Ljava/beans/PropertyDescriptor; existingPD   (line 156)
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+    |               ALOAD 11     // Ljava/lang/String; propertyName
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFEQ L18
+    |               ALOAD 14     // Ljava/beans/PropertyDescriptor; existingPD   (line 157)
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+    |               IFNONNULL L23
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 159)
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               ALOAD 11     // Ljava/lang/String; propertyName
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23   (line 162)
+    |          L18: ALOAD 15   (line 154)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L17
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method   (line 165)
+    |               ALOAD 13     // Ljava/lang/reflect/Method; mostSpecificReadMethod
+    |               INVOKEVIRTUAL java.lang.reflect.Method.equals (Ljava/lang/Object;)Z
+    |               IFNE L19
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd   (line 166)
+    |               INSTANCEOF java.beans.IndexedPropertyDescriptor
+    |               IFEQ L21
+    |               ALOAD 6     // Ljava/lang/reflect/Method; method
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               CHECKCAST java.beans.IndexedPropertyDescriptor
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedReadMethod ()Ljava/lang/reflect/Method;
+    |               INVOKEVIRTUAL java.lang.reflect.Method.equals (Ljava/lang/Object;)Z
+    |               IFEQ L21
+    |          L19: ALOAD 7     // Ljava/beans/PropertyDescriptor; pd   (line 168)
+    |               INSTANCEOF java.beans.IndexedPropertyDescriptor
+    |               IFEQ L20
+    |               ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 169)
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               ALOAD 11     // Ljava/lang/String; propertyName
+    |               ALOAD 12     // Ljava/lang/reflect/Method; readMethod
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               CHECKCAST java.beans.IndexedPropertyDescriptor
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedReadMethod ()Ljava/lang/reflect/Method;
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               CHECKCAST java.beans.IndexedPropertyDescriptor
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedWriteMethod ()Ljava/lang/reflect/Method;
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23
+    |          L20: ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 171)
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               ALOAD 11     // Ljava/lang/String; propertyName
+    |               ALOAD 12     // Ljava/lang/reflect/Method; readMethod
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; pd
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+    |               INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               GOTO L23   (line 173)
+    |          L21: IINC 8 1   (line 149)
+    |          L22: ILOAD 8
+    |               ILOAD 9
+    |               IF_ICMPLT L16
+    |          L23: IINC_3 1   (line 79)
+    |          L24: ILOAD_3
+    |               ILOAD 4
+    |               IF_ICMPLT L0
+    |               RETURN   (line 177)
+    constructor-execution(void org.springframework.beans.ExtendedBeanInfo.<init>(java.beans.BeanInfo))
+  end public void <init>(java.beans.BeanInfo) throws java.beans.IntrospectionException
+
+  private void addOrUpdatePropertyDescriptor(java.beans.PropertyDescriptor, String, java.lang.reflect.Method, java.lang.reflect.Method) throws java.beans.IntrospectionException:
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 180)
+                    ALOAD_1     // Ljava/beans/PropertyDescriptor; pd
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+                    ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+                    ACONST_NULL
+                    ACONST_NULL
+                    INVOKESPECIAL org.springframework.beans.ExtendedBeanInfo.addOrUpdatePropertyDescriptor (Ljava/beans/PropertyDescriptor;Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+                    RETURN   (line 181)
+  end private void addOrUpdatePropertyDescriptor(java.beans.PropertyDescriptor, String, java.lang.reflect.Method, java.lang.reflect.Method) throws java.beans.IntrospectionException
+
+  private void addOrUpdatePropertyDescriptor(java.beans.PropertyDescriptor, String, java.lang.reflect.Method, java.lang.reflect.Method, java.lang.reflect.Method, java.lang.reflect.Method) throws java.beans.IntrospectionException:
+                    ALOAD_2     // Ljava/lang/String; propertyName   (line 184)
+                    LDC "propertyName may not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/beans/PropertyDescriptor; pd   (line 185)
+                    IFNONNULL L0
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    GOTO L1
+                L0: ALOAD_1     // Ljava/beans/PropertyDescriptor; pd
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+                L1: ASTORE_2     // Ljava/lang/String; propertyName
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 186)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.propertyDescriptors Ljava/util/SortedSet;
+                    INVOKEINTERFACE java.util.SortedSet.iterator ()Ljava/util/Iterator;
+                    ASTORE 8
+                    GOTO L16
+                L2: ALOAD 8
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.beans.PropertyDescriptor
+                    ASTORE 7
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 187)
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getName ()Ljava/lang/String;
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L16
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 189)
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+                    IFNULL L4
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod   (line 190)
+                    IFNULL L3
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    IF_ACMPNE L17
+                L3: ALOAD 4     // Ljava/lang/reflect/Method; writeMethod   (line 191)
+                    IFNULL L4
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getReadMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_0
+                    AALOAD
+                    IF_ACMPEQ L4
+                    GOTO L17   (line 193)
+                L4: ALOAD_3     // Ljava/lang/reflect/Method; readMethod   (line 197)
+                    IFNULL L5
+    catch java.beans.IntrospectionException -> E0
+    |               ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 199)
+    |               ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.setReadMethod (Ljava/lang/reflect/Method;)V
+    catch java.beans.IntrospectionException -> E0
+                    GOTO L5
+                E0: POP   (line 200)
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 202)
+                    ACONST_NULL
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.setWriteMethod (Ljava/lang/reflect/Method;)V
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 203)
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.setReadMethod (Ljava/lang/reflect/Method;)V
+                L5: ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 208)
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+                    IFNULL L7
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod   (line 209)
+                    IFNULL L6
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_0
+                    AALOAD
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    IF_ACMPNE L17
+                L6: ALOAD 4     // Ljava/lang/reflect/Method; writeMethod   (line 210)
+                    IFNULL L7
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.getWriteMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_0
+                    AALOAD
+                    ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_0
+                    AALOAD
+                    IF_ACMPEQ L7
+                    GOTO L17   (line 212)
+                L7: ALOAD 4     // Ljava/lang/reflect/Method; writeMethod   (line 216)
+                    IFNULL L9
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 217)
+                    INSTANCEOF java.beans.IndexedPropertyDescriptor
+                    IFEQ L8
+                    ALOAD 4     // Ljava/lang/reflect/Method; writeMethod   (line 218)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_0
+                    AALOAD
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L9
+                L8: ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 219)
+                    ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.setWriteMethod (Ljava/lang/reflect/Method;)V
+                L9: ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 223)
+                    INSTANCEOF java.beans.IndexedPropertyDescriptor
+                    IFEQ L15
+                    ALOAD 7     // Ljava/beans/PropertyDescriptor; existingPD   (line 224)
+                    CHECKCAST java.beans.IndexedPropertyDescriptor
+                    ASTORE 9
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD   (line 227)
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedReadMethod ()Ljava/lang/reflect/Method;
+                    IFNULL L11
+                    ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod   (line 228)
+                    IFNULL L10
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedReadMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    IF_ACMPNE L17
+               L10: ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod   (line 229)
+                    IFNULL L11
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedReadMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_1
+                    AALOAD
+                    IF_ACMPEQ L11
+                    GOTO L17   (line 231)
+    catch java.beans.IntrospectionException -> E1
+    |          L11: ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod   (line 236)
+    |               IFNULL L12
+    |               ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD   (line 237)
+    |               ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.setIndexedReadMethod (Ljava/lang/reflect/Method;)V
+    catch java.beans.IntrospectionException -> E1
+                    GOTO L12
+                E1: POP   (line 239)
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD   (line 241)
+                    ACONST_NULL
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.setIndexedWriteMethod (Ljava/lang/reflect/Method;)V
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD   (line 242)
+                    ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.setIndexedReadMethod (Ljava/lang/reflect/Method;)V
+               L12: ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD   (line 246)
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedWriteMethod ()Ljava/lang/reflect/Method;
+                    IFNULL L14
+                    ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod   (line 247)
+                    IFNULL L13
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedWriteMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_1
+                    AALOAD
+                    ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    IF_ACMPNE L17
+               L13: ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod   (line 248)
+                    IFNULL L14
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.getIndexedWriteMethod ()Ljava/lang/reflect/Method;
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_1
+                    AALOAD
+                    ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ICONST_1
+                    AALOAD
+                    IF_ACMPEQ L14
+                    GOTO L17   (line 250)
+               L14: ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod   (line 254)
+                    IFNULL L15
+                    ALOAD 9     // Ljava/beans/IndexedPropertyDescriptor; existingIPD   (line 255)
+                    ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.setIndexedWriteMethod (Ljava/lang/reflect/Method;)V
+               L15: RETURN   (line 260)
+               L16: ALOAD 8   (line 186)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L2
+               L17: ALOAD_1     // Ljava/beans/PropertyDescriptor; pd   (line 265)
+                    IFNONNULL L20
+    catch java.beans.IntrospectionException -> E2
+    |               ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod   (line 267)
+    |               IFNONNULL L18
+    |               ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod
+    |               IFNONNULL L18
+    |               NEW java.beans.PropertyDescriptor   (line 268)
+    |               DUP
+    |               ALOAD_2     // Ljava/lang/String; propertyName
+    |               ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+    |               ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+    |               INVOKESPECIAL java.beans.PropertyDescriptor.<init> (Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               ASTORE_1     // Ljava/beans/PropertyDescriptor; pd
+    |               GOTO L19
+    |          L18: NEW java.beans.IndexedPropertyDescriptor   (line 271)
+    |               DUP
+    |               ALOAD_2     // Ljava/lang/String; propertyName
+    |               ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+    |               ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+    |               ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod
+    |               ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod
+    |               INVOKESPECIAL java.beans.IndexedPropertyDescriptor.<init> (Ljava/lang/String;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    |               ASTORE_1     // Ljava/beans/PropertyDescriptor; pd
+    |          L19: ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 273)
+    |               GETFIELD org.springframework.beans.ExtendedBeanInfo.propertyDescriptors Ljava/util/SortedSet;
+    |               ALOAD_1     // Ljava/beans/PropertyDescriptor; pd
+    |               INVOKEINTERFACE java.util.SortedSet.add (Ljava/lang/Object;)Z
+    |               POP
+    catch java.beans.IntrospectionException -> E2
+                    GOTO L23
+                E2: ASTORE 7   (line 274)
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 275)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.logger Lorg/apache/commons/logging/Log;
+                    LDC "Could not create new PropertyDescriptor for readMethod [%s] writeMethod [%s] indexedReadMethod [%s] indexedWriteMethod [%s] for property [%s]. Reason: %s"
+                    BIPUSH 6
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod   (line 277)
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+                    AASTORE
+                    DUP
+                    ICONST_2
+                    ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod
+                    AASTORE
+                    DUP
+                    ICONST_3
+                    ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod
+                    AASTORE
+                    DUP
+                    ICONST_4
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    AASTORE
+                    DUP
+                    ICONST_5
+                    ALOAD 7     // Ljava/beans/IntrospectionException; ex
+                    INVOKEVIRTUAL java.beans.IntrospectionException.getMessage ()Ljava/lang/String;
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 275)
+                    GOTO L23
+               L20: ALOAD_1     // Ljava/beans/PropertyDescriptor; pd   (line 282)
+                    ALOAD_3     // Ljava/lang/reflect/Method; readMethod
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.setReadMethod (Ljava/lang/reflect/Method;)V
+    catch java.beans.IntrospectionException -> E3
+    |               ALOAD_1     // Ljava/beans/PropertyDescriptor; pd   (line 284)
+    |               ALOAD 4     // Ljava/lang/reflect/Method; writeMethod
+    |               INVOKEVIRTUAL java.beans.PropertyDescriptor.setWriteMethod (Ljava/lang/reflect/Method;)V
+    catch java.beans.IntrospectionException -> E3
+                    GOTO L21
+                E3: ASTORE 7   (line 285)
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 286)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.logger Lorg/apache/commons/logging/Log;
+                    LDC "Could not add write method [%s] for property [%s]. Reason: %s"
+                    ICONST_3
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD 4     // Ljava/lang/reflect/Method; writeMethod   (line 287)
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    AASTORE
+                    DUP
+                    ICONST_2
+                    ALOAD 7     // Ljava/beans/IntrospectionException; ex
+                    INVOKEVIRTUAL java.beans.IntrospectionException.getMessage ()Ljava/lang/String;
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 286)
+               L21: ALOAD_1     // Ljava/beans/PropertyDescriptor; pd   (line 290)
+                    INSTANCEOF java.beans.IndexedPropertyDescriptor
+                    IFEQ L22
+                    ALOAD_1     // Ljava/beans/PropertyDescriptor; pd   (line 291)
+                    CHECKCAST java.beans.IndexedPropertyDescriptor
+                    ALOAD 5     // Ljava/lang/reflect/Method; indexedReadMethod
+                    INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.setIndexedReadMethod (Ljava/lang/reflect/Method;)V
+    catch java.beans.IntrospectionException -> E4
+    |               ALOAD_1     // Ljava/beans/PropertyDescriptor; pd   (line 293)
+    |               CHECKCAST java.beans.IndexedPropertyDescriptor
+    |               ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod
+    |               INVOKEVIRTUAL java.beans.IndexedPropertyDescriptor.setIndexedWriteMethod (Ljava/lang/reflect/Method;)V
+    catch java.beans.IntrospectionException -> E4
+                    GOTO L22
+                E4: ASTORE 7   (line 294)
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 295)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.logger Lorg/apache/commons/logging/Log;
+                    LDC "Could not add indexed write method [%s] for property [%s]. Reason: %s"
+                    ICONST_3
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD 6     // Ljava/lang/reflect/Method; indexedWriteMethod   (line 296)
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    AASTORE
+                    DUP
+                    ICONST_2
+                    ALOAD 7     // Ljava/beans/IntrospectionException; ex
+                    INVOKEVIRTUAL java.beans.IntrospectionException.getMessage ()Ljava/lang/String;
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 295)
+               L22: ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 300)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.propertyDescriptors Ljava/util/SortedSet;
+                    ALOAD_1     // Ljava/beans/PropertyDescriptor; pd
+                    INVOKEINTERFACE java.util.SortedSet.add (Ljava/lang/Object;)Z
+                    POP
+               L23: RETURN   (line 302)
+  end private void addOrUpdatePropertyDescriptor(java.beans.PropertyDescriptor, String, java.lang.reflect.Method, java.lang.reflect.Method, java.lang.reflect.Method, java.lang.reflect.Method) throws java.beans.IntrospectionException
+
+  private String propertyNameFor(java.lang.reflect.Method):
+                    ALOAD_1     // Ljava/lang/reflect/Method; method   (line 305)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    ICONST_3
+                    ALOAD_1     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    INVOKESTATIC java.beans.Introspector.decapitalize (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end private String propertyNameFor(java.lang.reflect.Method)
+
+  private Object getterMethodNameFor(String):
+                    NEW java.lang.StringBuilder   (line 309)
+                    DUP
+                    LDC "get"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKESTATIC org.springframework.util.StringUtils.capitalize (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end private Object getterMethodNameFor(String)
+
+  public java.beans.BeanInfo[] getAdditionalBeanInfo():
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 313)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+                    INVOKEINTERFACE java.beans.BeanInfo.getAdditionalBeanInfo ()[Ljava/beans/BeanInfo;
+                    ARETURN
+  end public java.beans.BeanInfo[] getAdditionalBeanInfo()
+
+  public java.beans.BeanDescriptor getBeanDescriptor():
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 317)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+                    INVOKEINTERFACE java.beans.BeanInfo.getBeanDescriptor ()Ljava/beans/BeanDescriptor;
+                    ARETURN
+  end public java.beans.BeanDescriptor getBeanDescriptor()
+
+  public int getDefaultEventIndex():
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 321)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+                    INVOKEINTERFACE java.beans.BeanInfo.getDefaultEventIndex ()I
+                    IRETURN
+  end public int getDefaultEventIndex()
+
+  public int getDefaultPropertyIndex():
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 325)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+                    INVOKEINTERFACE java.beans.BeanInfo.getDefaultPropertyIndex ()I
+                    IRETURN
+  end public int getDefaultPropertyIndex()
+
+  public java.beans.EventSetDescriptor[] getEventSetDescriptors():
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 329)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+                    INVOKEINTERFACE java.beans.BeanInfo.getEventSetDescriptors ()[Ljava/beans/EventSetDescriptor;
+                    ARETURN
+  end public java.beans.EventSetDescriptor[] getEventSetDescriptors()
+
+  public java.awt.Image getIcon(int):
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 333)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+                    ILOAD_1     // I arg0
+                    INVOKEINTERFACE java.beans.BeanInfo.getIcon (I)Ljava/awt/Image;
+                    ARETURN
+  end public java.awt.Image getIcon(int)
+
+  public java.beans.MethodDescriptor[] getMethodDescriptors():
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 337)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.delegate Ljava/beans/BeanInfo;
+                    INVOKEINTERFACE java.beans.BeanInfo.getMethodDescriptors ()[Ljava/beans/MethodDescriptor;
+                    ARETURN
+  end public java.beans.MethodDescriptor[] getMethodDescriptors()
+
+  public java.beans.PropertyDescriptor[] getPropertyDescriptors():
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this   (line 347)
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.propertyDescriptors Ljava/util/SortedSet;
+                    ALOAD_0     // Lorg/springframework/beans/ExtendedBeanInfo; this
+                    GETFIELD org.springframework.beans.ExtendedBeanInfo.propertyDescriptors Ljava/util/SortedSet;
+                    INVOKEINTERFACE java.util.SortedSet.size ()I
+                    ANEWARRAY java.beans.PropertyDescriptor
+                    INVOKEINTERFACE java.util.SortedSet.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Ljava.beans.PropertyDescriptor;
+                    ARETURN
+  end public java.beans.PropertyDescriptor[] getPropertyDescriptors()
+
+end  class org.springframework.beans.ExtendedBeanInfo
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:665)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:615)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1752)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1464)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1273)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:394)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:281)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:95)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:52)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.CachedIntrospectionResults.<init>(CachedIntrospectionResults.java:224)
+	at org.springframework.beans.CachedIntrospectionResults.forClass(CachedIntrospectionResults.java:149)
+	at org.springframework.beans.BeanWrapperImpl.getCachedIntrospectionResults(BeanWrapperImpl.java:324)
+	at org.springframework.beans.BeanWrapperImpl.getPropertyDescriptorInternal(BeanWrapperImpl.java:354)
+	at org.springframework.beans.BeanWrapperImpl.isWritableProperty(BeanWrapperImpl.java:430)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:649)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.curso.spring.springioc0007.Main.init(Main.java:29)
+	at com.curso.spring.springioc0007.Main.main(Main.java:24)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

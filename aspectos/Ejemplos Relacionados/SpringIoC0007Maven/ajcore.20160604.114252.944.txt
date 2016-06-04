@@ -1,0 +1,1318 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114252.944.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+info using configuration file:/C:/Users/usuario/.m2/repository/org/springframework/spring-aspects/3.1.2.RELEASE/spring-aspects-3.1.2.RELEASE.jar!/META-INF/aop.xml
+debug weaving 'org.springframework.core.env.SystemEnvironmentPropertySource'
+abort trouble in: 
+public class org.springframework.core.env.SystemEnvironmentPropertySource extends org.springframework.core.env.MapPropertySource:
+  public void <init>(String, java.util.Map):
+                    ALOAD_0     // Lorg/springframework/core/env/SystemEnvironmentPropertySource; this   (line 70)
+                    ALOAD_1     // Ljava/lang/String; name
+                    ALOAD_2     // Ljava/util/Map; source
+                    INVOKESPECIAL org.springframework.core.env.MapPropertySource.<init> (Ljava/lang/String;Ljava/util/Map;)V
+    constructor-execution(void org.springframework.core.env.SystemEnvironmentPropertySource.<init>(java.lang.String, java.util.Map))
+    |               RETURN   (line 71)
+    constructor-execution(void org.springframework.core.env.SystemEnvironmentPropertySource.<init>(java.lang.String, java.util.Map))
+  end public void <init>(String, java.util.Map)
+
+  public boolean containsProperty(String):
+                    ALOAD_0     // Lorg/springframework/core/env/SystemEnvironmentPropertySource; this   (line 79)
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKESPECIAL org.springframework.core.env.SystemEnvironmentPropertySource.resolvePropertyName (Ljava/lang/String;)Ljava/lang/String;
+                    IFNULL L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public boolean containsProperty(String)
+
+  public Object getProperty(String):
+                    ALOAD_1     // Ljava/lang/String; name   (line 89)
+                    LDC "property name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/env/SystemEnvironmentPropertySource; this   (line 90)
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKESPECIAL org.springframework.core.env.SystemEnvironmentPropertySource.resolvePropertyName (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; actualName   (line 91)
+                    IFNONNULL L0
+                    ACONST_NULL   (line 93)
+                    ARETURN
+                L0: ALOAD_0     // Lorg/springframework/core/env/SystemEnvironmentPropertySource; this   (line 95)
+                    GETFIELD org.springframework.core.env.SystemEnvironmentPropertySource.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L1
+                    ALOAD_1     // Ljava/lang/String; name
+                    ALOAD_2     // Ljava/lang/String; actualName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_0     // Lorg/springframework/core/env/SystemEnvironmentPropertySource; this   (line 96)
+                    GETFIELD org.springframework.core.env.SystemEnvironmentPropertySource.logger Lorg/apache/commons/logging/Log;
+                    LDC "PropertySource [%s] does not contain '%s', but found equivalent '%s'"   (line 97)
+                    ICONST_3
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_0     // Lorg/springframework/core/env/SystemEnvironmentPropertySource; this   (line 98)
+                    INVOKEVIRTUAL org.springframework.core.env.SystemEnvironmentPropertySource.getName ()Ljava/lang/String;
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD_1     // Ljava/lang/String; name
+                    AASTORE
+                    DUP
+                    ICONST_2
+                    ALOAD_2     // Ljava/lang/String; actualName
+                    AASTORE   (line 96)
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L1: ALOAD_0     // Lorg/springframework/core/env/SystemEnvironmentPropertySource; this   (line 100)
+                    ALOAD_2     // Ljava/lang/String; actualName
+                    INVOKESPECIAL org.springframework.core.env.MapPropertySource.getProperty (Ljava/lang/String;)Ljava/lang/Object;
+                    ARETURN
+  end public Object getProperty(String)
+
+  private String resolvePropertyName(String):
+                    ALOAD_0     // Lorg/springframework/core/env/SystemEnvironmentPropertySource; this   (line 109)
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKESPECIAL org.springframework.core.env.MapPropertySource.containsProperty (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_1     // Ljava/lang/String; name   (line 110)
+                    ARETURN
+                L0: ALOAD_1     // Ljava/lang/String; name   (line 113)
+                    BIPUSH 46
+                    BIPUSH 95
+                    INVOKEVIRTUAL java.lang.String.replace (CC)Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_1     // Ljava/lang/String; name   (line 114)
+                    ALOAD_2     // Ljava/lang/String; usName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_0     // Lorg/springframework/core/env/SystemEnvironmentPropertySource; this
+                    ALOAD_2     // Ljava/lang/String; usName
+                    INVOKESPECIAL org.springframework.core.env.MapPropertySource.containsProperty (Ljava/lang/String;)Z
+                    IFEQ L1
+                    ALOAD_2     // Ljava/lang/String; usName   (line 115)
+                    ARETURN
+                L1: ALOAD_1     // Ljava/lang/String; name   (line 118)
+                    INVOKEVIRTUAL java.lang.String.toUpperCase ()Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_1     // Ljava/lang/String; name   (line 119)
+                    ALOAD_3     // Ljava/lang/String; ucName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L3
+                    ALOAD_0     // Lorg/springframework/core/env/SystemEnvironmentPropertySource; this   (line 120)
+                    ALOAD_3     // Ljava/lang/String; ucName
+                    INVOKESPECIAL org.springframework.core.env.MapPropertySource.containsProperty (Ljava/lang/String;)Z
+                    IFEQ L2
+                    ALOAD_3     // Ljava/lang/String; ucName   (line 121)
+                    ARETURN
+                L2: ALOAD_3     // Ljava/lang/String; ucName   (line 123)
+                    BIPUSH 46
+                    BIPUSH 95
+                    INVOKEVIRTUAL java.lang.String.replace (CC)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD_3     // Ljava/lang/String; ucName   (line 124)
+                    ALOAD 4     // Ljava/lang/String; usUcName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L3
+                    ALOAD_0     // Lorg/springframework/core/env/SystemEnvironmentPropertySource; this
+                    ALOAD 4     // Ljava/lang/String; usUcName
+                    INVOKESPECIAL org.springframework.core.env.MapPropertySource.containsProperty (Ljava/lang/String;)Z
+                    IFEQ L3
+                    ALOAD 4     // Ljava/lang/String; usUcName   (line 125)
+                    ARETURN
+                L3: ACONST_NULL   (line 130)
+                    ARETURN
+  end private String resolvePropertyName(String)
+
+end public class org.springframework.core.env.SystemEnvironmentPropertySource
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.core.env.MutablePropertySources'
+abort trouble in: 
+public class org.springframework.core.env.MutablePropertySources extends java.lang.Object implements org.springframework.core.env.PropertySources:
+  static final String NON_EXISTENT_PROPERTY_SOURCE_MESSAGE = "PropertySource named [%s] does not exist"
+  static final String ILLEGAL_RELATIVE_ADDITION_MESSAGE = "PropertySource named [%s] cannot be added relative to itself"
+  private final org.apache.commons.logging.Log logger
+  private final java.util.LinkedList propertySourceList [Signature(Ljava/util/LinkedList<Lorg/springframework/core/env/PropertySource<*>;>;)]
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 53)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.env.MutablePropertySources.<init>())
+    |               ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 47)
+    |               NEW java.util.LinkedList
+    |               DUP
+    |               INVOKESPECIAL java.util.LinkedList.<init> ()V
+    |               PUTFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+    |               ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 54)
+    |               ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTFIELD org.springframework.core.env.MutablePropertySources.logger Lorg/apache/commons/logging/Log;
+    |               RETURN   (line 55)
+    constructor-execution(void org.springframework.core.env.MutablePropertySources.<init>())
+  end public void <init>()
+
+  public void <init>(org.springframework.core.env.PropertySources):
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 62)
+                    INVOKESPECIAL org.springframework.core.env.MutablePropertySources.<init> ()V
+    constructor-execution(void org.springframework.core.env.MutablePropertySources.<init>(org.springframework.core.env.PropertySources))
+    |               ALOAD_1     // Lorg/springframework/core/env/PropertySources; propertySources   (line 63)
+    |               INVOKEINTERFACE org.springframework.core.env.PropertySources.iterator ()Ljava/util/Iterator;
+    |               ASTORE_3
+    |               GOTO L1
+    |           L0: ALOAD_3
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST org.springframework.core.env.PropertySource
+    |               ASTORE_2
+    |               ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 64)
+    |               ALOAD_2     // Lorg/springframework/core/env/PropertySource; propertySource
+    |               INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.addLast (Lorg/springframework/core/env/PropertySource;)V
+    |           L1: ALOAD_3   (line 63)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L0
+    |               RETURN   (line 66)
+    constructor-execution(void org.springframework.core.env.MutablePropertySources.<init>(org.springframework.core.env.PropertySources))
+  end public void <init>(org.springframework.core.env.PropertySources)
+
+  void <init>(org.apache.commons.logging.Log):
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 72)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.env.MutablePropertySources.<init>(org.apache.commons.logging.Log))
+    |               ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 47)
+    |               NEW java.util.LinkedList
+    |               DUP
+    |               INVOKESPECIAL java.util.LinkedList.<init> ()V
+    |               PUTFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+    |               ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 73)
+    |               ALOAD_1     // Lorg/apache/commons/logging/Log; logger
+    |               PUTFIELD org.springframework.core.env.MutablePropertySources.logger Lorg/apache/commons/logging/Log;
+    |               RETURN   (line 74)
+    constructor-execution(void org.springframework.core.env.MutablePropertySources.<init>(org.apache.commons.logging.Log))
+  end void <init>(org.apache.commons.logging.Log)
+
+  public boolean contains(String):
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 78)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKESTATIC org.springframework.core.env.PropertySource.named (Ljava/lang/String;)Lorg/springframework/core/env/PropertySource;
+                    INVOKEVIRTUAL java.util.LinkedList.contains (Ljava/lang/Object;)Z
+                    IRETURN
+  end public boolean contains(String)
+
+  public org.springframework.core.env.PropertySource get(String):
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 82)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKESTATIC org.springframework.core.env.PropertySource.named (Ljava/lang/String;)Lorg/springframework/core/env/PropertySource;
+                    INVOKEVIRTUAL java.util.LinkedList.indexOf (Ljava/lang/Object;)I
+                    ISTORE_2
+                    ILOAD_2     // I index   (line 83)
+                    ICONST_M1
+                    IF_ICMPNE L0
+                    ACONST_NULL
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    ILOAD_2     // I index
+                    INVOKEVIRTUAL java.util.LinkedList.get (I)Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.env.PropertySource
+                L1: ARETURN
+  end public org.springframework.core.env.PropertySource get(String)
+
+  public java.util.Iterator iterator():
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 87)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    INVOKEVIRTUAL java.util.LinkedList.iterator ()Ljava/util/Iterator;
+                    ARETURN
+  end public java.util.Iterator iterator()
+
+  public void addFirst(org.springframework.core.env.PropertySource):
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 94)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.logger Lorg/apache/commons/logging/Log;
+                    LDC "Adding [%s] PropertySource with highest search precedence"
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Lorg/springframework/core/env/PropertySource; propertySource   (line 95)
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getName ()Ljava/lang/String;
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 94)
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 96)
+                    ALOAD_1     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.removeIfPresent (Lorg/springframework/core/env/PropertySource;)V
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 97)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    ALOAD_1     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL java.util.LinkedList.addFirst (Ljava/lang/Object;)V
+                    RETURN   (line 98)
+  end public void addFirst(org.springframework.core.env.PropertySource)
+
+  public void addLast(org.springframework.core.env.PropertySource):
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 104)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.logger Lorg/apache/commons/logging/Log;
+                    LDC "Adding [%s] PropertySource with lowest search precedence"
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Lorg/springframework/core/env/PropertySource; propertySource   (line 105)
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getName ()Ljava/lang/String;
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 104)
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 106)
+                    ALOAD_1     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.removeIfPresent (Lorg/springframework/core/env/PropertySource;)V
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 107)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    ALOAD_1     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL java.util.LinkedList.addLast (Ljava/lang/Object;)V
+                    RETURN   (line 108)
+  end public void addLast(org.springframework.core.env.PropertySource)
+
+  public void addBefore(String, org.springframework.core.env.PropertySource):
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 115)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.logger Lorg/apache/commons/logging/Log;
+                    LDC "Adding [%s] PropertySource with search precedence immediately higher than [%s]"
+                    ICONST_2
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; propertySource   (line 116)
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getName ()Ljava/lang/String;
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD_1     // Ljava/lang/String; relativePropertySourceName
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 115)
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 117)
+                    ALOAD_1     // Ljava/lang/String; relativePropertySourceName
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.assertLegalRelativeAddition (Ljava/lang/String;Lorg/springframework/core/env/PropertySource;)V
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 118)
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.removeIfPresent (Lorg/springframework/core/env/PropertySource;)V
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 119)
+                    ALOAD_1     // Ljava/lang/String; relativePropertySourceName
+                    INVOKESPECIAL org.springframework.core.env.MutablePropertySources.assertPresentAndGetIndex (Ljava/lang/String;)I
+                    ISTORE_3
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 120)
+                    ILOAD_3     // I index
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKESPECIAL org.springframework.core.env.MutablePropertySources.addAtIndex (ILorg/springframework/core/env/PropertySource;)V
+                    RETURN   (line 121)
+  end public void addBefore(String, org.springframework.core.env.PropertySource)
+
+  public void addAfter(String, org.springframework.core.env.PropertySource):
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 128)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.logger Lorg/apache/commons/logging/Log;
+                    LDC "Adding [%s] PropertySource with search precedence immediately lower than [%s]"
+                    ICONST_2
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; propertySource   (line 129)
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getName ()Ljava/lang/String;
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD_1     // Ljava/lang/String; relativePropertySourceName
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 128)
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 130)
+                    ALOAD_1     // Ljava/lang/String; relativePropertySourceName
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.assertLegalRelativeAddition (Ljava/lang/String;Lorg/springframework/core/env/PropertySource;)V
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 131)
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.removeIfPresent (Lorg/springframework/core/env/PropertySource;)V
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 132)
+                    ALOAD_1     // Ljava/lang/String; relativePropertySourceName
+                    INVOKESPECIAL org.springframework.core.env.MutablePropertySources.assertPresentAndGetIndex (Ljava/lang/String;)I
+                    ISTORE_3
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 133)
+                    ILOAD_3     // I index
+                    ICONST_1
+                    IADD
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKESPECIAL org.springframework.core.env.MutablePropertySources.addAtIndex (ILorg/springframework/core/env/PropertySource;)V
+                    RETURN   (line 134)
+  end public void addAfter(String, org.springframework.core.env.PropertySource)
+
+  public int precedenceOf(org.springframework.core.env.PropertySource):
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 140)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    ALOAD_1     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL java.util.LinkedList.indexOf (Ljava/lang/Object;)I
+                    IRETURN
+  end public int precedenceOf(org.springframework.core.env.PropertySource)
+
+  public org.springframework.core.env.PropertySource remove(String):
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 148)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.logger Lorg/apache/commons/logging/Log;
+                    LDC "Removing [%s] PropertySource"
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; name
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 149)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKESTATIC org.springframework.core.env.PropertySource.named (Ljava/lang/String;)Lorg/springframework/core/env/PropertySource;
+                    INVOKEVIRTUAL java.util.LinkedList.indexOf (Ljava/lang/Object;)I
+                    ISTORE_2
+                    ILOAD_2     // I index   (line 150)
+                    ICONST_M1
+                    IF_ICMPNE L0
+                    ACONST_NULL
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    ILOAD_2     // I index
+                    INVOKEVIRTUAL java.util.LinkedList.remove (I)Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.env.PropertySource
+                L1: ARETURN
+  end public org.springframework.core.env.PropertySource remove(String)
+
+  public void replace(String, org.springframework.core.env.PropertySource):
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 161)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.logger Lorg/apache/commons/logging/Log;
+                    LDC "Replacing [%s] PropertySource with [%s]"
+                    ICONST_2
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; name   (line 162)
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getName ()Ljava/lang/String;
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 161)
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 163)
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKESPECIAL org.springframework.core.env.MutablePropertySources.assertPresentAndGetIndex (Ljava/lang/String;)I
+                    ISTORE_3
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 164)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    ILOAD_3     // I index
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL java.util.LinkedList.set (ILjava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    RETURN   (line 165)
+  end public void replace(String, org.springframework.core.env.PropertySource)
+
+  public int size():
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 171)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    INVOKEVIRTUAL java.util.LinkedList.size ()I
+                    IRETURN
+  end public int size()
+
+  public synchronized String toString():
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 176)
+                    INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.size ()I
+                    ANEWARRAY java.lang.String
+                    ASTORE_1
+                    ICONST_0   (line 177)
+                    ISTORE_2
+                    GOTO L1
+                L0: ALOAD_1     // [Ljava/lang/String; names   (line 178)
+                    ILOAD_2     // I i
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    ILOAD_2     // I i
+                    INVOKEVIRTUAL java.util.LinkedList.get (I)Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.env.PropertySource
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getName ()Ljava/lang/String;
+                    AASTORE
+                    IINC_2 1     // I i   (line 177)
+                L1: ILOAD_2     // I i
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this
+                    INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.size ()I
+                    IF_ICMPLT L0
+                    LDC "[%s]"   (line 180)
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // [Ljava/lang/String; names
+                    INVOKESTATIC org.springframework.util.StringUtils.arrayToCommaDelimitedString ([Ljava/lang/Object;)Ljava/lang/String;
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    ARETURN
+  end public synchronized String toString()
+
+  protected void assertLegalRelativeAddition(String, org.springframework.core.env.PropertySource):
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; propertySource   (line 187)
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getName ()Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_1     // Ljava/lang/String; relativePropertySourceName   (line 188)
+                    ALOAD_3     // Ljava/lang/String; newPropertySourceName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ICONST_0
+                    GOTO L1
+                L0: ICONST_1
+                L1: LDC "PropertySource named [%s] cannot be added relative to itself"   (line 189)
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_3     // Ljava/lang/String; newPropertySourceName
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.Assert.isTrue (ZLjava/lang/String;)V   (line 188)
+                    RETURN   (line 190)
+  end protected void assertLegalRelativeAddition(String, org.springframework.core.env.PropertySource)
+
+  protected void removeIfPresent(org.springframework.core.env.PropertySource):
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 196)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    ALOAD_1     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL java.util.LinkedList.contains (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 197)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    ALOAD_1     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL java.util.LinkedList.remove (Ljava/lang/Object;)Z
+                    POP
+                L0: RETURN   (line 199)
+  end protected void removeIfPresent(org.springframework.core.env.PropertySource)
+
+  private void addAtIndex(int, org.springframework.core.env.PropertySource):
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 205)
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL org.springframework.core.env.MutablePropertySources.removeIfPresent (Lorg/springframework/core/env/PropertySource;)V
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 206)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    ILOAD_1     // I index
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL java.util.LinkedList.add (ILjava/lang/Object;)V
+                    RETURN   (line 207)
+  end private void addAtIndex(int, org.springframework.core.env.PropertySource)
+
+  private int assertPresentAndGetIndex(String):
+                    ALOAD_0     // Lorg/springframework/core/env/MutablePropertySources; this   (line 216)
+                    GETFIELD org.springframework.core.env.MutablePropertySources.propertySourceList Ljava/util/LinkedList;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKESTATIC org.springframework.core.env.PropertySource.named (Ljava/lang/String;)Lorg/springframework/core/env/PropertySource;
+                    INVOKEVIRTUAL java.util.LinkedList.indexOf (Ljava/lang/Object;)I
+                    ISTORE_2
+                    ILOAD_2     // I index   (line 217)
+                    IFLT L0
+                    ICONST_1
+                    GOTO L1
+                L0: ICONST_0
+                L1: LDC "PropertySource named [%s] does not exist"
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; name
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.Assert.isTrue (ZLjava/lang/String;)V
+                    ILOAD_2     // I index   (line 218)
+                    IRETURN
+  end private int assertPresentAndGetIndex(String)
+
+end public class org.springframework.core.env.MutablePropertySources
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.core.env.PropertySourcesPropertyResolver'
+abort trouble in: 
+public class org.springframework.core.env.PropertySourcesPropertyResolver extends org.springframework.core.env.AbstractPropertyResolver:
+  private final org.springframework.core.env.PropertySources propertySources
+  public void <init>(org.springframework.core.env.PropertySources):
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 42)
+                    INVOKESPECIAL org.springframework.core.env.AbstractPropertyResolver.<init> ()V
+    constructor-execution(void org.springframework.core.env.PropertySourcesPropertyResolver.<init>(org.springframework.core.env.PropertySources))
+    |               ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 43)
+    |               ALOAD_1     // Lorg/springframework/core/env/PropertySources; propertySources
+    |               PUTFIELD org.springframework.core.env.PropertySourcesPropertyResolver.propertySources Lorg/springframework/core/env/PropertySources;
+    |               RETURN   (line 44)
+    constructor-execution(void org.springframework.core.env.PropertySourcesPropertyResolver.<init>(org.springframework.core.env.PropertySources))
+  end public void <init>(org.springframework.core.env.PropertySources)
+
+  public boolean containsProperty(String):
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 47)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.propertySources Lorg/springframework/core/env/PropertySources;
+                    INVOKEINTERFACE org.springframework.core.env.PropertySources.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L1
+                L0: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.env.PropertySource
+                    ASTORE_2
+                    ALOAD_2     // Lorg/springframework/core/env/PropertySource; propertySource   (line 48)
+                    ALOAD_1     // Ljava/lang/String; key
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getProperty (Ljava/lang/String;)Ljava/lang/Object;
+                    IFNULL L1
+                    ICONST_1   (line 49)
+                    IRETURN
+                L1: ALOAD_3   (line 47)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ICONST_0   (line 52)
+                    IRETURN
+  end public boolean containsProperty(String)
+
+  public String getProperty(String):
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 56)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 57)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.logger Lorg/apache/commons/logging/Log;
+                    LDC "getProperty(\"%s\") (implicit targetType [String])"
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; key
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;)V
+                L0: ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 59)
+                    ALOAD_1     // Ljava/lang/String; key
+                    LDC java.lang.String
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySourcesPropertyResolver.getProperty (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ARETURN
+  end public String getProperty(String)
+
+  public Object getProperty(String, Class):
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 63)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    ISTORE_3
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 64)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 65)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.logger Lorg/apache/commons/logging/Log;
+                    LDC "getProperty(\"%s\", %s)"
+                    ICONST_2
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; key
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD_2     // Ljava/lang/Class; targetValueType
+                    INVOKEVIRTUAL java.lang.Class.getSimpleName ()Ljava/lang/String;
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;)V
+                L0: ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 68)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.propertySources Lorg/springframework/core/env/PropertySources;
+                    INVOKEINTERFACE org.springframework.core.env.PropertySources.iterator ()Ljava/util/Iterator;
+                    ASTORE 5
+                    GOTO L6
+                L1: ALOAD 5
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.env.PropertySource
+                    ASTORE 4
+                    ILOAD_3     // Z debugEnabled   (line 69)
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 70)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.logger Lorg/apache/commons/logging/Log;
+                    LDC "Searching for key '%s' in [%s]"
+                    ICONST_2
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; key
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD 4     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getName ()Ljava/lang/String;
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L2: ALOAD 4     // Lorg/springframework/core/env/PropertySource; propertySource   (line 73)
+                    ALOAD_1     // Ljava/lang/String; key
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getProperty (Ljava/lang/String;)Ljava/lang/Object;
+                    DUP
+                    ASTORE 6
+                    IFNULL L6
+                    ALOAD 6     // Ljava/lang/Object; value   (line 74)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ASTORE 7
+                    LDC java.lang.String   (line 75)
+                    ALOAD 7     // Ljava/lang/Class; valueType
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L3
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 76)
+                    ALOAD 6     // Ljava/lang/Object; value
+                    CHECKCAST java.lang.String
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySourcesPropertyResolver.resolveRequiredPlaceholders (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 6     // Ljava/lang/Object; value
+                L3: ILOAD_3     // Z debugEnabled   (line 78)
+                    IFEQ L4
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 79)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.logger Lorg/apache/commons/logging/Log;
+                    LDC "Found key '%s' in [%s] with type [%s] and value '%s'"   (line 80)
+                    ICONST_4
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; key   (line 81)
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD 4     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getName ()Ljava/lang/String;
+                    AASTORE
+                    DUP
+                    ICONST_2
+                    ALOAD 7     // Ljava/lang/Class; valueType
+                    INVOKEVIRTUAL java.lang.Class.getSimpleName ()Ljava/lang/String;
+                    AASTORE
+                    DUP
+                    ICONST_3
+                    ALOAD 6     // Ljava/lang/Object; value
+                    AASTORE   (line 80)
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 79)
+                L4: ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 83)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.conversionService Lorg/springframework/core/convert/support/ConfigurableConversionService;
+                    ALOAD 7     // Ljava/lang/Class; valueType
+                    ALOAD_2     // Ljava/lang/Class; targetValueType
+                    INVOKEINTERFACE org.springframework.core.convert.support.ConfigurableConversionService.canConvert (Ljava/lang/Class;Ljava/lang/Class;)Z
+                    IFNE L5
+                    NEW java.lang.IllegalArgumentException   (line 84)
+                    DUP
+                    LDC "Cannot convert value [%s] from source type [%s] to target type [%s]"   (line 85)
+                    ICONST_3
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD 6     // Ljava/lang/Object; value   (line 86)
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD 7     // Ljava/lang/Class; valueType
+                    INVOKEVIRTUAL java.lang.Class.getSimpleName ()Ljava/lang/String;
+                    AASTORE
+                    DUP
+                    ICONST_2
+                    ALOAD_2     // Ljava/lang/Class; targetValueType
+                    INVOKEVIRTUAL java.lang.Class.getSimpleName ()Ljava/lang/String;
+                    AASTORE   (line 85)
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 84)
+                    ATHROW
+                L5: ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 88)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.conversionService Lorg/springframework/core/convert/support/ConfigurableConversionService;
+                    ALOAD 6     // Ljava/lang/Object; value
+                    ALOAD_2     // Ljava/lang/Class; targetValueType
+                    INVOKEINTERFACE org.springframework.core.convert.support.ConfigurableConversionService.convert (Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+                    ARETURN
+                L6: ALOAD 5   (line 68)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L1
+                    ILOAD_3     // Z debugEnabled   (line 92)
+                    IFEQ L7
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 93)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.logger Lorg/apache/commons/logging/Log;
+                    LDC "Could not find key '%s' in any property source. Returning [null]"
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; key
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L7: ACONST_NULL   (line 95)
+                    ARETURN
+  end public Object getProperty(String, Class)
+
+  public Class getPropertyAsClass(String, Class):
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 99)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    ISTORE_3
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 100)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 101)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.logger Lorg/apache/commons/logging/Log;
+                    LDC "getPropertyAsClass(\"%s\", %s)"
+                    ICONST_2
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; key
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD_2     // Ljava/lang/Class; targetValueType
+                    INVOKEVIRTUAL java.lang.Class.getSimpleName ()Ljava/lang/String;
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;)V
+                L0: ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 104)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.propertySources Lorg/springframework/core/env/PropertySources;
+                    INVOKEINTERFACE org.springframework.core.env.PropertySources.iterator ()Ljava/util/Iterator;
+                    ASTORE 5
+                    GOTO L8
+                L1: ALOAD 5
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.env.PropertySource
+                    ASTORE 4
+                    ILOAD_3     // Z debugEnabled   (line 105)
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 106)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.logger Lorg/apache/commons/logging/Log;
+                    LDC "Searching for key '%s' in [%s]"
+                    ICONST_2
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; key
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD 4     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getName ()Ljava/lang/String;
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L2: ALOAD 4     // Lorg/springframework/core/env/PropertySource; propertySource   (line 109)
+                    ALOAD_1     // Ljava/lang/String; key
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getProperty (Ljava/lang/String;)Ljava/lang/Object;
+                    DUP
+                    ASTORE 6
+                    IFNULL L8
+                    ILOAD_3     // Z debugEnabled   (line 110)
+                    IFEQ L3
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 111)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.logger Lorg/apache/commons/logging/Log;
+                    LDC "Found key '%s' in [%s] with value '%s'"   (line 112)
+                    ICONST_3
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; key
+                    AASTORE
+                    DUP
+                    ICONST_1
+                    ALOAD 4     // Lorg/springframework/core/env/PropertySource; propertySource
+                    INVOKEVIRTUAL org.springframework.core.env.PropertySource.getName ()Ljava/lang/String;
+                    AASTORE
+                    DUP
+                    ICONST_2
+                    ALOAD 6     // Ljava/lang/Object; value
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 111)
+                L3: ALOAD 6     // Ljava/lang/Object; value   (line 116)
+                    INSTANCEOF java.lang.String
+                    IFEQ L4
+    catch java.lang.Exception -> E0
+    |               ALOAD 6     // Ljava/lang/Object; value   (line 118)
+    |               CHECKCAST java.lang.String
+    |               ACONST_NULL
+    |               INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    |               ASTORE 7
+    catch java.lang.Exception -> E0
+                    GOTO L6
+                E0: ASTORE 8   (line 119)
+                    NEW org.springframework.core.env.PropertySourcesPropertyResolver$ClassConversionException   (line 120)
+                    DUP
+                    ALOAD 6     // Ljava/lang/Object; value
+                    CHECKCAST java.lang.String
+                    ALOAD_2     // Ljava/lang/Class; targetValueType
+                    ALOAD 8     // Ljava/lang/Exception; ex
+                    INVOKESPECIAL org.springframework.core.env.PropertySourcesPropertyResolver$ClassConversionException.<init> (Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Exception;)V
+                    ATHROW
+                L4: ALOAD 6     // Ljava/lang/Object; value   (line 123)
+                    INSTANCEOF java.lang.Class
+                    IFEQ L5
+                    ALOAD 6     // Ljava/lang/Object; value   (line 124)
+                    CHECKCAST java.lang.Class
+                    ASTORE 7
+                    GOTO L6
+                L5: ALOAD 6     // Ljava/lang/Object; value   (line 126)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ASTORE 7
+                L6: ALOAD_2     // Ljava/lang/Class; targetValueType   (line 129)
+                    ALOAD 7     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFNE L7
+                    NEW org.springframework.core.env.PropertySourcesPropertyResolver$ClassConversionException   (line 130)
+                    DUP
+                    ALOAD 7     // Ljava/lang/Class; clazz
+                    ALOAD_2     // Ljava/lang/Class; targetValueType
+                    INVOKESPECIAL org.springframework.core.env.PropertySourcesPropertyResolver$ClassConversionException.<init> (Ljava/lang/Class;Ljava/lang/Class;)V
+                    ATHROW
+                L7: ALOAD 7     // Ljava/lang/Class; clazz   (line 133)
+                    ASTORE 8
+                    ALOAD 8     // Ljava/lang/Class; targetClass   (line 134)
+                    ARETURN
+                L8: ALOAD 5   (line 104)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L1
+                    ILOAD_3     // Z debugEnabled   (line 138)
+                    IFEQ L9
+                    ALOAD_0     // Lorg/springframework/core/env/PropertySourcesPropertyResolver; this   (line 139)
+                    GETFIELD org.springframework.core.env.PropertySourcesPropertyResolver.logger Lorg/apache/commons/logging/Log;
+                    LDC "Could not find key '%s' in any property source. Returning [null]"
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; key
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L9: ACONST_NULL   (line 141)
+                    ARETURN
+  end public Class getPropertyAsClass(String, Class)
+
+end public class org.springframework.core.env.PropertySourcesPropertyResolver
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.core.env.AbstractPropertyResolver'
+abort trouble in: 
+public abstract class org.springframework.core.env.AbstractPropertyResolver extends java.lang.Object implements org.springframework.core.env.ConfigurablePropertyResolver:
+  protected final org.apache.commons.logging.Log logger
+  protected org.springframework.core.convert.support.ConfigurableConversionService conversionService
+  private org.springframework.util.PropertyPlaceholderHelper nonStrictHelper
+  private org.springframework.util.PropertyPlaceholderHelper strictHelper
+  private String placeholderPrefix
+  private String placeholderSuffix
+  private String valueSeparator
+  private final java.util.Set requiredProperties [Signature(Ljava/util/Set<Ljava/lang/String;>;)]
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 40)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.env.AbstractPropertyResolver.<init>())
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 42)
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTFIELD org.springframework.core.env.AbstractPropertyResolver.logger Lorg/apache/commons/logging/Log;
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 44)
+    |               NEW org.springframework.core.convert.support.DefaultConversionService
+    |               DUP
+    |               INVOKESPECIAL org.springframework.core.convert.support.DefaultConversionService.<init> ()V
+    |               PUTFIELD org.springframework.core.env.AbstractPropertyResolver.conversionService Lorg/springframework/core/convert/support/ConfigurableConversionService;
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 49)
+    |               LDC "${"
+    |               PUTFIELD org.springframework.core.env.AbstractPropertyResolver.placeholderPrefix Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 50)
+    |               LDC "}"
+    |               PUTFIELD org.springframework.core.env.AbstractPropertyResolver.placeholderSuffix Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 51)
+    |               LDC ":"
+    |               PUTFIELD org.springframework.core.env.AbstractPropertyResolver.valueSeparator Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 53)
+    |               NEW java.util.LinkedHashSet
+    |               DUP
+    |               INVOKESPECIAL java.util.LinkedHashSet.<init> ()V
+    |               PUTFIELD org.springframework.core.env.AbstractPropertyResolver.requiredProperties Ljava/util/Set;
+    |               RETURN   (line 40)
+    constructor-execution(void org.springframework.core.env.AbstractPropertyResolver.<init>())
+  end public void <init>()
+
+  public org.springframework.core.convert.support.ConfigurableConversionService getConversionService():
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 56)
+                    GETFIELD org.springframework.core.env.AbstractPropertyResolver.conversionService Lorg/springframework/core/convert/support/ConfigurableConversionService;
+                    ARETURN
+  end public org.springframework.core.convert.support.ConfigurableConversionService getConversionService()
+
+  public void setConversionService(org.springframework.core.convert.support.ConfigurableConversionService):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 60)
+                    ALOAD_1     // Lorg/springframework/core/convert/support/ConfigurableConversionService; conversionService
+                    PUTFIELD org.springframework.core.env.AbstractPropertyResolver.conversionService Lorg/springframework/core/convert/support/ConfigurableConversionService;
+                    RETURN   (line 61)
+  end public void setConversionService(org.springframework.core.convert.support.ConfigurableConversionService)
+
+  public String getProperty(String, String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 64)
+                    ALOAD_1     // Ljava/lang/String; key
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractPropertyResolver.getProperty (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; value   (line 65)
+                    IFNONNULL L0
+                    ALOAD_2     // Ljava/lang/String; defaultValue
+                    GOTO L1
+                L0: ALOAD_3     // Ljava/lang/String; value
+                L1: ARETURN
+  end public String getProperty(String, String)
+
+  public Object getProperty(String, Class, Object):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 69)
+                    ALOAD_1     // Ljava/lang/String; key
+                    ALOAD_2     // Ljava/lang/Class; targetType
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractPropertyResolver.getProperty (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Object; value   (line 70)
+                    IFNONNULL L0
+                    ALOAD_3     // Ljava/lang/Object; defaultValue
+                    GOTO L1
+                L0: ALOAD 4     // Ljava/lang/Object; value
+                L1: ARETURN
+  end public Object getProperty(String, Class, Object)
+
+  public transient void setRequiredProperties(String[]):
+                    ALOAD_1     // [Ljava/lang/String; requiredProperties   (line 74)
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L1
+                L0: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 75)
+                    GETFIELD org.springframework.core.env.AbstractPropertyResolver.requiredProperties Ljava/util/Set;
+                    ALOAD_2     // Ljava/lang/String; key
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    IINC_3 1   (line 74)
+                L1: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L0
+                    RETURN   (line 77)
+  end public transient void setRequiredProperties(String[])
+
+  public void validateRequiredProperties():
+                    NEW org.springframework.core.env.MissingRequiredPropertiesException   (line 80)
+                    DUP
+                    INVOKESPECIAL org.springframework.core.env.MissingRequiredPropertiesException.<init> ()V
+                    ASTORE_1
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 81)
+                    GETFIELD org.springframework.core.env.AbstractPropertyResolver.requiredProperties Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L1
+                L0: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 82)
+                    ALOAD_2     // Ljava/lang/String; key
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractPropertyResolver.getProperty (Ljava/lang/String;)Ljava/lang/String;
+                    IFNONNULL L1
+                    ALOAD_1     // Lorg/springframework/core/env/MissingRequiredPropertiesException; ex   (line 83)
+                    ALOAD_2     // Ljava/lang/String; key
+                    INVOKEVIRTUAL org.springframework.core.env.MissingRequiredPropertiesException.addMissingRequiredProperty (Ljava/lang/String;)V
+                L1: ALOAD_3   (line 81)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ALOAD_1     // Lorg/springframework/core/env/MissingRequiredPropertiesException; ex   (line 86)
+                    INVOKEVIRTUAL org.springframework.core.env.MissingRequiredPropertiesException.getMissingRequiredProperties ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.isEmpty ()Z
+                    IFNE L2
+                    ALOAD_1     // Lorg/springframework/core/env/MissingRequiredPropertiesException; ex   (line 87)
+                    ATHROW
+                L2: RETURN   (line 89)
+  end public void validateRequiredProperties()
+
+  public String getRequiredProperty(String) throws java.lang.IllegalStateException:
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 92)
+                    ALOAD_1     // Ljava/lang/String; key
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractPropertyResolver.getProperty (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; value   (line 93)
+                    IFNONNULL L0
+                    NEW java.lang.IllegalStateException   (line 94)
+                    DUP
+                    LDC "required key [%s] not found"
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; key
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_2     // Ljava/lang/String; value   (line 96)
+                    ARETURN
+  end public String getRequiredProperty(String) throws java.lang.IllegalStateException
+
+  public Object getRequiredProperty(String, Class) throws java.lang.IllegalStateException:
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 100)
+                    ALOAD_1     // Ljava/lang/String; key
+                    ALOAD_2     // Ljava/lang/Class; valueType
+                    INVOKEVIRTUAL org.springframework.core.env.AbstractPropertyResolver.getProperty (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/Object; value   (line 101)
+                    IFNONNULL L0
+                    NEW java.lang.IllegalStateException   (line 102)
+                    DUP
+                    LDC "required key [%s] not found"
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; key
+                    AASTORE
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_3     // Ljava/lang/Object; value   (line 104)
+                    ARETURN
+  end public Object getRequiredProperty(String, Class) throws java.lang.IllegalStateException
+
+  public void setPlaceholderPrefix(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 112)
+                    ALOAD_1     // Ljava/lang/String; placeholderPrefix
+                    PUTFIELD org.springframework.core.env.AbstractPropertyResolver.placeholderPrefix Ljava/lang/String;
+                    RETURN   (line 113)
+  end public void setPlaceholderPrefix(String)
+
+  public void setPlaceholderSuffix(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 120)
+                    ALOAD_1     // Ljava/lang/String; placeholderSuffix
+                    PUTFIELD org.springframework.core.env.AbstractPropertyResolver.placeholderSuffix Ljava/lang/String;
+                    RETURN   (line 121)
+  end public void setPlaceholderSuffix(String)
+
+  public void setValueSeparator(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 128)
+                    ALOAD_1     // Ljava/lang/String; valueSeparator
+                    PUTFIELD org.springframework.core.env.AbstractPropertyResolver.valueSeparator Ljava/lang/String;
+                    RETURN   (line 129)
+  end public void setValueSeparator(String)
+
+  public String resolvePlaceholders(String):
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 132)
+                    GETFIELD org.springframework.core.env.AbstractPropertyResolver.nonStrictHelper Lorg/springframework/util/PropertyPlaceholderHelper;
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 133)
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.core.env.AbstractPropertyResolver.createPlaceholderHelper (Z)Lorg/springframework/util/PropertyPlaceholderHelper;
+                    PUTFIELD org.springframework.core.env.AbstractPropertyResolver.nonStrictHelper Lorg/springframework/util/PropertyPlaceholderHelper;
+                L0: ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 135)
+                    ALOAD_1     // Ljava/lang/String; text
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this
+                    GETFIELD org.springframework.core.env.AbstractPropertyResolver.nonStrictHelper Lorg/springframework/util/PropertyPlaceholderHelper;
+                    INVOKESPECIAL org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders (Ljava/lang/String;Lorg/springframework/util/PropertyPlaceholderHelper;)Ljava/lang/String;
+                    ARETURN
+  end public String resolvePlaceholders(String)
+
+  public String resolveRequiredPlaceholders(String) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 139)
+                    GETFIELD org.springframework.core.env.AbstractPropertyResolver.strictHelper Lorg/springframework/util/PropertyPlaceholderHelper;
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 140)
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this
+                    ICONST_0
+                    INVOKESPECIAL org.springframework.core.env.AbstractPropertyResolver.createPlaceholderHelper (Z)Lorg/springframework/util/PropertyPlaceholderHelper;
+                    PUTFIELD org.springframework.core.env.AbstractPropertyResolver.strictHelper Lorg/springframework/util/PropertyPlaceholderHelper;
+                L0: ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 142)
+                    ALOAD_1     // Ljava/lang/String; text
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this
+                    GETFIELD org.springframework.core.env.AbstractPropertyResolver.strictHelper Lorg/springframework/util/PropertyPlaceholderHelper;
+                    INVOKESPECIAL org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders (Ljava/lang/String;Lorg/springframework/util/PropertyPlaceholderHelper;)Ljava/lang/String;
+                    ARETURN
+  end public String resolveRequiredPlaceholders(String) throws java.lang.IllegalArgumentException
+
+  private org.springframework.util.PropertyPlaceholderHelper createPlaceholderHelper(boolean):
+                    NEW org.springframework.util.PropertyPlaceholderHelper   (line 146)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this
+                    GETFIELD org.springframework.core.env.AbstractPropertyResolver.placeholderPrefix Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this
+                    GETFIELD org.springframework.core.env.AbstractPropertyResolver.placeholderSuffix Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this   (line 147)
+                    GETFIELD org.springframework.core.env.AbstractPropertyResolver.valueSeparator Ljava/lang/String;
+                    ILOAD_1     // Z ignoreUnresolvablePlaceholders
+                    INVOKESPECIAL org.springframework.util.PropertyPlaceholderHelper.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V   (line 146)
+                    ARETURN
+  end private org.springframework.util.PropertyPlaceholderHelper createPlaceholderHelper(boolean)
+
+  private String doResolvePlaceholders(String, org.springframework.util.PropertyPlaceholderHelper):
+                    ALOAD_2     // Lorg/springframework/util/PropertyPlaceholderHelper; helper   (line 151)
+                    ALOAD_1     // Ljava/lang/String; text
+                    NEW org.springframework.core.env.AbstractPropertyResolver$1
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/env/AbstractPropertyResolver; this
+                    INVOKESPECIAL org.springframework.core.env.AbstractPropertyResolver$1.<init> (Lorg/springframework/core/env/AbstractPropertyResolver;)V
+                    INVOKEVIRTUAL org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders (Ljava/lang/String;Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver;)Ljava/lang/String;
+                    ARETURN
+  end private String doResolvePlaceholders(String, org.springframework.util.PropertyPlaceholderHelper)
+
+end public abstract class org.springframework.core.env.AbstractPropertyResolver
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.core.env.MissingRequiredPropertiesException'
+abort trouble in: 
+public class org.springframework.core.env.MissingRequiredPropertiesException extends java.lang.IllegalStateException:
+  private final java.util.Set missingRequiredProperties [Signature(Ljava/util/Set<Ljava/lang/String;>;)]
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/core/env/MissingRequiredPropertiesException; this   (line 32)
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> ()V
+    constructor-execution(void org.springframework.core.env.MissingRequiredPropertiesException.<init>())
+    |               ALOAD_0     // Lorg/springframework/core/env/MissingRequiredPropertiesException; this   (line 34)
+    |               NEW java.util.LinkedHashSet
+    |               DUP
+    |               INVOKESPECIAL java.util.LinkedHashSet.<init> ()V
+    |               PUTFIELD org.springframework.core.env.MissingRequiredPropertiesException.missingRequiredProperties Ljava/util/Set;
+    |               RETURN   (line 32)
+    constructor-execution(void org.springframework.core.env.MissingRequiredPropertiesException.<init>())
+  end public void <init>()
+
+  public java.util.Set getMissingRequiredProperties():
+                    ALOAD_0     // Lorg/springframework/core/env/MissingRequiredPropertiesException; this   (line 43)
+                    GETFIELD org.springframework.core.env.MissingRequiredPropertiesException.missingRequiredProperties Ljava/util/Set;
+                    ARETURN
+  end public java.util.Set getMissingRequiredProperties()
+
+  void addMissingRequiredProperty(String):
+                    ALOAD_0     // Lorg/springframework/core/env/MissingRequiredPropertiesException; this   (line 47)
+                    GETFIELD org.springframework.core.env.MissingRequiredPropertiesException.missingRequiredProperties Ljava/util/Set;
+                    ALOAD_1     // Ljava/lang/String; key
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    RETURN   (line 48)
+  end void addMissingRequiredProperty(String)
+
+  public String getMessage():
+                    LDC "The following properties were declared as required but could not be resolved: %s"   (line 53)
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_0     // Lorg/springframework/core/env/MissingRequiredPropertiesException; this   (line 54)
+                    INVOKEVIRTUAL org.springframework.core.env.MissingRequiredPropertiesException.getMissingRequiredProperties ()Ljava/util/Set;
+                    AASTORE   (line 52)
+                    INVOKESTATIC java.lang.String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+                    ARETURN
+  end public String getMessage()
+
+end public class org.springframework.core.env.MissingRequiredPropertiesException
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.util.PropertyPlaceholderHelper$PlaceholderResolver'
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

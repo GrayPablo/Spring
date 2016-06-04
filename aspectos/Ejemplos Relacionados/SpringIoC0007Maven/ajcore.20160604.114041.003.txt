@@ -1,0 +1,329 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114041.003.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+info using configuration file:/C:/Users/usuario/.m2/repository/org/springframework/spring-aspects/3.1.2.RELEASE/spring-aspects-3.1.2.RELEASE.jar!/META-INF/aop.xml
+debug weaving 'org.springframework.context.config.MBeanExportBeanDefinitionParser'
+abort trouble in: 
+ class org.springframework.context.config.MBeanExportBeanDefinitionParser extends org.springframework.beans.factory.xml.AbstractBeanDefinitionParser:
+  private static final String MBEAN_EXPORTER_BEAN_NAME = "mbeanExporter"
+  private static final String DEFAULT_DOMAIN_ATTRIBUTE = "default-domain"
+  private static final String SERVER_ATTRIBUTE = "server"
+  private static final String REGISTRATION_ATTRIBUTE = "registration"
+  private static final String REGISTRATION_IGNORE_EXISTING = "ignoreExisting"
+  private static final String REGISTRATION_REPLACE_EXISTING = "replaceExisting"
+  void <init>():
+                    ALOAD_0     // Lorg/springframework/context/config/MBeanExportBeanDefinitionParser; this   (line 42)
+                    INVOKESPECIAL org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.<init> ()V
+    constructor-execution(void org.springframework.context.config.MBeanExportBeanDefinitionParser.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.context.config.MBeanExportBeanDefinitionParser.<init>())
+  end void <init>()
+
+  protected String resolveId(org.w3c.dom.Element, org.springframework.beans.factory.support.AbstractBeanDefinition, org.springframework.beans.factory.xml.ParserContext):
+                    LDC "mbeanExporter"   (line 59)
+                    ARETURN
+  end protected String resolveId(org.w3c.dom.Element, org.springframework.beans.factory.support.AbstractBeanDefinition, org.springframework.beans.factory.xml.ParserContext)
+
+  protected org.springframework.beans.factory.support.AbstractBeanDefinition parseInternal(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext):
+                    LDC org.springframework.jmx.export.annotation.AnnotationMBeanExporter   (line 64)
+                    INVOKESTATIC org.springframework.beans.factory.support.BeanDefinitionBuilder.rootBeanDefinition (Ljava/lang/Class;)Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;
+                    ASTORE_3
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 67)
+                    ICONST_2
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.setRole (I)Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;
+                    POP
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 68)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.getRawBeanDefinition ()Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.extractSource (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanDefinition.setSource (Ljava/lang/Object;)V
+                    ALOAD_1     // Lorg/w3c/dom/Element; element   (line 70)
+                    LDC "default-domain"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/String; defaultDomain   (line 71)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 72)
+                    LDC "defaultDomain"
+                    ALOAD 4     // Ljava/lang/String; defaultDomain
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.addPropertyValue (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;
+                    POP
+                L0: ALOAD_1     // Lorg/w3c/dom/Element; element   (line 75)
+                    LDC "server"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 5
+                    ALOAD 5     // Ljava/lang/String; serverBeanName   (line 76)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L1
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 77)
+                    LDC "server"
+                    ALOAD 5     // Ljava/lang/String; serverBeanName
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.addPropertyReference (Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;
+                    POP
+                    GOTO L2
+                L1: INVOKESTATIC org.springframework.context.config.MBeanServerBeanDefinitionParser.findServerForSpecialEnvironment ()Lorg/springframework/beans/factory/support/AbstractBeanDefinition;   (line 80)
+                    ASTORE 6
+                    ALOAD 6     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; specialServer   (line 81)
+                    IFNULL L2
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 82)
+                    LDC "server"
+                    ALOAD 6     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; specialServer
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.addPropertyValue (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;
+                    POP
+                L2: ALOAD_1     // Lorg/w3c/dom/Element; element   (line 86)
+                    LDC "registration"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 6
+                    ICONST_0   (line 87)
+                    ISTORE 7
+                    LDC "ignoreExisting"   (line 88)
+                    ALOAD 6     // Ljava/lang/String; registration
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L3
+                    ICONST_1   (line 89)
+                    ISTORE 7     // I registrationBehavior
+                    GOTO L4
+                L3: LDC "replaceExisting"   (line 91)
+                    ALOAD 6     // Ljava/lang/String; registration
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L4
+                    ICONST_2   (line 92)
+                    ISTORE 7     // I registrationBehavior
+                L4: ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 94)
+                    LDC "registrationBehavior"
+                    ILOAD 7     // I registrationBehavior
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.addPropertyValue (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;
+                    POP
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 96)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.getBeanDefinition ()Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
+                    ARETURN
+  end protected org.springframework.beans.factory.support.AbstractBeanDefinition parseInternal(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext)
+
+end  class org.springframework.context.config.MBeanExportBeanDefinitionParser
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.context.config.MBeanServerBeanDefinitionParser'
+abort trouble in: 
+ class org.springframework.context.config.MBeanServerBeanDefinitionParser extends org.springframework.beans.factory.xml.AbstractBeanDefinitionParser:
+  private static final String MBEAN_SERVER_BEAN_NAME = "mbeanServer"
+  private static final String AGENT_ID_ATTRIBUTE = "agent-id"
+  private static final boolean weblogicPresent
+  private static final boolean webspherePresent
+  static void <clinit>():
+    staticinitialization(void org.springframework.context.config.MBeanServerBeanDefinitionParser.<clinit>())
+    |               LDC "weblogic.management.Helper"   (line 52)
+    |               LDC org.springframework.context.config.MBeanServerBeanDefinitionParser
+    |               INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+    |               INVOKESTATIC org.springframework.util.ClassUtils.isPresent (Ljava/lang/String;Ljava/lang/ClassLoader;)Z   (line 51)
+    |               PUTSTATIC org.springframework.context.config.MBeanServerBeanDefinitionParser.weblogicPresent Z
+    |               LDC "com.ibm.websphere.management.AdminServiceFactory"   (line 55)
+    |               LDC org.springframework.context.config.MBeanServerBeanDefinitionParser
+    |               INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+    |               INVOKESTATIC org.springframework.util.ClassUtils.isPresent (Ljava/lang/String;Ljava/lang/ClassLoader;)Z   (line 54)
+    |               PUTSTATIC org.springframework.context.config.MBeanServerBeanDefinitionParser.webspherePresent Z
+    |               RETURN   (line 44)
+    staticinitialization(void org.springframework.context.config.MBeanServerBeanDefinitionParser.<clinit>())
+  end static void <clinit>()
+
+  void <init>():
+                    ALOAD_0     // Lorg/springframework/context/config/MBeanServerBeanDefinitionParser; this   (line 44)
+                    INVOKESPECIAL org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.<init> ()V
+    constructor-execution(void org.springframework.context.config.MBeanServerBeanDefinitionParser.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.context.config.MBeanServerBeanDefinitionParser.<init>())
+  end void <init>()
+
+  protected String resolveId(org.w3c.dom.Element, org.springframework.beans.factory.support.AbstractBeanDefinition, org.springframework.beans.factory.xml.ParserContext):
+                    ALOAD_1     // Lorg/w3c/dom/Element; element   (line 60)
+                    LDC "id"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/String; id   (line 61)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD 4     // Ljava/lang/String; id
+                    GOTO L1
+                L0: LDC "mbeanServer"
+                L1: ARETURN
+  end protected String resolveId(org.w3c.dom.Element, org.springframework.beans.factory.support.AbstractBeanDefinition, org.springframework.beans.factory.xml.ParserContext)
+
+  protected org.springframework.beans.factory.support.AbstractBeanDefinition parseInternal(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext):
+                    ALOAD_1     // Lorg/w3c/dom/Element; element   (line 66)
+                    LDC "agent-id"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; agentId   (line 67)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L0
+                    NEW org.springframework.beans.factory.support.RootBeanDefinition   (line 68)
+                    DUP
+                    LDC org.springframework.jmx.support.MBeanServerFactoryBean
+                    INVOKESPECIAL org.springframework.beans.factory.support.RootBeanDefinition.<init> (Ljava/lang/Class;)V
+                    ASTORE 4
+                    ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; bd   (line 69)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+                    LDC "agentId"
+                    ALOAD_3     // Ljava/lang/String; agentId
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                    ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; bd   (line 70)
+                    ARETURN
+                L0: INVOKESTATIC org.springframework.context.config.MBeanServerBeanDefinitionParser.findServerForSpecialEnvironment ()Lorg/springframework/beans/factory/support/AbstractBeanDefinition;   (line 72)
+                    ASTORE 4
+                    ALOAD 4     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; specialServer   (line 73)
+                    IFNULL L1
+                    ALOAD 4     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; specialServer   (line 74)
+                    ARETURN
+                L1: NEW org.springframework.beans.factory.support.RootBeanDefinition   (line 76)
+                    DUP
+                    LDC org.springframework.jmx.support.MBeanServerFactoryBean
+                    INVOKESPECIAL org.springframework.beans.factory.support.RootBeanDefinition.<init> (Ljava/lang/Class;)V
+                    ASTORE 5
+                    ALOAD 5     // Lorg/springframework/beans/factory/support/RootBeanDefinition; bd   (line 77)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+                    LDC "locateExistingServerIfPossible"
+                    GETSTATIC java.lang.Boolean.TRUE Ljava/lang/Boolean;
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                    ALOAD 5     // Lorg/springframework/beans/factory/support/RootBeanDefinition; bd   (line 80)
+                    ICONST_2
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.setRole (I)V
+                    ALOAD 5     // Lorg/springframework/beans/factory/support/RootBeanDefinition; bd   (line 81)
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.extractSource (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.setSource (Ljava/lang/Object;)V
+                    ALOAD 5     // Lorg/springframework/beans/factory/support/RootBeanDefinition; bd   (line 82)
+                    ARETURN
+  end protected org.springframework.beans.factory.support.AbstractBeanDefinition parseInternal(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext)
+
+  static org.springframework.beans.factory.support.AbstractBeanDefinition findServerForSpecialEnvironment():
+                    GETSTATIC org.springframework.context.config.MBeanServerBeanDefinitionParser.weblogicPresent Z   (line 86)
+                    IFEQ L0
+                    NEW org.springframework.beans.factory.support.RootBeanDefinition   (line 87)
+                    DUP
+                    LDC org.springframework.jndi.JndiObjectFactoryBean
+                    INVOKESPECIAL org.springframework.beans.factory.support.RootBeanDefinition.<init> (Ljava/lang/Class;)V
+                    ASTORE_0
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/RootBeanDefinition; bd   (line 88)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+                    LDC "jndiName"
+                    LDC "java:comp/env/jmx/runtime"
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/RootBeanDefinition; bd   (line 89)
+                    ARETURN
+                L0: GETSTATIC org.springframework.context.config.MBeanServerBeanDefinitionParser.webspherePresent Z   (line 91)
+                    IFEQ L1
+                    NEW org.springframework.beans.factory.support.RootBeanDefinition   (line 92)
+                    DUP
+                    LDC org.springframework.jmx.support.WebSphereMBeanServerFactoryBean
+                    INVOKESPECIAL org.springframework.beans.factory.support.RootBeanDefinition.<init> (Ljava/lang/Class;)V
+                    ARETURN
+                L1: ACONST_NULL   (line 95)
+                    ARETURN
+  end static org.springframework.beans.factory.support.AbstractBeanDefinition findServerForSpecialEnvironment()
+end  class org.springframework.context.config.MBeanServerBeanDefinitionParser
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.beans.factory.xml.ParserContext'
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

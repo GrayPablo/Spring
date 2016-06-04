@@ -1,0 +1,936 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114254.597.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.core.SimpleAliasRegistry extends java.lang.Object implements org.springframework.core.AliasRegistry:
+  private final java.util.Map aliasMap [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)]
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 38)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.SimpleAliasRegistry.<init>())
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 41)
+    |               NEW java.util.concurrent.ConcurrentHashMap
+    |               DUP
+    |               INVOKESPECIAL java.util.concurrent.ConcurrentHashMap.<init> ()V
+    |               PUTFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+    |               RETURN   (line 38)
+    constructor-execution(void org.springframework.core.SimpleAliasRegistry.<init>())
+  end public void <init>()
+
+  public void registerAlias(String, String):
+                    ALOAD_1     // Ljava/lang/String; name   (line 45)
+                    LDC "'name' must not be empty"
+                    INVOKESTATIC org.springframework.util.Assert.hasText (Ljava/lang/String;Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; alias   (line 46)
+                    LDC "'alias' must not be empty"
+                    INVOKESTATIC org.springframework.util.Assert.hasText (Ljava/lang/String;Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; alias   (line 47)
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 48)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    ALOAD_2     // Ljava/lang/String; alias
+                    INVOKEINTERFACE java.util.Map.remove (Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    GOTO L2
+                L0: ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 51)
+                    INVOKEVIRTUAL org.springframework.core.SimpleAliasRegistry.allowAliasOverriding ()Z
+                    IFNE L1
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 52)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    ALOAD_2     // Ljava/lang/String; alias
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; registeredName   (line 53)
+                    IFNULL L1
+                    ALOAD_3     // Ljava/lang/String; registeredName
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L1
+                    NEW java.lang.IllegalStateException   (line 54)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Cannot register alias '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; alias
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' for name '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; name   (line 55)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "': It is already registered for name '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/lang/String; registeredName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'."
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 54)
+                    ATHROW
+                L1: ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 58)
+                    ALOAD_1     // Ljava/lang/String; name
+                    ALOAD_2     // Ljava/lang/String; alias
+                    INVOKEVIRTUAL org.springframework.core.SimpleAliasRegistry.checkForAliasCircle (Ljava/lang/String;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 59)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    ALOAD_2     // Ljava/lang/String; alias
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                L2: RETURN   (line 61)
+  end public void registerAlias(String, String)
+
+  protected boolean allowAliasOverriding():
+                    ICONST_1   (line 68)
+                    IRETURN
+  end protected boolean allowAliasOverriding()
+
+  public void removeAlias(String):
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 72)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    ALOAD_1     // Ljava/lang/String; alias
+                    INVOKEINTERFACE java.util.Map.remove (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; name   (line 73)
+                    IFNONNULL L0
+                    NEW java.lang.IllegalStateException   (line 74)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "No alias '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; alias
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' registered"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: RETURN   (line 76)
+  end public void removeAlias(String)
+
+  public boolean isAlias(String):
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 79)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE java.util.Map.containsKey (Ljava/lang/Object;)Z
+                    IRETURN
+  end public boolean isAlias(String)
+
+  public String[] getAliases(String):
+                    NEW java.util.ArrayList   (line 83)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 84)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    DUP
+                    ASTORE_3
+                    MONITORENTER
+    finally -> E1
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 85)
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               ALOAD_2     // Ljava/util/List; result
+    |               INVOKESPECIAL org.springframework.core.SimpleAliasRegistry.retrieveAliases (Ljava/lang/String;Ljava/util/List;)V
+    |               ALOAD_3   (line 84)
+    |               MONITOREXIT
+    finally -> E1
+                    GOTO L0
+    finally -> E1
+    |           E1: ALOAD_3
+    |               MONITOREXIT
+    finally -> E1
+                    ATHROW
+                L0: ALOAD_2     // Ljava/util/List; result   (line 87)
+                    INVOKESTATIC org.springframework.util.StringUtils.toStringArray (Ljava/util/Collection;)[Ljava/lang/String;
+                    ARETURN
+  end public String[] getAliases(String)
+
+  private void retrieveAliases(String, java.util.List):
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 96)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 4
+                    GOTO L1
+                L0: ALOAD 4
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.util.Map$Entry
+                    ASTORE_3
+                    ALOAD_3     // Ljava/util/Map$Entry; entry   (line 97)
+                    INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 5
+                    ALOAD 5     // Ljava/lang/String; registeredName   (line 98)
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_3     // Ljava/util/Map$Entry; entry   (line 99)
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 6
+                    ALOAD_2     // Ljava/util/List; result   (line 100)
+                    ALOAD 6     // Ljava/lang/String; alias
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 101)
+                    ALOAD 6     // Ljava/lang/String; alias
+                    ALOAD_2     // Ljava/util/List; result
+                    INVOKESPECIAL org.springframework.core.SimpleAliasRegistry.retrieveAliases (Ljava/lang/String;Ljava/util/List;)V
+                L1: ALOAD 4   (line 96)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    RETURN   (line 104)
+  end private void retrieveAliases(String, java.util.List)
+
+  public void resolveAliases(org.springframework.util.StringValueResolver):
+                    ALOAD_1     // Lorg/springframework/util/StringValueResolver; valueResolver   (line 114)
+                    LDC "StringValueResolver must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 115)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    DUP
+                    ASTORE_2
+                    MONITORENTER
+    finally -> E1
+    |               NEW java.util.HashMap   (line 116)
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this
+    |               GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+    |               INVOKESPECIAL java.util.HashMap.<init> (Ljava/util/Map;)V
+    |               ASTORE_3
+    |               ALOAD_3     // Ljava/util/Map; aliasCopy   (line 117)
+    |               INVOKEINTERFACE java.util.Map.keySet ()Ljava/util/Set;
+    |               INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+    |               ASTORE 5
+    |               GOTO L4
+    |           L0: ALOAD 5
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST java.lang.String
+    |               ASTORE 4
+    |               ALOAD_3     // Ljava/util/Map; aliasCopy   (line 118)
+    |               ALOAD 4     // Ljava/lang/String; alias
+    |               INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               CHECKCAST java.lang.String
+    |               ASTORE 6
+    |               ALOAD_1     // Lorg/springframework/util/StringValueResolver; valueResolver   (line 119)
+    |               ALOAD 4     // Ljava/lang/String; alias
+    |               INVOKEINTERFACE org.springframework.util.StringValueResolver.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+    |               ASTORE 7
+    |               ALOAD_1     // Lorg/springframework/util/StringValueResolver; valueResolver   (line 120)
+    |               ALOAD 6     // Ljava/lang/String; registeredName
+    |               INVOKEINTERFACE org.springframework.util.StringValueResolver.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+    |               ASTORE 8
+    |               ALOAD 7     // Ljava/lang/String; resolvedAlias   (line 121)
+    |               ALOAD 8     // Ljava/lang/String; resolvedName
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFEQ L1
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 122)
+    |               GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+    |               ALOAD 4     // Ljava/lang/String; alias
+    |               INVOKEINTERFACE java.util.Map.remove (Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GOTO L4
+    |           L1: ALOAD 7     // Ljava/lang/String; resolvedAlias   (line 124)
+    |               ALOAD 4     // Ljava/lang/String; alias
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFNE L3
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 125)
+    |               GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+    |               ALOAD 7     // Ljava/lang/String; resolvedAlias
+    |               INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               CHECKCAST java.lang.String
+    |               ASTORE 9
+    |               ALOAD 9     // Ljava/lang/String; existingName   (line 126)
+    |               IFNULL L2
+    |               ALOAD 9     // Ljava/lang/String; existingName
+    |               ALOAD 8     // Ljava/lang/String; resolvedName
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFNE L2
+    |               NEW java.lang.IllegalStateException   (line 127)
+    |               DUP
+    |               NEW java.lang.StringBuilder   (line 128)
+    |               DUP
+    |               LDC "Cannot register resolved alias '"
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD 7     // Ljava/lang/String; resolvedAlias
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "' (original: '"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               ALOAD 4     // Ljava/lang/String; alias
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "') for name '"   (line 129)
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               ALOAD 8     // Ljava/lang/String; resolvedName
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "': It is already registered for name '"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               ALOAD 6     // Ljava/lang/String; registeredName   (line 130)
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "'."
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;   (line 128)
+    |               INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 127)
+    |               ATHROW
+    |           L2: ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 132)
+    |               ALOAD 8     // Ljava/lang/String; resolvedName
+    |               ALOAD 7     // Ljava/lang/String; resolvedAlias
+    |               INVOKEVIRTUAL org.springframework.core.SimpleAliasRegistry.checkForAliasCircle (Ljava/lang/String;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 133)
+    |               GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+    |               ALOAD 4     // Ljava/lang/String; alias
+    |               INVOKEINTERFACE java.util.Map.remove (Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 134)
+    |               GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+    |               ALOAD 7     // Ljava/lang/String; resolvedAlias
+    |               ALOAD 8     // Ljava/lang/String; resolvedName
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GOTO L4
+    |           L3: ALOAD 6     // Ljava/lang/String; registeredName   (line 136)
+    |               ALOAD 8     // Ljava/lang/String; resolvedName
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFNE L4
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 137)
+    |               GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+    |               ALOAD 4     // Ljava/lang/String; alias
+    |               ALOAD 8     // Ljava/lang/String; resolvedName
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |           L4: ALOAD 5   (line 117)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L0
+    |               ALOAD_2   (line 115)
+    |               MONITOREXIT
+    finally -> E1
+                    GOTO L5
+    finally -> E1
+    |           E1: ALOAD_2
+    |               MONITOREXIT
+    finally -> E1
+                    ATHROW
+                L5: RETURN   (line 141)
+  end public void resolveAliases(org.springframework.util.StringValueResolver)
+
+  public String canonicalName(String):
+                    ALOAD_1     // Ljava/lang/String; name   (line 149)
+                    ASTORE_2
+                L0: ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 153)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    ALOAD_2     // Ljava/lang/String; canonicalName
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; resolvedName   (line 154)
+                    IFNULL L1
+                    ALOAD_3     // Ljava/lang/String; resolvedName   (line 155)
+                    ASTORE_2     // Ljava/lang/String; canonicalName
+                L1: ALOAD_3     // Ljava/lang/String; resolvedName   (line 158)
+                    IFNONNULL L0
+                    ALOAD_2     // Ljava/lang/String; canonicalName   (line 159)
+                    ARETURN
+  end public String canonicalName(String)
+
+  protected void checkForAliasCircle(String, String):
+                    ALOAD_2     // Ljava/lang/String; alias   (line 171)
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEVIRTUAL org.springframework.core.SimpleAliasRegistry.canonicalName (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    NEW java.lang.IllegalStateException   (line 172)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Cannot register alias '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; alias
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' for name '"   (line 173)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "': Circular reference - '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; name   (line 174)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' is a direct or indirect alias for '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_2     // Ljava/lang/String; alias
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' already"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 172)
+                    ATHROW
+                L0: RETURN   (line 176)
+  end protected void checkForAliasCircle(String, String)
+
+end public class org.springframework.core.SimpleAliasRegistry
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.core.SimpleAliasRegistry extends java.lang.Object implements org.springframework.core.AliasRegistry:
+  private final java.util.Map aliasMap [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)]
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 38)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.SimpleAliasRegistry.<init>())
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 41)
+    |               NEW java.util.concurrent.ConcurrentHashMap
+    |               DUP
+    |               INVOKESPECIAL java.util.concurrent.ConcurrentHashMap.<init> ()V
+    |               PUTFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+    |               RETURN   (line 38)
+    constructor-execution(void org.springframework.core.SimpleAliasRegistry.<init>())
+  end public void <init>()
+
+  public void registerAlias(String, String):
+                    ALOAD_1     // Ljava/lang/String; name   (line 45)
+                    LDC "'name' must not be empty"
+                    INVOKESTATIC org.springframework.util.Assert.hasText (Ljava/lang/String;Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; alias   (line 46)
+                    LDC "'alias' must not be empty"
+                    INVOKESTATIC org.springframework.util.Assert.hasText (Ljava/lang/String;Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; alias   (line 47)
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 48)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    ALOAD_2     // Ljava/lang/String; alias
+                    INVOKEINTERFACE java.util.Map.remove (Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    GOTO L2
+                L0: ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 51)
+                    INVOKEVIRTUAL org.springframework.core.SimpleAliasRegistry.allowAliasOverriding ()Z
+                    IFNE L1
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 52)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    ALOAD_2     // Ljava/lang/String; alias
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; registeredName   (line 53)
+                    IFNULL L1
+                    ALOAD_3     // Ljava/lang/String; registeredName
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L1
+                    NEW java.lang.IllegalStateException   (line 54)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Cannot register alias '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; alias
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' for name '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; name   (line 55)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "': It is already registered for name '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/lang/String; registeredName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'."
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 54)
+                    ATHROW
+                L1: ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 58)
+                    ALOAD_1     // Ljava/lang/String; name
+                    ALOAD_2     // Ljava/lang/String; alias
+                    INVOKEVIRTUAL org.springframework.core.SimpleAliasRegistry.checkForAliasCircle (Ljava/lang/String;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 59)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    ALOAD_2     // Ljava/lang/String; alias
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                L2: RETURN   (line 61)
+  end public void registerAlias(String, String)
+
+  protected boolean allowAliasOverriding():
+                    ICONST_1   (line 68)
+                    IRETURN
+  end protected boolean allowAliasOverriding()
+
+  public void removeAlias(String):
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 72)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    ALOAD_1     // Ljava/lang/String; alias
+                    INVOKEINTERFACE java.util.Map.remove (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; name   (line 73)
+                    IFNONNULL L0
+                    NEW java.lang.IllegalStateException   (line 74)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "No alias '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; alias
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' registered"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: RETURN   (line 76)
+  end public void removeAlias(String)
+
+  public boolean isAlias(String):
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 79)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE java.util.Map.containsKey (Ljava/lang/Object;)Z
+                    IRETURN
+  end public boolean isAlias(String)
+
+  public String[] getAliases(String):
+                    NEW java.util.ArrayList   (line 83)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 84)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    DUP
+                    ASTORE_3
+                    MONITORENTER
+    finally -> E1
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 85)
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               ALOAD_2     // Ljava/util/List; result
+    |               INVOKESPECIAL org.springframework.core.SimpleAliasRegistry.retrieveAliases (Ljava/lang/String;Ljava/util/List;)V
+    |               ALOAD_3   (line 84)
+    |               MONITOREXIT
+    finally -> E1
+                    GOTO L0
+    finally -> E1
+    |           E1: ALOAD_3
+    |               MONITOREXIT
+    finally -> E1
+                    ATHROW
+                L0: ALOAD_2     // Ljava/util/List; result   (line 87)
+                    INVOKESTATIC org.springframework.util.StringUtils.toStringArray (Ljava/util/Collection;)[Ljava/lang/String;
+                    ARETURN
+  end public String[] getAliases(String)
+
+  private void retrieveAliases(String, java.util.List):
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 96)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 4
+                    GOTO L1
+                L0: ALOAD 4
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.util.Map$Entry
+                    ASTORE_3
+                    ALOAD_3     // Ljava/util/Map$Entry; entry   (line 97)
+                    INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 5
+                    ALOAD 5     // Ljava/lang/String; registeredName   (line 98)
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_3     // Ljava/util/Map$Entry; entry   (line 99)
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 6
+                    ALOAD_2     // Ljava/util/List; result   (line 100)
+                    ALOAD 6     // Ljava/lang/String; alias
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 101)
+                    ALOAD 6     // Ljava/lang/String; alias
+                    ALOAD_2     // Ljava/util/List; result
+                    INVOKESPECIAL org.springframework.core.SimpleAliasRegistry.retrieveAliases (Ljava/lang/String;Ljava/util/List;)V
+                L1: ALOAD 4   (line 96)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    RETURN   (line 104)
+  end private void retrieveAliases(String, java.util.List)
+
+  public void resolveAliases(org.springframework.util.StringValueResolver):
+                    ALOAD_1     // Lorg/springframework/util/StringValueResolver; valueResolver   (line 114)
+                    LDC "StringValueResolver must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 115)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    DUP
+                    ASTORE_2
+                    MONITORENTER
+    finally -> E1
+    |               NEW java.util.HashMap   (line 116)
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this
+    |               GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+    |               INVOKESPECIAL java.util.HashMap.<init> (Ljava/util/Map;)V
+    |               ASTORE_3
+    |               ALOAD_3     // Ljava/util/Map; aliasCopy   (line 117)
+    |               INVOKEINTERFACE java.util.Map.keySet ()Ljava/util/Set;
+    |               INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+    |               ASTORE 5
+    |               GOTO L4
+    |           L0: ALOAD 5
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST java.lang.String
+    |               ASTORE 4
+    |               ALOAD_3     // Ljava/util/Map; aliasCopy   (line 118)
+    |               ALOAD 4     // Ljava/lang/String; alias
+    |               INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               CHECKCAST java.lang.String
+    |               ASTORE 6
+    |               ALOAD_1     // Lorg/springframework/util/StringValueResolver; valueResolver   (line 119)
+    |               ALOAD 4     // Ljava/lang/String; alias
+    |               INVOKEINTERFACE org.springframework.util.StringValueResolver.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+    |               ASTORE 7
+    |               ALOAD_1     // Lorg/springframework/util/StringValueResolver; valueResolver   (line 120)
+    |               ALOAD 6     // Ljava/lang/String; registeredName
+    |               INVOKEINTERFACE org.springframework.util.StringValueResolver.resolveStringValue (Ljava/lang/String;)Ljava/lang/String;
+    |               ASTORE 8
+    |               ALOAD 7     // Ljava/lang/String; resolvedAlias   (line 121)
+    |               ALOAD 8     // Ljava/lang/String; resolvedName
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFEQ L1
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 122)
+    |               GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+    |               ALOAD 4     // Ljava/lang/String; alias
+    |               INVOKEINTERFACE java.util.Map.remove (Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GOTO L4
+    |           L1: ALOAD 7     // Ljava/lang/String; resolvedAlias   (line 124)
+    |               ALOAD 4     // Ljava/lang/String; alias
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFNE L3
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 125)
+    |               GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+    |               ALOAD 7     // Ljava/lang/String; resolvedAlias
+    |               INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               CHECKCAST java.lang.String
+    |               ASTORE 9
+    |               ALOAD 9     // Ljava/lang/String; existingName   (line 126)
+    |               IFNULL L2
+    |               ALOAD 9     // Ljava/lang/String; existingName
+    |               ALOAD 8     // Ljava/lang/String; resolvedName
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFNE L2
+    |               NEW java.lang.IllegalStateException   (line 127)
+    |               DUP
+    |               NEW java.lang.StringBuilder   (line 128)
+    |               DUP
+    |               LDC "Cannot register resolved alias '"
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD 7     // Ljava/lang/String; resolvedAlias
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "' (original: '"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               ALOAD 4     // Ljava/lang/String; alias
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "') for name '"   (line 129)
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               ALOAD 8     // Ljava/lang/String; resolvedName
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "': It is already registered for name '"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               ALOAD 6     // Ljava/lang/String; registeredName   (line 130)
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "'."
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;   (line 128)
+    |               INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 127)
+    |               ATHROW
+    |           L2: ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 132)
+    |               ALOAD 8     // Ljava/lang/String; resolvedName
+    |               ALOAD 7     // Ljava/lang/String; resolvedAlias
+    |               INVOKEVIRTUAL org.springframework.core.SimpleAliasRegistry.checkForAliasCircle (Ljava/lang/String;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 133)
+    |               GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+    |               ALOAD 4     // Ljava/lang/String; alias
+    |               INVOKEINTERFACE java.util.Map.remove (Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 134)
+    |               GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+    |               ALOAD 7     // Ljava/lang/String; resolvedAlias
+    |               ALOAD 8     // Ljava/lang/String; resolvedName
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GOTO L4
+    |           L3: ALOAD 6     // Ljava/lang/String; registeredName   (line 136)
+    |               ALOAD 8     // Ljava/lang/String; resolvedName
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFNE L4
+    |               ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 137)
+    |               GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+    |               ALOAD 4     // Ljava/lang/String; alias
+    |               ALOAD 8     // Ljava/lang/String; resolvedName
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |           L4: ALOAD 5   (line 117)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L0
+    |               ALOAD_2   (line 115)
+    |               MONITOREXIT
+    finally -> E1
+                    GOTO L5
+    finally -> E1
+    |           E1: ALOAD_2
+    |               MONITOREXIT
+    finally -> E1
+                    ATHROW
+                L5: RETURN   (line 141)
+  end public void resolveAliases(org.springframework.util.StringValueResolver)
+
+  public String canonicalName(String):
+                    ALOAD_1     // Ljava/lang/String; name   (line 149)
+                    ASTORE_2
+                L0: ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this   (line 153)
+                    GETFIELD org.springframework.core.SimpleAliasRegistry.aliasMap Ljava/util/Map;
+                    ALOAD_2     // Ljava/lang/String; canonicalName
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; resolvedName   (line 154)
+                    IFNULL L1
+                    ALOAD_3     // Ljava/lang/String; resolvedName   (line 155)
+                    ASTORE_2     // Ljava/lang/String; canonicalName
+                L1: ALOAD_3     // Ljava/lang/String; resolvedName   (line 158)
+                    IFNONNULL L0
+                    ALOAD_2     // Ljava/lang/String; canonicalName   (line 159)
+                    ARETURN
+  end public String canonicalName(String)
+
+  protected void checkForAliasCircle(String, String):
+                    ALOAD_2     // Ljava/lang/String; alias   (line 171)
+                    ALOAD_0     // Lorg/springframework/core/SimpleAliasRegistry; this
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEVIRTUAL org.springframework.core.SimpleAliasRegistry.canonicalName (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    NEW java.lang.IllegalStateException   (line 172)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Cannot register alias '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; alias
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' for name '"   (line 173)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "': Circular reference - '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; name   (line 174)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' is a direct or indirect alias for '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_2     // Ljava/lang/String; alias
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' already"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 172)
+                    ATHROW
+                L0: RETURN   (line 176)
+  end protected void checkForAliasCircle(String, String)
+
+end public class org.springframework.core.SimpleAliasRegistry
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:665)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:615)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1752)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1464)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1273)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:394)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:281)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:95)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:52)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.createBeanFactory(AbstractRefreshableApplicationContext.java:195)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:128)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:527)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:441)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.curso.spring.springioc0007.Main.init(Main.java:29)
+	at com.curso.spring.springioc0007.Main.main(Main.java:24)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

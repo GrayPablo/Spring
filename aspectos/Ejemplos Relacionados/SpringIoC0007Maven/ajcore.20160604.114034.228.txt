@@ -1,0 +1,2082 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114034.228.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+info using configuration file:/C:/Users/usuario/.m2/repository/org/springframework/spring-aspects/3.1.2.RELEASE/spring-aspects-3.1.2.RELEASE.jar!/META-INF/aop.xml
+debug weaving 'org.springframework.context.support.AbstractApplicationContext'
+abort trouble in: 
+public abstract class org.springframework.context.support.AbstractApplicationContext extends org.springframework.core.io.DefaultResourceLoader implements org.springframework.context.ConfigurableApplicationContext, org.springframework.beans.factory.DisposableBean:
+  public static final String MESSAGE_SOURCE_BEAN_NAME = "messageSource"
+  public static final String LIFECYCLE_PROCESSOR_BEAN_NAME = "lifecycleProcessor"
+  public static final String APPLICATION_EVENT_MULTICASTER_BEAN_NAME = "applicationEventMulticaster"
+  protected final org.apache.commons.logging.Log logger
+  private String id
+  private String displayName
+  private org.springframework.context.ApplicationContext parent
+  private final java.util.List beanFactoryPostProcessors [Signature(Ljava/util/List<Lorg/springframework/beans/factory/config/BeanFactoryPostProcessor;>;)]
+  private long startupDate
+  private boolean active
+  private boolean closed
+  private final Object activeMonitor
+  private final Object startupShutdownMonitor
+  private Thread shutdownHook
+  private org.springframework.core.io.support.ResourcePatternResolver resourcePatternResolver
+  private org.springframework.context.LifecycleProcessor lifecycleProcessor
+  private org.springframework.context.MessageSource messageSource
+  private org.springframework.context.event.ApplicationEventMulticaster applicationEventMulticaster
+  private java.util.Set applicationListeners [Signature(Ljava/util/Set<Lorg/springframework/context/ApplicationListener<*>;>;)]
+  private org.springframework.core.env.ConfigurableEnvironment environment
+  static void <clinit>():
+    staticinitialization(void org.springframework.context.support.AbstractApplicationContext.<clinit>())
+    |               LDC org.springframework.context.event.ContextClosedEvent   (line 156)
+    |               INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    |               POP
+    |               RETURN   (line 126)
+    staticinitialization(void org.springframework.context.support.AbstractApplicationContext.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 217)
+                    ACONST_NULL
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.<init> (Lorg/springframework/context/ApplicationContext;)V
+    constructor-execution(void org.springframework.context.support.AbstractApplicationContext.<init>())
+    |               RETURN   (line 218)
+    constructor-execution(void org.springframework.context.support.AbstractApplicationContext.<init>())
+  end public void <init>()
+
+  public void <init>(org.springframework.context.ApplicationContext):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 224)
+                    INVOKESPECIAL org.springframework.core.io.DefaultResourceLoader.<init> ()V
+    constructor-execution(void org.springframework.context.support.AbstractApplicationContext.<init>(org.springframework.context.ApplicationContext))
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 161)
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 164)
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+    |               INVOKESTATIC org.springframework.util.ObjectUtils.identityToString (Ljava/lang/Object;)Ljava/lang/String;
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.id Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 167)
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+    |               INVOKESTATIC org.springframework.util.ObjectUtils.identityToString (Ljava/lang/Object;)Ljava/lang/String;
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.displayName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 173)
+    |               NEW java.util.ArrayList   (line 174)
+    |               DUP
+    |               INVOKESPECIAL java.util.ArrayList.<init> ()V
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.beanFactoryPostProcessors Ljava/util/List;
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 180)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.active Z
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 183)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.closed Z
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 186)
+    |               NEW java.lang.Object
+    |               DUP
+    |               INVOKESPECIAL java.lang.Object.<init> ()V
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.activeMonitor Ljava/lang/Object;
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 189)
+    |               NEW java.lang.Object
+    |               DUP
+    |               INVOKESPECIAL java.lang.Object.<init> ()V
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.startupShutdownMonitor Ljava/lang/Object;
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 207)
+    |               NEW java.util.LinkedHashSet
+    |               DUP
+    |               INVOKESPECIAL java.util.LinkedHashSet.<init> ()V
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.applicationListeners Ljava/util/Set;
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 225)
+    |               ALOAD_1     // Lorg/springframework/context/ApplicationContext; parent
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.parent Lorg/springframework/context/ApplicationContext;
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 226)
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+    |               INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getResourcePatternResolver ()Lorg/springframework/core/io/support/ResourcePatternResolver;
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.resourcePatternResolver Lorg/springframework/core/io/support/ResourcePatternResolver;
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 227)
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+    |               INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.createEnvironment ()Lorg/springframework/core/env/ConfigurableEnvironment;
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.environment Lorg/springframework/core/env/ConfigurableEnvironment;
+    |               RETURN   (line 228)
+    constructor-execution(void org.springframework.context.support.AbstractApplicationContext.<init>(org.springframework.context.ApplicationContext))
+  end public void <init>(org.springframework.context.ApplicationContext)
+
+  public void setId(String):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 242)
+                    ALOAD_1     // Ljava/lang/String; id
+                    PUTFIELD org.springframework.context.support.AbstractApplicationContext.id Ljava/lang/String;
+                    RETURN   (line 243)
+  end public void setId(String)
+
+  public String getId():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 250)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.id Ljava/lang/String;
+                    ARETURN
+  end public String getId()
+
+  public void setDisplayName(String):
+                    ALOAD_1     // Ljava/lang/String; displayName   (line 259)
+                    LDC "Display name must not be empty"
+                    INVOKESTATIC org.springframework.util.Assert.hasLength (Ljava/lang/String;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 260)
+                    ALOAD_1     // Ljava/lang/String; displayName
+                    PUTFIELD org.springframework.context.support.AbstractApplicationContext.displayName Ljava/lang/String;
+                    RETURN   (line 261)
+  end public void setDisplayName(String)
+
+  public String getDisplayName():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 268)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.displayName Ljava/lang/String;
+                    ARETURN
+  end public String getDisplayName()
+
+  public org.springframework.context.ApplicationContext getParent():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 276)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.parent Lorg/springframework/context/ApplicationContext;
+                    ARETURN
+  end public org.springframework.context.ApplicationContext getParent()
+
+  public org.springframework.core.env.ConfigurableEnvironment getEnvironment():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 280)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.environment Lorg/springframework/core/env/ConfigurableEnvironment;
+                    ARETURN
+  end public org.springframework.core.env.ConfigurableEnvironment getEnvironment()
+
+  public void setEnvironment(org.springframework.core.env.ConfigurableEnvironment):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 292)
+                    ALOAD_1     // Lorg/springframework/core/env/ConfigurableEnvironment; environment
+                    PUTFIELD org.springframework.context.support.AbstractApplicationContext.environment Lorg/springframework/core/env/ConfigurableEnvironment;
+                    RETURN   (line 293)
+  end public void setEnvironment(org.springframework.core.env.ConfigurableEnvironment)
+
+  public org.springframework.beans.factory.config.AutowireCapableBeanFactory getAutowireCapableBeanFactory() throws java.lang.IllegalStateException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 301)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ARETURN
+  end public org.springframework.beans.factory.config.AutowireCapableBeanFactory getAutowireCapableBeanFactory() throws java.lang.IllegalStateException
+
+  public long getStartupDate():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 308)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.startupDate J
+                    LRETURN
+  end public long getStartupDate()
+
+  public void publishEvent(org.springframework.context.ApplicationEvent):
+                    ALOAD_1     // Lorg/springframework/context/ApplicationEvent; event   (line 320)
+                    LDC "Event must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 321)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 322)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Publishing event in "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getDisplayName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Lorg/springframework/context/ApplicationEvent; event
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;)V
+                L0: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 324)
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster ()Lorg/springframework/context/event/ApplicationEventMulticaster;
+                    ALOAD_1     // Lorg/springframework/context/ApplicationEvent; event
+                    INVOKEINTERFACE org.springframework.context.event.ApplicationEventMulticaster.multicastEvent (Lorg/springframework/context/ApplicationEvent;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 325)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.parent Lorg/springframework/context/ApplicationContext;
+                    IFNULL L1
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 326)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.parent Lorg/springframework/context/ApplicationContext;
+                    ALOAD_1     // Lorg/springframework/context/ApplicationEvent; event
+                    INVOKEINTERFACE org.springframework.context.ApplicationContext.publishEvent (Lorg/springframework/context/ApplicationEvent;)V
+                L1: RETURN   (line 328)
+  end public void publishEvent(org.springframework.context.ApplicationEvent)
+
+  private org.springframework.context.event.ApplicationEventMulticaster getApplicationEventMulticaster() throws java.lang.IllegalStateException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 336)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.applicationEventMulticaster Lorg/springframework/context/event/ApplicationEventMulticaster;
+                    IFNONNULL L0
+                    NEW java.lang.IllegalStateException   (line 337)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 338)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 337)
+                    ATHROW
+                L0: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 340)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.applicationEventMulticaster Lorg/springframework/context/event/ApplicationEventMulticaster;
+                    ARETURN
+  end private org.springframework.context.event.ApplicationEventMulticaster getApplicationEventMulticaster() throws java.lang.IllegalStateException
+
+  private org.springframework.context.LifecycleProcessor getLifecycleProcessor():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 349)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.lifecycleProcessor Lorg/springframework/context/LifecycleProcessor;
+                    IFNONNULL L0
+                    NEW java.lang.IllegalStateException   (line 350)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 351)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 350)
+                    ATHROW
+                L0: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 353)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.lifecycleProcessor Lorg/springframework/context/LifecycleProcessor;
+                    ARETURN
+  end private org.springframework.context.LifecycleProcessor getLifecycleProcessor()
+
+  protected org.springframework.core.io.support.ResourcePatternResolver getResourcePatternResolver():
+                    NEW org.springframework.core.io.support.PathMatchingResourcePatternResolver   (line 371)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKESPECIAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init> (Lorg/springframework/core/io/ResourceLoader;)V
+                    ARETURN
+  end protected org.springframework.core.io.support.ResourcePatternResolver getResourcePatternResolver()
+
+  public void setParent(org.springframework.context.ApplicationContext):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 388)
+                    ALOAD_1     // Lorg/springframework/context/ApplicationContext; parent
+                    PUTFIELD org.springframework.context.support.AbstractApplicationContext.parent Lorg/springframework/context/ApplicationContext;
+                    ALOAD_1     // Lorg/springframework/context/ApplicationContext; parent   (line 389)
+                    IFNULL L0
+                    ALOAD_1     // Lorg/springframework/context/ApplicationContext; parent   (line 390)
+                    INVOKEINTERFACE org.springframework.context.ApplicationContext.getEnvironment ()Lorg/springframework/core/env/Environment;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Object; parentEnvironment   (line 391)
+                    INSTANCEOF org.springframework.core.env.ConfigurableEnvironment
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 392)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.environment Lorg/springframework/core/env/ConfigurableEnvironment;
+                    ALOAD_2     // Ljava/lang/Object; parentEnvironment
+                    CHECKCAST org.springframework.core.env.ConfigurableEnvironment
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurableEnvironment.merge (Lorg/springframework/core/env/ConfigurableEnvironment;)V
+                L0: RETURN   (line 395)
+  end public void setParent(org.springframework.context.ApplicationContext)
+
+  public void addBeanFactoryPostProcessor(org.springframework.beans.factory.config.BeanFactoryPostProcessor):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 398)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.beanFactoryPostProcessors Ljava/util/List;
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanFactoryPostProcessor; beanFactoryPostProcessor
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    RETURN   (line 399)
+  end public void addBeanFactoryPostProcessor(org.springframework.beans.factory.config.BeanFactoryPostProcessor)
+
+  public java.util.List getBeanFactoryPostProcessors():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 407)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.beanFactoryPostProcessors Ljava/util/List;
+                    ARETURN
+  end public java.util.List getBeanFactoryPostProcessors()
+
+  public void addApplicationListener(org.springframework.context.ApplicationListener):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 411)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.applicationEventMulticaster Lorg/springframework/context/event/ApplicationEventMulticaster;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 412)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.applicationEventMulticaster Lorg/springframework/context/event/ApplicationEventMulticaster;
+                    ALOAD_1     // Lorg/springframework/context/ApplicationListener; listener
+                    INVOKEINTERFACE org.springframework.context.event.ApplicationEventMulticaster.addApplicationListener (Lorg/springframework/context/ApplicationListener;)V
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 415)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.applicationListeners Ljava/util/Set;
+                    ALOAD_1     // Lorg/springframework/context/ApplicationListener; listener
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L1: RETURN   (line 417)
+  end public void addApplicationListener(org.springframework.context.ApplicationListener)
+
+  public java.util.Collection getApplicationListeners():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 423)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.applicationListeners Ljava/util/Set;
+                    ARETURN
+  end public java.util.Collection getApplicationListeners()
+
+  protected org.springframework.core.env.ConfigurableEnvironment createEnvironment():
+                    NEW org.springframework.core.env.StandardEnvironment   (line 432)
+                    DUP
+                    INVOKESPECIAL org.springframework.core.env.StandardEnvironment.<init> ()V
+                    ARETURN
+  end protected org.springframework.core.env.ConfigurableEnvironment createEnvironment()
+
+  public void refresh() throws org.springframework.beans.BeansException, java.lang.IllegalStateException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 436)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.startupShutdownMonitor Ljava/lang/Object;
+                    DUP
+                    ASTORE_1
+                    MONITORENTER
+    finally -> E2
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 438)
+    |               INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.prepareRefresh ()V
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 441)
+    |               INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+    |               ASTORE_2
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 444)
+    |               ALOAD_2     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+    |               INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.prepareBeanFactory (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
+    | catch org.springframework.beans.BeansException -> E0
+    | |             ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 448)
+    | |             ALOAD_2     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+    | |             INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.postProcessBeanFactory (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
+    | |             ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 451)
+    | |             ALOAD_2     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+    | |             INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
+    | |             ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 454)
+    | |             ALOAD_2     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+    | |             INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
+    | |             ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 457)
+    | |             INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.initMessageSource ()V
+    | |             ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 460)
+    | |             INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.initApplicationEventMulticaster ()V
+    | |             ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 463)
+    | |             INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.onRefresh ()V
+    | |             ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 466)
+    | |             INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.registerListeners ()V
+    | |             ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 469)
+    | |             ALOAD_2     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+    | |             INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
+    | |             ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 472)
+    | |             INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.finishRefresh ()V
+    | catch org.springframework.beans.BeansException -> E0
+    |               GOTO L0
+    |           E0: ASTORE_3   (line 475)
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 477)
+    |               INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.destroyBeans ()V
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 480)
+    |               ALOAD_3     // Lorg/springframework/beans/BeansException; ex
+    |               INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.cancelRefresh (Lorg/springframework/beans/BeansException;)V
+    |               ALOAD_3     // Lorg/springframework/beans/BeansException; ex   (line 483)
+    |               ATHROW
+    |           L0: ALOAD_1   (line 436)
+    |               MONITOREXIT
+    finally -> E2
+                    GOTO L1
+    finally -> E2
+    |           E2: ALOAD_1
+    |               MONITOREXIT
+    finally -> E2
+                    ATHROW
+                L1: RETURN   (line 486)
+  end public void refresh() throws org.springframework.beans.BeansException, java.lang.IllegalStateException
+
+  protected void prepareRefresh():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 493)
+                    INVOKESTATIC java.lang.System.currentTimeMillis ()J
+                    PUTFIELD org.springframework.context.support.AbstractApplicationContext.startupDate J
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 495)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.activeMonitor Ljava/lang/Object;
+                    DUP
+                    ASTORE_1
+                    MONITORENTER
+    finally -> E1
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 496)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.active Z
+    |               ALOAD_1   (line 495)
+    |               MONITOREXIT
+    finally -> E1
+                    GOTO L0
+    finally -> E1
+    |           E1: ALOAD_1
+    |               MONITOREXIT
+    finally -> E1
+                    ATHROW
+                L0: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 499)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isInfoEnabled ()Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 500)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Refreshing "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.info (Ljava/lang/Object;)V
+                L1: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 504)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.initPropertySources ()V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 508)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.environment Lorg/springframework/core/env/ConfigurableEnvironment;
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurableEnvironment.validateRequiredProperties ()V
+                    RETURN   (line 509)
+  end protected void prepareRefresh()
+
+  protected void initPropertySources():
+                    RETURN   (line 518)
+  end protected void initPropertySources()
+
+  protected org.springframework.beans.factory.config.ConfigurableListableBeanFactory obtainFreshBeanFactory():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 527)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.refreshBeanFactory ()V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 528)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ASTORE_1
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 529)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 530)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Bean factory for "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getDisplayName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L0: ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 532)
+                    ARETURN
+  end protected org.springframework.beans.factory.config.ConfigurableListableBeanFactory obtainFreshBeanFactory()
+
+  protected void prepareBeanFactory(org.springframework.beans.factory.config.ConfigurableListableBeanFactory):
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 542)
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getClassLoader ()Ljava/lang/ClassLoader;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.setBeanClassLoader (Ljava/lang/ClassLoader;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 543)
+                    NEW org.springframework.context.expression.StandardBeanExpressionResolver
+                    DUP
+                    INVOKESPECIAL org.springframework.context.expression.StandardBeanExpressionResolver.<init> ()V
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.setBeanExpressionResolver (Lorg/springframework/beans/factory/config/BeanExpressionResolver;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 544)
+                    NEW org.springframework.beans.support.ResourceEditorRegistrar
+                    DUP
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getEnvironment ()Lorg/springframework/core/env/ConfigurableEnvironment;
+                    INVOKESPECIAL org.springframework.beans.support.ResourceEditorRegistrar.<init> (Lorg/springframework/core/io/ResourceLoader;Lorg/springframework/core/env/PropertyResolver;)V
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.addPropertyEditorRegistrar (Lorg/springframework/beans/PropertyEditorRegistrar;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 547)
+                    NEW org.springframework.context.support.ApplicationContextAwareProcessor
+                    DUP
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKESPECIAL org.springframework.context.support.ApplicationContextAwareProcessor.<init> (Lorg/springframework/context/ConfigurableApplicationContext;)V
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.addBeanPostProcessor (Lorg/springframework/beans/factory/config/BeanPostProcessor;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 548)
+                    LDC_W org.springframework.context.ResourceLoaderAware
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.ignoreDependencyInterface (Ljava/lang/Class;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 549)
+                    LDC_W org.springframework.context.ApplicationEventPublisherAware
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.ignoreDependencyInterface (Ljava/lang/Class;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 550)
+                    LDC_W org.springframework.context.MessageSourceAware
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.ignoreDependencyInterface (Ljava/lang/Class;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 551)
+                    LDC_W org.springframework.context.ApplicationContextAware
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.ignoreDependencyInterface (Ljava/lang/Class;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 552)
+                    LDC_W org.springframework.context.EnvironmentAware
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.ignoreDependencyInterface (Ljava/lang/Class;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 556)
+                    LDC_W org.springframework.beans.factory.BeanFactory
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.registerResolvableDependency (Ljava/lang/Class;Ljava/lang/Object;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 557)
+                    LDC_W org.springframework.core.io.ResourceLoader
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.registerResolvableDependency (Ljava/lang/Class;Ljava/lang/Object;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 558)
+                    LDC_W org.springframework.context.ApplicationEventPublisher
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.registerResolvableDependency (Ljava/lang/Class;Ljava/lang/Object;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 559)
+                    LDC org.springframework.context.ApplicationContext
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.registerResolvableDependency (Ljava/lang/Class;Ljava/lang/Object;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 562)
+                    LDC_W "loadTimeWeaver"
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.containsBean (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 563)
+                    NEW org.springframework.context.weaving.LoadTimeWeaverAwareProcessor
+                    DUP
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    INVOKESPECIAL org.springframework.context.weaving.LoadTimeWeaverAwareProcessor.<init> (Lorg/springframework/beans/factory/BeanFactory;)V
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.addBeanPostProcessor (Lorg/springframework/beans/factory/config/BeanPostProcessor;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 565)
+                    NEW org.springframework.context.support.ContextTypeMatchClassLoader
+                    DUP
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBeanClassLoader ()Ljava/lang/ClassLoader;
+                    INVOKESPECIAL org.springframework.context.support.ContextTypeMatchClassLoader.<init> (Ljava/lang/ClassLoader;)V
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.setTempClassLoader (Ljava/lang/ClassLoader;)V
+                L0: ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 569)
+                    LDC_W "environment"
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.containsBean (Ljava/lang/String;)Z
+                    IFNE L1
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 570)
+                    LDC_W "environment"
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getEnvironment ()Lorg/springframework/core/env/ConfigurableEnvironment;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.registerSingleton (Ljava/lang/String;Ljava/lang/Object;)V
+                L1: ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 573)
+                    LDC_W "systemProperties"
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.containsBean (Ljava/lang/String;)Z
+                    IFNE L2
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 574)
+                    LDC_W "systemProperties"
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getEnvironment ()Lorg/springframework/core/env/ConfigurableEnvironment;
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurableEnvironment.getSystemProperties ()Ljava/util/Map;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.registerSingleton (Ljava/lang/String;Ljava/lang/Object;)V
+                L2: ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 577)
+                    LDC_W "systemEnvironment"
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.containsBean (Ljava/lang/String;)Z
+                    IFNE L3
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 578)
+                    LDC_W "systemEnvironment"
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getEnvironment ()Lorg/springframework/core/env/ConfigurableEnvironment;
+                    INVOKEINTERFACE org.springframework.core.env.ConfigurableEnvironment.getSystemEnvironment ()Ljava/util/Map;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.registerSingleton (Ljava/lang/String;Ljava/lang/Object;)V
+                L3: RETURN   (line 580)
+  end protected void prepareBeanFactory(org.springframework.beans.factory.config.ConfigurableListableBeanFactory)
+
+  protected void postProcessBeanFactory(org.springframework.beans.factory.config.ConfigurableListableBeanFactory):
+                    RETURN   (line 590)
+  end protected void postProcessBeanFactory(org.springframework.beans.factory.config.ConfigurableListableBeanFactory)
+
+  protected void invokeBeanFactoryPostProcessors(org.springframework.beans.factory.config.ConfigurableListableBeanFactory):
+                    NEW java.util.HashSet   (line 599)
+                    DUP
+                    INVOKESPECIAL java.util.HashSet.<init> ()V
+                    ASTORE_2
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 600)
+                    INSTANCEOF org.springframework.beans.factory.support.BeanDefinitionRegistry
+                    IFEQ L5
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 601)
+                    CHECKCAST org.springframework.beans.factory.support.BeanDefinitionRegistry
+                    ASTORE_3
+                    NEW java.util.LinkedList   (line 602)
+                    DUP
+                    INVOKESPECIAL java.util.LinkedList.<init> ()V
+                    ASTORE 4
+                    NEW java.util.LinkedList   (line 604)
+                    DUP
+                    INVOKESPECIAL java.util.LinkedList.<init> ()V
+                    ASTORE 5   (line 603)
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 605)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactoryPostProcessors ()Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE 7
+                    GOTO L2
+                L0: ALOAD 7
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.BeanFactoryPostProcessor
+                    ASTORE 6
+                    ALOAD 6     // Lorg/springframework/beans/factory/config/BeanFactoryPostProcessor; postProcessor   (line 606)
+                    INSTANCEOF org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor
+                    IFEQ L1
+                    ALOAD 6     // Lorg/springframework/beans/factory/config/BeanFactoryPostProcessor; postProcessor   (line 608)
+                    CHECKCAST org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor
+                    ASTORE 8   (line 607)
+                    ALOAD 8     // Lorg/springframework/beans/factory/support/BeanDefinitionRegistryPostProcessor; registryPostProcessor   (line 609)
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionRegistry; registry
+                    INVOKEINTERFACE org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor.postProcessBeanDefinitionRegistry (Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;)V
+                    ALOAD 5     // Ljava/util/List; registryPostProcessors   (line 610)
+                    ALOAD 8     // Lorg/springframework/beans/factory/support/BeanDefinitionRegistryPostProcessor; registryPostProcessor
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    GOTO L2
+                L1: ALOAD 4     // Ljava/util/List; regularPostProcessors   (line 613)
+                    ALOAD 6     // Lorg/springframework/beans/factory/config/BeanFactoryPostProcessor; postProcessor
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                L2: ALOAD 7   (line 605)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 617)
+                    LDC_W org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor
+                    ICONST_1
+                    ICONST_0
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBeansOfType (Ljava/lang/Class;ZZ)Ljava/util/Map;
+                    ASTORE 6   (line 616)
+                    NEW java.util.ArrayList   (line 619)
+                    DUP
+                    ALOAD 6     // Ljava/util/Map; beanMap
+                    INVOKEINTERFACE java.util.Map.values ()Ljava/util/Collection;
+                    INVOKESPECIAL java.util.ArrayList.<init> (Ljava/util/Collection;)V
+                    ASTORE 7   (line 618)
+                    ALOAD 7     // Ljava/util/List; registryPostProcessorBeans   (line 620)
+                    INVOKESTATIC org.springframework.core.OrderComparator.sort (Ljava/util/List;)V
+                    ALOAD 7     // Ljava/util/List; registryPostProcessorBeans   (line 621)
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE 9
+                    GOTO L4
+                L3: ALOAD 9
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor
+                    ASTORE 8
+                    ALOAD 8     // Lorg/springframework/beans/factory/support/BeanDefinitionRegistryPostProcessor; postProcessor   (line 622)
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionRegistry; registry
+                    INVOKEINTERFACE org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor.postProcessBeanDefinitionRegistry (Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;)V
+                L4: ALOAD 9   (line 621)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L3
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 624)
+                    ALOAD 5     // Ljava/util/List; registryPostProcessors
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors (Ljava/util/Collection;Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 625)
+                    ALOAD 7     // Ljava/util/List; registryPostProcessorBeans
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors (Ljava/util/Collection;Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 626)
+                    ALOAD 4     // Ljava/util/List; regularPostProcessors
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors (Ljava/util/Collection;Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
+                    ALOAD_2     // Ljava/util/Set; processedBeans   (line 627)
+                    ALOAD 6     // Ljava/util/Map; beanMap
+                    INVOKEINTERFACE java.util.Map.keySet ()Ljava/util/Set;
+                    CHECKCAST java.util.Collection
+                    INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+                    POP
+                    GOTO L6
+                L5: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 631)
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactoryPostProcessors ()Ljava/util/List;
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors (Ljava/util/Collection;Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
+                L6: ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 637)
+                    LDC_W org.springframework.beans.factory.config.BeanFactoryPostProcessor
+                    ICONST_1
+                    ICONST_0
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBeanNamesForType (Ljava/lang/Class;ZZ)[Ljava/lang/String;
+                    ASTORE_3   (line 636)
+                    NEW java.util.ArrayList   (line 641)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE 4
+                    NEW java.util.ArrayList   (line 642)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE 5
+                    NEW java.util.ArrayList   (line 643)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE 6
+                    ALOAD_3     // [Ljava/lang/String; postProcessorNames   (line 644)
+                    DUP
+                    ASTORE 10
+                    ARRAYLENGTH
+                    ISTORE 9
+                    ICONST_0
+                    ISTORE 8
+                    GOTO L11
+                L7: ALOAD 10
+                    ILOAD 8
+                    AALOAD
+                    ASTORE 7
+                    ALOAD_2     // Ljava/util/Set; processedBeans   (line 645)
+                    ALOAD 7     // Ljava/lang/String; ppName
+                    INVOKEINTERFACE java.util.Set.contains (Ljava/lang/Object;)Z
+                    IFNE L10
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 648)
+                    ALOAD 7     // Ljava/lang/String; ppName
+                    LDC_W org.springframework.core.PriorityOrdered
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.isTypeMatch (Ljava/lang/String;Ljava/lang/Class;)Z
+                    IFEQ L8
+                    ALOAD 4     // Ljava/util/List; priorityOrderedPostProcessors   (line 649)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    ALOAD 7     // Ljava/lang/String; ppName
+                    LDC_W org.springframework.beans.factory.config.BeanFactoryPostProcessor
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBean (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.BeanFactoryPostProcessor
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    GOTO L10
+                L8: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 651)
+                    ALOAD 7     // Ljava/lang/String; ppName
+                    LDC_W org.springframework.core.Ordered
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.isTypeMatch (Ljava/lang/String;Ljava/lang/Class;)Z
+                    IFEQ L9
+                    ALOAD 5     // Ljava/util/List; orderedPostProcessorNames   (line 652)
+                    ALOAD 7     // Ljava/lang/String; ppName
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    GOTO L10
+                L9: ALOAD 6     // Ljava/util/List; nonOrderedPostProcessorNames   (line 655)
+                    ALOAD 7     // Ljava/lang/String; ppName
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+               L10: IINC 8 1   (line 644)
+               L11: ILOAD 8
+                    ILOAD 9
+                    IF_ICMPLT L7
+                    ALOAD 4     // Ljava/util/List; priorityOrderedPostProcessors   (line 660)
+                    INVOKESTATIC org.springframework.core.OrderComparator.sort (Ljava/util/List;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 661)
+                    ALOAD 4     // Ljava/util/List; priorityOrderedPostProcessors
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors (Ljava/util/Collection;Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
+                    NEW java.util.ArrayList   (line 664)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE 7
+                    ALOAD 5     // Ljava/util/List; orderedPostProcessorNames   (line 665)
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE 9
+                    GOTO L13
+               L12: ALOAD 9
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 8
+                    ALOAD 7     // Ljava/util/List; orderedPostProcessors   (line 666)
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    ALOAD 8     // Ljava/lang/String; postProcessorName
+                    LDC_W org.springframework.beans.factory.config.BeanFactoryPostProcessor
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBean (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.BeanFactoryPostProcessor
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+               L13: ALOAD 9   (line 665)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L12
+                    ALOAD 7     // Ljava/util/List; orderedPostProcessors   (line 668)
+                    INVOKESTATIC org.springframework.core.OrderComparator.sort (Ljava/util/List;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 669)
+                    ALOAD 7     // Ljava/util/List; orderedPostProcessors
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors (Ljava/util/Collection;Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
+                    NEW java.util.ArrayList   (line 672)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE 8
+                    ALOAD 6     // Ljava/util/List; nonOrderedPostProcessorNames   (line 673)
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE 10
+                    GOTO L15
+               L14: ALOAD 10
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 9
+                    ALOAD 8     // Ljava/util/List; nonOrderedPostProcessors   (line 674)
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    ALOAD 9     // Ljava/lang/String; postProcessorName
+                    LDC_W org.springframework.beans.factory.config.BeanFactoryPostProcessor
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBean (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.BeanFactoryPostProcessor
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+               L15: ALOAD 10   (line 673)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L14
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 676)
+                    ALOAD 8     // Ljava/util/List; nonOrderedPostProcessors
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors (Ljava/util/Collection;Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
+                    RETURN   (line 677)
+  end protected void invokeBeanFactoryPostProcessors(org.springframework.beans.factory.config.ConfigurableListableBeanFactory)
+
+  private void invokeBeanFactoryPostProcessors(java.util.Collection, org.springframework.beans.factory.config.ConfigurableListableBeanFactory):
+                    ALOAD_1     // Ljava/util/Collection; postProcessors   (line 685)
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE 4
+                    GOTO L1
+                L0: ALOAD 4
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.BeanFactoryPostProcessor
+                    ASTORE_3
+                    ALOAD_3     // Lorg/springframework/beans/factory/config/BeanFactoryPostProcessor; postProcessor   (line 686)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanFactoryPostProcessor.postProcessBeanFactory (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
+                L1: ALOAD 4   (line 685)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    RETURN   (line 688)
+  end private void invokeBeanFactoryPostProcessors(java.util.Collection, org.springframework.beans.factory.config.ConfigurableListableBeanFactory)
+
+  protected void registerBeanPostProcessors(org.springframework.beans.factory.config.ConfigurableListableBeanFactory):
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 696)
+                    LDC_W org.springframework.beans.factory.config.BeanPostProcessor
+                    ICONST_1
+                    ICONST_0
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBeanNamesForType (Ljava/lang/Class;ZZ)[Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 701)
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBeanPostProcessorCount ()I
+                    ICONST_1
+                    IADD
+                    ALOAD_2     // [Ljava/lang/String; postProcessorNames
+                    ARRAYLENGTH
+                    IADD
+                    ISTORE_3
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 702)
+                    NEW org.springframework.context.support.AbstractApplicationContext$BeanPostProcessorChecker
+                    DUP
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    ILOAD_3     // I beanProcessorTargetCount
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext$BeanPostProcessorChecker.<init> (Lorg/springframework/context/support/AbstractApplicationContext;Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;I)V
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.addBeanPostProcessor (Lorg/springframework/beans/factory/config/BeanPostProcessor;)V
+                    NEW java.util.ArrayList   (line 706)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE 4
+                    NEW java.util.ArrayList   (line 707)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE 5
+                    NEW java.util.ArrayList   (line 708)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE 6
+                    NEW java.util.ArrayList   (line 709)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE 7
+                    ALOAD_2     // [Ljava/lang/String; postProcessorNames   (line 710)
+                    DUP
+                    ASTORE 11
+                    ARRAYLENGTH
+                    ISTORE 10
+                    ICONST_0
+                    ISTORE 9
+                    GOTO L4
+                L0: ALOAD 11
+                    ILOAD 9
+                    AALOAD
+                    ASTORE 8
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 711)
+                    ALOAD 8     // Ljava/lang/String; ppName
+                    LDC_W org.springframework.core.PriorityOrdered
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.isTypeMatch (Ljava/lang/String;Ljava/lang/Class;)Z
+                    IFEQ L1
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 712)
+                    ALOAD 8     // Ljava/lang/String; ppName
+                    LDC_W org.springframework.beans.factory.config.BeanPostProcessor
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBean (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.BeanPostProcessor
+                    ASTORE 12
+                    ALOAD 4     // Ljava/util/List; priorityOrderedPostProcessors   (line 713)
+                    ALOAD 12     // Lorg/springframework/beans/factory/config/BeanPostProcessor; pp
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    ALOAD 12     // Lorg/springframework/beans/factory/config/BeanPostProcessor; pp   (line 714)
+                    INSTANCEOF org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor
+                    IFEQ L3
+                    ALOAD 5     // Ljava/util/List; internalPostProcessors   (line 715)
+                    ALOAD 12     // Lorg/springframework/beans/factory/config/BeanPostProcessor; pp
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    GOTO L3
+                L1: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 718)
+                    ALOAD 8     // Ljava/lang/String; ppName
+                    LDC_W org.springframework.core.Ordered
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.isTypeMatch (Ljava/lang/String;Ljava/lang/Class;)Z
+                    IFEQ L2
+                    ALOAD 6     // Ljava/util/List; orderedPostProcessorNames   (line 719)
+                    ALOAD 8     // Ljava/lang/String; ppName
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    GOTO L3
+                L2: ALOAD 7     // Ljava/util/List; nonOrderedPostProcessorNames   (line 722)
+                    ALOAD 8     // Ljava/lang/String; ppName
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                L3: IINC 9 1   (line 710)
+                L4: ILOAD 9
+                    ILOAD 10
+                    IF_ICMPLT L0
+                    ALOAD 4     // Ljava/util/List; priorityOrderedPostProcessors   (line 727)
+                    INVOKESTATIC org.springframework.core.OrderComparator.sort (Ljava/util/List;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 728)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    ALOAD 4     // Ljava/util/List; priorityOrderedPostProcessors
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;Ljava/util/List;)V
+                    NEW java.util.ArrayList   (line 731)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE 8
+                    ALOAD 6     // Ljava/util/List; orderedPostProcessorNames   (line 732)
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE 10
+                    GOTO L6
+                L5: ALOAD 10
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 9
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 733)
+                    ALOAD 9     // Ljava/lang/String; ppName
+                    LDC_W org.springframework.beans.factory.config.BeanPostProcessor
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBean (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.BeanPostProcessor
+                    ASTORE 11
+                    ALOAD 8     // Ljava/util/List; orderedPostProcessors   (line 734)
+                    ALOAD 11     // Lorg/springframework/beans/factory/config/BeanPostProcessor; pp
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    ALOAD 11     // Lorg/springframework/beans/factory/config/BeanPostProcessor; pp   (line 735)
+                    INSTANCEOF org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor
+                    IFEQ L6
+                    ALOAD 5     // Ljava/util/List; internalPostProcessors   (line 736)
+                    ALOAD 11     // Lorg/springframework/beans/factory/config/BeanPostProcessor; pp
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                L6: ALOAD 10   (line 732)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L5
+                    ALOAD 8     // Ljava/util/List; orderedPostProcessors   (line 739)
+                    INVOKESTATIC org.springframework.core.OrderComparator.sort (Ljava/util/List;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 740)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    ALOAD 8     // Ljava/util/List; orderedPostProcessors
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;Ljava/util/List;)V
+                    NEW java.util.ArrayList   (line 743)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE 9
+                    ALOAD 7     // Ljava/util/List; nonOrderedPostProcessorNames   (line 744)
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE 11
+                    GOTO L8
+                L7: ALOAD 11
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 10
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 745)
+                    ALOAD 10     // Ljava/lang/String; ppName
+                    LDC_W org.springframework.beans.factory.config.BeanPostProcessor
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBean (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.BeanPostProcessor
+                    ASTORE 12
+                    ALOAD 9     // Ljava/util/List; nonOrderedPostProcessors   (line 746)
+                    ALOAD 12     // Lorg/springframework/beans/factory/config/BeanPostProcessor; pp
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    ALOAD 12     // Lorg/springframework/beans/factory/config/BeanPostProcessor; pp   (line 747)
+                    INSTANCEOF org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor
+                    IFEQ L8
+                    ALOAD 5     // Ljava/util/List; internalPostProcessors   (line 748)
+                    ALOAD 12     // Lorg/springframework/beans/factory/config/BeanPostProcessor; pp
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                L8: ALOAD 11   (line 744)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L7
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 751)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    ALOAD 9     // Ljava/util/List; nonOrderedPostProcessors
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;Ljava/util/List;)V
+                    ALOAD 5     // Ljava/util/List; internalPostProcessors   (line 754)
+                    INVOKESTATIC org.springframework.core.OrderComparator.sort (Ljava/util/List;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 755)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    ALOAD 5     // Ljava/util/List; internalPostProcessors
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;Ljava/util/List;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 757)
+                    NEW org.springframework.context.support.AbstractApplicationContext$ApplicationListenerDetector
+                    DUP
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    ACONST_NULL
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext$ApplicationListenerDetector.<init> (Lorg/springframework/context/support/AbstractApplicationContext;Lorg/springframework/context/support/AbstractApplicationContext$ApplicationListenerDetector;)V
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.addBeanPostProcessor (Lorg/springframework/beans/factory/config/BeanPostProcessor;)V
+                    RETURN   (line 758)
+  end protected void registerBeanPostProcessors(org.springframework.beans.factory.config.ConfigurableListableBeanFactory)
+
+  private void registerBeanPostProcessors(org.springframework.beans.factory.config.ConfigurableListableBeanFactory, java.util.List):
+                    ALOAD_2     // Ljava/util/List; postProcessors   (line 766)
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE 4
+                    GOTO L1
+                L0: ALOAD 4
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.BeanPostProcessor
+                    ASTORE_3
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 767)
+                    ALOAD_3     // Lorg/springframework/beans/factory/config/BeanPostProcessor; postProcessor
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.addBeanPostProcessor (Lorg/springframework/beans/factory/config/BeanPostProcessor;)V
+                L1: ALOAD 4   (line 766)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    RETURN   (line 769)
+  end private void registerBeanPostProcessors(org.springframework.beans.factory.config.ConfigurableListableBeanFactory, java.util.List)
+
+  protected void initMessageSource():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 776)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ASTORE_1
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 777)
+                    LDC "messageSource"
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.containsLocalBean (Ljava/lang/String;)Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 778)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    LDC "messageSource"
+                    LDC_W org.springframework.context.MessageSource
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBean (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    CHECKCAST org.springframework.context.MessageSource
+                    PUTFIELD org.springframework.context.support.AbstractApplicationContext.messageSource Lorg/springframework/context/MessageSource;
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 780)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.parent Lorg/springframework/context/ApplicationContext;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.messageSource Lorg/springframework/context/MessageSource;
+                    INSTANCEOF org.springframework.context.HierarchicalMessageSource
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 781)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.messageSource Lorg/springframework/context/MessageSource;
+                    CHECKCAST org.springframework.context.HierarchicalMessageSource
+                    ASTORE_2
+                    ALOAD_2     // Lorg/springframework/context/HierarchicalMessageSource; hms   (line 782)
+                    INVOKEINTERFACE org.springframework.context.HierarchicalMessageSource.getParentMessageSource ()Lorg/springframework/context/MessageSource;
+                    IFNONNULL L0
+                    ALOAD_2     // Lorg/springframework/context/HierarchicalMessageSource; hms   (line 785)
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getInternalParentMessageSource ()Lorg/springframework/context/MessageSource;
+                    INVOKEINTERFACE org.springframework.context.HierarchicalMessageSource.setParentMessageSource (Lorg/springframework/context/MessageSource;)V
+                L0: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 788)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 789)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Using MessageSource ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.messageSource Lorg/springframework/context/MessageSource;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                    GOTO L2
+                L1: NEW org.springframework.context.support.DelegatingMessageSource   (line 794)
+                    DUP
+                    INVOKESPECIAL org.springframework.context.support.DelegatingMessageSource.<init> ()V
+                    ASTORE_2
+                    ALOAD_2     // Lorg/springframework/context/support/DelegatingMessageSource; dms   (line 795)
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getInternalParentMessageSource ()Lorg/springframework/context/MessageSource;
+                    INVOKEVIRTUAL org.springframework.context.support.DelegatingMessageSource.setParentMessageSource (Lorg/springframework/context/MessageSource;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 796)
+                    ALOAD_2     // Lorg/springframework/context/support/DelegatingMessageSource; dms
+                    PUTFIELD org.springframework.context.support.AbstractApplicationContext.messageSource Lorg/springframework/context/MessageSource;
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 797)
+                    LDC "messageSource"
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.messageSource Lorg/springframework/context/MessageSource;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.registerSingleton (Ljava/lang/String;Ljava/lang/Object;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 798)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 799)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Unable to locate MessageSource with name 'messageSource': using default ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 800)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.messageSource Lorg/springframework/context/MessageSource;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 799)
+                L2: RETURN   (line 803)
+  end protected void initMessageSource()
+
+  protected void initApplicationEventMulticaster():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 811)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ASTORE_1
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 812)
+                    LDC "applicationEventMulticaster"
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.containsLocalBean (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 813)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 814)
+                    LDC "applicationEventMulticaster"
+                    LDC org.springframework.context.event.ApplicationEventMulticaster
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBean (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    CHECKCAST org.springframework.context.event.ApplicationEventMulticaster
+                    PUTFIELD org.springframework.context.support.AbstractApplicationContext.applicationEventMulticaster Lorg/springframework/context/event/ApplicationEventMulticaster;   (line 813)
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 815)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 816)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Using ApplicationEventMulticaster ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.applicationEventMulticaster Lorg/springframework/context/event/ApplicationEventMulticaster;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 820)
+                    NEW org.springframework.context.event.SimpleApplicationEventMulticaster
+                    DUP
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    INVOKESPECIAL org.springframework.context.event.SimpleApplicationEventMulticaster.<init> (Lorg/springframework/beans/factory/BeanFactory;)V
+                    PUTFIELD org.springframework.context.support.AbstractApplicationContext.applicationEventMulticaster Lorg/springframework/context/event/ApplicationEventMulticaster;
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 821)
+                    LDC "applicationEventMulticaster"
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.applicationEventMulticaster Lorg/springframework/context/event/ApplicationEventMulticaster;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.registerSingleton (Ljava/lang/String;Ljava/lang/Object;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 822)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 823)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 825)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.applicationEventMulticaster Lorg/springframework/context/event/ApplicationEventMulticaster;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 823)
+                L1: RETURN   (line 828)
+  end protected void initApplicationEventMulticaster()
+
+  protected void initLifecycleProcessor():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 836)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ASTORE_1
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 837)
+                    LDC "lifecycleProcessor"
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.containsLocalBean (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 838)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 839)
+                    LDC "lifecycleProcessor"
+                    LDC_W org.springframework.context.LifecycleProcessor
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBean (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    CHECKCAST org.springframework.context.LifecycleProcessor
+                    PUTFIELD org.springframework.context.support.AbstractApplicationContext.lifecycleProcessor Lorg/springframework/context/LifecycleProcessor;   (line 838)
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 840)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 841)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Using LifecycleProcessor ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.lifecycleProcessor Lorg/springframework/context/LifecycleProcessor;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                    GOTO L1
+                L0: NEW org.springframework.context.support.DefaultLifecycleProcessor   (line 845)
+                    DUP
+                    INVOKESPECIAL org.springframework.context.support.DefaultLifecycleProcessor.<init> ()V
+                    ASTORE_2
+                    ALOAD_2     // Lorg/springframework/context/support/DefaultLifecycleProcessor; defaultProcessor   (line 846)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory
+                    INVOKEVIRTUAL org.springframework.context.support.DefaultLifecycleProcessor.setBeanFactory (Lorg/springframework/beans/factory/BeanFactory;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 847)
+                    ALOAD_2     // Lorg/springframework/context/support/DefaultLifecycleProcessor; defaultProcessor
+                    PUTFIELD org.springframework.context.support.AbstractApplicationContext.lifecycleProcessor Lorg/springframework/context/LifecycleProcessor;
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 848)
+                    LDC "lifecycleProcessor"
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.lifecycleProcessor Lorg/springframework/context/LifecycleProcessor;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.registerSingleton (Ljava/lang/String;Ljava/lang/Object;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 849)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 850)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 852)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.lifecycleProcessor Lorg/springframework/context/LifecycleProcessor;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 850)
+                L1: RETURN   (line 855)
+  end protected void initLifecycleProcessor()
+
+  protected void onRefresh() throws org.springframework.beans.BeansException:
+                    RETURN   (line 866)
+  end protected void onRefresh() throws org.springframework.beans.BeansException
+
+  protected void registerListeners():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 874)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getApplicationListeners ()Ljava/util/Collection;
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE_2
+                    GOTO L1
+                L0: ALOAD_2
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.context.ApplicationListener
+                    ASTORE_1
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 875)
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster ()Lorg/springframework/context/event/ApplicationEventMulticaster;
+                    ALOAD_1     // Lorg/springframework/context/ApplicationListener; listener
+                    INVOKEINTERFACE org.springframework.context.event.ApplicationEventMulticaster.addApplicationListener (Lorg/springframework/context/ApplicationListener;)V
+                L1: ALOAD_2   (line 874)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 879)
+                    LDC_W org.springframework.context.ApplicationListener
+                    ICONST_1
+                    ICONST_0
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanNamesForType (Ljava/lang/Class;ZZ)[Ljava/lang/String;
+                    ASTORE_1
+                    ALOAD_1     // [Ljava/lang/String; listenerBeanNames   (line 880)
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L3
+                L2: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 881)
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster ()Lorg/springframework/context/event/ApplicationEventMulticaster;
+                    ALOAD_2     // Ljava/lang/String; lisName
+                    INVOKEINTERFACE org.springframework.context.event.ApplicationEventMulticaster.addApplicationListenerBean (Ljava/lang/String;)V
+                    IINC_3 1   (line 880)
+                L3: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L2
+                    RETURN   (line 883)
+  end protected void registerListeners()
+
+  protected void addListener(org.springframework.context.ApplicationListener):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 896)
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster ()Lorg/springframework/context/event/ApplicationEventMulticaster;
+                    ALOAD_1     // Lorg/springframework/context/ApplicationListener; listener
+                    INVOKEINTERFACE org.springframework.context.event.ApplicationEventMulticaster.addApplicationListener (Lorg/springframework/context/ApplicationListener;)V
+                    RETURN   (line 897)
+  end protected void addListener(org.springframework.context.ApplicationListener)
+
+  protected void finishBeanFactoryInitialization(org.springframework.beans.factory.config.ConfigurableListableBeanFactory):
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 905)
+                    LDC_W "conversionService"
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.containsBean (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 906)
+                    LDC_W "conversionService"
+                    LDC_W org.springframework.core.convert.ConversionService
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.isTypeMatch (Ljava/lang/String;Ljava/lang/Class;)Z
+                    IFEQ L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 907)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 908)
+                    LDC_W "conversionService"
+                    LDC_W org.springframework.core.convert.ConversionService
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBean (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.convert.ConversionService
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.setConversionService (Lorg/springframework/core/convert/ConversionService;)V   (line 907)
+                L0: ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 912)
+                    ACONST_NULL
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.setTempClassLoader (Ljava/lang/ClassLoader;)V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 915)
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.freezeConfiguration ()V
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory; beanFactory   (line 918)
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.preInstantiateSingletons ()V
+                    RETURN   (line 919)
+  end protected void finishBeanFactoryInitialization(org.springframework.beans.factory.config.ConfigurableListableBeanFactory)
+
+  protected void finishRefresh():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 928)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.initLifecycleProcessor ()V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 931)
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor ()Lorg/springframework/context/LifecycleProcessor;
+                    INVOKEINTERFACE org.springframework.context.LifecycleProcessor.onRefresh ()V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 934)
+                    NEW org.springframework.context.event.ContextRefreshedEvent
+                    DUP
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKESPECIAL org.springframework.context.event.ContextRefreshedEvent.<init> (Lorg/springframework/context/ApplicationContext;)V
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.publishEvent (Lorg/springframework/context/ApplicationEvent;)V
+                    RETURN   (line 935)
+  end protected void finishRefresh()
+
+  protected void cancelRefresh(org.springframework.beans.BeansException):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 943)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.activeMonitor Ljava/lang/Object;
+                    DUP
+                    ASTORE_2
+                    MONITORENTER
+    finally -> E1
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 944)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.active Z
+    |               ALOAD_2   (line 943)
+    |               MONITOREXIT
+    finally -> E1
+                    GOTO L0
+    finally -> E1
+    |           E1: ALOAD_2
+    |               MONITOREXIT
+    finally -> E1
+                    ATHROW
+                L0: RETURN   (line 946)
+  end protected void cancelRefresh(org.springframework.beans.BeansException)
+
+  public void registerShutdownHook():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 958)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.shutdownHook Ljava/lang/Thread;
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 960)
+                    NEW org.springframework.context.support.AbstractApplicationContext$1
+                    DUP
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext$1.<init> (Lorg/springframework/context/support/AbstractApplicationContext;)V
+                    PUTFIELD org.springframework.context.support.AbstractApplicationContext.shutdownHook Ljava/lang/Thread;
+                    INVOKESTATIC java.lang.Runtime.getRuntime ()Ljava/lang/Runtime;   (line 966)
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.shutdownHook Ljava/lang/Thread;
+                    INVOKEVIRTUAL java.lang.Runtime.addShutdownHook (Ljava/lang/Thread;)V
+                L0: RETURN   (line 968)
+  end public void registerShutdownHook()
+
+  public void destroy():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 981)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.close ()V
+                    RETURN   (line 982)
+  end public void destroy()
+
+  public void close():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 992)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.startupShutdownMonitor Ljava/lang/Object;
+                    DUP
+                    ASTORE_1
+                    MONITORENTER
+    finally -> E2
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 993)
+    |               INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.doClose ()V
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 996)
+    |               GETFIELD org.springframework.context.support.AbstractApplicationContext.shutdownHook Ljava/lang/Thread;
+    |               IFNULL L0
+    | catch java.lang.IllegalStateException -> E0
+    | |             INVOKESTATIC java.lang.Runtime.getRuntime ()Ljava/lang/Runtime;   (line 998)
+    | |             ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+    | |             GETFIELD org.springframework.context.support.AbstractApplicationContext.shutdownHook Ljava/lang/Thread;
+    | |             INVOKEVIRTUAL java.lang.Runtime.removeShutdownHook (Ljava/lang/Thread;)Z
+    | |             POP
+    | catch java.lang.IllegalStateException -> E0
+    |               GOTO L0
+    |           E0: POP   (line 1000)
+    |           L0: ALOAD_1   (line 992)
+    |               MONITOREXIT
+    finally -> E2
+                    GOTO L1
+    finally -> E2
+    |           E2: ALOAD_1
+    |               MONITOREXIT
+    finally -> E2
+                    ATHROW
+                L1: RETURN   (line 1005)
+  end public void close()
+
+  protected void doClose():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1018)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.activeMonitor Ljava/lang/Object;
+                    DUP
+                    ASTORE_2
+                    MONITORENTER
+    finally -> E1
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1019)
+    |               GETFIELD org.springframework.context.support.AbstractApplicationContext.active Z
+    |               IFEQ L0
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+    |               GETFIELD org.springframework.context.support.AbstractApplicationContext.closed Z
+    |               IFNE L0
+    |               ICONST_1
+    |               GOTO L1
+    |           L0: ICONST_0
+    |           L1: ISTORE_1
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1020)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.closed Z
+    |               ALOAD_2   (line 1018)
+    |               MONITOREXIT
+    finally -> E1
+                    GOTO L2
+    finally -> E1
+    |           E1: ALOAD_2
+    |               MONITOREXIT
+    finally -> E1
+                    ATHROW
+                L2: ILOAD_1     // Z actuallyClose   (line 1023)
+                    IFEQ L6
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1024)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isInfoEnabled ()Z
+                    IFEQ L3
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1025)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Closing "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.info (Ljava/lang/Object;)V
+    catch java.lang.Throwable -> E2
+    |           L3: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1030)
+    |               NEW org.springframework.context.event.ContextClosedEvent
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+    |               INVOKESPECIAL org.springframework.context.event.ContextClosedEvent.<init> (Lorg/springframework/context/ApplicationContext;)V
+    |               INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.publishEvent (Lorg/springframework/context/ApplicationEvent;)V
+    catch java.lang.Throwable -> E2
+                    GOTO L4
+                E2: ASTORE_2   (line 1032)
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1033)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    LDC_W "Exception thrown from ApplicationListener handling ContextClosedEvent"
+                    ALOAD_2     // Ljava/lang/Throwable; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;Ljava/lang/Throwable;)V
+    catch java.lang.Throwable -> E3
+    |           L4: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1038)
+    |               INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor ()Lorg/springframework/context/LifecycleProcessor;
+    |               INVOKEINTERFACE org.springframework.context.LifecycleProcessor.onClose ()V
+    catch java.lang.Throwable -> E3
+                    GOTO L5
+                E3: ASTORE_2   (line 1040)
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1041)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.logger Lorg/apache/commons/logging/Log;
+                    LDC_W "Exception thrown from LifecycleProcessor on context close"
+                    ALOAD_2     // Ljava/lang/Throwable; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;Ljava/lang/Throwable;)V
+                L5: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1045)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.destroyBeans ()V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1048)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.closeBeanFactory ()V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1051)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.onClose ()V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1053)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.activeMonitor Ljava/lang/Object;
+                    DUP
+                    ASTORE_2
+                    MONITORENTER
+    finally -> E5
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1054)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.context.support.AbstractApplicationContext.active Z
+    |               ALOAD_2   (line 1053)
+    |               MONITOREXIT
+    finally -> E5
+                    GOTO L6
+    finally -> E5
+    |           E5: ALOAD_2
+    |               MONITOREXIT
+    finally -> E5
+                    ATHROW
+                L6: RETURN   (line 1057)
+  end protected void doClose()
+
+  protected void destroyBeans():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1071)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.destroySingletons ()V
+                    RETURN   (line 1072)
+  end protected void destroyBeans()
+
+  protected void onClose():
+                    RETURN   (line 1084)
+  end protected void onClose()
+
+  public boolean isActive():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1087)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.activeMonitor Ljava/lang/Object;
+                    DUP
+                    ASTORE_1
+                    MONITORENTER
+    finally -> E1
+    |               ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1088)
+    |               GETFIELD org.springframework.context.support.AbstractApplicationContext.active Z
+    |               ALOAD_1
+    |               MONITOREXIT
+    finally -> E1
+                    IRETURN
+    finally -> E1
+    |           E1: ALOAD_1   (line 1087)
+    |               MONITOREXIT
+    finally -> E1
+                    ATHROW
+  end public boolean isActive()
+
+  public Object getBean(String) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1098)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBean (Ljava/lang/String;)Ljava/lang/Object;
+                    ARETURN
+  end public Object getBean(String) throws org.springframework.beans.BeansException
+
+  public Object getBean(String, Class) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1102)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/String; name
+                    ALOAD_2     // Ljava/lang/Class; requiredType
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBean (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    ARETURN
+  end public Object getBean(String, Class) throws org.springframework.beans.BeansException
+
+  public Object getBean(Class) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1106)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/Class; requiredType
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBean (Ljava/lang/Class;)Ljava/lang/Object;
+                    ARETURN
+  end public Object getBean(Class) throws org.springframework.beans.BeansException
+
+  public transient Object getBean(String, Object[]) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1110)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/String; name
+                    ALOAD_2     // [Ljava/lang/Object; args
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBean (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+  end public transient Object getBean(String, Object[]) throws org.springframework.beans.BeansException
+
+  public boolean containsBean(String):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1114)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.containsBean (Ljava/lang/String;)Z
+                    IRETURN
+  end public boolean containsBean(String)
+
+  public boolean isSingleton(String) throws org.springframework.beans.factory.NoSuchBeanDefinitionException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1118)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.isSingleton (Ljava/lang/String;)Z
+                    IRETURN
+  end public boolean isSingleton(String) throws org.springframework.beans.factory.NoSuchBeanDefinitionException
+
+  public boolean isPrototype(String) throws org.springframework.beans.factory.NoSuchBeanDefinitionException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1122)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.isPrototype (Ljava/lang/String;)Z
+                    IRETURN
+  end public boolean isPrototype(String) throws org.springframework.beans.factory.NoSuchBeanDefinitionException
+
+  public boolean isTypeMatch(String, Class) throws org.springframework.beans.factory.NoSuchBeanDefinitionException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1126)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/String; name
+                    ALOAD_2     // Ljava/lang/Class; targetType
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.isTypeMatch (Ljava/lang/String;Ljava/lang/Class;)Z
+                    IRETURN
+  end public boolean isTypeMatch(String, Class) throws org.springframework.beans.factory.NoSuchBeanDefinitionException
+
+  public Class getType(String) throws org.springframework.beans.factory.NoSuchBeanDefinitionException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1130)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getType (Ljava/lang/String;)Ljava/lang/Class;
+                    ARETURN
+  end public Class getType(String) throws org.springframework.beans.factory.NoSuchBeanDefinitionException
+
+  public String[] getAliases(String):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1134)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getAliases (Ljava/lang/String;)[Ljava/lang/String;
+                    ARETURN
+  end public String[] getAliases(String)
+
+  public boolean containsBeanDefinition(String):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1143)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/String; beanName
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.containsBeanDefinition (Ljava/lang/String;)Z
+                    IRETURN
+  end public boolean containsBeanDefinition(String)
+
+  public int getBeanDefinitionCount():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1147)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBeanDefinitionCount ()I
+                    IRETURN
+  end public int getBeanDefinitionCount()
+
+  public String[] getBeanDefinitionNames():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1151)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBeanDefinitionNames ()[Ljava/lang/String;
+                    ARETURN
+  end public String[] getBeanDefinitionNames()
+
+  public String[] getBeanNamesForType(Class):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1155)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/Class; type
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBeanNamesForType (Ljava/lang/Class;)[Ljava/lang/String;
+                    ARETURN
+  end public String[] getBeanNamesForType(Class)
+
+  public String[] getBeanNamesForType(Class, boolean, boolean):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1159)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/Class; type
+                    ILOAD_2     // Z includeNonSingletons
+                    ILOAD_3     // Z allowEagerInit
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBeanNamesForType (Ljava/lang/Class;ZZ)[Ljava/lang/String;
+                    ARETURN
+  end public String[] getBeanNamesForType(Class, boolean, boolean)
+
+  public java.util.Map getBeansOfType(Class) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1163)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/Class; type
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBeansOfType (Ljava/lang/Class;)Ljava/util/Map;
+                    ARETURN
+  end public java.util.Map getBeansOfType(Class) throws org.springframework.beans.BeansException
+
+  public java.util.Map getBeansOfType(Class, boolean, boolean) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1169)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/Class; type
+                    ILOAD_2     // Z includeNonSingletons
+                    ILOAD_3     // Z allowEagerInit
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBeansOfType (Ljava/lang/Class;ZZ)Ljava/util/Map;
+                    ARETURN
+  end public java.util.Map getBeansOfType(Class, boolean, boolean) throws org.springframework.beans.BeansException
+
+  public java.util.Map getBeansWithAnnotation(Class) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1175)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/Class; annotationType
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.getBeansWithAnnotation (Ljava/lang/Class;)Ljava/util/Map;
+                    ARETURN
+  end public java.util.Map getBeansWithAnnotation(Class) throws org.springframework.beans.BeansException
+
+  public java.lang.annotation.Annotation findAnnotationOnBean(String, Class):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1179)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/String; beanName
+                    ALOAD_2     // Ljava/lang/Class; annotationType
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.findAnnotationOnBean (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+                    ARETURN
+  end public java.lang.annotation.Annotation findAnnotationOnBean(String, Class)
+
+  public org.springframework.beans.factory.BeanFactory getParentBeanFactory():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1188)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getParent ()Lorg/springframework/context/ApplicationContext;
+                    ARETURN
+  end public org.springframework.beans.factory.BeanFactory getParentBeanFactory()
+
+  public boolean containsLocalBean(String):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1192)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE org.springframework.beans.factory.config.ConfigurableListableBeanFactory.containsLocalBean (Ljava/lang/String;)Z
+                    IRETURN
+  end public boolean containsLocalBean(String)
+
+  protected org.springframework.beans.factory.BeanFactory getInternalParentBeanFactory():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1201)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getParent ()Lorg/springframework/context/ApplicationContext;
+                    INSTANCEOF org.springframework.context.ConfigurableApplicationContext
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1202)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getParent ()Lorg/springframework/context/ApplicationContext;
+                    CHECKCAST org.springframework.context.ConfigurableApplicationContext
+                    INVOKEINTERFACE org.springframework.context.ConfigurableApplicationContext.getBeanFactory ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getParent ()Lorg/springframework/context/ApplicationContext;
+                L1: ARETURN   (line 1201)
+  end protected org.springframework.beans.factory.BeanFactory getInternalParentBeanFactory()
+
+  public String getMessage(String, Object[], String, java.util.Locale):
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1211)
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.getMessageSource ()Lorg/springframework/context/MessageSource;
+                    ALOAD_1     // Ljava/lang/String; code
+                    ALOAD_2     // [Ljava/lang/Object; args
+                    ALOAD_3     // Ljava/lang/String; defaultMessage
+                    ALOAD 4     // Ljava/util/Locale; locale
+                    INVOKEINTERFACE org.springframework.context.MessageSource.getMessage (Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;
+                    ARETURN
+  end public String getMessage(String, Object[], String, java.util.Locale)
+
+  public String getMessage(String, Object[], java.util.Locale) throws org.springframework.context.NoSuchMessageException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1215)
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.getMessageSource ()Lorg/springframework/context/MessageSource;
+                    ALOAD_1     // Ljava/lang/String; code
+                    ALOAD_2     // [Ljava/lang/Object; args
+                    ALOAD_3     // Ljava/util/Locale; locale
+                    INVOKEINTERFACE org.springframework.context.MessageSource.getMessage (Ljava/lang/String;[Ljava/lang/Object;Ljava/util/Locale;)Ljava/lang/String;
+                    ARETURN
+  end public String getMessage(String, Object[], java.util.Locale) throws org.springframework.context.NoSuchMessageException
+
+  public String getMessage(org.springframework.context.MessageSourceResolvable, java.util.Locale) throws org.springframework.context.NoSuchMessageException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1219)
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.getMessageSource ()Lorg/springframework/context/MessageSource;
+                    ALOAD_1     // Lorg/springframework/context/MessageSourceResolvable; resolvable
+                    ALOAD_2     // Ljava/util/Locale; locale
+                    INVOKEINTERFACE org.springframework.context.MessageSource.getMessage (Lorg/springframework/context/MessageSourceResolvable;Ljava/util/Locale;)Ljava/lang/String;
+                    ARETURN
+  end public String getMessage(org.springframework.context.MessageSourceResolvable, java.util.Locale) throws org.springframework.context.NoSuchMessageException
+
+  private org.springframework.context.MessageSource getMessageSource() throws java.lang.IllegalStateException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1228)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.messageSource Lorg/springframework/context/MessageSource;
+                    IFNONNULL L0
+                    NEW java.lang.IllegalStateException   (line 1229)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "MessageSource not initialized - call 'refresh' before accessing messages via the context: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1230)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 1229)
+                    ATHROW
+                L0: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1232)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.messageSource Lorg/springframework/context/MessageSource;
+                    ARETURN
+  end private org.springframework.context.MessageSource getMessageSource() throws java.lang.IllegalStateException
+
+  protected org.springframework.context.MessageSource getInternalParentMessageSource():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1240)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getParent ()Lorg/springframework/context/ApplicationContext;
+                    INSTANCEOF org.springframework.context.support.AbstractApplicationContext
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1241)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getParent ()Lorg/springframework/context/ApplicationContext;
+                    CHECKCAST org.springframework.context.support.AbstractApplicationContext
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.messageSource Lorg/springframework/context/MessageSource;
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getParent ()Lorg/springframework/context/ApplicationContext;
+                L1: ARETURN   (line 1240)
+  end protected org.springframework.context.MessageSource getInternalParentMessageSource()
+
+  public org.springframework.core.io.Resource[] getResources(String) throws java.io.IOException:
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1250)
+                    GETFIELD org.springframework.context.support.AbstractApplicationContext.resourcePatternResolver Lorg/springframework/core/io/support/ResourcePatternResolver;
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEINTERFACE org.springframework.core.io.support.ResourcePatternResolver.getResources (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
+                    ARETURN
+  end public org.springframework.core.io.Resource[] getResources(String) throws java.io.IOException
+
+  public void start():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1259)
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor ()Lorg/springframework/context/LifecycleProcessor;
+                    INVOKEINTERFACE org.springframework.context.LifecycleProcessor.start ()V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1260)
+                    NEW org.springframework.context.event.ContextStartedEvent
+                    DUP
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKESPECIAL org.springframework.context.event.ContextStartedEvent.<init> (Lorg/springframework/context/ApplicationContext;)V
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.publishEvent (Lorg/springframework/context/ApplicationEvent;)V
+                    RETURN   (line 1261)
+  end public void start()
+
+  public void stop():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1264)
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor ()Lorg/springframework/context/LifecycleProcessor;
+                    INVOKEINTERFACE org.springframework.context.LifecycleProcessor.stop ()V
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1265)
+                    NEW org.springframework.context.event.ContextStoppedEvent
+                    DUP
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKESPECIAL org.springframework.context.event.ContextStoppedEvent.<init> (Lorg/springframework/context/ApplicationContext;)V
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.publishEvent (Lorg/springframework/context/ApplicationEvent;)V
+                    RETURN   (line 1266)
+  end public void stop()
+
+  public boolean isRunning():
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1269)
+                    INVOKESPECIAL org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor ()Lorg/springframework/context/LifecycleProcessor;
+                    INVOKEINTERFACE org.springframework.context.LifecycleProcessor.isRunning ()Z
+                    IRETURN
+  end public boolean isRunning()
+
+  protected abstract void refreshBeanFactory() throws org.springframework.beans.BeansException, java.lang.IllegalStateException;
+
+  protected abstract void closeBeanFactory();
+
+  public abstract org.springframework.beans.factory.config.ConfigurableListableBeanFactory getBeanFactory() throws java.lang.IllegalStateException;
+
+  public String toString():
+                    NEW java.lang.StringBuilder   (line 1317)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getDisplayName ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 1318)
+                    LDC_W ": startup date ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    NEW java.util.Date
+                    DUP
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getStartupDate ()J
+                    INVOKESPECIAL java.util.Date.<init> (J)V
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 1319)
+                    LDC_W "]; "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_0     // Lorg/springframework/context/support/AbstractApplicationContext; this   (line 1320)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getParent ()Lorg/springframework/context/ApplicationContext;
+                    ASTORE_2
+                    ALOAD_2     // Lorg/springframework/context/ApplicationContext; parent   (line 1321)
+                    IFNONNULL L0
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 1322)
+                    LDC_W "root of context hierarchy"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L1
+                L0: ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 1325)
+                    LDC_W "parent: "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_2     // Lorg/springframework/context/ApplicationContext; parent
+                    INVOKEINTERFACE org.springframework.context.ApplicationContext.getDisplayName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L1: ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 1327)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+  public volatile org.springframework.core.env.Environment getEnvironment():
+                    ALOAD_0   (line 1)
+                    INVOKEVIRTUAL org.springframework.context.support.AbstractApplicationContext.getEnvironment ()Lorg/springframework/core/env/ConfigurableEnvironment;
+                    ARETURN
+  end public volatile org.springframework.core.env.Environment getEnvironment()
+end public abstract class org.springframework.context.support.AbstractApplicationContext
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:387)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:245)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:484)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:70)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:165)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:119)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:74)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:391)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:336)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:300)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:106)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:146)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:52)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:146)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:146)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:70)
+	at org.aspectj.weaver.Advice.match(Advice.java:106)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:140)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2980)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2489)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:486)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:98)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1733)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1464)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1273)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:394)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:281)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:95)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:52)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at com.curso.spring.springioc0007.Main.init(Main.java:29)
+	at com.curso.spring.springioc0007.Main.main(Main.java:24)
+
+debug weaving 'org.springframework.context.ConfigurableApplicationContext'
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

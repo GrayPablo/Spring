@@ -1,0 +1,420 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114223.656.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+info using configuration file:/C:/Users/usuario/.m2/repository/org/springframework/spring-aspects/3.1.2.RELEASE/spring-aspects-3.1.2.RELEASE.jar!/META-INF/aop.xml
+debug weaving 'org.springframework.beans.PropertyBatchUpdateException'
+abort trouble in: 
+public class org.springframework.beans.PropertyBatchUpdateException extends org.springframework.beans.BeansException:
+  private org.springframework.beans.PropertyAccessException[] propertyAccessExceptions
+  public void <init>(org.springframework.beans.PropertyAccessException[]):
+                    ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this   (line 49)
+                    ACONST_NULL
+                    INVOKESPECIAL org.springframework.beans.BeansException.<init> (Ljava/lang/String;)V
+    constructor-execution(void org.springframework.beans.PropertyBatchUpdateException.<init>(org.springframework.beans.PropertyAccessException[]))
+    |               ALOAD_1     // [Lorg/springframework/beans/PropertyAccessException; propertyAccessExceptions   (line 50)
+    |               LDC "At least 1 PropertyAccessException required"
+    |               INVOKESTATIC org.springframework.util.Assert.notEmpty ([Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this   (line 51)
+    |               ALOAD_1     // [Lorg/springframework/beans/PropertyAccessException; propertyAccessExceptions
+    |               PUTFIELD org.springframework.beans.PropertyBatchUpdateException.propertyAccessExceptions [Lorg/springframework/beans/PropertyAccessException;
+    |               RETURN   (line 52)
+    constructor-execution(void org.springframework.beans.PropertyBatchUpdateException.<init>(org.springframework.beans.PropertyAccessException[]))
+  end public void <init>(org.springframework.beans.PropertyAccessException[])
+
+  public final int getExceptionCount():
+                    ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this   (line 59)
+                    GETFIELD org.springframework.beans.PropertyBatchUpdateException.propertyAccessExceptions [Lorg/springframework/beans/PropertyAccessException;
+                    ARRAYLENGTH
+                    IRETURN
+  end public final int getExceptionCount()
+
+  public final org.springframework.beans.PropertyAccessException[] getPropertyAccessExceptions():
+                    ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this   (line 67)
+                    GETFIELD org.springframework.beans.PropertyBatchUpdateException.propertyAccessExceptions [Lorg/springframework/beans/PropertyAccessException;
+                    ARETURN
+  end public final org.springframework.beans.PropertyAccessException[] getPropertyAccessExceptions()
+
+  public org.springframework.beans.PropertyAccessException getPropertyAccessException(String):
+                    ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this   (line 74)
+                    GETFIELD org.springframework.beans.PropertyBatchUpdateException.propertyAccessExceptions [Lorg/springframework/beans/PropertyAccessException;
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L2
+                L0: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_1     // Ljava/lang/String; propertyName   (line 75)
+                    ALOAD_2     // Lorg/springframework/beans/PropertyAccessException; pae
+                    INVOKEVIRTUAL org.springframework.beans.PropertyAccessException.getPropertyName ()Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_2     // Lorg/springframework/beans/PropertyAccessException; pae   (line 76)
+                    ARETURN
+                L1: IINC_3 1   (line 74)
+                L2: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L0
+                    ACONST_NULL   (line 79)
+                    ARETURN
+  end public org.springframework.beans.PropertyAccessException getPropertyAccessException(String)
+
+  public String getMessage():
+                    NEW java.lang.StringBuilder   (line 85)
+                    DUP
+                    LDC "Failed properties: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ASTORE_1
+                    ICONST_0   (line 86)
+                    ISTORE_2
+                    GOTO L2
+                L0: ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 87)
+                    ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this
+                    GETFIELD org.springframework.beans.PropertyBatchUpdateException.propertyAccessExceptions [Lorg/springframework/beans/PropertyAccessException;
+                    ILOAD_2     // I i
+                    AALOAD
+                    INVOKEVIRTUAL org.springframework.beans.PropertyAccessException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ILOAD_2     // I i   (line 88)
+                    ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this
+                    GETFIELD org.springframework.beans.PropertyBatchUpdateException.propertyAccessExceptions [Lorg/springframework/beans/PropertyAccessException;
+                    ARRAYLENGTH
+                    ICONST_1
+                    ISUB
+                    IF_ICMPGE L1
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 89)
+                    LDC "; "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L1: IINC_2 1     // I i   (line 86)
+                L2: ILOAD_2     // I i
+                    ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this
+                    GETFIELD org.springframework.beans.PropertyBatchUpdateException.propertyAccessExceptions [Lorg/springframework/beans/PropertyAccessException;
+                    ARRAYLENGTH
+                    IF_ICMPLT L0
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 92)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String getMessage()
+
+  public String toString():
+                    NEW java.lang.StringBuilder   (line 97)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 98)
+                    ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "; nested PropertyAccessExceptions ("
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 99)
+                    ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this
+                    INVOKEVIRTUAL org.springframework.beans.PropertyBatchUpdateException.getExceptionCount ()I
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+                    LDC ") are:"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ICONST_0   (line 100)
+                    ISTORE_2
+                    GOTO L1
+                L0: ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 101)
+                    BIPUSH 10
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    LDC "PropertyAccessException "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ILOAD_2     // I i
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 102)
+                    ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this
+                    GETFIELD org.springframework.beans.PropertyBatchUpdateException.propertyAccessExceptions [Lorg/springframework/beans/PropertyAccessException;
+                    ILOAD_2     // I i
+                    AALOAD
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    POP
+                    IINC_2 1     // I i   (line 100)
+                L1: ILOAD_2     // I i
+                    ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this
+                    GETFIELD org.springframework.beans.PropertyBatchUpdateException.propertyAccessExceptions [Lorg/springframework/beans/PropertyAccessException;
+                    ARRAYLENGTH
+                    IF_ICMPLT L0
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 104)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+  public void printStackTrace(java.io.PrintStream):
+                    ALOAD_1     // Ljava/io/PrintStream; ps   (line 109)
+                    DUP
+                    ASTORE_2
+                    MONITORENTER
+    finally -> E1
+    |               ALOAD_1     // Ljava/io/PrintStream; ps   (line 110)
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    |               INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               LDC "; nested PropertyAccessException details ("
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this   (line 111)
+    |               INVOKEVIRTUAL org.springframework.beans.PropertyBatchUpdateException.getExceptionCount ()I
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+    |               LDC ") are:"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               INVOKEVIRTUAL java.io.PrintStream.println (Ljava/lang/String;)V   (line 110)
+    |               ICONST_0   (line 112)
+    |               ISTORE_3
+    |               GOTO L1
+    |           L0: ALOAD_1     // Ljava/io/PrintStream; ps   (line 113)
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               LDC "PropertyAccessException "
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ILOAD_3     // I i
+    |               ICONST_1
+    |               IADD
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+    |               LDC ":"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               INVOKEVIRTUAL java.io.PrintStream.println (Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this   (line 114)
+    |               GETFIELD org.springframework.beans.PropertyBatchUpdateException.propertyAccessExceptions [Lorg/springframework/beans/PropertyAccessException;
+    |               ILOAD_3     // I i
+    |               AALOAD
+    |               ALOAD_1     // Ljava/io/PrintStream; ps
+    |               INVOKEVIRTUAL org.springframework.beans.PropertyAccessException.printStackTrace (Ljava/io/PrintStream;)V
+    |               IINC_3 1     // I i   (line 112)
+    |           L1: ILOAD_3     // I i
+    |               ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this
+    |               GETFIELD org.springframework.beans.PropertyBatchUpdateException.propertyAccessExceptions [Lorg/springframework/beans/PropertyAccessException;
+    |               ARRAYLENGTH
+    |               IF_ICMPLT L0
+    |               ALOAD_2   (line 109)
+    |               MONITOREXIT
+    finally -> E1
+                    GOTO L2
+    finally -> E1
+    |           E1: ALOAD_2
+    |               MONITOREXIT
+    finally -> E1
+                    ATHROW
+                L2: RETURN   (line 117)
+  end public void printStackTrace(java.io.PrintStream)
+
+  public void printStackTrace(java.io.PrintWriter):
+                    ALOAD_1     // Ljava/io/PrintWriter; pw   (line 121)
+                    DUP
+                    ASTORE_2
+                    MONITORENTER
+    finally -> E1
+    |               ALOAD_1     // Ljava/io/PrintWriter; pw   (line 122)
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    |               INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               LDC "; nested PropertyAccessException details ("
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this   (line 123)
+    |               INVOKEVIRTUAL org.springframework.beans.PropertyBatchUpdateException.getExceptionCount ()I
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+    |               LDC ") are:"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               INVOKEVIRTUAL java.io.PrintWriter.println (Ljava/lang/String;)V   (line 122)
+    |               ICONST_0   (line 124)
+    |               ISTORE_3
+    |               GOTO L1
+    |           L0: ALOAD_1     // Ljava/io/PrintWriter; pw   (line 125)
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               LDC "PropertyAccessException "
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ILOAD_3     // I i
+    |               ICONST_1
+    |               IADD
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+    |               LDC ":"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               INVOKEVIRTUAL java.io.PrintWriter.println (Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this   (line 126)
+    |               GETFIELD org.springframework.beans.PropertyBatchUpdateException.propertyAccessExceptions [Lorg/springframework/beans/PropertyAccessException;
+    |               ILOAD_3     // I i
+    |               AALOAD
+    |               ALOAD_1     // Ljava/io/PrintWriter; pw
+    |               INVOKEVIRTUAL org.springframework.beans.PropertyAccessException.printStackTrace (Ljava/io/PrintWriter;)V
+    |               IINC_3 1     // I i   (line 124)
+    |           L1: ILOAD_3     // I i
+    |               ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this
+    |               GETFIELD org.springframework.beans.PropertyBatchUpdateException.propertyAccessExceptions [Lorg/springframework/beans/PropertyAccessException;
+    |               ARRAYLENGTH
+    |               IF_ICMPLT L0
+    |               ALOAD_2   (line 121)
+    |               MONITOREXIT
+    finally -> E1
+                    GOTO L2
+    finally -> E1
+    |           E1: ALOAD_2
+    |               MONITOREXIT
+    finally -> E1
+                    ATHROW
+                L2: RETURN   (line 129)
+  end public void printStackTrace(java.io.PrintWriter)
+
+  public boolean contains(Class):
+                    ALOAD_1     // Ljava/lang/Class; exType   (line 133)
+                    IFNONNULL L0
+                    ICONST_0   (line 134)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/Class; exType   (line 136)
+                    ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this
+                    INVOKEVIRTUAL java.lang.Class.isInstance (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ICONST_1   (line 137)
+                    IRETURN
+                L1: ALOAD_0     // Lorg/springframework/beans/PropertyBatchUpdateException; this   (line 139)
+                    GETFIELD org.springframework.beans.PropertyBatchUpdateException.propertyAccessExceptions [Lorg/springframework/beans/PropertyAccessException;
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L4
+                L2: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_2     // Lorg/springframework/beans/PropertyAccessException; pae   (line 140)
+                    ALOAD_1     // Ljava/lang/Class; exType
+                    INVOKEVIRTUAL org.springframework.beans.PropertyAccessException.contains (Ljava/lang/Class;)Z
+                    IFEQ L3
+                    ICONST_1   (line 141)
+                    IRETURN
+                L3: IINC_3 1   (line 139)
+                L4: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L2
+                    ICONST_0   (line 144)
+                    IRETURN
+  end public boolean contains(Class)
+
+end public class org.springframework.beans.PropertyBatchUpdateException
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.beans.NotReadablePropertyException'
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

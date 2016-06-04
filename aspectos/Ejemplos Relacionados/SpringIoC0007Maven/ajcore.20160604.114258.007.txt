@@ -1,0 +1,1063 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20160604.114258.007.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_72\jre\bin
+java.vm.version=25.72-b15
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=ES
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven
+java.runtime.version=1.8.0_72-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\usuario\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\CollabNet\Subversion Client;E:\bin\Sencha\Cmd\5.1.3.61;C:\Users\usuario\bin\Sencha\Cmd\5.1.3.61;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\sbt\\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\.meteor\;C:\Users\usuario\AppData\Roaming\npm;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\usuario
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=C:\Users\usuario\git\spring\aspectos\Ejemplos Relacionados\SpringIoC0007Maven\target\classes;C:\Users\usuario\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-aspects\3.1.2.RELEASE\spring-aspects-3.1.2.RELEASE.jar;C:\Users\usuario\.m2\repository\org\springframework\spring-context-support\3.1.2.RELEASE\spring-context-support-3.1.2.RELEASE.jar;.\..\aspectjweaver.jar
+user.name=usuario
+java.vm.specification.version=1.8
+sun.java.command=com.curso.spring.springioc0007.Main
+java.home=C:\Program Files\Java\jdk1.8.0_72\jre
+sun.arch.data.model=64
+user.language=es
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_72
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+info using configuration file:/C:/Users/usuario/.m2/repository/org/springframework/spring-aspects/3.1.2.RELEASE/spring-aspects-3.1.2.RELEASE.jar!/META-INF/aop.xml
+debug weaving 'org.springframework.beans.factory.parsing.BeanEntry'
+abort trouble in: 
+public class org.springframework.beans.factory.parsing.BeanEntry extends java.lang.Object implements org.springframework.beans.factory.parsing.ParseState$Entry:
+  private String beanDefinitionName
+  public void <init>(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/parsing/BeanEntry; this   (line 34)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.parsing.BeanEntry.<init>(java.lang.String))
+    |               ALOAD_0     // Lorg/springframework/beans/factory/parsing/BeanEntry; this   (line 35)
+    |               ALOAD_1     // Ljava/lang/String; beanDefinitionName
+    |               PUTFIELD org.springframework.beans.factory.parsing.BeanEntry.beanDefinitionName Ljava/lang/String;
+    |               RETURN   (line 36)
+    constructor-execution(void org.springframework.beans.factory.parsing.BeanEntry.<init>(java.lang.String))
+  end public void <init>(String)
+
+  public String toString():
+                    NEW java.lang.StringBuilder   (line 41)
+                    DUP
+                    LDC "Bean '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/parsing/BeanEntry; this
+                    GETFIELD org.springframework.beans.factory.parsing.BeanEntry.beanDefinitionName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+end public class org.springframework.beans.factory.parsing.BeanEntry
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.util.xml.DomUtils'
+abort trouble in: 
+public abstract class org.springframework.util.xml.DomUtils extends java.lang.Object:
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/util/xml/DomUtils; this   (line 46)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.util.xml.DomUtils.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.util.xml.DomUtils.<init>())
+  end public void <init>()
+
+  public static java.util.List getChildElementsByTagName(org.w3c.dom.Element, String[]):
+                    ALOAD_0     // Lorg/w3c/dom/Element; ele   (line 60)
+                    LDC "Element must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // [Ljava/lang/String; childEleNames   (line 61)
+                    LDC "Element names collection must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // [Ljava/lang/String; childEleNames   (line 62)
+                    INVOKESTATIC java.util.Arrays.asList ([Ljava/lang/Object;)Ljava/util/List;
+                    ASTORE_2
+                    ALOAD_0     // Lorg/w3c/dom/Element; ele   (line 63)
+                    INVOKEINTERFACE org.w3c.dom.Element.getChildNodes ()Lorg/w3c/dom/NodeList;
+                    ASTORE_3
+                    NEW java.util.ArrayList   (line 64)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE 4
+                    ICONST_0   (line 65)
+                    ISTORE 5
+                    GOTO L2
+                L0: ALOAD_3     // Lorg/w3c/dom/NodeList; nl   (line 66)
+                    ILOAD 5     // I i
+                    INVOKEINTERFACE org.w3c.dom.NodeList.item (I)Lorg/w3c/dom/Node;
+                    ASTORE 6
+                    ALOAD 6     // Lorg/w3c/dom/Node; node   (line 67)
+                    INSTANCEOF org.w3c.dom.Element
+                    IFEQ L1
+                    ALOAD 6     // Lorg/w3c/dom/Node; node
+                    ALOAD_2     // Ljava/util/List; childEleNameList
+                    INVOKESTATIC org.springframework.util.xml.DomUtils.nodeNameMatch (Lorg/w3c/dom/Node;Ljava/util/Collection;)Z
+                    IFEQ L1
+                    ALOAD 4     // Ljava/util/List; childEles   (line 68)
+                    ALOAD 6     // Lorg/w3c/dom/Node; node
+                    CHECKCAST org.w3c.dom.Element
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                L1: IINC 5 1     // I i   (line 65)
+                L2: ILOAD 5     // I i
+                    ALOAD_3     // Lorg/w3c/dom/NodeList; nl
+                    INVOKEINTERFACE org.w3c.dom.NodeList.getLength ()I
+                    IF_ICMPLT L0
+                    ALOAD 4     // Ljava/util/List; childEles   (line 71)
+                    ARETURN
+  end public static java.util.List getChildElementsByTagName(org.w3c.dom.Element, String[])
+
+  public static java.util.List getChildElementsByTagName(org.w3c.dom.Element, String):
+                    ALOAD_0     // Lorg/w3c/dom/Element; ele   (line 86)
+                    ICONST_1
+                    ANEWARRAY java.lang.String
+                    DUP
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; childEleName
+                    AASTORE
+                    INVOKESTATIC org.springframework.util.xml.DomUtils.getChildElementsByTagName (Lorg/w3c/dom/Element;[Ljava/lang/String;)Ljava/util/List;
+                    ARETURN
+  end public static java.util.List getChildElementsByTagName(org.w3c.dom.Element, String)
+
+  public static org.w3c.dom.Element getChildElementByTagName(org.w3c.dom.Element, String):
+                    ALOAD_0     // Lorg/w3c/dom/Element; ele   (line 97)
+                    LDC "Element must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; childEleName   (line 98)
+                    LDC "Element name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/w3c/dom/Element; ele   (line 99)
+                    INVOKEINTERFACE org.w3c.dom.Element.getChildNodes ()Lorg/w3c/dom/NodeList;
+                    ASTORE_2
+                    ICONST_0   (line 100)
+                    ISTORE_3
+                    GOTO L2
+                L0: ALOAD_2     // Lorg/w3c/dom/NodeList; nl   (line 101)
+                    ILOAD_3     // I i
+                    INVOKEINTERFACE org.w3c.dom.NodeList.item (I)Lorg/w3c/dom/Node;
+                    ASTORE 4
+                    ALOAD 4     // Lorg/w3c/dom/Node; node   (line 102)
+                    INSTANCEOF org.w3c.dom.Element
+                    IFEQ L1
+                    ALOAD 4     // Lorg/w3c/dom/Node; node
+                    ALOAD_1     // Ljava/lang/String; childEleName
+                    INVOKESTATIC org.springframework.util.xml.DomUtils.nodeNameMatch (Lorg/w3c/dom/Node;Ljava/lang/String;)Z
+                    IFEQ L1
+                    ALOAD 4     // Lorg/w3c/dom/Node; node   (line 103)
+                    CHECKCAST org.w3c.dom.Element
+                    ARETURN
+                L1: IINC_3 1     // I i   (line 100)
+                L2: ILOAD_3     // I i
+                    ALOAD_2     // Lorg/w3c/dom/NodeList; nl
+                    INVOKEINTERFACE org.w3c.dom.NodeList.getLength ()I
+                    IF_ICMPLT L0
+                    ACONST_NULL   (line 106)
+                    ARETURN
+  end public static org.w3c.dom.Element getChildElementByTagName(org.w3c.dom.Element, String)
+
+  public static String getChildElementValueByTagName(org.w3c.dom.Element, String):
+                    ALOAD_0     // Lorg/w3c/dom/Element; ele   (line 117)
+                    ALOAD_1     // Ljava/lang/String; childEleName
+                    INVOKESTATIC org.springframework.util.xml.DomUtils.getChildElementByTagName (Lorg/w3c/dom/Element;Ljava/lang/String;)Lorg/w3c/dom/Element;
+                    ASTORE_2
+                    ALOAD_2     // Lorg/w3c/dom/Element; child   (line 118)
+                    IFNULL L0
+                    ALOAD_2     // Lorg/w3c/dom/Element; child
+                    INVOKESTATIC org.springframework.util.xml.DomUtils.getTextValue (Lorg/w3c/dom/Element;)Ljava/lang/String;
+                    GOTO L1
+                L0: ACONST_NULL
+                L1: ARETURN
+  end public static String getChildElementValueByTagName(org.w3c.dom.Element, String)
+
+  public static java.util.List getChildElements(org.w3c.dom.Element):
+                    ALOAD_0     // Lorg/w3c/dom/Element; ele   (line 128)
+                    LDC "Element must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/w3c/dom/Element; ele   (line 129)
+                    INVOKEINTERFACE org.w3c.dom.Element.getChildNodes ()Lorg/w3c/dom/NodeList;
+                    ASTORE_1
+                    NEW java.util.ArrayList   (line 130)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 131)
+                    ISTORE_3
+                    GOTO L2
+                L0: ALOAD_1     // Lorg/w3c/dom/NodeList; nl   (line 132)
+                    ILOAD_3     // I i
+                    INVOKEINTERFACE org.w3c.dom.NodeList.item (I)Lorg/w3c/dom/Node;
+                    ASTORE 4
+                    ALOAD 4     // Lorg/w3c/dom/Node; node   (line 133)
+                    INSTANCEOF org.w3c.dom.Element
+                    IFEQ L1
+                    ALOAD_2     // Ljava/util/List; childEles   (line 134)
+                    ALOAD 4     // Lorg/w3c/dom/Node; node
+                    CHECKCAST org.w3c.dom.Element
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                L1: IINC_3 1     // I i   (line 131)
+                L2: ILOAD_3     // I i
+                    ALOAD_1     // Lorg/w3c/dom/NodeList; nl
+                    INVOKEINTERFACE org.w3c.dom.NodeList.getLength ()I
+                    IF_ICMPLT L0
+                    ALOAD_2     // Ljava/util/List; childEles   (line 137)
+                    ARETURN
+  end public static java.util.List getChildElements(org.w3c.dom.Element)
+
+  public static String getTextValue(org.w3c.dom.Element):
+                    ALOAD_0     // Lorg/w3c/dom/Element; valueEle   (line 149)
+                    LDC "Element must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    NEW java.lang.StringBuilder   (line 150)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_1
+                    ALOAD_0     // Lorg/w3c/dom/Element; valueEle   (line 151)
+                    INVOKEINTERFACE org.w3c.dom.Element.getChildNodes ()Lorg/w3c/dom/NodeList;
+                    ASTORE_2
+                    ICONST_0   (line 152)
+                    ISTORE_3
+                    GOTO L4
+                L0: ALOAD_2     // Lorg/w3c/dom/NodeList; nl   (line 153)
+                    ILOAD_3     // I i
+                    INVOKEINTERFACE org.w3c.dom.NodeList.item (I)Lorg/w3c/dom/Node;
+                    ASTORE 4
+                    ALOAD 4     // Lorg/w3c/dom/Node; item   (line 154)
+                    INSTANCEOF org.w3c.dom.CharacterData
+                    IFEQ L1
+                    ALOAD 4     // Lorg/w3c/dom/Node; item
+                    INSTANCEOF org.w3c.dom.Comment
+                    IFEQ L2
+                L1: ALOAD 4     // Lorg/w3c/dom/Node; item
+                    INSTANCEOF org.w3c.dom.EntityReference
+                    IFEQ L3
+                L2: ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 155)
+                    ALOAD 4     // Lorg/w3c/dom/Node; item
+                    INVOKEINTERFACE org.w3c.dom.Node.getNodeValue ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L3: IINC_3 1     // I i   (line 152)
+                L4: ILOAD_3     // I i
+                    ALOAD_2     // Lorg/w3c/dom/NodeList; nl
+                    INVOKEINTERFACE org.w3c.dom.NodeList.getLength ()I
+                    IF_ICMPLT L0
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 158)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String getTextValue(org.w3c.dom.Element)
+
+  public static boolean nodeNameEquals(org.w3c.dom.Node, String):
+                    ALOAD_0     // Lorg/w3c/dom/Node; node   (line 166)
+                    LDC "Node must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; desiredName   (line 167)
+                    LDC "Desired name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/w3c/dom/Node; node   (line 168)
+                    ALOAD_1     // Ljava/lang/String; desiredName
+                    INVOKESTATIC org.springframework.util.xml.DomUtils.nodeNameMatch (Lorg/w3c/dom/Node;Ljava/lang/String;)Z
+                    IRETURN
+  end public static boolean nodeNameEquals(org.w3c.dom.Node, String)
+
+  public static org.xml.sax.ContentHandler createContentHandler(org.w3c.dom.Node):
+                    NEW org.springframework.util.xml.DomContentHandler   (line 178)
+                    DUP
+                    ALOAD_0     // Lorg/w3c/dom/Node; node
+                    INVOKESPECIAL org.springframework.util.xml.DomContentHandler.<init> (Lorg/w3c/dom/Node;)V
+                    ARETURN
+  end public static org.xml.sax.ContentHandler createContentHandler(org.w3c.dom.Node)
+
+  private static boolean nodeNameMatch(org.w3c.dom.Node, String):
+                    ALOAD_1     // Ljava/lang/String; desiredName   (line 183)
+                    ALOAD_0     // Lorg/w3c/dom/Node; node
+                    INVOKEINTERFACE org.w3c.dom.Node.getNodeName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/lang/String; desiredName
+                    ALOAD_0     // Lorg/w3c/dom/Node; node
+                    INVOKEINTERFACE org.w3c.dom.Node.getLocalName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ICONST_0
+                    IRETURN
+                L0: ICONST_1
+                    IRETURN
+  end private static boolean nodeNameMatch(org.w3c.dom.Node, String)
+
+  private static boolean nodeNameMatch(org.w3c.dom.Node, java.util.Collection):
+                    ALOAD_1     // Ljava/util/Collection; desiredNames   (line 188)
+                    ALOAD_0     // Lorg/w3c/dom/Node; node
+                    INVOKEINTERFACE org.w3c.dom.Node.getNodeName ()Ljava/lang/String;
+                    INVOKEINTERFACE java.util.Collection.contains (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/util/Collection; desiredNames
+                    ALOAD_0     // Lorg/w3c/dom/Node; node
+                    INVOKEINTERFACE org.w3c.dom.Node.getLocalName ()Ljava/lang/String;
+                    INVOKEINTERFACE java.util.Collection.contains (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ICONST_0
+                    IRETURN
+                L0: ICONST_1
+                    IRETURN
+  end private static boolean nodeNameMatch(org.w3c.dom.Node, java.util.Collection)
+
+end public abstract class org.springframework.util.xml.DomUtils
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.beans.factory.parsing.PropertyEntry'
+abort trouble in: 
+public class org.springframework.beans.factory.parsing.PropertyEntry extends java.lang.Object implements org.springframework.beans.factory.parsing.ParseState$Entry:
+  private final String name
+  public void <init>(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/parsing/PropertyEntry; this   (line 38)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.parsing.PropertyEntry.<init>(java.lang.String))
+    |               ALOAD_1     // Ljava/lang/String; name   (line 39)
+    |               INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+    |               IFNE L0
+    |               NEW java.lang.IllegalArgumentException   (line 40)
+    |               DUP
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               LDC "Invalid property name '"
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "'."
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+    |               ATHROW
+    |           L0: ALOAD_0     // Lorg/springframework/beans/factory/parsing/PropertyEntry; this   (line 42)
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               PUTFIELD org.springframework.beans.factory.parsing.PropertyEntry.name Ljava/lang/String;
+    |               RETURN   (line 43)
+    constructor-execution(void org.springframework.beans.factory.parsing.PropertyEntry.<init>(java.lang.String))
+  end public void <init>(String)
+
+  public String toString():
+                    NEW java.lang.StringBuilder   (line 48)
+                    DUP
+                    LDC "Property '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/parsing/PropertyEntry; this
+                    GETFIELD org.springframework.beans.factory.parsing.PropertyEntry.name Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+end public class org.springframework.beans.factory.parsing.PropertyEntry
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.beans.factory.config.RuntimeBeanReference'
+abort trouble in: 
+public class org.springframework.beans.factory.config.RuntimeBeanReference extends java.lang.Object implements org.springframework.beans.factory.config.BeanReference:
+  private final String beanName
+  private final boolean toParent
+  private Object source
+  public void <init>(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; this   (line 46)
+                    ALOAD_1     // Ljava/lang/String; beanName
+                    ICONST_0
+                    INVOKESPECIAL org.springframework.beans.factory.config.RuntimeBeanReference.<init> (Ljava/lang/String;Z)V
+    constructor-execution(void org.springframework.beans.factory.config.RuntimeBeanReference.<init>(java.lang.String))
+    |               RETURN   (line 47)
+    constructor-execution(void org.springframework.beans.factory.config.RuntimeBeanReference.<init>(java.lang.String))
+  end public void <init>(String)
+
+  public void <init>(String, boolean):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; this   (line 57)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.RuntimeBeanReference.<init>(java.lang.String, boolean))
+    |               ALOAD_1     // Ljava/lang/String; beanName   (line 58)
+    |               LDC "'beanName' must not be empty"
+    |               INVOKESTATIC org.springframework.util.Assert.hasText (Ljava/lang/String;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; this   (line 59)
+    |               ALOAD_1     // Ljava/lang/String; beanName
+    |               PUTFIELD org.springframework.beans.factory.config.RuntimeBeanReference.beanName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; this   (line 60)
+    |               ILOAD_2     // Z toParent
+    |               PUTFIELD org.springframework.beans.factory.config.RuntimeBeanReference.toParent Z
+    |               RETURN   (line 61)
+    constructor-execution(void org.springframework.beans.factory.config.RuntimeBeanReference.<init>(java.lang.String, boolean))
+  end public void <init>(String, boolean)
+
+  public String getBeanName():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; this   (line 65)
+                    GETFIELD org.springframework.beans.factory.config.RuntimeBeanReference.beanName Ljava/lang/String;
+                    ARETURN
+  end public String getBeanName()
+
+  public boolean isToParent():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; this   (line 73)
+                    GETFIELD org.springframework.beans.factory.config.RuntimeBeanReference.toParent Z
+                    IRETURN
+  end public boolean isToParent()
+
+  public void setSource(Object):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; this   (line 81)
+                    ALOAD_1     // Ljava/lang/Object; source
+                    PUTFIELD org.springframework.beans.factory.config.RuntimeBeanReference.source Ljava/lang/Object;
+                    RETURN   (line 82)
+  end public void setSource(Object)
+
+  public Object getSource():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; this   (line 85)
+                    GETFIELD org.springframework.beans.factory.config.RuntimeBeanReference.source Ljava/lang/Object;
+                    ARETURN
+  end public Object getSource()
+
+  public boolean equals(Object):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; this   (line 91)
+                    ALOAD_1     // Ljava/lang/Object; other
+                    IF_ACMPNE L0
+                    ICONST_1   (line 92)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/Object; other   (line 94)
+                    INSTANCEOF org.springframework.beans.factory.config.RuntimeBeanReference
+                    IFNE L1
+                    ICONST_0   (line 95)
+                    IRETURN
+                L1: ALOAD_1     // Ljava/lang/Object; other   (line 97)
+                    CHECKCAST org.springframework.beans.factory.config.RuntimeBeanReference
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; this   (line 98)
+                    GETFIELD org.springframework.beans.factory.config.RuntimeBeanReference.beanName Ljava/lang/String;
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; that
+                    GETFIELD org.springframework.beans.factory.config.RuntimeBeanReference.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; this
+                    GETFIELD org.springframework.beans.factory.config.RuntimeBeanReference.toParent Z
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; that
+                    GETFIELD org.springframework.beans.factory.config.RuntimeBeanReference.toParent Z
+                    IF_ICMPNE L2
+                    ICONST_1
+                    IRETURN
+                L2: ICONST_0
+                    IRETURN
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; this   (line 103)
+                    GETFIELD org.springframework.beans.factory.config.RuntimeBeanReference.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.hashCode ()I
+                    ISTORE_1
+                    BIPUSH 29   (line 104)
+                    ILOAD_1     // I result
+                    IMUL
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; this
+                    GETFIELD org.springframework.beans.factory.config.RuntimeBeanReference.toParent Z
+                    IFEQ L0
+                    ICONST_1
+                    GOTO L1
+                L0: ICONST_0
+                L1: IADD
+                    ISTORE_1     // I result
+                    ILOAD_1     // I result   (line 105)
+                    IRETURN
+  end public int hashCode()
+
+  public String toString():
+                    NEW java.lang.StringBuilder   (line 110)
+                    DUP
+                    BIPUSH 60
+                    INVOKESTATIC java.lang.String.valueOf (C)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; this
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanReference.getBeanName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    BIPUSH 62
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+end public class org.springframework.beans.factory.config.RuntimeBeanReference
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.beans.factory.BeanFactoryUtils'
+abort trouble in: 
+public abstract class org.springframework.beans.factory.BeanFactoryUtils extends java.lang.Object:
+  public static final String GENERATED_BEAN_NAME_SEPARATOR = "#"
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/factory/BeanFactoryUtils; this   (line 44)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.BeanFactoryUtils.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.beans.factory.BeanFactoryUtils.<init>())
+  end public void <init>()
+
+  public static boolean isFactoryDereference(String):
+                    ALOAD_0     // Ljava/lang/String; name   (line 61)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/String; name
+                    LDC "&"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static boolean isFactoryDereference(String)
+
+  public static String transformedBeanName(String):
+                    ALOAD_0     // Ljava/lang/String; name   (line 72)
+                    LDC "'name' must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/String; name   (line 73)
+                    ASTORE_1
+                    GOTO L1   (line 74)
+                L0: ALOAD_1     // Ljava/lang/String; beanName   (line 75)
+                    LDC "&"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE_1     // Ljava/lang/String; beanName
+                L1: ALOAD_1     // Ljava/lang/String; beanName   (line 74)
+                    LDC "&"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/lang/String; beanName   (line 77)
+                    ARETURN
+  end public static String transformedBeanName(String)
+
+  public static boolean isGeneratedBeanName(String):
+                    ALOAD_0     // Ljava/lang/String; name   (line 90)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/String; name
+                    LDC "#"
+                    INVOKEVIRTUAL java.lang.String.contains (Ljava/lang/CharSequence;)Z
+                    IFEQ L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static boolean isGeneratedBeanName(String)
+
+  public static String originalBeanName(String):
+                    ALOAD_0     // Ljava/lang/String; name   (line 101)
+                    LDC "'name' must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/String; name   (line 102)
+                    LDC "#"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ISTORE_1
+                    ILOAD_1     // I separatorIndex   (line 103)
+                    ICONST_M1
+                    IF_ICMPEQ L0
+                    ALOAD_0     // Ljava/lang/String; name
+                    ICONST_0
+                    ILOAD_1     // I separatorIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    GOTO L1
+                L0: ALOAD_0     // Ljava/lang/String; name
+                L1: ARETURN
+  end public static String originalBeanName(String)
+
+  public static int countBeansIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory):
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 116)
+                    INVOKESTATIC org.springframework.beans.factory.BeanFactoryUtils.beanNamesIncludingAncestors (Lorg/springframework/beans/factory/ListableBeanFactory;)[Ljava/lang/String;
+                    ARRAYLENGTH
+                    IRETURN
+  end public static int countBeansIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory)
+
+  public static String[] beanNamesIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory):
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 126)
+                    LDC java.lang.Object
+                    INVOKESTATIC org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors (Lorg/springframework/beans/factory/ListableBeanFactory;Ljava/lang/Class;)[Ljava/lang/String;
+                    ARETURN
+  end public static String[] beanNamesIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory)
+
+  public static String[] beanNamesForTypeIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory, Class):
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 143)
+                    LDC "ListableBeanFactory must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 144)
+                    ALOAD_1     // Ljava/lang/Class; type
+                    INVOKEINTERFACE org.springframework.beans.factory.ListableBeanFactory.getBeanNamesForType (Ljava/lang/Class;)[Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 145)
+                    INSTANCEOF org.springframework.beans.factory.HierarchicalBeanFactory
+                    IFEQ L3
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 146)
+                    CHECKCAST org.springframework.beans.factory.HierarchicalBeanFactory
+                    ASTORE_3
+                    ALOAD_3     // Lorg/springframework/beans/factory/HierarchicalBeanFactory; hbf   (line 147)
+                    INVOKEINTERFACE org.springframework.beans.factory.HierarchicalBeanFactory.getParentBeanFactory ()Lorg/springframework/beans/factory/BeanFactory;
+                    INSTANCEOF org.springframework.beans.factory.ListableBeanFactory
+                    IFEQ L3
+                    ALOAD_3     // Lorg/springframework/beans/factory/HierarchicalBeanFactory; hbf   (line 149)
+                    INVOKEINTERFACE org.springframework.beans.factory.HierarchicalBeanFactory.getParentBeanFactory ()Lorg/springframework/beans/factory/BeanFactory;
+                    CHECKCAST org.springframework.beans.factory.ListableBeanFactory
+                    ALOAD_1     // Ljava/lang/Class; type
+                    INVOKESTATIC org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors (Lorg/springframework/beans/factory/ListableBeanFactory;Ljava/lang/Class;)[Ljava/lang/String;   (line 148)
+                    ASTORE 4
+                    NEW java.util.ArrayList   (line 150)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE 5
+                    ALOAD 5     // Ljava/util/List; resultList   (line 151)
+                    ALOAD_2     // [Ljava/lang/String; result
+                    INVOKESTATIC java.util.Arrays.asList ([Ljava/lang/Object;)Ljava/util/List;
+                    CHECKCAST java.util.Collection
+                    INVOKEINTERFACE java.util.List.addAll (Ljava/util/Collection;)Z
+                    POP
+                    ALOAD 4     // [Ljava/lang/String; parentResult   (line 152)
+                    DUP
+                    ASTORE 9
+                    ARRAYLENGTH
+                    ISTORE 8
+                    ICONST_0
+                    ISTORE 7
+                    GOTO L2
+                L0: ALOAD 9
+                    ILOAD 7
+                    AALOAD
+                    ASTORE 6
+                    ALOAD 5     // Ljava/util/List; resultList   (line 153)
+                    ALOAD 6     // Ljava/lang/String; beanName
+                    INVOKEINTERFACE java.util.List.contains (Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_3     // Lorg/springframework/beans/factory/HierarchicalBeanFactory; hbf
+                    ALOAD 6     // Ljava/lang/String; beanName
+                    INVOKEINTERFACE org.springframework.beans.factory.HierarchicalBeanFactory.containsLocalBean (Ljava/lang/String;)Z
+                    IFNE L1
+                    ALOAD 5     // Ljava/util/List; resultList   (line 154)
+                    ALOAD 6     // Ljava/lang/String; beanName
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                L1: IINC 7 1   (line 152)
+                L2: ILOAD 7
+                    ILOAD 8
+                    IF_ICMPLT L0
+                    ALOAD 5     // Ljava/util/List; resultList   (line 157)
+                    INVOKESTATIC org.springframework.util.StringUtils.toStringArray (Ljava/util/Collection;)[Ljava/lang/String;
+                    ASTORE_2     // [Ljava/lang/String; result
+                L3: ALOAD_2     // [Ljava/lang/String; result   (line 160)
+                    ARETURN
+  end public static String[] beanNamesForTypeIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory, Class)
+
+  public static String[] beanNamesForTypeIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory, Class, boolean, boolean):
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 186)
+                    LDC "ListableBeanFactory must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 187)
+                    ALOAD_1     // Ljava/lang/Class; type
+                    ILOAD_2     // Z includeNonSingletons
+                    ILOAD_3     // Z allowEagerInit
+                    INVOKEINTERFACE org.springframework.beans.factory.ListableBeanFactory.getBeanNamesForType (Ljava/lang/Class;ZZ)[Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 188)
+                    INSTANCEOF org.springframework.beans.factory.HierarchicalBeanFactory
+                    IFEQ L3
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 189)
+                    CHECKCAST org.springframework.beans.factory.HierarchicalBeanFactory
+                    ASTORE 5
+                    ALOAD 5     // Lorg/springframework/beans/factory/HierarchicalBeanFactory; hbf   (line 190)
+                    INVOKEINTERFACE org.springframework.beans.factory.HierarchicalBeanFactory.getParentBeanFactory ()Lorg/springframework/beans/factory/BeanFactory;
+                    INSTANCEOF org.springframework.beans.factory.ListableBeanFactory
+                    IFEQ L3
+                    ALOAD 5     // Lorg/springframework/beans/factory/HierarchicalBeanFactory; hbf   (line 192)
+                    INVOKEINTERFACE org.springframework.beans.factory.HierarchicalBeanFactory.getParentBeanFactory ()Lorg/springframework/beans/factory/BeanFactory;
+                    CHECKCAST org.springframework.beans.factory.ListableBeanFactory
+                    ALOAD_1     // Ljava/lang/Class; type
+                    ILOAD_2     // Z includeNonSingletons
+                    ILOAD_3     // Z allowEagerInit
+                    INVOKESTATIC org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors (Lorg/springframework/beans/factory/ListableBeanFactory;Ljava/lang/Class;ZZ)[Ljava/lang/String;   (line 191)
+                    ASTORE 6
+                    NEW java.util.ArrayList   (line 193)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE 7
+                    ALOAD 7     // Ljava/util/List; resultList   (line 194)
+                    ALOAD 4     // [Ljava/lang/String; result
+                    INVOKESTATIC java.util.Arrays.asList ([Ljava/lang/Object;)Ljava/util/List;
+                    CHECKCAST java.util.Collection
+                    INVOKEINTERFACE java.util.List.addAll (Ljava/util/Collection;)Z
+                    POP
+                    ALOAD 6     // [Ljava/lang/String; parentResult   (line 195)
+                    DUP
+                    ASTORE 11
+                    ARRAYLENGTH
+                    ISTORE 10
+                    ICONST_0
+                    ISTORE 9
+                    GOTO L2
+                L0: ALOAD 11
+                    ILOAD 9
+                    AALOAD
+                    ASTORE 8
+                    ALOAD 7     // Ljava/util/List; resultList   (line 196)
+                    ALOAD 8     // Ljava/lang/String; beanName
+                    INVOKEINTERFACE java.util.List.contains (Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD 5     // Lorg/springframework/beans/factory/HierarchicalBeanFactory; hbf
+                    ALOAD 8     // Ljava/lang/String; beanName
+                    INVOKEINTERFACE org.springframework.beans.factory.HierarchicalBeanFactory.containsLocalBean (Ljava/lang/String;)Z
+                    IFNE L1
+                    ALOAD 7     // Ljava/util/List; resultList   (line 197)
+                    ALOAD 8     // Ljava/lang/String; beanName
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                L1: IINC 9 1   (line 195)
+                L2: ILOAD 9
+                    ILOAD 10
+                    IF_ICMPLT L0
+                    ALOAD 7     // Ljava/util/List; resultList   (line 200)
+                    INVOKESTATIC org.springframework.util.StringUtils.toStringArray (Ljava/util/Collection;)[Ljava/lang/String;
+                    ASTORE 4     // [Ljava/lang/String; result
+                L3: ALOAD 4     // [Ljava/lang/String; result   (line 203)
+                    ARETURN
+  end public static String[] beanNamesForTypeIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory, Class, boolean, boolean)
+
+  public static java.util.Map beansOfTypeIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory, Class) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 226)
+                    LDC "ListableBeanFactory must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    NEW java.util.LinkedHashMap   (line 227)
+                    DUP
+                    ICONST_4
+                    INVOKESPECIAL java.util.LinkedHashMap.<init> (I)V
+                    ASTORE_2
+                    ALOAD_2     // Ljava/util/Map; result   (line 228)
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf
+                    ALOAD_1     // Ljava/lang/Class; type
+                    INVOKEINTERFACE org.springframework.beans.factory.ListableBeanFactory.getBeansOfType (Ljava/lang/Class;)Ljava/util/Map;
+                    INVOKEINTERFACE java.util.Map.putAll (Ljava/util/Map;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 229)
+                    INSTANCEOF org.springframework.beans.factory.HierarchicalBeanFactory
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 230)
+                    CHECKCAST org.springframework.beans.factory.HierarchicalBeanFactory
+                    ASTORE_3
+                    ALOAD_3     // Lorg/springframework/beans/factory/HierarchicalBeanFactory; hbf   (line 231)
+                    INVOKEINTERFACE org.springframework.beans.factory.HierarchicalBeanFactory.getParentBeanFactory ()Lorg/springframework/beans/factory/BeanFactory;
+                    INSTANCEOF org.springframework.beans.factory.ListableBeanFactory
+                    IFEQ L2
+                    ALOAD_3     // Lorg/springframework/beans/factory/HierarchicalBeanFactory; hbf   (line 233)
+                    INVOKEINTERFACE org.springframework.beans.factory.HierarchicalBeanFactory.getParentBeanFactory ()Lorg/springframework/beans/factory/BeanFactory;
+                    CHECKCAST org.springframework.beans.factory.ListableBeanFactory
+                    ALOAD_1     // Ljava/lang/Class; type
+                    INVOKESTATIC org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors (Lorg/springframework/beans/factory/ListableBeanFactory;Ljava/lang/Class;)Ljava/util/Map;   (line 232)
+                    ASTORE 4
+                    ALOAD 4     // Ljava/util/Map; parentResult   (line 234)
+                    INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 6
+                    GOTO L1
+                L0: ALOAD 6
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.util.Map$Entry
+                    ASTORE 5
+                    ALOAD 5     // Ljava/util/Map$Entry; entry   (line 235)
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 7
+                    ALOAD_2     // Ljava/util/Map; result   (line 236)
+                    ALOAD 7     // Ljava/lang/String; beanName
+                    INVOKEINTERFACE java.util.Map.containsKey (Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_3     // Lorg/springframework/beans/factory/HierarchicalBeanFactory; hbf
+                    ALOAD 7     // Ljava/lang/String; beanName
+                    INVOKEINTERFACE org.springframework.beans.factory.HierarchicalBeanFactory.containsLocalBean (Ljava/lang/String;)Z
+                    IFNE L1
+                    ALOAD_2     // Ljava/util/Map; result   (line 237)
+                    ALOAD 7     // Ljava/lang/String; beanName
+                    ALOAD 5     // Ljava/util/Map$Entry; entry
+                    INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                L1: ALOAD 6   (line 234)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                L2: ALOAD_2     // Ljava/util/Map; result   (line 242)
+                    ARETURN
+  end public static java.util.Map beansOfTypeIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory, Class) throws org.springframework.beans.BeansException
+
+  public static java.util.Map beansOfTypeIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory, Class, boolean, boolean) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 275)
+                    LDC "ListableBeanFactory must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    NEW java.util.LinkedHashMap   (line 276)
+                    DUP
+                    ICONST_4
+                    INVOKESPECIAL java.util.LinkedHashMap.<init> (I)V
+                    ASTORE 4
+                    ALOAD 4     // Ljava/util/Map; result   (line 277)
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf
+                    ALOAD_1     // Ljava/lang/Class; type
+                    ILOAD_2     // Z includeNonSingletons
+                    ILOAD_3     // Z allowEagerInit
+                    INVOKEINTERFACE org.springframework.beans.factory.ListableBeanFactory.getBeansOfType (Ljava/lang/Class;ZZ)Ljava/util/Map;
+                    INVOKEINTERFACE java.util.Map.putAll (Ljava/util/Map;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 278)
+                    INSTANCEOF org.springframework.beans.factory.HierarchicalBeanFactory
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 279)
+                    CHECKCAST org.springframework.beans.factory.HierarchicalBeanFactory
+                    ASTORE 5
+                    ALOAD 5     // Lorg/springframework/beans/factory/HierarchicalBeanFactory; hbf   (line 280)
+                    INVOKEINTERFACE org.springframework.beans.factory.HierarchicalBeanFactory.getParentBeanFactory ()Lorg/springframework/beans/factory/BeanFactory;
+                    INSTANCEOF org.springframework.beans.factory.ListableBeanFactory
+                    IFEQ L2
+                    ALOAD 5     // Lorg/springframework/beans/factory/HierarchicalBeanFactory; hbf   (line 282)
+                    INVOKEINTERFACE org.springframework.beans.factory.HierarchicalBeanFactory.getParentBeanFactory ()Lorg/springframework/beans/factory/BeanFactory;
+                    CHECKCAST org.springframework.beans.factory.ListableBeanFactory
+                    ALOAD_1     // Ljava/lang/Class; type
+                    ILOAD_2     // Z includeNonSingletons
+                    ILOAD_3     // Z allowEagerInit
+                    INVOKESTATIC org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors (Lorg/springframework/beans/factory/ListableBeanFactory;Ljava/lang/Class;ZZ)Ljava/util/Map;   (line 281)
+                    ASTORE 6
+                    ALOAD 6     // Ljava/util/Map; parentResult   (line 283)
+                    INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 8
+                    GOTO L1
+                L0: ALOAD 8
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.util.Map$Entry
+                    ASTORE 7
+                    ALOAD 7     // Ljava/util/Map$Entry; entry   (line 284)
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE 9
+                    ALOAD 4     // Ljava/util/Map; result   (line 285)
+                    ALOAD 9     // Ljava/lang/String; beanName
+                    INVOKEINTERFACE java.util.Map.containsKey (Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD 5     // Lorg/springframework/beans/factory/HierarchicalBeanFactory; hbf
+                    ALOAD 9     // Ljava/lang/String; beanName
+                    INVOKEINTERFACE org.springframework.beans.factory.HierarchicalBeanFactory.containsLocalBean (Ljava/lang/String;)Z
+                    IFNE L1
+                    ALOAD 4     // Ljava/util/Map; result   (line 286)
+                    ALOAD 9     // Ljava/lang/String; beanName
+                    ALOAD 7     // Ljava/util/Map$Entry; entry
+                    INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                L1: ALOAD 8   (line 283)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                L2: ALOAD 4     // Ljava/util/Map; result   (line 291)
+                    ARETURN
+  end public static java.util.Map beansOfTypeIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory, Class, boolean, boolean) throws org.springframework.beans.BeansException
+
+  public static Object beanOfTypeIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory, Class) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 320)
+                    ALOAD_1     // Ljava/lang/Class; type
+                    INVOKESTATIC org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors (Lorg/springframework/beans/factory/ListableBeanFactory;Ljava/lang/Class;)Ljava/util/Map;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/util/Map; beansOfType   (line 321)
+                    INVOKEINTERFACE java.util.Map.size ()I
+                    ICONST_1
+                    IF_ICMPNE L0
+                    ALOAD_2     // Ljava/util/Map; beansOfType   (line 322)
+                    INVOKEINTERFACE java.util.Map.values ()Ljava/util/Collection;
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ARETURN
+                L0: NEW org.springframework.beans.factory.NoSuchBeanDefinitionException   (line 325)
+                    DUP
+                    ALOAD_1     // Ljava/lang/Class; type
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "expected single bean but found "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/util/Map; beansOfType
+                    INVOKEINTERFACE java.util.Map.size ()I
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL org.springframework.beans.factory.NoSuchBeanDefinitionException.<init> (Ljava/lang/Class;Ljava/lang/String;)V
+                    ATHROW
+  end public static Object beanOfTypeIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory, Class) throws org.springframework.beans.BeansException
+
+  public static Object beanOfTypeIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory, Class, boolean, boolean) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 362)
+                    ALOAD_1     // Ljava/lang/Class; type
+                    ILOAD_2     // Z includeNonSingletons
+                    ILOAD_3     // Z allowEagerInit
+                    INVOKESTATIC org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors (Lorg/springframework/beans/factory/ListableBeanFactory;Ljava/lang/Class;ZZ)Ljava/util/Map;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/util/Map; beansOfType   (line 363)
+                    INVOKEINTERFACE java.util.Map.size ()I
+                    ICONST_1
+                    IF_ICMPNE L0
+                    ALOAD 4     // Ljava/util/Map; beansOfType   (line 364)
+                    INVOKEINTERFACE java.util.Map.values ()Ljava/util/Collection;
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ARETURN
+                L0: NEW org.springframework.beans.factory.NoSuchBeanDefinitionException   (line 367)
+                    DUP
+                    ALOAD_1     // Ljava/lang/Class; type
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "expected single bean but found "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/util/Map; beansOfType
+                    INVOKEINTERFACE java.util.Map.size ()I
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL org.springframework.beans.factory.NoSuchBeanDefinitionException.<init> (Ljava/lang/Class;Ljava/lang/String;)V
+                    ATHROW
+  end public static Object beanOfTypeIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory, Class, boolean, boolean) throws org.springframework.beans.BeansException
+
+  public static Object beanOfType(org.springframework.beans.factory.ListableBeanFactory, Class) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 388)
+                    LDC "ListableBeanFactory must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 389)
+                    ALOAD_1     // Ljava/lang/Class; type
+                    INVOKEINTERFACE org.springframework.beans.factory.ListableBeanFactory.getBeansOfType (Ljava/lang/Class;)Ljava/util/Map;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/util/Map; beansOfType   (line 390)
+                    INVOKEINTERFACE java.util.Map.size ()I
+                    ICONST_1
+                    IF_ICMPNE L0
+                    ALOAD_2     // Ljava/util/Map; beansOfType   (line 391)
+                    INVOKEINTERFACE java.util.Map.values ()Ljava/util/Collection;
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ARETURN
+                L0: NEW org.springframework.beans.factory.NoSuchBeanDefinitionException   (line 394)
+                    DUP
+                    ALOAD_1     // Ljava/lang/Class; type
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "expected single bean but found "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/util/Map; beansOfType
+                    INVOKEINTERFACE java.util.Map.size ()I
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL org.springframework.beans.factory.NoSuchBeanDefinitionException.<init> (Ljava/lang/Class;Ljava/lang/String;)V
+                    ATHROW
+  end public static Object beanOfType(org.springframework.beans.factory.ListableBeanFactory, Class) throws org.springframework.beans.BeansException
+
+  public static Object beanOfType(org.springframework.beans.factory.ListableBeanFactory, Class, boolean, boolean) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 426)
+                    LDC "ListableBeanFactory must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/ListableBeanFactory; lbf   (line 427)
+                    ALOAD_1     // Ljava/lang/Class; type
+                    ILOAD_2     // Z includeNonSingletons
+                    ILOAD_3     // Z allowEagerInit
+                    INVOKEINTERFACE org.springframework.beans.factory.ListableBeanFactory.getBeansOfType (Ljava/lang/Class;ZZ)Ljava/util/Map;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/util/Map; beansOfType   (line 428)
+                    INVOKEINTERFACE java.util.Map.size ()I
+                    ICONST_1
+                    IF_ICMPNE L0
+                    ALOAD 4     // Ljava/util/Map; beansOfType   (line 429)
+                    INVOKEINTERFACE java.util.Map.values ()Ljava/util/Collection;
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ARETURN
+                L0: NEW org.springframework.beans.factory.NoSuchBeanDefinitionException   (line 432)
+                    DUP
+                    ALOAD_1     // Ljava/lang/Class; type
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "expected single bean but found "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/util/Map; beansOfType
+                    INVOKEINTERFACE java.util.Map.size ()I
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL org.springframework.beans.factory.NoSuchBeanDefinitionException.<init> (Ljava/lang/Class;Ljava/lang/String;)V
+                    ATHROW
+  end public static Object beanOfType(org.springframework.beans.factory.ListableBeanFactory, Class, boolean, boolean) throws org.springframework.beans.BeansException
+
+end public abstract class org.springframework.beans.factory.BeanFactoryUtils
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+debug weaving 'org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler'
+---- org.aspectj.weaver.ltw.LTWWorld@28c97a5 ----
+Class loader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader parent:
+sun.misc.Launcher$ExtClassLoader@722c41f4
+Shadow mungers:
+(around(extraFlags: 3): ((((((((((within(@org.springframework.cache.annotation.CacheEvict *) && execution(public * @org.springframework.cache.annotation.CacheEvict *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)) || (((within(@org.springframework.cache.annotation.Caching *) && execution(public * @org.springframework.cache.annotation.Caching *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.CachePut *) && execution(public * @org.springframework.cache.annotation.CachePut *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || (((within(@org.springframework.cache.annotation.Cacheable *) && execution(public * @org.springframework.cache.annotation.Cacheable *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Caching * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.Cacheable * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CacheEvict * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect))) || ((execution(@org.springframework.cache.annotation.CachePut * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.cache.aspectj.AnnotationCacheAspect)))->java.lang.Object org.springframework.cache.aspectj.AbstractCacheAspect.ajc$around$org_springframework_cache_aspectj_AbstractCacheAspect$1$2bc714b5(java.lang.Object, org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(around(extraFlags: 5): ((execution(@org.springframework.scheduling.annotation.Async (void || java.util.concurrent.Future+) *(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)) || (execution((void || java.util.concurrent.Future+) @org.springframework.scheduling.annotation.Async *.*(..)) && persingleton(org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect)))->java.lang.Object org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect.ajc$around$org_springframework_scheduling_aspectj_AbstractAsyncExecutionAspect$1$6c004c3e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart))
+org.aspectj.weaver.Checker@5abff562
+org.aspectj.weaver.Checker@12140c1d
+(before(extraFlags: 4): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$before$org_springframework_transaction_aspectj_AbstractTransactionAspect$1$2a73e96c(java.lang.Object, org.aspectj.lang.JoinPoint$StaticPart))
+(afterThrowing(extraFlags: 1): ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterThrowing$org_springframework_transaction_aspectj_AbstractTransactionAspect$2$2a73e96c(java.lang.Object, java.lang.Throwable))
+(afterReturning: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$afterReturning$org_springframework_transaction_aspectj_AbstractTransactionAspect$3$2a73e96c(java.lang.Object))
+(after: ((((within(@org.springframework.transaction.annotation.Transactional *) && execution(public * @org.springframework.transaction.annotation.Transactional *.*(..))) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)) || ((execution(@org.springframework.transaction.annotation.Transactional * *(..)) && this(BindingTypePattern(java.lang.Object, 0))) && persingleton(org.springframework.transaction.aspectj.AnnotationTransactionAspect)))->void org.springframework.transaction.aspectj.AbstractTransactionAspect.ajc$after$org_springframework_transaction_aspectj_AbstractTransactionAspect$4$2a73e96c(java.lang.Object))
+(before: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject.new(..)) && initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..))) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object))
+(afterReturning: (((((initialization(org.springframework.beans.factory.aspectj.ConfigurableObject+.new(..)) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && !(@this(org.springframework.beans.factory.annotation.Configurable) && if(boolean org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect.ajc$if$bb0(org.springframework.beans.factory.annotation.Configurable)))) && if(boolean org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$if$6f1(org.aspectj.lang.JoinPoint))) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object))
+(afterReturning: (((execution(java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport+.readResolve()) && this(BindingTypePattern(java.lang.Object, 0))) && @this(org.springframework.beans.factory.annotation.Configurable)) && persingleton(org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect))->void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.ConfigurableObject))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty

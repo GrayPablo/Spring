@@ -9,6 +9,11 @@ public class Aficion {
     public Aficion() {
     }
 
+    public Aficion(String nombre, final Persona persona) {
+        this.nombre = nombre;
+        this.persona = persona;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -21,16 +26,12 @@ public class Aficion {
         return persona;
     }
 
-    public void setPersona(Persona persona) {
+    public void setPersona(final Persona persona) {
         this.persona = persona;
     }
 
     public Integer getId() {
         return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     @Override

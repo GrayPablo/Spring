@@ -7,6 +7,7 @@ package com.curso.springdaohibernateanotaciones;
 import com.curso.springdaohibernateanotaciones.dominio.Aficion;
 import com.curso.springdaohibernateanotaciones.dominio.Persona;
 import com.curso.springdaohibernateanotaciones.servicios.ServicioPersona;
+import static java.lang.System.out;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -20,7 +21,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
 
     private ApplicationContext ctx;
-    private static final Logger logger = Logger.getAnonymousLogger();
+    private static final Logger LOGGER = Logger.getAnonymousLogger();
 
     /**
      * @param args the command line arguments
@@ -32,26 +33,21 @@ public class Main {
         m.probarAccesoDatos();
     }
 
-    private void cargarContexto() {
-        String[] paths = {"applicationContext.xml", "daoContext.xml"};
-        ctx = new ClassPathXmlApplicationContext(paths);
+    private void cargarContexto() {        
+        ctx = new ClassPathXmlApplicationContext("applicationContext.xml", "daoContext.xml");
         System.out.println("Contexto cargado");
     }
 
     private void probarAccesoDatos() {
-        ServicioPersona s = (ServicioPersona) ctx.getBean("servicioPersona");
+        ServicioPersona s = ctx.getBean(ServicioPersona.class);
         System.out.printf("Hay %d personas en la base de datos\n",
                 s.getNumeroDePersonas());
         System.out.println("************************************************");
         System.out.println("Personas en la base de datos");
-        for (Persona una : s.getPersonas()) {
-            System.out.println(una);
-        }
+        s.getPersonas().forEach(out::println);
         System.out.println("************************************************");
         System.out.println("Personas en la base de datos cuyo nombre contiene la letra 'p'");
-        for (Persona una : s.getPorNombreParecido("5")) {
-            System.out.println(una);
-        }
+        s.getPorNombreParecido("5").forEach(out::println);
         System.out.println("************************************************");
         System.out.println("Datos de la persona con id 1");
         Persona p = s.getPersona(1);
@@ -62,9 +58,7 @@ public class Main {
         System.out.println("************************************************");
         System.out.println("Aficiones de la persona con id 2");
         List<Aficion> aficiones = s.getAficiones(2);
-        for (Aficion aficion : aficiones) {
-            System.out.println(aficion);
-        }
+        s.getAficiones(2).forEach(out::println);
         System.out.println("************************************************");
         System.out.println("Aficiones de la persona con id 2 obtenidas de otra manera");
         aficiones = s.getAficionesDeOtraManera(2);
@@ -85,7 +79,7 @@ public class Main {
 
     private void cargarDatosPrueba() {
         ServicioPersona s = (ServicioPersona) ctx.getBean("servicioPersona");
-        logger.log(Level.INFO, "Servicio de personas encontrado");
+        LOGGER.log(Level.INFO, "Servicio de personas encontrado");
         for (int i = 0; i < 10; i++) {
             Persona p = new Persona();
             p.setNombre("pepe" + i);
