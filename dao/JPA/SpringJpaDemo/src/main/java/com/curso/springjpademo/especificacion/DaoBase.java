@@ -5,6 +5,7 @@
 package com.curso.springjpademo.especificacion;
 
 import com.curso.springjpademo.dominio.Entidad;
+import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 import javax.persistence.EntityManager;
@@ -20,9 +21,11 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class DaoBase<T> {
 
+    private Class<T> obj;
+
     @PersistenceContext
-    private EntityManager em;   
-   
+    private EntityManager em;
+
     public T insertar(T objeto) {
         em.persist(objeto);
         return objeto;
@@ -37,12 +40,12 @@ public class DaoBase<T> {
     }
 
     public T buscar(Entidad objeto) {
-        return (T) em.find(objeto.getClass(),objeto.getId());
+        return (T) em.find(objeto.getClass(), objeto.getId());
     }
 
     public List<T> consulta(String texto, Map<String, String> parametros) {
         Query q = em.createQuery(texto);
-        parametros.keySet().stream().forEach((clave) -> {
+        parametros.keySet().forEach(clave -> {
             q.setParameter(clave, parametros.get(clave));
         });
         return q.getResultList();
@@ -50,7 +53,7 @@ public class DaoBase<T> {
 
     public List<T> consulta(String texto, Map<String, String> parametros, Integer desde, Integer cuantos) {
         Query q = em.createQuery(texto);
-        parametros.keySet().stream().forEach((clave) -> {
+        parametros.keySet().forEach(clave -> {
             q.setParameter(clave, parametros.get(clave));
         });
         q.setFirstResult(desde);

@@ -21,3 +21,6 @@ hs_err_pid*
 /aspectos/AopNativo/EjemploAroundAdvice/target/
 /aspectos/AopNativo/EjemploBeforeAdvice/target/
 /aspectos/AspectJSinSpring/target/
+/dao/JPA/SpringJpaDemo/target/
+/dao/JPA/SpringJpaWeb/target/
+/dao/Hibernate/SpringDaoHibernate5Anotaciones/target/

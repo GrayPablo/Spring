@@ -19,7 +19,7 @@ import org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcesso
 @Configuration
 public class Configuracion {
 
-    @Bean(name = "transactionManager", autowire = Autowire.BY_TYPE)
+    @Bean(name = "transactionManager")
     JpaTransactionManager getJpaTx() {
         return new JpaTransactionManager();
     }
