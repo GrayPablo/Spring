@@ -17,7 +17,7 @@ import org.springframework.util.StopWatch;
 @Aspect
 public class AspectoSaludo {
 
-    private Log log = LogFactory.getLog(this.getClass());
+    private final Log log = LogFactory.getLog(this.getClass());
 
     @Pointcut("execution(* principalAfter(..))")
     public void metodoAfter() {

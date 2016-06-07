@@ -25,3 +25,6 @@ hs_err_pid*
 /dao/JPA/SpringJpaWeb/target/
 /dao/Hibernate/SpringDaoHibernate5Anotaciones/target/
 /dao/EjemploJinq/target/
+/aspectos/Usando Spring AOP/SpringAspectosAOP0001/target/
+/aspectos/Usando AspectJ/EjemploAroundAdvice/target/
+/aspectos/Usando AspectJ/SpringAspectos0001Maven/target/
